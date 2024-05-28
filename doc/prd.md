@@ -38,6 +38,7 @@ The tattoo artist business environment comprises both a meticulously maintained 
 - Development of an administrative platform for tattoo artists to manage appointments, schedules, and client interactions
 - Features for user registration, profile management, and communication between clients and artists
 - Integration of payment processing and financial management tools
+- Appointment alerting system to notify clients and tattoo artists of any changes, confirmations, or cancellations
 - Implementation of marketing and promotional features
 - Basic analytics and reporting tools for business insights
 ### Out-of-Scope
