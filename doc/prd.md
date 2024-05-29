@@ -54,4 +54,4 @@ Clients interested in getting a tattoo typically initiate contact with the tatto
 | David Ano-Trudeau | Software developer, UI/UX designer, quality assurance tester | Design and develop software, design user interface, develop and execute test plans |
 ## Requirements
 ### User Stories
-<iframe src="https://github.com/users/gretron/projects/3/views/3" width="100%" height="500"></iframe>
+Here's a [link](https://github.com/users/gretron/projects/3/views/3) to the **beatattoos** user stories
