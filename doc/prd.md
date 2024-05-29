@@ -65,3 +65,8 @@ Clients interested in getting a tattoo typically initiate contact with the tatto
 - Custom tattoo design tools or software
 - Physical hardware or in-shop systems
 - Advanced financial analytics or enterprise-level accounting features
+## Roles & Responsibilities
+
+| Name              | Role                                                         | Responsibilities                                                                   |
+| ----------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| David Ano-Trudeau | Software developer, UI/UX designer, quality assurance tester | Design and develop software, design user interface, develop and execute test plans |
