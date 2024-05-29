@@ -1,22 +1,4 @@
 # Product Requirement Document
-## Table of Contents
-- [[#Overview|Overview]]
-- [[#Executive Summary*|Executive Summary*]]
-- [[#Objectives*|Objectives*]]
-	- [[#Objectives*#Primary Objectives|Primary Objectives]]
-	- [[#Objectives*#Secondary Objectives|Secondary Objectives]]
-	- [[#Objectives*#Business Objectives|Business Objectives]]
-	- [[#Objectives*#User Objectives|User Objectives]]
-	- [[#Objectives*#Technical Objectives|Technical Objectives]]
-- [[#Context|Context]]
-	- [[#Context#Business Problem*|Business Problem*]]
-	- [[#Context#Business Domain|Business Domain]]
-	- [[#Context#Business Environment|Business Environment]]
-	- [[#Context#Business Workflow*|Business Workflow*]]
-- [[#Project Scope*|Project Scope*]]
-	- [[#Project Scope*#In-Scope|In-Scope]]
-	- [[#Project Scope*#Out-of-Scope|Out-of-Scope]]
-
 ## Overview
 This document outlines the requirements for the **beatattoos** e-commerce project. It details the project's purpose, features, functionalities, roles, responsibilities, standards, and procedures, without addressing technical aspects. For technical specifications, please refer to the [Software Design Document](sdd.md).
 ## Executive Summary*
