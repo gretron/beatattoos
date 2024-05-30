@@ -36,7 +36,7 @@ The tattoo artist business environment comprises both a meticulously maintained 
 Clients interested in getting a tattoo typically initiate contact with the tattoo artist via social media or by visiting the tattoo shop. The tattoo artist then engages in a detailed discussion about the tattoo's design and size. Following this, the artist provides a price estimate and an approximate duration for the tattooing process. To secure an appointment, clients are required to make a security deposit, which helps mitigate the issue of no-show appointments. Each booking may involve multiple sessions, with subsequent appointments scheduled progressively. An amount is charged for each appointment based on its duration and the specifics of the tattoo. The security deposit is subtracted from the final appointment's total cost. Throughout the process, an open line of communication is maintained for feedback and post-tattoo healing recommendations.
 ## Project Scope*
 ### In-Scope
-- Development of a web-based platform for clients to book and manage tattoo appointments
+- Development of a web-based platform for clients to book and manage tattoo appointments with a **single** tattoo artist
 - Development of an administrative platform for tattoo artists to manage appointments, schedules, and client interactions
 - Features for user registration, profile management, and communication between clients and artists
 - Integration of payment processing and financial management tools
