@@ -22,6 +22,8 @@
     "@trpc/client": "next",
     "@trpc/react-query": "next",
     "@trpc/server": "next",
+    "@beatattoos/core": "*",
+    "@beatattoos/ui": "*",
     "geist": "^1.3.0",
     "next": "^14.2.1",
     "next-auth": "^4.24.7",
