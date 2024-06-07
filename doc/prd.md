@@ -49,4 +49,4 @@ Clients interested in getting a tattoo typically initiate contact with the tatto
 - Advanced financial analytics or enterprise-level accounting features
 ## Requirements
 ### User Stories
-Here is the [link](https://github.com/users/gretron/projects/3/views/3) to the **beatattoos** user stories
+[User stories defining product requirements](https://github.com/users/gretron/projects/3/views/3)
