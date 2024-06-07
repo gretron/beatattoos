@@ -51,6 +51,7 @@ Clients interested in getting a tattoo typically initiate contact with the tatto
 ### User Stories
 [User stories defining product requirements](https://github.com/users/gretron/projects/3/views/3)
 ## User Experience
+This clause directly relates product requirements to user experiences to efficiently visualize features for technical development
 ### Registration Process
 #### User Flow Diagram
 [User flow diagram for the registration process](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=17-84&t=Kw5xTLbOPfc352hX-1)
