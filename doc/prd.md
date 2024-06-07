@@ -1,6 +1,6 @@
 # Product Requirement Document
 ## Overview
-This document outlines the requirements for the **beatattoos** e-commerce project. It details the project's purpose, features, functionalities, roles, responsibilities, standards, and procedures, without addressing technical aspects. For technical specifications, please refer to the [Software Design Document](sdd.md).
+This document outlines the requirements for the **beatattoos** e-commerce project. It details the project's purpose, features, functionalities, without addressing technical aspects. For technical specifications, please refer to the [Software Design Document](sdd.md).
 ## Executive Summary*
 The **beatattoos** project aims to deliver an efficient and comprehensive business system for managing tattoo artist bookings and appointments. This all-inclusive solution enables tattoo artists to streamline every facet of their business operations, emphasizing usability and simplicity. Additionally, it offers an interactive platform for clients to convey their preferences and expectations, facilitating dynamic negotiation with the artist.
 ## Objectives*
@@ -47,11 +47,6 @@ Clients interested in getting a tattoo typically initiate contact with the tatto
 - Custom tattoo design tools or software
 - Physical hardware or in-shop systems
 - Advanced financial analytics or enterprise-level accounting features
-## Roles & Responsibilities
-
-| Name              | Role                                                         | Responsibilities                                                                   |
-| ----------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
-| David Ano-Trudeau | Software developer, UI/UX designer, quality assurance tester | Design and develop software, design user interface, develop and execute test plans |
 ## Requirements
 ### User Stories
 Here is the [link](https://github.com/users/gretron/projects/3/views/3) to the **beatattoos** user stories
