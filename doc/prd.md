@@ -2,9 +2,9 @@
 ## Overview
 This document outlines the requirements for the **beatattoos** e-commerce project. It details the project's purpose, features, functionalities, without addressing technical aspects. For technical specifications, please refer to the [Software Design Document](sdd.md).
 ## Executive Summary*
-The **beatattoos** project aims to deliver an efficient and comprehensive business system for managing tattoo artist bookings and appointments. This all-inclusive solution enables tattoo artists to streamline every facet of their business operations, emphasizing usability and simplicity. Additionally, it offers an interactive platform for clients to convey their preferences and expectations, facilitating dynamic negotiation with the artist.
+This project aims to deliver an efficient and comprehensive business system for managing tattoo artist bookings and appointments. This all-inclusive solution enables tattoo artists to streamline every facet of their business operations, emphasizing usability and simplicity. Additionally, it offers an interactive platform for clients to convey their preferences and expectations, facilitating dynamic negotiation with the artist.
 ## Objectives*
-The overarching objectives the **beatattoos** project aims to achieve
+The overarching objectives the project aims to achieve
 ### Primary Objectives
 - **Streamline booking process**: develop an intuitive booking system that allows client to easily schedule, modify and cancel appointments with tattoo artists
 - **Enhance client-artist communication**: facilitate seamless communication between clients and artists for discussing design, preferences, and special requirements
