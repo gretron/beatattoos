@@ -12,4 +12,6 @@ Here is a [link](https://www.figma.com/board/BoKrfOHfDMlBjGueEAiYs4/Diagrams?nod
 ## User Interface
 ### Design System
 Here is a [link](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=2-16&t=YSHXWSh49CgOEDim-1) to the **beatattoos** design system
-
+### Registration Process
+#### Wireframe
+[Registration process wireframe](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=297-1367&t=mvOEQwcOuLHUznJo-1)
