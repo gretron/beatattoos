@@ -15,3 +15,5 @@ Here is a [link](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interf
 ### Registration Process
 #### Wireframe
 [Registration process wireframe](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=297-1367&t=mvOEQwcOuLHUznJo-1)
+#### Mockup
+[Registration process mockup](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=297-1295&t=mvOEQwcOuLHUznJo-1)
