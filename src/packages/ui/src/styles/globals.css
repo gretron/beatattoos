@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Space+Grotesk:wght@300..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Proclamate Heavy";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../assets/fonts/proclamate_heavy.woff") format("woff");
+  }
+
+  html {
+    @apply !font-body font-medium !text-base text-secondary-500;
+  }
+
+  .d3 {
+    @apply text-9xl font-display;
+  }
+
+  h1 {
+    @apply font-heading !font-bold !text-4xl;
+  }
+}

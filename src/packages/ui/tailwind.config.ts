@@ -1,10 +1,11 @@
-import type { Config } from 'tailwindcss'
+// Types
+import { type Config } from "tailwindcss";
+
+// Presets
+import GlobalPreset from "./global.preset";
 
 export default {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {},
-  },
+  presets: [GlobalPreset],
+  content: ["./src/*/.tsx"],
   plugins: [],
-} satisfies Config
-
+} satisfies Config;
