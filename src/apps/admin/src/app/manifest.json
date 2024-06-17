@@ -1,0 +1,7 @@
+{
+  "name": "beatattoos",
+  "short_name": "beatattoos",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/auth"
+}
