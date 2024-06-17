@@ -5,23 +5,78 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: "Proclamate Heavy";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url("../assets/fonts/proclamate_heavy.woff") format("woff");
-  }
-
   html {
     @apply !font-body font-medium !text-base text-secondary-500;
   }
 
+  input:-webkit-autofill:disabled {
+    -webkit-text-fill-color: #a47c6f;
+  }
+
+  .d1,
+  .d2,
   .d3 {
-    @apply text-9xl font-display;
+    @apply font-display;
+  }
+
+  .d1 {
+    @apply text-9xl;
+  }
+
+  .d2 {
+    @apply text-8xl;
+  }
+
+  .d3 {
+    @apply text-7xl;
   }
 
   h1 {
     @apply font-heading !font-bold !text-4xl;
+  }
+
+  h2 {
+    @apply font-heading !font-bold !text-3xl;
+  }
+
+  h3 {
+    @apply font-heading !font-bold !text-2xl;
+  }
+
+  h4 {
+    @apply font-body !font-bold !text-xl;
+  }
+
+  h5 {
+    @apply font-body !font-bold !text-base;
+  }
+
+  .button,
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline,
+  .btn-outline__icon {
+    @apply flex items-center justify-center h-12 !px-4 !py-3 rounded-2xl !font-bold;
+  }
+
+  .btn-primary {
+    @apply bg-accent-500 hover:bg-accent-600 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-500 text-primary-300 hover:bg-secondary-400 transition-colors;
+  }
+
+  .btn-outline,
+  .btn-outline__icon {
+    @apply border border-neutral-400 hover:border-neutral-500 transition-colors;
+  }
+
+  .btn-outline__icon {
+    @apply !px-3 aspect-square;
+  }
+
+  .btn-icon {
+    @apply hover:fill-secondary-400 hover:stroke-secondary-400 cursor-pointer transition-colors;
   }
 }

@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./button": "./src/button.tsx",
+    "./AlertBox": "./src/AlertBox.tsx",
+    "./Field": "./src/Field.tsx",
+    "./InputField": "./src/InputField.tsx",
     "./card": "./src/card.tsx",
     "./code": "./src/code.tsx",
     "./global.preset": "./global.preset.ts",
@@ -25,5 +27,9 @@
     "react": "^18.2.0",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@tabler/icons-react": "^3.5.0",
+    "zod": "^3.23.8"
   }
 }

@@ -6,6 +6,6 @@ import GlobalPreset from "./global.preset";
 
 export default {
   presets: [GlobalPreset],
-  content: ["./src/*/.tsx"],
+  content: ["./src/**/*.tsx", "./src/*.tsx"],
   plugins: [],
 } satisfies Config;
