@@ -22,17 +22,19 @@ export default function RegisterForm(props: {}) {
 
     setErrorMessage("");
 
-    startTransition(() => {
-      register(new FormData(e.target as HTMLFormElement)).then((res) => {
-        if (res) {
-          setErrorMessage(res.error);
-        }
+    startTransition(async () => {
+      await register(new FormData(e.target as HTMLFormElement)).then((res) => {
+        setErrorMessage(res?.error);
       });
     });
   };
 
   return (
-    <form className={"flex-grow"} onSubmit={handleSubmit}>
+    <form
+      className={"flex-grow"}
+      onSubmit={handleSubmit}
+      aria-label={"registerForm"}
+    >
       <header>
         <h2 className={"mb-2"}>Register</h2>
         <h4 className={"mb-8 text-neutral-500"}>

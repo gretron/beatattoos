@@ -51,11 +51,13 @@ export default function AlertBox(props: AlertBoxProps) {
   return (
     <>
       {props.message && (
-        <motion.div
+        <motion.aside
           className={`${props.className} grid rounded-2xl border bg-${type}-300 border-${type}-500`}
           initial={"hidden"}
           animate={"show"}
           variants={alertVariants}
+          aria-label={"alert"}
+          role={"note"}
         >
           <div className={`overflow-hidden`}>
             <div className={"p-4 flex items-center gap-3"}>
@@ -67,7 +69,7 @@ export default function AlertBox(props: AlertBoxProps) {
               />
             </div>
           </div>
-        </motion.div>
+        </motion.aside>
       )}
     </>
   );
