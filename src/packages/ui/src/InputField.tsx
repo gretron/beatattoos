@@ -44,6 +44,7 @@ export default function InputField<T>(props: InputFieldProps<T>) {
           required={props.required}
           onChange={(e) => props.setValue(e.target.value)}
           placeholder={props.placeholder}
+          aria-label={props.name}
         />
         <label
           htmlFor={props.id}

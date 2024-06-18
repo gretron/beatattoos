@@ -5,7 +5,7 @@ import NextAuth, {
   type NextAuthOptions,
 } from "next-auth";
 import { type Adapter } from "next-auth/adapters";
-import { db } from "~/server/db";
+import { db } from "~/lib/db";
 import Credentials from "next-auth/providers/credentials";
 
 declare module "next-auth" {

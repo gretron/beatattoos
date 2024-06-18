@@ -4,7 +4,7 @@ import { registerFormSchemaRefined, tokenFormSchema } from "~/app/auth/schemas";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import bcrypt from "bcrypt";
-import { db } from "~/server/db";
+import { db } from "~/lib/db";
 
 /**
  * Action to verify administrator token validity
@@ -16,7 +16,7 @@ export async function verifyToken(formData: FormData) {
 
   // Check for data formatting errors
   if (!parsedData.success) {
-    return { error: "An error occurred while parsing the data" };
+    return { error: "An error occurred while parsing the token" };
   }
 
   // Check if entered token corresponds to the admin token
@@ -41,7 +41,7 @@ export async function register(formData: FormData) {
 
   // Check for data formatting errors
   if (!parsedData.success) {
-    return { error: "An error occurred while parsing the data" };
+    return { error: "An error occurred while parsing the credentials" };
   }
 
   // Retrieve admin token
@@ -53,6 +53,7 @@ export async function register(formData: FormData) {
     redirect(
       "/auth/token?message=Entered%20token%20does%20not%20correspond%20to%20the%20admin%20token",
     );
+    return; // For integration test
   }
 
   let adminUserExists;
