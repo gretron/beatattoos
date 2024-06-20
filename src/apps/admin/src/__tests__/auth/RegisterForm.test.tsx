@@ -109,7 +109,9 @@ describe("RegisterForm", () => {
 
     await fillRegisterFormAndSubmit(createUser());
 
-    await registerSpy.mock.results[0]?.value;
+    await act(async () => {
+      await registerSpy.mock.results[0]?.value;
+    });
 
     expect(registerSpy).toHaveBeenCalled();
     expect(registerSpy).toHaveReturnedWith(undefined);
