@@ -27,7 +27,7 @@ jobs:
           fetch-depth: 0
       - name: Get origin/main base SHA commit ID
         id: base-sha
-        run: echo "sha=$(git rev-parse origin/master)" >> $GITHUB_OUTPUT
+        run: echo "sha=$(git rev-parse origin/main)" >> $GITHUB_OUTPUT
       - name: Get changed UI package files
         id: changed-ui-files
         uses: tj-actions/changed-files@v44
@@ -71,7 +71,7 @@ jobs:
             echo "$file was changed"
           done
   test-admin:
-    if: ${{ false }}
+    if: ${{ needs.setup.outputs.admin_all_changed_files }}
     needs: setup
     name: Run admin app tests
     runs-on: ubuntu-latest
