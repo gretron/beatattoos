@@ -1,3 +1,2 @@
 -e ./.act/event.json
 --var-file ./.act/admin.variables
--s GITHUB_TOKEN="$(gh auth token)"
