@@ -1,0 +1,91 @@
+name: Run tests
+
+on:
+  pull_request:
+    types:
+      - synchronize
+    branches:
+      - main
+    paths:
+      - 'src'
+  push:
+    branches:
+      - main
+
+jobs:
+  setup:
+    name: Setup app and packages tests
+    runs-on: ubuntu-latest
+    outputs:
+      ui_all_changed_files: ${{ steps.changed-ui-files.outputs.all_changed_files }}
+      admin_all_changed_files: ${{ steps.changed-admin-files.outputs.all_changed_files }}
+      client_all_changed_files: ${{ steps.changed-client-files.outputs.all_changed_files }}
+    steps:
+      - name: Checkout beatattoos repository
+        uses: actions/checkout@v4
+      - name: Install git
+        if: ${{ github.event.act }} # Act only
+        run: apt-get update && apt-get install -y git
+      - name: Get changed UI package files
+        id: changed-ui-files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: ./src/packages/ui/**
+      - name: List all changed UI package files
+        if: ${{ github.event.act }} # Act only
+        env:
+          CHANGED_FILES: ${{ steps.changed-ui-files.outputs.all_changed_files }}
+        run: |
+          for file in ${CHANGED_FILES}; do
+            echo "$file was changed"
+          done
+      - name: Get changed admin app files
+        id: changed-admin-files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: ./src/apps/admin/**
+      - name: List all changed admin app files
+        if: ${{ github.event.act }} # Act only
+        env:
+          CHANGED_FILES: ${{ steps.changed-admin-files.outputs.all_changed_files }}
+        run: |
+          for file in ${CHANGED_FILES}; do
+            echo "$file was changed"
+          done
+      - name: Get changed client app files
+        id: changed-client-files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: ./src/apps/client/**
+      - name: List all changed client app files
+        if: ${{ github.event.act }} # Act only
+        env:
+          CHANGED_FILES: ${{ steps.changed-client-files.outputs.all_changed_files }}
+        run: |
+          for file in ${CHANGED_FILES}; do
+            echo "$file was changed"
+          done
+  test-admin:
+    if: ${{ needs.setup.outputs.admin_all_changed_files }}
+    needs: setup
+    name: Run admin app tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout beatattoos repository
+        uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install dependencies
+        working-directory: ./src
+        run: npm ci
+      - name: Install admin app dependencies
+        working-directory: ./src/apps/admin
+        run: npm ci
+      - name: Install playwright dependencies
+        working-directory: ./src/apps/admin
+        run: npx playwright install-deps
+      - name: Run playwright e2e tests
+        working-directory: ./src/apps/admin
+        run: npx playwright test
