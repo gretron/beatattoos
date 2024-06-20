@@ -2,6 +2,7 @@ import { IconArrowLeft } from "@tabler/icons-react";
 import TokenForm from "~/app/auth/token/_components/TokenForm";
 import Link from "next/link";
 import PageWrapper from "~/app/auth/_components/PageWrapper";
+import { Suspense } from "react";
 
 export default async function TokenPage() {
   return (
@@ -12,7 +13,9 @@ export default async function TokenPage() {
             <IconArrowLeft className={"h-5 w-5"} />
           </Link>
         </div>
-        <TokenForm />
+        <Suspense>
+          <TokenForm />
+        </Suspense>
         <div className={"flex-grow"}></div>
       </div>
     </PageWrapper>
