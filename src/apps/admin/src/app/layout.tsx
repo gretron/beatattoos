@@ -1,7 +1,4 @@
-// Styles
 import "~/app/_styles/globals.css";
-
-// Helpers
 import localFont from "next/font/local";
 import { Metadata } from "next";
 
