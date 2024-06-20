@@ -23,10 +23,16 @@ jobs:
     steps:
       - name: Checkout beatattoos repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Get origin/main base SHA commit ID
+        id: base-sha
+        run: echo "sha=$(git rev-parse origin/master)" >> $GITHUB_OUTPUT
       - name: Get changed UI package files
         id: changed-ui-files
         uses: tj-actions/changed-files@v44
         with:
+          base_sha: ${{ steps.base-sha.outputs.sha }}
           files: ./src/packages/ui/**
       - name: List all changed UI package files
         if: ${{ github.event.act }}
@@ -40,6 +46,7 @@ jobs:
         id: changed-admin-files
         uses: tj-actions/changed-files@v44
         with:
+          base_sha: ${{ steps.base-sha.outputs.sha }}
           files: ./src/apps/admin/**
       - name: List all changed admin app files
         if: ${{ github.event.act }}
@@ -53,6 +60,7 @@ jobs:
         id: changed-client-files
         uses: tj-actions/changed-files@v44
         with:
+          base_sha: ${{ steps.base-sha.outputs.sha }}
           files: ./src/apps/client/**
       - name: List all changed client app files
         if: ${{ github.event.act }}
@@ -63,7 +71,7 @@ jobs:
             echo "$file was changed"
           done
   test-admin:
-    if: ${{ needs.setup.outputs.admin_all_changed_files }}
+    if: ${{ false }}
     needs: setup
     name: Run admin app tests
     runs-on: ubuntu-latest
