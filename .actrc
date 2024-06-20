@@ -1,1 +1,2 @@
--e event.json
+-e ./.act/event.json
+--var-file ./.act/admin.variables
