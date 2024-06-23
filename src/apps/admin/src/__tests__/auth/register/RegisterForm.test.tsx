@@ -1,49 +1,41 @@
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
-import { expect, it, vi, describe, afterEach, beforeEach } from "vitest";
+import { expect, it, vi, describe, beforeEach } from "vitest";
 import RegisterForm from "~/app/auth/register/_components/RegisterForm";
-import { createUser } from "~/utils/userFactory";
-import * as actions from "~/app/auth/actions";
+import { createUser } from "~/utils/userUtilities";
+import * as actions from "~/app/auth/register/actions";
 import { act } from "react";
 import { User } from "@prisma/client";
+import { db } from "~/lib/db";
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
+import {
+  CREDENTIALS_PARSING_ERROR,
+  EMAIL_IN_USE_ERROR,
+  EXISTING_ACCOUNT_ERROR,
+} from "~/app/auth/register/_constants/actionResponses";
+import {
+  INCORRECT_TOKEN_REDIRECT,
+  SUCCESS_REDIRECT,
+} from "~/app/auth/register/_constants/redirectUrls";
 
-// Setup mock database calls
-const findFirstUser = vi.hoisted(() => vi.fn());
-const findUniqueUser = vi.hoisted(() => vi.fn());
-const createUserDB = vi.hoisted(() => vi.fn());
-vi.mock("~/lib/db", async (importOriginal) => {
-  return {
-    db: {
-      user: {
-        findFirst: findFirstUser,
-        findUnique: findUniqueUser,
-        create: createUserDB,
-      },
-    },
-  };
-});
+vi.mock("~/lib/db");
+vi.mock("next/headers");
+vi.mock("next/navigation");
 
-// Setup mock cookie retrieval
-const getCookies = vi.hoisted(() => vi.fn());
-vi.mock("next/headers", async (importOriginal) => {
-  return {
-    cookies: () => {
-      return {
-        get: getCookies,
-      };
-    },
-  };
-});
-
-// Setup mock url navigation
-const redirect = vi.hoisted(() => vi.fn());
-vi.mock("next/navigation", async (importOriginal) => {
-  return {
-    redirect,
-  };
-});
-
+// Register server action spy
 const registerSpy = vi.spyOn(actions, "register");
 
+// Default get cookie return value
+vi.mocked(cookies().get).mockReturnValue({
+  name: "adminToken",
+  value: process.env.ADMIN_TOKEN ?? "",
+});
+
+/**
+ * To fill register form with credentials and submit
+ * @param user User credentials to fill form with
+ * @param confirmPassword Confirm password in case it differs from user password
+ */
 const fillRegisterFormAndSubmit = async (
   user: User,
   confirmPassword?: string,
@@ -79,50 +71,44 @@ const fillRegisterFormAndSubmit = async (
   });
 };
 
+/**
+ * Reusable credentials error assertion
+ */
 const expectCredentialsError = async () => {
   // Wait for register server action to complete
   await registerSpy.mock.results[0]?.value;
-  const credentialsError = "An error occurred while parsing the credentials";
 
   expect(registerSpy).toHaveBeenCalled();
-  expect(registerSpy).toHaveReturnedWith({
-    error: credentialsError,
-  });
+  expect(registerSpy).toHaveReturnedWith(CREDENTIALS_PARSING_ERROR);
 
-  await waitFor(() => expect(screen.getByText(credentialsError)).toBeDefined());
+  await waitFor(() =>
+    expect(
+      screen.getByText(CREDENTIALS_PARSING_ERROR.message ?? ""),
+    ).toBeDefined(),
+  );
 };
 
-describe("RegisterForm", () => {
+describe("RegisterForm", async () => {
   beforeEach(() => {
     render(<RegisterForm />);
   });
 
-  afterEach(() => {
-    // Reset mock db calls
-    findFirstUser.mockReset();
-    findUniqueUser.mockReset();
-    createUserDB.mockReset();
-  });
-
   it("should succeed with valid admin token and credentials", async () => {
-    getCookies.mockReturnValue({ value: process.env.ADMIN_TOKEN });
+    vi.mocked(db.user.findUnique).mockResolvedValue(null);
 
     await fillRegisterFormAndSubmit(createUser());
 
     await act(async () => {
+      // Wait for register server action to complete
       await registerSpy.mock.results[0]?.value;
     });
 
     expect(registerSpy).toHaveBeenCalled();
     expect(registerSpy).toHaveReturnedWith(undefined);
-    expect(redirect).toHaveBeenCalledWith(
-      "/auth/login?message=Administrator%20account%20was%20successfully%20created",
-    );
+    expect(redirect).toHaveBeenCalledWith(SUCCESS_REDIRECT);
   });
 
   it("should fail with invalid first name", async () => {
-    getCookies.mockReturnValue({ value: process.env.ADMIN_TOKEN });
-
     const user = createUser();
     user.firstName = "";
     await fillRegisterFormAndSubmit(user);
@@ -130,8 +116,6 @@ describe("RegisterForm", () => {
   });
 
   it("should fail with invalid last name", async () => {
-    getCookies.mockReturnValue({ value: process.env.ADMIN_TOKEN });
-
     const user = createUser();
     user.lastName = "";
     await fillRegisterFormAndSubmit(user);
@@ -139,8 +123,6 @@ describe("RegisterForm", () => {
   });
 
   it("should fail with invalid email address", async () => {
-    getCookies.mockReturnValue({ value: process.env.ADMIN_TOKEN });
-
     const user = createUser();
     user.emailAddress = "fail@err.c";
     await fillRegisterFormAndSubmit(user);
@@ -148,8 +130,6 @@ describe("RegisterForm", () => {
   });
 
   it("should fail with invalid password", async () => {
-    getCookies.mockReturnValue({ value: process.env.ADMIN_TOKEN });
-
     const user = createUser();
     user.password = "pass";
     await fillRegisterFormAndSubmit(user);
@@ -157,15 +137,16 @@ describe("RegisterForm", () => {
   });
 
   it("should fail with invalid confirm password", async () => {
-    getCookies.mockReturnValue({ value: process.env.ADMIN_TOKEN });
-
     const user = createUser();
     await fillRegisterFormAndSubmit(user, "pass");
     await expectCredentialsError();
   });
 
   it("should fail with invalid admin token", async () => {
-    getCookies.mockReturnValue({ value: "" });
+    vi.mocked(cookies().get).mockReturnValueOnce({
+      name: "adminToken",
+      value: "",
+    });
 
     await fillRegisterFormAndSubmit(createUser());
 
@@ -174,34 +155,29 @@ describe("RegisterForm", () => {
 
     expect(registerSpy).toHaveBeenCalled();
     expect(registerSpy).toHaveReturnedWith(undefined);
-    expect(redirect).toHaveBeenCalledWith(
-      "/auth/token?message=Entered%20token%20does%20not%20correspond%20to%20the%20admin%20token",
-    );
+    expect(redirect).toHaveBeenCalledWith(INCORRECT_TOKEN_REDIRECT);
   });
 
   it("should fail when admin user exists", async () => {
-    getCookies.mockReturnValue({ value: process.env.ADMIN_TOKEN });
-    findFirstUser.mockReturnValue(createUser());
+    vi.mocked(db.user.findFirst).mockResolvedValueOnce(createUser());
 
     await fillRegisterFormAndSubmit(createUser());
 
     // Wait for register server action to complete
     await registerSpy.mock.results[0]?.value;
-    const adminExistsError = "The administrator user already exists";
 
     expect(registerSpy).toHaveBeenCalled();
-    expect(registerSpy).toHaveReturnedWith({
-      error: adminExistsError,
-    });
+    expect(registerSpy).toHaveReturnedWith(EXISTING_ACCOUNT_ERROR);
 
     await waitFor(() =>
-      expect(screen.getByText(adminExistsError)).toBeDefined(),
+      expect(
+        screen.getByText(EXISTING_ACCOUNT_ERROR.message ?? ""),
+      ).toBeDefined(),
     );
   });
 
   it("should fail when email is in use", async () => {
-    getCookies.mockReturnValue({ value: process.env.ADMIN_TOKEN });
-    findUniqueUser.mockReturnValue(createUser());
+    vi.mocked(db.user.findUnique).mockResolvedValueOnce(createUser());
 
     await fillRegisterFormAndSubmit(createUser());
 
@@ -210,12 +186,10 @@ describe("RegisterForm", () => {
     const emailInUseError = "Email address is already in use";
 
     expect(registerSpy).toHaveBeenCalled();
-    expect(registerSpy).toHaveReturnedWith({
-      error: emailInUseError,
-    });
+    expect(registerSpy).toHaveReturnedWith(EMAIL_IN_USE_ERROR);
 
     await waitFor(() =>
-      expect(screen.getByText(emailInUseError)).toBeDefined(),
+      expect(screen.getByText(EMAIL_IN_USE_ERROR.message ?? "")).toBeDefined(),
     );
   });
 });
