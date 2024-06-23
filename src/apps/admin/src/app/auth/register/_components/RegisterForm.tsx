@@ -2,29 +2,30 @@
 
 import InputField from "@beatattoos/ui/InputField";
 import { FormEvent, useState, useTransition } from "react";
-import { register } from "~/app/auth/actions";
+import { register } from "~/app/auth/register/actions";
 import {
   confirmPasswordSchema,
   defaultRegisterForm,
   registerFormSchema,
-} from "~/app/auth/schemas";
-import AlertBox, { AlertType } from "@beatattoos/ui/AlertBox";
+} from "~/app/auth/register/_constants/schemas";
+import AlertBox from "@beatattoos/ui/AlertBox";
 import { z } from "zod";
+import { Alert, AlertType } from "@beatattoos/ui/Alert";
 
 export default function RegisterForm(props: {}) {
   const [registerForm, setRegisterForm] =
     useState<z.infer<typeof registerFormSchema>>(defaultRegisterForm);
-  const [errorMessage, setErrorMessage] = useState<string>();
+  const [alert, setAlert] = useState<Alert>({ type: AlertType.error });
   const [isPending, startTransition] = useTransition();
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
-    setErrorMessage("");
+    setAlert((prev) => ({ ...prev, message: undefined }));
 
     startTransition(async () => {
       await register(new FormData(e.target as HTMLFormElement)).then((res) => {
-        setErrorMessage(res?.error);
+        setAlert((prev) => ({ ...prev, message: res?.message }));
       });
     });
   };
@@ -120,12 +121,7 @@ export default function RegisterForm(props: {}) {
           confirmPassword: registerForm.confirmPassword,
         }}
       />
-      <AlertBox
-        className={"mt-6"}
-        type={AlertType.error}
-        message={errorMessage}
-        setMessage={setErrorMessage}
-      />
+      <AlertBox className={"mt-6"} alert={alert} setAlert={setAlert} />
       <button className={"btn-primary mt-6 w-full"}>Register</button>
     </form>
   );

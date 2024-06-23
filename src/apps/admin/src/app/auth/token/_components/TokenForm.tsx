@@ -2,36 +2,41 @@
 
 import InputField from "@beatattoos/ui/InputField";
 import { FormEvent, useState, useTransition } from "react";
-import { verifyToken } from "~/app/auth/actions";
-import { tokenFormSchema } from "~/app/auth/schemas";
-import AlertBox, { AlertType } from "@beatattoos/ui/AlertBox";
+import { verifyToken } from "~/app/auth/token/actions";
+import { tokenFormSchema } from "~/app/auth/token/_constants/schemas";
+import AlertBox from "@beatattoos/ui/AlertBox";
 import { useSearchParams } from "next/navigation";
+import { Alert, AlertType } from "@beatattoos/ui/Alert";
 
 export default function TokenForm(props: {}) {
   const [token, setToken] = useState<string>("");
   const [isPending, startTransition] = useTransition();
   const searchParams = useSearchParams();
-
-  const [errorMessage, setErrorMessage] = useState(
-    searchParams.get("message") ?? undefined,
-  );
+  const [alert, setAlert] = useState<Alert>({
+    type: AlertType.error,
+    message: searchParams.get("message") ?? undefined,
+  });
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
-    setErrorMessage("");
+    setAlert((prev) => ({ ...prev, message: undefined }));
 
     startTransition(() => {
       verifyToken(new FormData(e.target as HTMLFormElement)).then((res) => {
         if (res) {
-          setErrorMessage(res.error);
+          setAlert((prev) => ({ ...prev, message: res?.message }));
         }
       });
     });
   };
 
   return (
-    <form className={"flex-grow"} onSubmit={handleSubmit}>
+    <form
+      className={"flex-grow"}
+      aria-label={"tokenForm"}
+      onSubmit={handleSubmit}
+    >
       <header>
         <h2 className={"mb-2"}>Admin Authentication</h2>
         <h4 className={"mb-8 text-neutral-500"}>
@@ -49,12 +54,7 @@ export default function TokenForm(props: {}) {
         disabled={isPending}
         setValue={setToken}
       />
-      <AlertBox
-        className={"mt-6"}
-        type={AlertType.error}
-        message={errorMessage}
-        setMessage={setErrorMessage}
-      />
+      <AlertBox className={"mt-6"} alert={alert} setAlert={setAlert} />
       <button className={"btn-primary mt-6 w-full"}>Validate</button>
     </form>
   );
