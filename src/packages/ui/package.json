@@ -4,6 +4,7 @@
   "private": true,
   "exports": {
     "./AlertBox": "./src/AlertBox.tsx",
+    "./Alert": "./src/types/Alert.ts",
     "./Field": "./src/Field.tsx",
     "./InputField": "./src/InputField.tsx",
     "./card": "./src/card.tsx",
