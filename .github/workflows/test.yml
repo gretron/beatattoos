@@ -1,0 +1,122 @@
+name: Run tests
+
+on:
+  pull_request:
+    types:
+      - synchronize
+    branches:
+      - main
+    paths:
+      - 'src'
+  push:
+    branches:
+      - main
+
+jobs:
+  setup:
+    name: Setup app and packages tests
+    runs-on: ubuntu-latest
+    outputs:
+      ui_all_changed_files: ${{ steps.changed-ui-files.outputs.all_changed_files }}
+      admin_all_changed_files: ${{ steps.changed-admin-files.outputs.all_changed_files }}
+      client_all_changed_files: ${{ steps.changed-client-files.outputs.all_changed_files }}
+    steps:
+      - name: Checkout beatattoos repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Get origin/main base SHA commit ID
+        id: base-sha
+        run: echo "sha=$(git rev-parse origin/main)" >> $GITHUB_OUTPUT
+      - name: Get changed UI package files
+        id: changed-ui-files
+        uses: tj-actions/changed-files@v44
+        with:
+          base_sha: ${{ steps.base-sha.outputs.sha }}
+          files: ./src/packages/ui/**
+      - name: List all changed UI package files
+        if: ${{ github.event.act }}
+        env:
+          CHANGED_FILES: ${{ steps.changed-ui-files.outputs.all_changed_files }}
+        run: |
+          for file in ${CHANGED_FILES}; do
+            echo "$file was changed"
+          done
+      - name: Get changed admin app files
+        id: changed-admin-files
+        uses: tj-actions/changed-files@v44
+        with:
+          base_sha: ${{ steps.base-sha.outputs.sha }}
+          files: ./src/apps/admin/**
+      - name: List all changed admin app files
+        if: ${{ github.event.act }}
+        env:
+          CHANGED_FILES: ${{ steps.changed-admin-files.outputs.all_changed_files }}
+        run: |
+          for file in ${CHANGED_FILES}; do
+            echo "$file was changed"
+          done
+      - name: Get changed client app files
+        id: changed-client-files
+        uses: tj-actions/changed-files@v44
+        with:
+          base_sha: ${{ steps.base-sha.outputs.sha }}
+          files: ./src/apps/client/**
+      - name: List all changed client app files
+        if: ${{ github.event.act }}
+        env:
+          CHANGED_FILES: ${{ steps.changed-client-files.outputs.all_changed_files }}
+        run: |
+          for file in ${CHANGED_FILES}; do
+            echo "$file was changed"
+          done
+  test-admin:
+    if: ${{ needs.setup.outputs.admin_all_changed_files }}
+    needs: setup
+    name: Run admin app tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./src/apps/admin
+    env:
+      NEXTAUTH_SECRET: ${{ vars.ADMIN_NEXTAUTH_SECRET }}
+      NEXTAUTH_URL: ${{ vars.ADMIN_NEXTAUTH_URL }}
+      DISCORD_CLIENT_ID: ${{ vars.ADMIN_DISCORD_CLIENT_ID }}
+      DISCORD_CLIENT_SECRET: ${{ vars.ADMIN_DISCORD_CLIENT_SECRET }}
+      ADMIN_TOKEN: ${{ vars.ADMIN_TOKEN }}
+      DATABASE_URL: ${{ vars.ADMIN_DATABASE_URL }}
+      DIRECT_URL: ${{ vars.ADMIN_DIRECT_URL }}
+    steps:
+      - name: Checkout beatattoos repository
+        uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install monorepo dependencies
+        working-directory: ./src
+        run: npm ci
+      - name: Install admin app dependencies
+        run: npm ci
+      - name: Generate prisma client
+        run: npm run postinstall
+      - name: Build admin app
+        run: npm run build
+      - name: Run linter
+        run: npm run lint
+      - name: Setup supabase CLI
+        uses: supabase/setup-cli@v1
+        with:
+          version: latest
+      - name: Initialize supabase database
+        run: supabase init --with-intellij-settings --with-vscode-settings
+      - name: Start supabase database
+        run: supabase db start
+      - name: Push tables to database
+        run: npm run db:push
+      - name: Install playwright
+        run: npx playwright install --with-deps
+      - name: Run playwright e2e tests
+        run: npm run test-e2e
+      - name: Run unit and integration vitest tests
+        run: npm run test
