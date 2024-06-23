@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useRef } from "react";
 import LandingItems from "~/app/auth/_components/LandingItems";
 import Logo, { LogoAnimationDirection } from "~/app/auth/_components/Logo";
+import Background from "~/app/auth/_components/Background";
 
 interface AuthLayoutProps {
   children: React.ReactNode;
@@ -62,6 +63,7 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
           {children}
         </div>
       </div>
+      <Background />
     </section>
   );
 }
