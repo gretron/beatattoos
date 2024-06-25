@@ -37,7 +37,7 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
         </div>
         <div
           className={
-            "text-center max-md:absolute max-md:left-1/2 max-md:top-1/2 max-md:translate-x-[-50%] max-md:translate-y-[-50%]"
+            "z-10 text-center max-md:absolute max-md:left-1/2 max-md:top-1/2 max-md:translate-x-[-50%] max-md:translate-y-[-50%]"
           }
         >
           <Logo

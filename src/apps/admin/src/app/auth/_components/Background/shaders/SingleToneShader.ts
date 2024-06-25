@@ -54,7 +54,7 @@ export const SingleToneShader = {
       if (brightness > brightnessThreshold)
         final = vec4(colorMap[0], 1);
       else
-        final = vec4(colorMap[1], 0);
+        final = vec4(colorMap[1], 1);
 
       gl_FragColor = vec4(final);
       

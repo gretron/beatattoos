@@ -1,5 +1,5 @@
 import React, { RefObject, useMemo, useRef } from "react";
-import { useGLTF } from "@react-three/drei";
+import { Outlines, useGLTF } from "@react-three/drei";
 import three, { Color, Vector3 } from "three";
 import {
   SingleToneShader,
@@ -10,7 +10,7 @@ interface GothicCircleProps {
   lightPosition: Vector3;
 }
 
-export function GothicCircle(props: GothicCircleProps) {
+export function GothicCircle(props: any) {
   const ref = useRef<three.Mesh>(null);
   const { nodes, materials } = useGLTF("/models/gothic_circle.glb");
 
@@ -45,9 +45,8 @@ export function GothicCircle(props: GothicCircleProps) {
             {...SingleToneShader}
             uniforms={uniforms}
             toneMapped={false}
-            transparent={true}
           />
-          {/*<meshToonMaterial color={"#3E3305"} toneMapped={false} />*/}
+          <Outlines thickness={0.2} color={new Color("#F05D23")} />
         </mesh>
       </group>
     </>

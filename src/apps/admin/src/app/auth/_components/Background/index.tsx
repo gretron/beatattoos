@@ -4,7 +4,7 @@ import Scene from "~/app/auth/_components/Background/components/Scene";
 
 export default function Background() {
   return (
-    <div className={"absolute left-0 top-0 z-0 h-full w-full"}>
+    <div className={"fixed left-0 top-0 z-0 h-full w-full"}>
       <Canvas camera={{ position: [0, 0, -15] }}>
         <OrbitControls minDistance={1} maxDistance={200} makeDefault />
         <Scene />
