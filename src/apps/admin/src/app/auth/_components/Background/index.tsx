@@ -1,14 +1,18 @@
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import Scene from "~/app/auth/_components/Background/components/Scene";
+import dynamic from "next/dynamic";
+import styles from "~/app/auth/_components/Background/components/Scene/styles.module.css";
+import { Suspense } from "react";
+
+const Scene = dynamic(
+  () => import("~/app/auth/_components/Background/components/Scene/index"),
+  {
+    ssr: false,
+  },
+);
 
 export default function Background() {
   return (
-    <div className={"fixed left-0 top-0 z-0 h-full w-full"}>
-      <Canvas camera={{ position: [0, 0, -15] }}>
-        <OrbitControls minDistance={1} maxDistance={200} makeDefault />
-        <Scene />
-      </Canvas>
+    <div className={`${styles.animate} fixed left-0 top-0 z-0 h-full w-full`}>
+      <Scene />
     </div>
   );
 }

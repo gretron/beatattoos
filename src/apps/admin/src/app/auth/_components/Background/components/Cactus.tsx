@@ -1,22 +1,11 @@
-import React, { Suspense, useMemo, useRef } from "react";
-import { Float, Helper, Outlines, Sphere, useGLTF } from "@react-three/drei";
-import three, { BoxHelper, Color, Mesh, Vector3 } from "three";
+import React, { useMemo, useRef } from "react";
+import { Float, useGLTF } from "@react-three/drei";
+import { Color, Mesh, Vector3 } from "three";
 import { TwoToneShaderUniforms } from "~/app/auth/_components/Background/shaders/TwoToneShader";
 import TwoToneOutline from "~/app/auth/_components/Background/components/TwoToneOutline";
 
-/*
-const SingleToneOutline = React.lazy(
-  () => import("~/app/auth/_components/Background/components/TwoToneOutline"),
-);
- */
-
-interface FlowerProps {
-  position: Vector3 | [number, number, number];
-  lightPosition: Vector3;
-}
-
-export default function Flower(props: any) {
-  const { nodes, materials } = useGLTF("/models/flower.glb");
+export function Cactus(props: any) {
+  const { nodes, materials } = useGLTF("/models/cactus.glb");
 
   const uniforms = useMemo((): TwoToneShaderUniforms => {
     return {
@@ -24,7 +13,7 @@ export default function Flower(props: any) {
         value: [new Color("#F05D23"), new Color("#3E3305")],
       },
       brightnessThreshold: {
-        value: 0.6,
+        value: 0.8,
       },
       lightPosition: {
         value: props.lightPosition ?? new Vector3(),
@@ -43,15 +32,15 @@ export default function Flower(props: any) {
         <mesh
           castShadow
           receiveShadow
-          geometry={(nodes.Flower as Mesh).geometry}
+          geometry={(nodes["Cactus002"] as Mesh).geometry}
           scale={3}
-          rotation={[0, -1.75, 0]}
+          rotation={[1, 0, 0]}
         >
-          <TwoToneOutline uniforms={uniforms} />
+          <TwoToneOutline thickness={0.01} uniforms={uniforms} />
         </mesh>
       </Float>
     </group>
   );
 }
 
-useGLTF.preload("/models/flower.glb");
+useGLTF.preload("/models/cactus.glb");

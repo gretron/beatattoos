@@ -1,10 +1,12 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useRef } from "react";
+import React, { Suspense, useRef } from "react";
 import LandingItems from "~/app/auth/_components/LandingItems";
 import Logo, { LogoAnimationDirection } from "~/app/auth/_components/Logo";
+import dynamic from "next/dynamic";
 import Background from "~/app/auth/_components/Background";
+import { Loader } from "@react-three/drei";
 
 interface AuthLayoutProps {
   children: React.ReactNode;
@@ -23,7 +25,7 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
         "ease-[cubic-bezier(0.83, 0, 0.17, 1)] transition-[grid-template-rows] !duration-700 md:transition-[grid-template-columns]"
       }
     >
-      <div className={"flex flex-col items-center justify-center"}>
+      <div className={"z-10 flex flex-col items-center justify-center"}>
         <div
           className={
             "sticky top-6 mb-4 w-full max-md:pl-6 md:top-10 md:flex-grow"
@@ -37,7 +39,7 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
         </div>
         <div
           className={
-            "z-10 text-center max-md:absolute max-md:left-1/2 max-md:top-1/2 max-md:translate-x-[-50%] max-md:translate-y-[-50%]"
+            "text-center max-md:absolute max-md:left-1/2 max-md:top-1/2 max-md:translate-x-[-50%] max-md:translate-y-[-50%]"
           }
         >
           <Logo

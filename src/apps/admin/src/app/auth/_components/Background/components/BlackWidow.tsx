@@ -1,22 +1,13 @@
-import React, { Suspense, useMemo, useRef } from "react";
-import { Float, Helper, Outlines, Sphere, useGLTF } from "@react-three/drei";
-import three, { BoxHelper, Color, Mesh, Vector3 } from "three";
+import React, { useMemo, useRef } from "react";
+import { Float, useGLTF } from "@react-three/drei";
+import { Color, Mesh, Vector3 } from "three";
 import { TwoToneShaderUniforms } from "~/app/auth/_components/Background/shaders/TwoToneShader";
 import TwoToneOutline from "~/app/auth/_components/Background/components/TwoToneOutline";
 
-/*
-const SingleToneOutline = React.lazy(
-  () => import("~/app/auth/_components/Background/components/TwoToneOutline"),
-);
- */
+interface BlackWidowProps {}
 
-interface FlowerProps {
-  position: Vector3 | [number, number, number];
-  lightPosition: Vector3;
-}
-
-export default function Flower(props: any) {
-  const { nodes, materials } = useGLTF("/models/flower.glb");
+export function BlackWidow(props: any) {
+  const { nodes, materials } = useGLTF("/models/black_widow.glb");
 
   const uniforms = useMemo((): TwoToneShaderUniforms => {
     return {
@@ -43,15 +34,16 @@ export default function Flower(props: any) {
         <mesh
           castShadow
           receiveShadow
-          geometry={(nodes.Flower as Mesh).geometry}
-          scale={3}
-          rotation={[0, -1.75, 0]}
+          geometry={(nodes["BlackWidow"] as Mesh).geometry}
+          material={materials["default"]}
+          scale={2.5}
+          rotation={[1.7, 5.3, -1]}
         >
-          <TwoToneOutline uniforms={uniforms} />
+          <TwoToneOutline thickness={0.01} uniforms={uniforms} />
         </mesh>
       </Float>
     </group>
   );
 }
 
-useGLTF.preload("/models/flower.glb");
+useGLTF.preload("/models/black_widow.glb");

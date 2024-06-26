@@ -12,7 +12,7 @@ export type TwoToneShaderUniforms = {
   };
 };
 
-export const SingleToneShader = {
+export const TwoToneShader = {
   vertexShader: /* glsl */ `
     precision highp float;
     precision highp int;
