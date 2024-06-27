@@ -1,25 +1,14 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { Float, useGLTF } from "@react-three/drei";
-import { Color, Mesh, Vector3 } from "three";
-import { TwoToneShaderUniforms } from "~/app/auth/_components/Background/shaders/TwoToneShader";
+import { Mesh } from "three";
 import TwoToneOutline from "~/app/auth/_components/Background/components/TwoToneOutline";
 
-export function TeaCup(props: any) {
-  const { nodes, materials } = useGLTF("/models/tea_cup.glb");
+interface TeaCupProps {
+  lightPosition: [number, number, number];
+}
 
-  const uniforms = useMemo((): TwoToneShaderUniforms => {
-    return {
-      colorMap: {
-        value: [new Color("#F05D23"), new Color("#3E3305")],
-      },
-      brightnessThreshold: {
-        value: 0.5,
-      },
-      lightPosition: {
-        value: props.lightPosition ?? new Vector3(),
-      },
-    };
-  }, [props.lightPosition]);
+export function TeaCup(props: TeaCupProps) {
+  const { nodes, materials } = useGLTF("/models/tea_cup.glb");
 
   return (
     <group {...props} dispose={null}>
@@ -33,10 +22,11 @@ export function TeaCup(props: any) {
           castShadow
           receiveShadow
           geometry={(nodes["TeaCup"] as Mesh).geometry}
+          position={[0, -1, 0]}
           scale={1.5}
-          rotation={[0, 3.5, 0]}
+          rotation={[0, 3.7, 0]}
         >
-          <TwoToneOutline thickness={0.01} uniforms={uniforms} />
+          <TwoToneOutline lightPosition={props.lightPosition} />
         </mesh>
       </Float>
     </group>

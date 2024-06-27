@@ -1,25 +1,14 @@
-import React, { useMemo, useRef } from "react";
+import React from "react";
 import { Float, useGLTF } from "@react-three/drei";
-import { Color, Mesh, Vector3 } from "three";
-import { TwoToneShaderUniforms } from "~/app/auth/_components/Background/shaders/TwoToneShader";
+import { Mesh } from "three";
 import TwoToneOutline from "~/app/auth/_components/Background/components/TwoToneOutline";
 
-export function Cactus(props: any) {
-  const { nodes, materials } = useGLTF("/models/cactus.glb");
+interface CactusProps {
+  lightPosition: [number, number, number];
+}
 
-  const uniforms = useMemo((): TwoToneShaderUniforms => {
-    return {
-      colorMap: {
-        value: [new Color("#F05D23"), new Color("#3E3305")],
-      },
-      brightnessThreshold: {
-        value: 0.8,
-      },
-      lightPosition: {
-        value: props.lightPosition ?? new Vector3(),
-      },
-    };
-  }, [props.lightPosition]);
+export function Cactus(props: CactusProps) {
+  const { nodes, materials } = useGLTF("/models/cactus.glb");
 
   return (
     <group {...props} dispose={null}>
@@ -36,7 +25,7 @@ export function Cactus(props: any) {
           scale={3}
           rotation={[1, 0, 0]}
         >
-          <TwoToneOutline thickness={0.01} uniforms={uniforms} />
+          <TwoToneOutline lightPosition={props.lightPosition} />
         </mesh>
       </Float>
     </group>

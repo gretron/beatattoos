@@ -1,25 +1,14 @@
-import React, { useMemo, useRef } from "react";
+import React from "react";
 import { Float, useGLTF } from "@react-three/drei";
-import { Color, Mesh, Vector3 } from "three";
-import { TwoToneShaderUniforms } from "~/app/auth/_components/Background/shaders/TwoToneShader";
+import { Mesh } from "three";
 import TwoToneOutline from "~/app/auth/_components/Background/components/TwoToneOutline";
 
-export function LuckyCat(props: any) {
-  const { nodes, materials } = useGLTF("/models/lucky_cat.glb");
+interface LuckyCatProps {
+  lightPosition: [number, number, number];
+}
 
-  const uniforms = useMemo((): TwoToneShaderUniforms => {
-    return {
-      colorMap: {
-        value: [new Color("#F05D23"), new Color("#3E3305")],
-      },
-      brightnessThreshold: {
-        value: 0.9,
-      },
-      lightPosition: {
-        value: props.lightPosition ?? new Vector3(),
-      },
-    };
-  }, [props.lightPosition]);
+export function LuckyCat(props: LuckyCatProps) {
+  const { nodes, materials } = useGLTF("/models/lucky_cat.glb");
 
   return (
     <group {...props} dispose={null}>
@@ -35,7 +24,7 @@ export function LuckyCat(props: any) {
           geometry={(nodes["LuckyCat"] as Mesh).geometry}
           scale={2.5}
         >
-          <TwoToneOutline thickness={0.01} uniforms={uniforms} />
+          <TwoToneOutline lightPosition={props.lightPosition} />
         </mesh>
       </Float>
     </group>

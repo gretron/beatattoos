@@ -8,7 +8,7 @@ export type TwoToneShaderUniforms = {
     value: number;
   };
   lightPosition: {
-    value: Vector3;
+    value: Vector3 | [number, number, number];
   };
 };
 

@@ -1,41 +1,59 @@
 "use client";
 
-import React, { Suspense, useRef, useState } from "react";
+import React, { Suspense, useMemo, useRef, useState } from "react";
 import three, { Vector3 } from "three";
-
-const Flower = React.lazy(() => import("../Flower"));
-const GothicCircle = React.lazy(() => import("../GothicCircle"));
 
 import { OrbitControls, useAspect } from "@react-three/drei";
 import { Canvas, useThree } from "@react-three/fiber";
-import { Box, Flex } from "@react-three/flex";
+import { Flex } from "@react-three/flex";
 import { FlexItem } from "~/app/auth/_components/Background/components/FlexItem";
 import { BlackWidow } from "~/app/auth/_components/Background/components/BlackWidow";
 import { Skull } from "~/app/auth/_components/Background/components/Skull";
 import { TeaCup } from "~/app/auth/_components/Background/components/TeaCup";
 import { Cactus } from "~/app/auth/_components/Background/components/Cactus";
 import { LuckyCat } from "~/app/auth/_components/Background/components/LuckyCat";
+import { usePathname } from "next/navigation";
+import { animated, useSpring } from "@react-spring/three";
+import GothicCircle from "~/app/auth/_components/Background/components/GothicCircle";
+import Flower from "~/app/auth/_components/Background/components/Flower";
 
-export function Layout(props: any) {
+const AnimatedFlex = animated(Flex);
+
+function Layout(props: any) {
   const { size } = useThree();
   const [vpWidth, vpHeight] = useAspect(size.width, size.height);
-  const [margin, setMargin] = useState<number>(2);
+  const pathname = usePathname();
+
+  const isExpanded = useMemo(
+    () => pathname === "/auth" || size.width < 768,
+    [pathname, size.width],
+  );
+
+  const springs = useSpring({
+    position: [isExpanded ? 0 : vpWidth / -4, 0, 0] as [number, number, number],
+  });
 
   return (
-    <Flex
+    <AnimatedFlex
       flexDirection={"row"}
       flexWrap={"wrap"}
-      position={[0, 0, 0]}
-      size={[vpWidth, vpHeight, 0]}
+      position={springs.position}
+      size={[isExpanded ? vpWidth : vpWidth / 2, vpHeight, 0]}
       marginTop={2}
       centerAnchor
     >
+      {/* Item 1 */}
       <FlexItem
         width={1 / 3}
         height={1 / 3}
-        margin={margin}
         alignItems={"center"}
-        justifyContent={"center"}
+        justifyContent={
+          size.width < 768
+            ? "flex-start"
+            : pathname === "/auth"
+              ? "center"
+              : "flex-start"
+        }
       >
         <BlackWidow lightPosition={props.lightPosition} />
       </FlexItem>
@@ -43,7 +61,7 @@ export function Layout(props: any) {
       <FlexItem
         width={1 / 3}
         height={1 / 3}
-        margin={margin}
+        marginTop={isExpanded ? 0 : -2}
         justifyContent={"center"}
       >
         <GothicCircle lightPosition={props.lightPosition} />
@@ -52,9 +70,14 @@ export function Layout(props: any) {
       <FlexItem
         width={1 / 3}
         height={1 / 3}
-        margin={margin}
         alignItems={"center"}
-        justifyContent={"center"}
+        justifyContent={
+          size.width < 768
+            ? "flex-end"
+            : pathname === "/auth"
+              ? "center"
+              : "flex-end"
+        }
       >
         <Skull lightPosition={props.lightPosition} />
       </FlexItem>
@@ -62,8 +85,8 @@ export function Layout(props: any) {
       <FlexItem
         width={1 / 2}
         height={1 / 3}
-        margin={margin}
         alignItems={"center"}
+        justifyContent={isExpanded ? "flex-start" : "center"}
       >
         <Flower lightPosition={props.lightPosition} />
       </FlexItem>
@@ -71,9 +94,8 @@ export function Layout(props: any) {
       <FlexItem
         width={1 / 2}
         height={1 / 3}
-        margin={margin}
         alignItems={"center"}
-        justifyContent={"flex-end"}
+        justifyContent={isExpanded ? "flex-end" : "center"}
       >
         <TeaCup lightPosition={props.lightPosition} />
       </FlexItem>
@@ -81,9 +103,8 @@ export function Layout(props: any) {
       <FlexItem
         width={1 / 2}
         height={1 / 3}
-        margin={margin}
         alignItems={"flex-end"}
-        justifyContent={"center"}
+        justifyContent={isExpanded ? "center" : "flex-start"}
       >
         <LuckyCat lightPosition={props.lightPosition} />
       </FlexItem>
@@ -91,13 +112,12 @@ export function Layout(props: any) {
       <FlexItem
         width={1 / 2}
         height={1 / 3}
-        margin={margin}
         alignItems={"flex-end"}
-        justifyContent={"center"}
+        justifyContent={isExpanded ? "center" : "flex-end"}
       >
         <Cactus lightPosition={props.lightPosition} />
       </FlexItem>
-    </Flex>
+    </AnimatedFlex>
   );
 }
 

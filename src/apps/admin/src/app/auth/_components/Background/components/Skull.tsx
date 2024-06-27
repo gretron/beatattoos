@@ -1,25 +1,14 @@
-import React, { useMemo, useRef } from "react";
+import React from "react";
 import { Float, useGLTF } from "@react-three/drei";
-import { Color, Mesh, Vector3 } from "three";
+import { Mesh } from "three";
 import TwoToneOutline from "~/app/auth/_components/Background/components/TwoToneOutline";
-import { TwoToneShaderUniforms } from "~/app/auth/_components/Background/shaders/TwoToneShader";
 
-export function Skull(props: any) {
+interface SkullProps {
+  lightPosition: [number, number, number];
+}
+
+export function Skull(props: SkullProps) {
   const { nodes, materials } = useGLTF("/models/skull.glb");
-
-  const uniforms = useMemo((): TwoToneShaderUniforms => {
-    return {
-      colorMap: {
-        value: [new Color("#F05D23"), new Color("#3E3305")],
-      },
-      brightnessThreshold: {
-        value: 0.7,
-      },
-      lightPosition: {
-        value: props.lightPosition ?? new Vector3(),
-      },
-    };
-  }, [props.lightPosition]);
 
   return (
     <group {...props} dispose={null}>
@@ -36,7 +25,7 @@ export function Skull(props: any) {
           scale={2}
           rotation={[0, 3, 0.5]}
         >
-          <TwoToneOutline thickness={0.01} uniforms={uniforms} />
+          <TwoToneOutline lightPosition={props.lightPosition} />
         </mesh>
       </Float>
     </group>

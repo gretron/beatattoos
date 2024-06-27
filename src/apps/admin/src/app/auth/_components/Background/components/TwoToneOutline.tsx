@@ -1,5 +1,9 @@
-import { TwoToneShader } from "~/app/auth/_components/Background/shaders/TwoToneShader";
-import React from "react";
+import {
+  TwoToneShader,
+  TwoToneShaderUniforms,
+} from "~/app/auth/_components/Background/shaders/TwoToneShader";
+import React, { useMemo } from "react";
+import { Color, Vector3 } from "three";
 
 const Outlines = React.lazy(() =>
   import("@react-three/drei").then((module) => {
@@ -7,13 +11,31 @@ const Outlines = React.lazy(() =>
   }),
 );
 
-export default function TwoToneOutline(props: any) {
+interface TwoToneOutlineProps {
+  lightPosition: [number, number, number];
+}
+
+export default function TwoToneOutline(props: TwoToneOutlineProps) {
+  const uniforms = useMemo((): TwoToneShaderUniforms => {
+    return {
+      colorMap: {
+        value: [new Color("#F05D23"), new Color("#3E3305")],
+      },
+      brightnessThreshold: {
+        value: 0.6,
+      },
+      lightPosition: {
+        value: props.lightPosition ?? new Vector3(),
+      },
+    };
+  }, [props.lightPosition]);
+
   return (
     <>
       <shaderMaterial
         attach={"material"}
         {...TwoToneShader}
-        uniforms={props.uniforms}
+        uniforms={uniforms}
         toneMapped={false}
       />
       <Outlines
