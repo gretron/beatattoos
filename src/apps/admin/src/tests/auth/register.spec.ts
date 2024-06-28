@@ -2,15 +2,23 @@ import { test, expect } from "@playwright/test";
 import { db } from "~/lib/db";
 import { createUser } from "~/utils/userUtilities";
 
-test("As a tattoo artist (admin), I want to register with my email address and password during the initial setup so that I can create an account with access to the admin website", async ({
-  page,
-}) => {
-  const { count } = await db.user.deleteMany({
+test.beforeEach(async ({ page }) => {
+  page.on("console", async (msg) => {
+    const values = [];
+    for (const arg of msg.args()) values.push(await arg.jsonValue());
+    console.log(...values);
+  });
+
+  await db.user.deleteMany({
     where: { role: { equals: "ADMIN" } },
   });
 
   await page.goto("/auth");
+});
 
+test("As a tattoo artist (admin), I want to register with my email address and password during the initial setup so that I can create an account with access to the admin website", async ({
+  page,
+}) => {
   await page.getByRole("button", { name: "First Time Setup" }).click();
 
   await expect(page).toHaveURL(/auth\/token/);

@@ -2,13 +2,21 @@ import React from "react";
 import { Float, useGLTF } from "@react-three/drei";
 import { Mesh } from "three";
 import TwoToneOutline from "~/app/auth/_components/Background/components/TwoToneOutline";
+import { MeshoptDecoder } from "meshoptimizer";
 
 interface FlowerProps {
   lightPosition: [number, number, number];
 }
 
 export default function Flower(props: FlowerProps) {
-  const { nodes, materials } = useGLTF("/models/flower.glb");
+  const { nodes, materials } = useGLTF(
+    "/models/flower.glb",
+    undefined,
+    true,
+    (loader) => {
+      loader.setMeshoptDecoder(MeshoptDecoder);
+    },
+  );
 
   return (
     <group {...props} dispose={null}>

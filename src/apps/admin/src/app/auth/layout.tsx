@@ -7,6 +7,7 @@ import Logo, { LogoAnimationDirection } from "~/app/auth/_components/Logo";
 import dynamic from "next/dynamic";
 import Background from "~/app/auth/_components/Background";
 import { Loader } from "@react-three/drei";
+import ErrorBoundary from "~/components/ErrorBoundary";
 
 interface AuthLayoutProps {
   children: React.ReactNode;
@@ -65,7 +66,10 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
           {children}
         </div>
       </div>
-      <Background />
+      {/* For CI WebGL-disabled browsers */}
+      <ErrorBoundary fallback={null}>
+        <Background />
+      </ErrorBoundary>
     </section>
   );
 }

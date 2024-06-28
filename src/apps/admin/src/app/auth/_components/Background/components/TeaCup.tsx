@@ -2,13 +2,21 @@ import React from "react";
 import { Float, useGLTF } from "@react-three/drei";
 import { Mesh } from "three";
 import TwoToneOutline from "~/app/auth/_components/Background/components/TwoToneOutline";
+import { MeshoptDecoder } from "meshoptimizer";
 
 interface TeaCupProps {
   lightPosition: [number, number, number];
 }
 
 export function TeaCup(props: TeaCupProps) {
-  const { nodes, materials } = useGLTF("/models/tea_cup.glb");
+  const { nodes, materials } = useGLTF(
+    "/models/tea_cup.glb",
+    undefined,
+    true,
+    (loader) => {
+      loader.setMeshoptDecoder(MeshoptDecoder);
+    },
+  );
 
   return (
     <group {...props} dispose={null}>

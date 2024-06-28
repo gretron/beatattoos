@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Float, useGLTF } from "@react-three/drei";
 import three, { Mesh } from "three";
 import TwoToneOutline from "~/app/auth/_components/Background/components/TwoToneOutline";
+import { MeshoptDecoder } from "meshoptimizer";
 
 interface GothicCircleProps {
   lightPosition: [number, number, number];
@@ -9,7 +10,14 @@ interface GothicCircleProps {
 
 export default function GothicCircle(props: GothicCircleProps) {
   const ref = useRef<three.Mesh>(null);
-  const { nodes, materials } = useGLTF("/models/gothic_circle.glb");
+  const { nodes, materials } = useGLTF(
+    "/models/gothic_circle.glb",
+    undefined,
+    true,
+    (loader) => {
+      loader.setMeshoptDecoder(MeshoptDecoder);
+    },
+  );
 
   return (
     <>
