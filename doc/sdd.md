@@ -11,7 +11,7 @@ This document provides information regarding the technical specifications of the
 Here is a [link](https://www.figma.com/board/BoKrfOHfDMlBjGueEAiYs4/Diagrams?node-id=1-2&t=wdJXqc44TwnmdagJ-1) to the **beatattoos** system architecture diagram
 ## User Interface
 ### Design System
-Here is a [link](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=2-16&t=YSHXWSh49CgOEDim-1) to the **beatattoos** design system
+[Design System](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=297-1367&t=mvOEQwcOuLHUznJo-1)
 ### Registration Process
 #### Wireframe
 [Registration process wireframe](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=297-1367&t=mvOEQwcOuLHUznJo-1)
