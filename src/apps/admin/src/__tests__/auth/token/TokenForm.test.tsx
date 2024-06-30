@@ -23,9 +23,7 @@ const verifyTokenSpy = vi.spyOn(actions, "verifyToken");
  */
 const fillTokenFormAndSubmit = async (token: string) => {
   const tokenForm = screen.getByRole("form");
-  const tokenInput = screen.getByRole("textbox", {
-    name: /adminToken/i,
-  });
+  const tokenInput = screen.getByLabelText(/Admin token/i);
 
   await act(async () => {
     fireEvent.change(tokenInput, {

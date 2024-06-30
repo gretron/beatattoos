@@ -41,21 +41,11 @@ const fillRegisterFormAndSubmit = async (
   confirmPassword?: string,
 ) => {
   const registerForm = screen.getByRole("form");
-  const firstNameInput = screen.getByRole("textbox", {
-    name: /firstName/i,
-  });
-  const lastNameInput = screen.getByRole("textbox", {
-    name: /lastName/i,
-  });
-  const emailAddressInput = screen.getByRole("textbox", {
-    name: /emailAddress/i,
-  });
-  const passwordInput = screen.getByRole("textbox", {
-    name: /^password/i,
-  });
-  const confirmPasswordInput = screen.getByRole("textbox", {
-    name: /confirmPassword/i,
-  });
+  const firstNameInput = screen.getByLabelText(/First name/i);
+  const lastNameInput = screen.getByLabelText(/Last name/);
+  const emailAddressInput = screen.getByLabelText(/Email address/i);
+  const passwordInput = screen.getByLabelText(/^Password/i);
+  const confirmPasswordInput = screen.getByLabelText(/Confirm password/i);
 
   await act(async () => {
     fireEvent.change(firstNameInput, { target: { value: user.firstName } });

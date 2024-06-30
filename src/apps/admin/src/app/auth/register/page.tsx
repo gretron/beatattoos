@@ -5,7 +5,7 @@ import Link from "next/link";
 import { IconArrowLeft } from "@tabler/icons-react";
 import RegisterForm from "~/app/auth/register/_components/RegisterForm";
 
-export default async function AuthPage() {
+export default async function RegisterPage() {
   const cookieStore = cookies();
 
   if (!cookieStore.get("adminToken")) {

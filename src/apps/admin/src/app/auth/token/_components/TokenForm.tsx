@@ -45,6 +45,7 @@ export default function TokenForm(props: {}) {
       </header>
       <InputField
         id={"admin-token"}
+        type={"password"}
         name={"adminToken"}
         heading={"Admin token"}
         placeholder={"00000000"}

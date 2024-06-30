@@ -89,6 +89,7 @@ export default function RegisterForm(props: {}) {
       />
       <InputField
         id={"password"}
+        type={"password"}
         name={"password"}
         heading={"Password"}
         placeholder={"********"}
@@ -104,6 +105,7 @@ export default function RegisterForm(props: {}) {
       />
       <InputField<z.infer<typeof confirmPasswordSchema>>
         id={"confirm-password"}
+        type={"password"}
         name={"confirmPassword"}
         heading={"Confirm password"}
         placeholder={"********"}
