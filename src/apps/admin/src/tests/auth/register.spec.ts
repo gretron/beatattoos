@@ -23,24 +23,18 @@ test("As a tattoo artist (admin), I want to register with my email address and p
 
   await expect(page).toHaveURL(/auth\/token/);
 
-  await page.getByRole("textbox").fill(process.env.ADMIN_TOKEN ?? "");
+  await page.getByLabel(/Admin token/).fill(process.env.ADMIN_TOKEN ?? "");
   await page.getByRole("button", { name: "Validate" }).click();
 
   await expect(page).toHaveURL(/auth\/register/);
 
   const user = createUser();
 
-  await page.getByRole("textbox", { name: "firstName" }).fill(user.firstName);
-  await page.getByRole("textbox", { name: "lastName" }).fill(user.lastName);
-  await page
-    .getByRole("textbox", { name: "emailAddress" })
-    .fill(user.emailAddress);
-  await page
-    .getByRole("textbox", { name: "password", exact: true })
-    .fill(user.password);
-  await page
-    .getByRole("textbox", { name: "confirmPassword" })
-    .fill(user.password);
+  await page.getByLabel(/First name/).fill(user.firstName);
+  await page.getByLabel(/Last name/).fill(user.lastName);
+  await page.getByLabel(/Email address/).fill(user.emailAddress);
+  await page.getByLabel(/^Password/).fill(user.password);
+  await page.getByLabel(/Confirm password/).fill(user.password);
   await page.getByRole("button", { name: "Register" }).click();
 
   await expect(page).toHaveURL(/auth\/login/);

@@ -7,7 +7,6 @@ import useFocused from "./hooks/useFocused";
 import useValidity from "./hooks/useValidity";
 
 interface InputFieldProps<T> extends RequiredFieldProps {
-  id: string;
   placeholder: string;
   disabled?: boolean;
   type?: string;
@@ -28,6 +27,7 @@ export default function InputField<T>(props: InputFieldProps<T>) {
 
   return (
     <Field
+      id={props.id}
       className={props.className}
       heading={props.heading}
       subheading={props.subheading}
@@ -50,7 +50,6 @@ export default function InputField<T>(props: InputFieldProps<T>) {
           required={props.required}
           onChange={(e) => props.setValue(e.target.value)}
           placeholder={props.placeholder}
-          aria-label={props.name}
         />
         <label
           htmlFor={props.id}
