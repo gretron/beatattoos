@@ -3,7 +3,7 @@
 import { registerFormSchemaRefined } from "~/app/auth/register/_constants/schemas";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { db } from "~/lib/db";
 import {
   CREATE_USER_FAILED_ERROR,
@@ -54,8 +54,6 @@ export async function register(formData: FormData) {
   if (adminUserExists) {
     return EXISTING_ACCOUNT_ERROR;
   }
-
-  // TODO: Remove check to allow multiple users in the future if necessary
 
   const { firstName, lastName, emailAddress, password } = parsedData.data;
 

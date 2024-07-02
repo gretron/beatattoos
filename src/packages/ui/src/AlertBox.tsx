@@ -1,7 +1,7 @@
 "use client";
 
 import "./styles/globals.css";
-import { AnimatePresence, motion, Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import {
   IconAlertOctagonFilled,
   IconCircleCheckFilled,
@@ -9,7 +9,7 @@ import {
   IconX,
 } from "@tabler/icons-react";
 import { Alert, AlertType } from "./types/Alert";
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 interface AlertBoxProps {
   className?: string;
@@ -18,6 +18,7 @@ interface AlertBoxProps {
 }
 
 export default function AlertBox(props: AlertBoxProps) {
+  const [alert, setAlert] = useState(props.alert);
   const type = AlertType[props.alert.type];
   const icons = [
     <IconAlertOctagonFilled className={"flex-shrink-0"} />,
@@ -41,9 +42,13 @@ export default function AlertBox(props: AlertBoxProps) {
     },
   };
 
+  useEffect(() => {
+    setAlert(props.alert);
+  }, [props.alert]);
+
   return (
     <>
-      {props.alert.message && (
+      {alert.message && (
         <motion.aside
           className={`${props.className} grid rounded-2xl border bg-${type}-300 border-${type}-500`}
           initial={"hidden"}
@@ -59,7 +64,7 @@ export default function AlertBox(props: AlertBoxProps) {
               <IconX
                 className={"btn-icon flex-shrink-0"}
                 onClick={() =>
-                  props.setAlert((prev) => ({ ...prev, message: undefined }))
+                  setAlert((prev) => ({ ...prev, message: undefined }))
                 }
               />
             </div>
