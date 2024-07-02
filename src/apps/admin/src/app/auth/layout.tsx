@@ -1,13 +1,12 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import React, { Suspense, useRef } from "react";
+import React, { useRef } from "react";
 import LandingItems from "~/app/auth/_components/LandingItems";
 import Logo, { LogoAnimationDirection } from "~/app/auth/_components/Logo";
-import dynamic from "next/dynamic";
 import Background from "~/app/auth/_components/Background";
-import { Loader } from "@react-three/drei";
-import ErrorBoundary from "~/components/ErrorBoundary";
+import ErrorBoundary from "~/app/_components/ErrorBoundary";
+import BackgroundColor from "~/app/_components/BackgroundColor";
 
 interface AuthLayoutProps {
   children: React.ReactNode;
@@ -70,6 +69,7 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
       <ErrorBoundary fallback={null}>
         <Background />
       </ErrorBoundary>
+      <BackgroundColor color={"#3E3305"} />
     </section>
   );
 }

@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${proclamateHeavy.variable}`}>
-      <body className={"bg-secondary-600"}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

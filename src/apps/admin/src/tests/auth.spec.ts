@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { db } from "~/lib/db";
 import { createUser } from "~/utils/userUtilities";
+import bcrypt from "bcryptjs";
 
 test.beforeEach(async ({ page }) => {
   page.on("console", async (msg) => {
@@ -38,4 +39,34 @@ test("As a tattoo artist (admin), I want to register with my email address and p
   await page.getByRole("button", { name: "Register" }).click();
 
   await expect(page).toHaveURL(/auth\/login/);
+});
+
+test("As a tattoo artist (admin), I want to log in with my email address and password so that I can access the administrator website", async ({
+  page,
+}) => {
+  const user = createUser();
+  const hashedPassword = await bcrypt.hash(user.password, 10);
+
+  await db.user.create({
+    data: {
+      role: "ADMIN",
+      firstName: user.firstName,
+      lastName: user.lastName,
+      emailAddress: user.emailAddress,
+      password: hashedPassword,
+    },
+  });
+
+  await page.getByRole("button", { name: "Log In" }).click();
+
+  await expect(page).toHaveURL(/auth\/login/);
+
+  await page.getByLabel(/Email address/).fill(user.emailAddress);
+  await page.getByLabel(/^Password/).fill(user.password);
+  await page
+    .getByLabel("Log in form")
+    .getByRole("button", { name: "Log In" })
+    .click();
+
+  await expect(page).toHaveURL(/dashboard/);
 });

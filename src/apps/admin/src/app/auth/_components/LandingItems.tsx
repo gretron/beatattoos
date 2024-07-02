@@ -43,7 +43,11 @@ export default function LandingItems(props: LandingItemsProps) {
       >
         Admin Dashboard
       </h1>
-      <button className={"btn-primary mb-3 w-full"} type={"button"}>
+      <button
+        className={"btn-primary mb-3 w-full"}
+        onClick={() => router.push("/auth/login")}
+        type={"button"}
+      >
         Log In
       </button>
       <button

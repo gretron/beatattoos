@@ -1,19 +1,17 @@
 import z from "zod";
+import {
+  emailAddressSchema,
+  passwordSchema,
+} from "~/app/auth/_constants/schemas";
 
-export const registerFormSchema = z.object({
-  firstName: z.string().min(1, "First name is required"),
-  lastName: z.string().min(1, "Last name is required"),
-  emailAddress: z
-    .string()
-    .min(1, "Email address is required")
-    .email("Incorrect email address format")
-    .default(""),
-  password: z
-    .string()
-    .min(8, "Password must be at least 8 characters long")
-    .default(""),
-  confirmPassword: z.string(),
-});
+export const registerFormSchema = z
+  .object({
+    firstName: z.string().min(1, "First name is required"),
+    lastName: z.string().min(1, "Last name is required"),
+    confirmPassword: z.string(),
+  })
+  .merge(emailAddressSchema)
+  .merge(passwordSchema);
 
 const confirmPasswordRefine = (
   { password, confirmPassword }: any,
