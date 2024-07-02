@@ -51,8 +51,9 @@ export default function LoginForm(props: {}) {
         heading={"Email address"}
         placeholder={"john.doe@example.com"}
         schema={loginFormSchema.shape.emailAddress}
-        value={loginForm.emailAddress}
         required={true}
+        disabled={isPending}
+        value={loginForm.emailAddress}
         setValue={(value) =>
           setLoginForm((prevState) => ({
             ...prevState,
@@ -68,6 +69,7 @@ export default function LoginForm(props: {}) {
         placeholder={"********"}
         schema={loginFormSchema.shape.password}
         required={true}
+        disabled={isPending}
         value={loginForm.password}
         setValue={(value) =>
           setLoginForm((prevState) => ({
