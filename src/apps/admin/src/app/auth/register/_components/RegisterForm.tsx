@@ -50,6 +50,7 @@ export default function RegisterForm(props: {}) {
         schema={registerFormSchema.shape.firstName}
         value={registerForm.firstName}
         required={true}
+        disabled={isPending}
         setValue={(value) =>
           setRegisterForm((prevState) => ({
             ...prevState,
@@ -65,6 +66,7 @@ export default function RegisterForm(props: {}) {
         schema={registerFormSchema.shape.lastName}
         value={registerForm.lastName}
         required={true}
+        disabled={isPending}
         setValue={(value) =>
           setRegisterForm((prevState) => ({
             ...prevState,
@@ -78,8 +80,9 @@ export default function RegisterForm(props: {}) {
         heading={"Email address"}
         placeholder={"john.doe@example.com"}
         schema={registerFormSchema.shape.emailAddress}
-        value={registerForm.emailAddress}
         required={true}
+        disabled={isPending}
+        value={registerForm.emailAddress}
         setValue={(value) =>
           setRegisterForm((prevState) => ({
             ...prevState,
@@ -95,6 +98,7 @@ export default function RegisterForm(props: {}) {
         placeholder={"********"}
         schema={registerFormSchema.shape.password}
         required={true}
+        disabled={isPending}
         value={registerForm.password}
         setValue={(value) =>
           setRegisterForm((prevState) => ({
@@ -111,6 +115,7 @@ export default function RegisterForm(props: {}) {
         placeholder={"********"}
         schema={confirmPasswordSchema}
         required={true}
+        disabled={isPending}
         value={registerForm.confirmPassword}
         setValue={(value) =>
           setRegisterForm((prevState) => ({
