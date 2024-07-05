@@ -1,6 +1,6 @@
 import { animated, useSpring } from "@react-spring/three";
 import { Flex } from "@react-three/flex";
-import { useThree } from "@react-three/fiber";
+import { Vector3, useThree } from "@react-three/fiber";
 import { useAspect } from "@react-three/drei";
 import { usePathname } from "next/navigation";
 import React, { useMemo } from "react";
@@ -15,7 +15,17 @@ import { Cactus } from "~/app/auth/_components/Background/components/Cactus";
 
 const AnimatedFlex = animated(Flex);
 
-export default function Layout(props: any) {
+/**
+ * Props for {@link Layout}
+ */
+interface LayoutProps {
+  lightPosition: any;
+}
+
+/**
+ * Authentication background flex layout
+ */
+export default function Layout(props: LayoutProps) {
   const { size } = useThree();
   const [vpWidth, vpHeight] = useAspect(size.width, size.height);
   const pathname = usePathname();

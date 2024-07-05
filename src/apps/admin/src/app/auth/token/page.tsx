@@ -4,6 +4,9 @@ import Link from "next/link";
 import PageWrapper from "~/app/auth/_components/PageWrapper";
 import { Suspense } from "react";
 
+/**
+ * Page for admin token validation
+ */
 export default async function TokenPage() {
   return (
     <PageWrapper>

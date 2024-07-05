@@ -1,11 +1,13 @@
-import { Box, FlexProps, useReflow } from "@react-three/flex";
-import React, { RefObject, useEffect, useRef, useState } from "react";
+import { Box } from "@react-three/flex";
+import React from "react";
 import { Align, JustifyContent } from "@react-three/flex";
 import { useThree } from "@react-three/fiber";
 import { useAspect } from "@react-three/drei";
 import { usePathname } from "next/navigation";
-import { useSpring, animated, SpringValue } from "@react-spring/three";
 
+/**
+ * Props for {@link FlexItem}
+ */
 interface FlexItemProps {
   width: number;
   height: number;
@@ -17,6 +19,9 @@ interface FlexItemProps {
   children?: React.ReactNode;
 }
 
+/**
+ * Flex item utility wrapper
+ */
 export function FlexItem(props: FlexItemProps) {
   const { size } = useThree();
   const [vpWidth, vpHeight] = useAspect(size.width, size.height);

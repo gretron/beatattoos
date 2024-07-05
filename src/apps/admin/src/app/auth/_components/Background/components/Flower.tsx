@@ -4,10 +4,16 @@ import { Mesh } from "three";
 import TwoToneOutline from "~/app/auth/_components/Background/components/TwoToneOutline";
 import { MeshoptDecoder } from "meshoptimizer";
 
+/**
+ * Props for {@link FlowerProps}
+ */
 interface FlowerProps {
   lightPosition: [number, number, number];
 }
 
+/**
+ * Flower 3D model
+ */
 export default function Flower(props: FlowerProps) {
   const { nodes, materials } = useGLTF(
     "/models/flower.glb",

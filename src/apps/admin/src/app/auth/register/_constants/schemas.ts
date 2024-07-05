@@ -4,6 +4,9 @@ import {
   passwordSchema,
 } from "~/app/auth/_constants/schemas";
 
+/**
+ * Validation schema for register form
+ */
 export const registerFormSchema = z
   .object({
     firstName: z.string().min(1, "First name is required"),
@@ -26,6 +29,9 @@ const confirmPasswordRefine = (
   }
 };
 
+/**
+ * Validation schema for password with confirm password refinement
+ */
 export const confirmPasswordSchema = z
   .object({
     password: z.string(),
@@ -33,6 +39,9 @@ export const confirmPasswordSchema = z
   })
   .superRefine(confirmPasswordRefine);
 
+/**
+ * Validation schema for register form with confirm password refinement
+ */
 export const registerFormSchemaRefined = registerFormSchema.superRefine(
   confirmPasswordRefine,
 );

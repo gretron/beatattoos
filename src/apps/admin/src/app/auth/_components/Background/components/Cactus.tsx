@@ -1,13 +1,18 @@
-import React from "react";
 import { Float, useGLTF } from "@react-three/drei";
 import { Mesh } from "three";
 import TwoToneOutline from "~/app/auth/_components/Background/components/TwoToneOutline";
 import { MeshoptDecoder } from "meshoptimizer";
 
+/**
+ * Props for {@link Cactus}
+ */
 interface CactusProps {
   lightPosition: [number, number, number];
 }
 
+/**
+ * Cactus 3D model
+ */
 export function Cactus(props: CactusProps) {
   const { nodes, materials } = useGLTF(
     "/models/cactus.glb",

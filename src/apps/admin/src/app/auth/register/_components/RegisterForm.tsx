@@ -12,7 +12,10 @@ import AlertBox from "@beatattoos/ui/AlertBox";
 import { z } from "zod";
 import { Alert, AlertType } from "@beatattoos/ui/Alert";
 
-export default function RegisterForm(props: {}) {
+/**
+ * Form to register admin user
+ */
+export default function RegisterForm() {
   const [registerForm, setRegisterForm] =
     useState<z.infer<typeof registerFormSchema>>(defaultRegisterForm);
   const [alert, setAlert] = useState<Alert>({ type: AlertType.error });

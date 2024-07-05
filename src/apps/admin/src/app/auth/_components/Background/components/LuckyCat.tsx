@@ -4,10 +4,16 @@ import { Mesh } from "three";
 import TwoToneOutline from "~/app/auth/_components/Background/components/TwoToneOutline";
 import { MeshoptDecoder } from "meshoptimizer";
 
+/**
+ * Props for {@link LuckyCat}
+ */
 interface LuckyCatProps {
   lightPosition: [number, number, number];
 }
 
+/**
+ * Lucky cat 3D model
+ */
 export function LuckyCat(props: LuckyCatProps) {
   const { nodes, materials } = useGLTF(
     "/models/lucky_cat.glb",

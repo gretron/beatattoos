@@ -5,6 +5,9 @@ import Link from "next/link";
 import { IconArrowLeft } from "@tabler/icons-react";
 import RegisterForm from "~/app/auth/register/_components/RegisterForm";
 
+/**
+ * Page for admin user registration
+ */
 export default async function RegisterPage() {
   const cookieStore = cookies();
 

@@ -4,10 +4,16 @@ import three, { Mesh } from "three";
 import TwoToneOutline from "~/app/auth/_components/Background/components/TwoToneOutline";
 import { MeshoptDecoder } from "meshoptimizer";
 
+/**
+ * Props for {@link GothicCircle}
+ */
 interface GothicCircleProps {
   lightPosition: [number, number, number];
 }
 
+/**
+ * Gothic circle 3D model
+ */
 export default function GothicCircle(props: GothicCircleProps) {
   const ref = useRef<three.Mesh>(null);
   const { nodes, materials } = useGLTF(

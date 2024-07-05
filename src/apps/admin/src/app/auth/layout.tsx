@@ -1,16 +1,22 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import React, { useRef } from "react";
+import { ReactNode, useRef } from "react";
 import LandingItems from "~/app/auth/_components/LandingItems";
 import Logo, { LogoAnimationDirection } from "~/app/auth/_components/Logo";
 import Background from "~/app/auth/_components/Background";
 import ErrorBoundary from "~/app/_components/ErrorBoundary";
 
+/**
+ * Pages for {@link AuthLayout}
+ */
 interface AuthLayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
+/**
+ * Authentication pages layout
+ */
 export default function AuthLayout({ children }: AuthLayoutProps) {
   const pathname = usePathname();
   const initialPathname = useRef(pathname);

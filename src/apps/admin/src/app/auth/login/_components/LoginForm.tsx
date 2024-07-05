@@ -11,7 +11,10 @@ import {
 } from "~/app/auth/login/_constants/schemas";
 import { login } from "~/app/auth/login/actions";
 
-export default function LoginForm(props: {}) {
+/**
+ * Form to log into admin account
+ */
+export default function LoginForm() {
   const [loginForm, setLoginForm] =
     useState<z.infer<typeof loginFormSchema>>(defaultLoginForm);
   const [alert, setAlert] = useState<Alert>({ type: AlertType.error });

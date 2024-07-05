@@ -8,6 +8,9 @@ interface TeaCupProps {
   lightPosition: [number, number, number];
 }
 
+/**
+ * Tea cup 3D model
+ */
 export function TeaCup(props: TeaCupProps) {
   const { nodes, materials } = useGLTF(
     "/models/tea_cup.glb",

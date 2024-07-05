@@ -1,23 +1,41 @@
 import { Component, ErrorInfo, ReactNode } from "react";
 
-interface Props {
-  fallback?: ReactNode;
+/**
+ * Props for {@link ErrorBoundary}
+ */
+interface ErrorBoundaryProps {
   children?: ReactNode;
+  /* Element shown when an error occurs in the children */
+  fallback?: ReactNode;
 }
 
-interface State {
+/**
+ * State for {@link ErrorBoundary}
+ */
+interface ErrorBoundaryState {
   hasError: boolean;
 }
 
-class ErrorBoundary extends Component<Props, State> {
-  public state: State = {
+/**
+ * Error boundary for failure feedback without application disruption
+ */
+class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  /**
+   * Default state values
+   */
+  public state: ErrorBoundaryState = {
     hasError: false,
   };
 
-  public static getDerivedStateFromError(_: Error): State {
+  public static getDerivedStateFromError(_: Error): ErrorBoundaryState {
     return { hasError: true };
   }
 
+  /**
+   * Called when component catches error from children
+   * @param error The captured error
+   * @param errorInfo Information regarding captured error
+   */
   public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     console.error("Uncaught error:", error, errorInfo);
   }
