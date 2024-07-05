@@ -1,6 +1,7 @@
 import "~/app/_styles/globals.css";
 import localFont from "next/font/local";
 import { Metadata } from "next";
+import Body from "~/app/_components/Body";
 
 export const metadata: Metadata = {
   title: "beatattoos",
@@ -21,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${proclamateHeavy.variable}`}>
-      <body>{children}</body>
+      <Body>{children}</Body>
     </html>
   );
 }
