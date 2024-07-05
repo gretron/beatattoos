@@ -1,13 +1,18 @@
-import React from "react";
 import { Float, useGLTF } from "@react-three/drei";
 import { Mesh } from "three";
 import TwoToneOutline from "~/app/auth/_components/Background/components/TwoToneOutline";
 import { MeshoptDecoder } from "meshoptimizer";
 
+/**
+ * Props for {@link BlackWidow}
+ */
 interface BlackWidowProps {
   lightPosition: [number, number, number];
 }
 
+/**
+ * Black widow 3D model
+ */
 export function BlackWidow(props: BlackWidowProps) {
   const { nodes, materials } = useGLTF(
     "/models/black_widow.glb",

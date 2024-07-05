@@ -2,8 +2,19 @@
 
 import { Variants } from "framer-motion";
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
 
-export default function PageWrapper(props: { children: React.ReactNode }) {
+/**
+ * Props for {@link PageWrapper}
+ */
+interface PageWrapperProps {
+  children: ReactNode;
+}
+
+/**
+ * Authentication page wrapper with reveal animation
+ */
+export default function PageWrapper(props: PageWrapperProps) {
   const pageVariants: Variants = {
     hidden: {
       y: 40,

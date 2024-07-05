@@ -1,7 +1,15 @@
 import React from "react";
 import { signOut } from "~/lib/auth";
 
-export default async function DashboardPage(props: any) {
+/**
+ * Props for {@link DashboardPage}
+ */
+interface DashboardPageProps {}
+
+/**
+ * Page for overview dashboard
+ */
+export default async function DashboardPage(props: DashboardPageProps) {
   return (
     <div>
       <form

@@ -1,5 +1,8 @@
 import z from "zod";
 
+/**
+ * Validation schema for email address
+ */
 export const emailAddressSchema = z.object({
   emailAddress: z
     .string()
@@ -8,6 +11,9 @@ export const emailAddressSchema = z.object({
     .default(""),
 });
 
+/**
+ * Validation schema for password
+ */
 export const passwordSchema = z.object({
   password: z
     .string()

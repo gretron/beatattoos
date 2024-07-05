@@ -1,11 +1,19 @@
-import BackgroundColor from "~/app/_components/BackgroundColor";
-import React from "react";
+import { ReactNode } from "react";
 
-export default async function ProtectedLayout(props: any) {
+/**
+ * Props for {@link ProtectedLayout}
+ */
+interface ProtectedLayoutProps {
+  children: ReactNode;
+}
+
+/**
+ * Layout for protected pages
+ */
+export default async function ProtectedLayout(props: ProtectedLayoutProps) {
   return (
     <>
       <section>{props.children}</section>
-      <BackgroundColor color={"#FFEFD6"} />
     </>
   );
 }

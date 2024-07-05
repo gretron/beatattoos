@@ -7,6 +7,9 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Layout from "~/app/auth/_components/Background/components/Layout";
 
+/**
+ * Authentication background scene
+ */
 export default function Scene() {
   const lightRef = useRef<three.PointLight>(null);
   const [lightPosition, setLightPosition] = useState<Vector3>(

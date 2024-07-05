@@ -3,6 +3,9 @@ import Link from "next/link";
 import { IconArrowLeft } from "@tabler/icons-react";
 import LoginForm from "~/app/auth/login/_components/LoginForm";
 
+/**
+ * Page for admin user log in
+ */
 export default async function LoginPage() {
   return (
     <PageWrapper>

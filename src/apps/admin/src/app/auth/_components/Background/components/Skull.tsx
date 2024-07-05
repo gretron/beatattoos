@@ -4,10 +4,16 @@ import { Mesh } from "three";
 import TwoToneOutline from "~/app/auth/_components/Background/components/TwoToneOutline";
 import { MeshoptDecoder } from "meshoptimizer";
 
+/**
+ * Props for {@link Skull}
+ */
 interface SkullProps {
   lightPosition: [number, number, number];
 }
 
+/**
+ * Skull 3D model
+ */
 export function Skull(props: SkullProps) {
   const { nodes, materials } = useGLTF(
     "/models/skull.glb",

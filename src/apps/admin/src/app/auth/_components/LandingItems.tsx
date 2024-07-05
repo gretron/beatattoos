@@ -3,11 +3,17 @@
 import { motion, Variants } from "framer-motion";
 import { useRouter } from "next/navigation";
 
+/**
+ * Props for {@link LandingItems}
+ */
 interface LandingItemsProps {
   className: string;
   isVisible: boolean;
 }
 
+/**
+ * Authentication layout animated landing items
+ */
 export default function LandingItems(props: LandingItemsProps) {
   const router = useRouter();
 

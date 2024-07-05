@@ -2,22 +2,30 @@
 
 import { motion, Variants } from "framer-motion";
 
+/**
+ * Direction for logo animation
+ */
 export enum LogoAnimationDirection {
   Up = "-100%",
   Down = "100%",
 }
 
+/**
+ * Props for {@link Logo}
+ */
 interface LogoProps {
+  /** Logo additional class names */
   className: string;
+  /** Current animation state */
   isVisible: boolean;
+  /** Hide/show animation direction */
   animationDirection: LogoAnimationDirection;
 }
 
-export default function Logo({
-  className,
-  isVisible,
-  animationDirection,
-}: LogoProps) {
+/**
+ * Authentication layout animated logo
+ */
+export default function Logo(props: LogoProps) {
   const logoVariants: Variants = {
     hidden: {
       transition: {
@@ -34,7 +42,7 @@ export default function Logo({
 
   const letterVariants: Variants = {
     hidden: {
-      y: animationDirection,
+      y: props.animationDirection,
       transition: {
         duration: 1,
         ease: [0.22, 1, 0.36, 1],
@@ -51,9 +59,9 @@ export default function Logo({
 
   return (
     <motion.div
-      className={`d1 overflow-hidden text-primary-500 ${className}`}
+      className={`d1 overflow-hidden text-primary-500 ${props.className}`}
       initial={"hidden"}
-      animate={isVisible ? "show" : "hidden"}
+      animate={props.isVisible ? "show" : "hidden"}
       variants={logoVariants}
     >
       {"beatattoos".split("").map((letter, index) => (

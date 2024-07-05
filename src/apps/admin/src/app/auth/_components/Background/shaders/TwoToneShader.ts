@@ -1,5 +1,8 @@
 import { Color, Vector3 } from "three";
 
+/**
+ * Two-tone shader uniforms data type
+ */
 export type TwoToneShaderUniforms = {
   colorMap: {
     value: [Color, Color];
@@ -12,6 +15,9 @@ export type TwoToneShaderUniforms = {
   };
 };
 
+/**
+ * Two-tone GLSL shader
+ */
 export const TwoToneShader = {
   vertexShader: /* glsl */ `
     precision highp float;

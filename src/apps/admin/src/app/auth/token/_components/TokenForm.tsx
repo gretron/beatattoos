@@ -8,7 +8,10 @@ import AlertBox from "@beatattoos/ui/AlertBox";
 import { useSearchParams } from "next/navigation";
 import { Alert, AlertType } from "@beatattoos/ui/Alert";
 
-export default function TokenForm(props: {}) {
+/**
+ * Form to validate admin token
+ */
+export default function TokenForm() {
   const [token, setToken] = useState<string>("");
   const [isPending, startTransition] = useTransition();
   const searchParams = useSearchParams();

@@ -5,16 +5,25 @@ import {
 import React, { useMemo } from "react";
 import { Color, Vector3 } from "three";
 
+/**
+ * Lazy load outlines due to initial load performance impact
+ */
 const Outlines = React.lazy(() =>
   import("@react-three/drei").then((module) => {
     return { default: module.Outlines };
   }),
 );
 
+/**
+ * Props for {@link TwoToneOutline}
+ */
 interface TwoToneOutlineProps {
   lightPosition: [number, number, number];
 }
 
+/**
+ * Two-tone shader material with outline
+ */
 export default function TwoToneOutline(props: TwoToneOutlineProps) {
   const uniforms = useMemo((): TwoToneShaderUniforms => {
     return {
