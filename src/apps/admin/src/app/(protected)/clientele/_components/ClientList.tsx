@@ -10,6 +10,9 @@ interface ClientListProps {
   children?: ReactNode;
 }
 
+/**
+ * List of clients with basic information
+ */
 function ClientList(props: ClientListProps) {
   return (
     <article
