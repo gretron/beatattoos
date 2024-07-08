@@ -4,6 +4,7 @@ import "./styles/globals.css";
 import { motion, Variants } from "framer-motion";
 import {
   IconAlertOctagonFilled,
+  IconAlertTriangleFilled,
   IconCircleCheckFilled,
   IconInfoCircleFilled,
   IconX,
@@ -14,7 +15,7 @@ import { Dispatch, SetStateAction, useEffect, useState } from "react";
 interface AlertBoxProps {
   className?: string;
   alert: Alert;
-  setAlert: Dispatch<SetStateAction<Alert>>;
+  setAlert?: Dispatch<SetStateAction<Alert>>;
 }
 
 export default function AlertBox(props: AlertBoxProps) {
@@ -23,7 +24,7 @@ export default function AlertBox(props: AlertBoxProps) {
   const icons = [
     <IconAlertOctagonFilled className={"flex-shrink-0"} />,
     <IconCircleCheckFilled className={"flex-shrink-0"} />,
-    <IconAlertOctagonFilled className={"flex-shrink-0"} />,
+    <IconAlertTriangleFilled className={"flex-shrink-0"} />,
     <IconInfoCircleFilled className={"flex-shrink-0"} />,
   ];
 

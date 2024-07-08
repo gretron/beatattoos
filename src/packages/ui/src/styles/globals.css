@@ -55,8 +55,10 @@
   .btn-primary,
   .btn-secondary,
   .btn-outline,
-  .btn-outline__icon {
-    @apply flex items-center justify-center h-12 !px-4 !py-3 rounded-2xl !font-bold;
+  .btn-outline__icon,
+  .btn-neutral,
+  .btn-neutral__icon {
+    @apply flex items-center justify-center h-12 !px-4 !py-3 gap-3 rounded-2xl !font-bold;
   }
 
   .btn-primary {
@@ -64,7 +66,7 @@
   }
 
   .btn-secondary {
-    @apply bg-secondary-500 text-primary-300 hover:bg-secondary-400 transition-colors;
+    @apply bg-secondary-500 text-primary-300 hover:bg-secondary-400 disabled:bg-neutral-400 disabled:text-neutral-500 transition-colors;
   }
 
   .btn-outline,
@@ -76,7 +78,24 @@
     @apply !px-3 aspect-square;
   }
 
+  .btn-neutral,
+  .btn-neutral__icon {
+    @apply bg-neutral-400 hover:bg-neutral-500 disabled:bg-neutral-500 disabled:text-neutral-600 transition-colors;
+  }
+
+  .btn-neutral__icon {
+    @apply !px-3 aspect-square;
+  }
+
   .btn-icon {
     @apply hover:fill-secondary-400 hover:stroke-secondary-400 cursor-pointer transition-colors;
+  }
+
+  ::-webkit-scrollbar {
+    @apply bg-neutral-400 w-2 h-2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neutral-500 rounded-full;
   }
 }

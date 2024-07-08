@@ -1,11 +1,14 @@
 import { defineConfig, devices } from "@playwright/test";
 import { config } from "dotenv";
+import * as path from "path";
 
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
 config();
+
+export const STORAGE_STATE = "state.json";
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -32,20 +35,37 @@ export default defineConfig({
   },
 
   /* Configure projects for major browsers */
+
   projects: [
     {
+      name: "setup",
+      testMatch: "**/*.setup.ts",
+    },
+    {
       name: "chromium",
-      use: { ...devices["Desktop Chrome"] },
+      dependencies: ["setup"],
+      use: {
+        ...devices["Desktop Chrome"],
+        storageState: STORAGE_STATE,
+      },
     },
 
     {
       name: "firefox",
-      use: { ...devices["Desktop Firefox"] },
+      dependencies: ["setup"],
+      use: {
+        ...devices["Desktop Firefox"],
+        storageState: STORAGE_STATE,
+      },
     },
 
     {
       name: "webkit",
-      use: { ...devices["Desktop Safari"] },
+      dependencies: ["setup"],
+      use: {
+        ...devices["Desktop Safari"],
+        storageState: STORAGE_STATE,
+      },
     },
 
     /* Test against mobile viewports. */

@@ -8,15 +8,15 @@ import { User } from "@prisma/client";
 import { db } from "~/lib/db";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import {
-  CREDENTIALS_PARSING_ERROR,
-  EMAIL_IN_USE_ERROR,
-  EXISTING_ACCOUNT_ERROR,
-} from "~/app/auth/register/_constants/actionResponses";
+import { EXISTING_ACCOUNT_ERROR } from "~/app/auth/register/_constants/actionResponses";
 import {
   INCORRECT_TOKEN_REDIRECT,
   SUCCESS_REDIRECT,
 } from "~/app/auth/register/_constants/redirectUrls";
+import {
+  CREDENTIALS_PARSING_ERROR,
+  EMAIL_IN_USE_ERROR,
+} from "~/app/_constants/actionResponses";
 
 vi.mock("~/lib/db");
 vi.mock("next/headers");
@@ -173,7 +173,6 @@ describe("RegisterForm", async () => {
 
     // Wait for register server action to complete
     await registerSpy.mock.results[0]?.value;
-    const emailInUseError = "Email address is already in use";
 
     expect(registerSpy).toHaveBeenCalled();
     expect(registerSpy).toHaveReturnedWith(EMAIL_IN_USE_ERROR);

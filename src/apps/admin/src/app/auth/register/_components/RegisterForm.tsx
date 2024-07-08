@@ -49,6 +49,7 @@ export default function RegisterForm() {
         id={"first-name"}
         name={"firstName"}
         heading={"First name"}
+        className={"mb-4"}
         placeholder={"John"}
         schema={registerFormSchema.shape.firstName}
         value={registerForm.firstName}
@@ -65,6 +66,7 @@ export default function RegisterForm() {
         id={"last-name"}
         name={"lastName"}
         heading={"Last name"}
+        className={"mb-4"}
         placeholder={"Doe"}
         schema={registerFormSchema.shape.lastName}
         value={registerForm.lastName}
@@ -81,6 +83,7 @@ export default function RegisterForm() {
         id={"email-address"}
         name={"emailAddress"}
         heading={"Email address"}
+        className={"mb-4"}
         placeholder={"john.doe@example.com"}
         schema={registerFormSchema.shape.emailAddress}
         required={true}
@@ -98,6 +101,7 @@ export default function RegisterForm() {
         type={"password"}
         name={"password"}
         heading={"Password"}
+        className={"mb-4"}
         placeholder={"********"}
         schema={registerFormSchema.shape.password}
         required={true}

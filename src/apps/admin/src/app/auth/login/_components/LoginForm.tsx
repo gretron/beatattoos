@@ -53,6 +53,7 @@ export default function LoginForm() {
         name={"emailAddress"}
         heading={"Email address"}
         placeholder={"john.doe@example.com"}
+        className={"mb-4"}
         schema={loginFormSchema.shape.emailAddress}
         required={true}
         disabled={isPending}

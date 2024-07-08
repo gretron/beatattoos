@@ -2,7 +2,15 @@
 
 import "./styles/globals.css";
 import Field, { RequiredFieldProps } from "./Field";
-import { useEffect, useRef } from "react";
+import {
+  FC,
+  ForwardedRef,
+  forwardRef,
+  ReactNode,
+  Ref,
+  RefObject,
+  useRef,
+} from "react";
 import useFocused from "./hooks/useFocused";
 import useValidity from "./hooks/useValidity";
 
@@ -13,30 +21,31 @@ interface InputFieldProps<T> extends RequiredFieldProps {
   value: string;
   setValue: (value: string) => void;
   validationValue?: T;
+  inputPrependNode?: ReactNode;
+  inputAppendNode?: ReactNode;
 }
 
-export default function InputField<T>(props: InputFieldProps<T>) {
+function InputFieldComponent<T>(
+  props: InputFieldProps<T>,
+  forwardRef?: Ref<HTMLInputElement>,
+) {
   const ref = useRef<HTMLInputElement>(null);
-  const { wasFocused } = useFocused(ref);
+  const { wasFocused } = useFocused(
+    (forwardRef as RefObject<HTMLInputElement>) ?? ref,
+  );
   const { isValid, message } = useValidity<T | string>(
     props.validationValue ?? props.value,
     props.required ?? false,
     props.schema,
-    ref,
+    (forwardRef as RefObject<HTMLInputElement>) ?? ref,
   );
 
   return (
-    <Field
-      id={props.id}
-      className={props.className}
-      heading={props.heading}
-      subheading={props.subheading}
-      required={props.required}
-      errorMessage={wasFocused ? message : undefined}
-    >
-      <div className={"relative mt-2"}>
+    <Field {...props}>
+      <div className={"flex grow items-center relative"}>
+        {props.inputPrependNode}
         <input
-          ref={ref}
+          ref={forwardRef ?? ref}
           id={props.id}
           type={props.type}
           name={props.name}
@@ -62,7 +71,14 @@ export default function InputField<T>(props: InputFieldProps<T>) {
             "transition-all"
           }
         />
+        {props.inputAppendNode}
       </div>
     </Field>
   );
 }
+
+const InputField = forwardRef(InputFieldComponent) as <T>(
+  props: InputFieldProps<T> & { ref?: Ref<HTMLInputElement> },
+) => ReturnType<typeof InputFieldComponent>;
+
+export default InputField;
