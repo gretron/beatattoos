@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode, useEffect, useRef, useState } from "react";
+import { ReactNode } from "react";
 import "./styles/globals.css";
 import { ZodType } from "zod";
 import { motion, AnimatePresence, Variants } from "framer-motion";
@@ -9,11 +9,15 @@ import { IconCircleXFilled } from "@tabler/icons-react";
 export interface RequiredFieldProps {
   id: string;
   className?: string;
-  heading: string;
+  inputContainerClassName?: string;
+  inputWrapperClassName?: string;
+  heading?: string;
   subheading?: string;
   name?: string;
   required?: boolean;
   schema?: ZodType;
+  fieldPrependNode?: ReactNode;
+  fieldAppendNode?: ReactNode;
 }
 
 interface FieldProps extends RequiredFieldProps {
@@ -44,41 +48,53 @@ export default function Field(props: FieldProps) {
   };
 
   return (
-    <div className={`${props.className} mb-4`}>
-      <label
-        htmlFor={props.id}
-        className={"flex gap-1 justify-between items-center mb-1"}
-      >
-        <h5>{props.heading}</h5>
-        {!props.required && (
-          <div className={"text-neutral-400 text-sm"}>Optional</div>
-        )}
-      </label>
+    <div className={`${props.className}`}>
+      {props.heading && (
+        <label
+          htmlFor={props.id}
+          className={"flex gap-1 justify-between items-center mb-1"}
+        >
+          <h5>{props.heading}</h5>
+          {props.required !== undefined && !props.required && (
+            <div className={"text-neutral-400 text-sm"}>Optional</div>
+          )}
+        </label>
+      )}
       {props.subheading && (
         <div className={"text-neutral-500 text-sm font-bold"}>
           {props.subheading}
         </div>
       )}
-      {props.children}
-      <AnimatePresence>
-        {props.errorMessage && (
-          <motion.div
-            className={"grid"}
-            initial={"hidden"}
-            animate={"show"}
-            exit={"hidden"}
-            variants={messageVariants}
-          >
-            <motion.div
-              layout
-              className={"flex gap-1 overflow-hidden text-error-500"}
-            >
-              <IconCircleXFilled stroke={2} className={"fill-error-500"} />
-              {props.errorMessage}
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <div
+        className={`flex max-md:grid grow gap-2 ${props.inputWrapperClassName}`}
+      >
+        {props.fieldPrependNode}
+        <div
+          className={`grow max-md:row-start-1 ${props.inputContainerClassName}`}
+        >
+          {props.children}
+          <AnimatePresence>
+            {props.errorMessage && (
+              <motion.div
+                className={"grid"}
+                initial={"hidden"}
+                animate={"show"}
+                exit={"hidden"}
+                variants={messageVariants}
+              >
+                <motion.div
+                  layout
+                  className={"flex gap-1 overflow-hidden text-error-500"}
+                >
+                  <IconCircleXFilled stroke={2} className={"fill-error-500"} />
+                  {props.errorMessage}
+                </motion.div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+        {props.fieldAppendNode}
+      </div>
     </div>
   );
 }

@@ -1,20 +1,21 @@
 import z from "zod";
 import {
   emailAddressSchema,
+  firstNameSchema,
+  lastNameSchema,
   passwordSchema,
-} from "~/app/auth/_constants/schemas";
+} from "~/app/_constants/schemas";
 
 /**
  * Validation schema for register form
  */
-export const registerFormSchema = z
-  .object({
-    firstName: z.string().min(1, "First name is required"),
-    lastName: z.string().min(1, "Last name is required"),
-    confirmPassword: z.string(),
-  })
-  .merge(emailAddressSchema)
-  .merge(passwordSchema);
+export const registerFormSchema = z.object({
+  firstName: firstNameSchema,
+  lastName: lastNameSchema,
+  emailAddress: emailAddressSchema,
+  password: passwordSchema,
+  confirmPassword: z.string(),
+});
 
 const confirmPasswordRefine = (
   { password, confirmPassword }: any,

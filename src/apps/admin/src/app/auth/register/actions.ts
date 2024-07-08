@@ -7,9 +7,6 @@ import bcrypt from "bcryptjs";
 import { db } from "~/lib/db";
 import {
   CREATE_USER_FAILED_ERROR,
-  CREDENTIALS_PARSING_ERROR,
-  EMAIL_IN_USE_ERROR,
-  EMAIL_IN_USE_FAILED_ERROR,
   EXISTING_ACCOUNT_ERROR,
   EXISTING_ACCOUNT_FAILED_ERROR,
 } from "~/app/auth/register/_constants/actionResponses";
@@ -17,6 +14,11 @@ import {
   INCORRECT_TOKEN_REDIRECT,
   SUCCESS_REDIRECT,
 } from "~/app/auth/register/_constants/redirectUrls";
+import {
+  CREDENTIALS_PARSING_ERROR,
+  EMAIL_IN_USE_ERROR,
+  EMAIL_IN_USE_FAILED_ERROR,
+} from "~/app/_constants/actionResponses";
 
 /**
  * Action to register new administrator account

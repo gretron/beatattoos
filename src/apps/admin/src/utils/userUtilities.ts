@@ -4,9 +4,10 @@ import type { User } from "@prisma/client";
 
 /**
  * Utility to create a randomized user
+ * @param overrideFields Fields to override certain randomized values
  * @returns A randomized user
  */
-export function createUser(): User {
+export function createUser(overrideFields?: Partial<User>): User {
   return {
     id: faker.string.uuid(),
     firstName: faker.person.firstName(),
@@ -14,5 +15,6 @@ export function createUser(): User {
     emailAddress: faker.internet.email(),
     password: faker.internet.password(),
     role: faker.helpers.enumValue(Role),
+    ...overrideFields,
   };
 }
