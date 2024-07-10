@@ -63,3 +63,6 @@ This clause directly relates product requirements to user experiences to efficie
 #### Create Client Process (Admin)
 ##### User Flow Diagram
 [Create client process user flow diagram](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=90-159&t=cZJKBYeqwHWRzt69-1)
+#### View Client Details Process (Admin)
+##### User Flow Diagram
+[View client details process user flow diagram](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=117-198&t=sXJObP5DN9cpEhhv-1)
