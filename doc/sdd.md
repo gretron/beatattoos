@@ -11,7 +11,7 @@ This document provides information regarding the technical specifications of the
 Here is a [link](https://www.figma.com/board/BoKrfOHfDMlBjGueEAiYs4/Diagrams?node-id=1-2&t=wdJXqc44TwnmdagJ-1) to the **beatattoos** system architecture diagram
 ## User Interface
 ### Design System
-[Design System](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=297-1367&t=mvOEQwcOuLHUznJo-1)
+[Design system](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=297-1367&t=mvOEQwcOuLHUznJo-1)
 ### Registration Process
 #### Wireframe
 [Registration process wireframe](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=297-1367&t=mvOEQwcOuLHUznJo-1)
@@ -22,3 +22,8 @@ Here is a [link](https://www.figma.com/board/BoKrfOHfDMlBjGueEAiYs4/Diagrams?nod
 [Log in wireframe](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=431-1141&t=JHX4SQlmPSdjdbt5-1)
 #### Mockup
 [Log in mockup](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=431-1301&t=JHX4SQlmPSdjdbt5-1)
+### Create Client Process
+#### Wireframe
+[Create client wireframe](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=443-1663&t=aohwIXTnZElIM6Ye-1)
+#### Mockup
+[Create client mockup](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=456-5108&t=aohwIXTnZElIM6Ye-1)
