@@ -27,3 +27,6 @@ Here is a [link](https://www.figma.com/board/BoKrfOHfDMlBjGueEAiYs4/Diagrams?nod
 [Create client wireframe](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=443-1663&t=aohwIXTnZElIM6Ye-1)
 #### Mockup
 [Create client mockup](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=456-5108&t=aohwIXTnZElIM6Ye-1)
+### View Client Details Process
+#### Wireframe
+[View client details wireframe](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=500-2695&t=ruULLJFoaCrLk9HA-1)
