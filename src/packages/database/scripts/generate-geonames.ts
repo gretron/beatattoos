@@ -15,8 +15,9 @@ const countryStateProvinceLevels: { [key: string]: AdminLevels } = {
 const pathToGeonames = __dirname + "/../res/allCountries.txt";
 
 interface Geoname {
-  [key: string]: string | number;
+  [key: string]: any;
   id: number;
+  parentId?: number;
   name: string;
   latitude: number;
   longitude: number;
@@ -28,16 +29,6 @@ interface Geoname {
   ADM3: string;
   ADM4: string;
   population: number;
-}
-
-interface Country extends Geoname {}
-
-interface StateProvince extends Geoname {
-  countryId: number;
-}
-
-interface City extends Geoname {
-  stateProvinceId: number;
 }
 
 /**
@@ -58,6 +49,16 @@ function getReadlineStream(filePath: string) {
     input: fileStream,
     crlfDelay: Infinity,
   });
+}
+
+/**
+ * To get the state/province feature code for a given country
+ * @param countryCode the code of the country
+ */
+function getStateProvinceFeatureCode(countryCode: string) {
+  const stateProvinceLevel = countryStateProvinceLevels[countryCode];
+
+  return !stateProvinceLevel ? "ADM1" : AdminLevels[stateProvinceLevel];
 }
 
 /**
@@ -91,8 +92,8 @@ async function generateJSONCountries() {
   const countryFeatureClass = "A";
   const countryFeatureCode = "PCLI";
 
-  const countries: Country[] = [];
-  const countriesByCountryCode: { [key: string]: Country } = {};
+  const countries: Geoname[] = [];
+  const countriesByCountryCode: { [key: string]: Geoname } = {};
 
   let count = 0;
 
@@ -129,14 +130,14 @@ async function generateJSONCountries() {
  * @param countriesByCountryCode Countries object with country code keys
  */
 async function generateJSONStatesProvinces(countriesByCountryCode: {
-  [p: string]: Country;
+  [p: string]: Geoname;
 }) {
   const geonamesStream = getReadlineStream(pathToGeonames);
   const statesProvincesFeatureClass = "A";
 
-  const statesProvinces: StateProvince[] = [];
+  const statesProvinces: Geoname[] = [];
   const stateProvincesByCountryAndAdminCode: {
-    [countryAdminCode: string]: StateProvince;
+    [countryAdminCode: string]: Geoname;
   } = {};
 
   let count = 0;
@@ -144,14 +145,7 @@ async function generateJSONStatesProvinces(countriesByCountryCode: {
   for await (const geonameLine of geonamesStream) {
     const geoname = geonameLineToGeoname(geonameLine);
     const country = countriesByCountryCode[geoname.countryCode];
-    const stateProvinceLevel = countryStateProvinceLevels[geoname.countryCode];
-    let featureCode;
-
-    if (!stateProvinceLevel) {
-      featureCode = "ADM1";
-    } else {
-      featureCode = AdminLevels[stateProvinceLevel];
-    }
+    const featureCode = getStateProvinceFeatureCode(geoname.countryCode);
 
     // If geoname is a state or province...
     if (
@@ -159,7 +153,7 @@ async function generateJSONStatesProvinces(countriesByCountryCode: {
       geoname.featureClass === statesProvincesFeatureClass &&
       geoname.featureCode === featureCode
     ) {
-      statesProvinces.push({ ...geoname, countryId: country.id });
+      statesProvinces.push({ ...geoname, parentId: country.id });
 
       const adminCode = String(geoname[featureCode]);
 
@@ -193,7 +187,7 @@ async function generateJSONStatesProvinces(countriesByCountryCode: {
  * To generate cities to JSON format
  */
 async function generateJSONCities(stateProvincesByCountryAndAdminCode: {
-  [countryAdminCode: string]: StateProvince;
+  [countryAdminCode: string]: Geoname;
 }) {
   const geonamesStream = getReadlineStream(pathToGeonames);
   const citiesFeatureClass = "P";
@@ -209,40 +203,49 @@ async function generateJSONCities(stateProvincesByCountryAndAdminCode: {
     "PPLR",
   ];
 
-  const cities: City[] = [];
+  const cities: Geoname[] = [];
 
   let count = 0;
 
   for await (const geonameLine of geonamesStream) {
     const geoname = geonameLineToGeoname(geonameLine);
-    const stateProvinceLevel = countryStateProvinceLevels[geoname.countryCode];
-    let featureCode;
-
-    if (!stateProvinceLevel) {
-      featureCode = "ADM1";
-    } else {
-      featureCode = AdminLevels[stateProvinceLevel];
-    }
-
+    const featureCode = getStateProvinceFeatureCode(geoname.countryCode);
     const adminCode = String(geoname[featureCode]);
     const stateProvince =
       stateProvincesByCountryAndAdminCode[
         `${geoname.countryCode}-${adminCode}`
       ];
 
-    // If geoname is a state or province...
     if (
-      stateProvince &&
-      geoname.featureClass === citiesFeatureClass &&
-      citiesFeatureCodes.includes(geoname.featureCode) &&
-      geoname.population > 10000
+      !stateProvince ||
+      geoname.featureClass !== citiesFeatureClass ||
+      !citiesFeatureCodes.includes(geoname.featureCode) ||
+      geoname.population < 10000
     ) {
-      cities.push({ ...geoname, stateProvinceId: stateProvince.id });
-
-      count++;
-
-      console.log(`Added city '${geoname.name}' (${count})`);
+      continue;
     }
+
+    const adminLevel = Number(featureCode.charAt(3));
+    let adminLevelsMatch = true;
+
+    for (let i = adminLevel; i > 0; i--) {
+      const adminLevel = `ADM${i}`;
+
+      if (geoname[adminLevel] !== stateProvince[adminLevel]) {
+        adminLevelsMatch = false;
+        break;
+      }
+    }
+
+    if (!adminLevelsMatch) {
+      continue;
+    }
+
+    cities.push({ ...geoname, parentId: stateProvince.id });
+
+    count++;
+
+    console.log(`Added city '${geoname.name}' (${count})`);
   }
 
   await fs.writeFile(
@@ -256,6 +259,9 @@ async function generateJSONCities(stateProvincesByCountryAndAdminCode: {
   console.log("Successfully generated cities");
 }
 
+/**
+ * To generate geonames at country, state/province and city level
+ */
 async function generate() {
   const countriesByCountryCode = await generateJSONCountries();
   const statesProvinces = await generateJSONStatesProvinces(
