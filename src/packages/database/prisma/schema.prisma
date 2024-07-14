@@ -56,6 +56,7 @@ model Country {
     latitude        Float
     longitude       Float
     stateProvinces  StateProvince[]
+    users           User[]
 }
 
 model StateProvince {
@@ -66,6 +67,7 @@ model StateProvince {
     longitude       Float
     cities          City[]
     country         Country @relation(fields: [countryId], references: [id], onDelete: Cascade)
+    users           User[]
 }
 
 model City {
@@ -75,6 +77,7 @@ model City {
     latitude        Float
     longitude       Float
     stateProvince   StateProvince @relation(fields: [stateProvinceId], references: [id], onDelete: Cascade)
+    users           User[]
 }
 
 enum Role {
@@ -83,13 +86,19 @@ enum Role {
 }
 
 model User {
-    id            String    @id @default(cuid())
-    firstName     String
-    lastName      String
-    emailAddress  String   @unique
-    password      String
-    role          Role
-    accounts      Account[]
-    sessions      Session[]
+    id              String @id @default(cuid())
+    firstName       String
+    lastName        String
+    countryId       String
+    stateProvinceId String
+    cityId          String
+    emailAddress    String @unique
+    password        String
+    role            Role
+    accounts        Account[]
+    sessions        Session[]
+    country         Country @relation(fields: [countryId], references: [id])
+    stateProvince   StateProvince @relation(fields: [stateProvinceId], references: [id])
+    city            City @relation(fields: [cityId], references: [id])
 }
 
