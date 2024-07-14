@@ -6,6 +6,7 @@
   },
   "scripts": {
     "generate-geonames": "ts-node ./scripts/generate-geonames.ts",
+    "import-geonames": "ts-node ./scripts/import-geonames.ts",
     "db:generate": "prisma migrate dev",
     "db:migrate": "prisma migrate deploy",
     "db:push": "prisma db push",

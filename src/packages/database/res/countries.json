@@ -1,6 +1,6 @@
 [
 	{
-		"id": 3041565,
+		"id": "3041565",
 		"name": "Principality of Andorra",
 		"latitude": 42.55,
 		"longitude": 1.58333,
@@ -14,7 +14,7 @@
 		"population": 77006
 	},
 	{
-		"id": 290557,
+		"id": "290557",
 		"name": "United Arab Emirates",
 		"latitude": 23.75,
 		"longitude": 54.5,
@@ -28,7 +28,7 @@
 		"population": 9630959
 	},
 	{
-		"id": 1149361,
+		"id": "1149361",
 		"name": "Islamic Republic of Afghanistan",
 		"latitude": 33,
 		"longitude": 66,
@@ -42,7 +42,7 @@
 		"population": 37172386
 	},
 	{
-		"id": 3576396,
+		"id": "3576396",
 		"name": "Antigua and Barbuda",
 		"latitude": 17.05,
 		"longitude": -61.8,
@@ -56,7 +56,7 @@
 		"population": 96286
 	},
 	{
-		"id": 783754,
+		"id": "783754",
 		"name": "Republic of Albania",
 		"latitude": 41,
 		"longitude": 20,
@@ -70,7 +70,7 @@
 		"population": 2866376
 	},
 	{
-		"id": 174982,
+		"id": "174982",
 		"name": "Republic of Armenia",
 		"latitude": 40.25,
 		"longitude": 45,
@@ -84,7 +84,7 @@
 		"population": 2951776
 	},
 	{
-		"id": 3351879,
+		"id": "3351879",
 		"name": "Republic of Angola",
 		"latitude": -12.5,
 		"longitude": 18.5,
@@ -98,7 +98,7 @@
 		"population": 30809762
 	},
 	{
-		"id": 3865483,
+		"id": "3865483",
 		"name": "Argentine Republic",
 		"latitude": -34,
 		"longitude": -64,
@@ -112,7 +112,7 @@
 		"population": 44494502
 	},
 	{
-		"id": 2782113,
+		"id": "2782113",
 		"name": "Republic of Austria",
 		"latitude": 47.33333,
 		"longitude": 13.33333,
@@ -126,7 +126,7 @@
 		"population": 8847037
 	},
 	{
-		"id": 2077456,
+		"id": "2077456",
 		"name": "Commonwealth of Australia",
 		"latitude": -25,
 		"longitude": 135,
@@ -140,7 +140,7 @@
 		"population": 24992369
 	},
 	{
-		"id": 587116,
+		"id": "587116",
 		"name": "Republic of Azerbaijan",
 		"latitude": 40.5,
 		"longitude": 47.5,
@@ -154,7 +154,7 @@
 		"population": 9942334
 	},
 	{
-		"id": 3277605,
+		"id": "3277605",
 		"name": "Bosnia and Herzegovina",
 		"latitude": 44.25,
 		"longitude": 17.83333,
@@ -168,7 +168,7 @@
 		"population": 3323929
 	},
 	{
-		"id": 3374084,
+		"id": "3374084",
 		"name": "Barbados",
 		"latitude": 13.16453,
 		"longitude": -59.55165,
@@ -182,7 +182,7 @@
 		"population": 286641
 	},
 	{
-		"id": 1210997,
+		"id": "1210997",
 		"name": "Bangladesh",
 		"latitude": 24,
 		"longitude": 90,
@@ -196,7 +196,7 @@
 		"population": 161356039
 	},
 	{
-		"id": 2802361,
+		"id": "2802361",
 		"name": "Kingdom of Belgium",
 		"latitude": 50.75,
 		"longitude": 4.5,
@@ -210,7 +210,7 @@
 		"population": 11422068
 	},
 	{
-		"id": 2361809,
+		"id": "2361809",
 		"name": "Burkina Faso",
 		"latitude": 12.5,
 		"longitude": -1.66667,
@@ -224,7 +224,7 @@
 		"population": 19751535
 	},
 	{
-		"id": 732800,
+		"id": "732800",
 		"name": "Republic of Bulgaria",
 		"latitude": 42.66667,
 		"longitude": 25.25,
@@ -238,7 +238,7 @@
 		"population": 7000039
 	},
 	{
-		"id": 290291,
+		"id": "290291",
 		"name": "Kingdom of Bahrain",
 		"latitude": 26.03333,
 		"longitude": 50.55,
@@ -252,7 +252,7 @@
 		"population": 1569439
 	},
 	{
-		"id": 433561,
+		"id": "433561",
 		"name": "Republic of Burundi",
 		"latitude": -3.5,
 		"longitude": 30,
@@ -266,7 +266,7 @@
 		"population": 11175378
 	},
 	{
-		"id": 2395170,
+		"id": "2395170",
 		"name": "Republic of Benin",
 		"latitude": 9.5,
 		"longitude": 2.25,
@@ -280,7 +280,7 @@
 		"population": 11485048
 	},
 	{
-		"id": 1820814,
+		"id": "1820814",
 		"name": "Brunei Darussalam",
 		"latitude": 4.5,
 		"longitude": 114.66667,
@@ -294,7 +294,7 @@
 		"population": 428962
 	},
 	{
-		"id": 3923057,
+		"id": "3923057",
 		"name": "Plurinational State of Bolivia",
 		"latitude": -17,
 		"longitude": -65,
@@ -308,7 +308,7 @@
 		"population": 11353142
 	},
 	{
-		"id": 3469034,
+		"id": "3469034",
 		"name": "Federative Republic of Brazil",
 		"latitude": -10,
 		"longitude": -55,
@@ -322,7 +322,7 @@
 		"population": 209469333
 	},
 	{
-		"id": 3572887,
+		"id": "3572887",
 		"name": "Commonwealth of The Bahamas",
 		"latitude": 25.04082,
 		"longitude": -77.37122,
@@ -336,7 +336,7 @@
 		"population": 385640
 	},
 	{
-		"id": 1252634,
+		"id": "1252634",
 		"name": "Kingdom of Bhutan",
 		"latitude": 27.5,
 		"longitude": 90.5,
@@ -350,7 +350,7 @@
 		"population": 754394
 	},
 	{
-		"id": 933860,
+		"id": "933860",
 		"name": "Republic of Botswana",
 		"latitude": -22,
 		"longitude": 24,
@@ -364,7 +364,7 @@
 		"population": 2254126
 	},
 	{
-		"id": 630336,
+		"id": "630336",
 		"name": "Republic of Belarus",
 		"latitude": 53,
 		"longitude": 28,
@@ -378,7 +378,7 @@
 		"population": 9485386
 	},
 	{
-		"id": 3582678,
+		"id": "3582678",
 		"name": "Belize",
 		"latitude": 17.25,
 		"longitude": -88.75,
@@ -392,7 +392,7 @@
 		"population": 383071
 	},
 	{
-		"id": 6251999,
+		"id": "6251999",
 		"name": "Canada",
 		"latitude": 60.10867,
 		"longitude": -113.64258,
@@ -406,7 +406,7 @@
 		"population": 37058856
 	},
 	{
-		"id": 203312,
+		"id": "203312",
 		"name": "Democratic Republic of the Congo",
 		"latitude": -2.5,
 		"longitude": 23.5,
@@ -420,7 +420,7 @@
 		"population": 84068091
 	},
 	{
-		"id": 239880,
+		"id": "239880",
 		"name": "Central African Republic",
 		"latitude": 7,
 		"longitude": 21,
@@ -434,7 +434,7 @@
 		"population": 4666377
 	},
 	{
-		"id": 2260494,
+		"id": "2260494",
 		"name": "Republic of the Congo",
 		"latitude": -1,
 		"longitude": 15.5,
@@ -448,7 +448,7 @@
 		"population": 5244363
 	},
 	{
-		"id": 2658434,
+		"id": "2658434",
 		"name": "Switzerland",
 		"latitude": 47.00016,
 		"longitude": 8.01427,
@@ -462,7 +462,7 @@
 		"population": 8516543
 	},
 	{
-		"id": 2287781,
+		"id": "2287781",
 		"name": "Republic of Côte d’Ivoire",
 		"latitude": 8,
 		"longitude": -5.5,
@@ -476,7 +476,7 @@
 		"population": 25069229
 	},
 	{
-		"id": 3895114,
+		"id": "3895114",
 		"name": "Republic of Chile",
 		"latitude": -30,
 		"longitude": -71,
@@ -490,7 +490,7 @@
 		"population": 18729160
 	},
 	{
-		"id": 2233387,
+		"id": "2233387",
 		"name": "Republic of Cameroon",
 		"latitude": 6,
 		"longitude": 12.5,
@@ -504,7 +504,7 @@
 		"population": 25216237
 	},
 	{
-		"id": 1814991,
+		"id": "1814991",
 		"name": "People’s Republic of China",
 		"latitude": 35,
 		"longitude": 105,
@@ -518,7 +518,7 @@
 		"population": 1411778724
 	},
 	{
-		"id": 3686110,
+		"id": "3686110",
 		"name": "Republic of Colombia",
 		"latitude": 4,
 		"longitude": -73.25,
@@ -532,7 +532,7 @@
 		"population": 49648685
 	},
 	{
-		"id": 3624060,
+		"id": "3624060",
 		"name": "Republic of Costa Rica",
 		"latitude": 10,
 		"longitude": -84,
@@ -546,7 +546,7 @@
 		"population": 4999441
 	},
 	{
-		"id": 3562981,
+		"id": "3562981",
 		"name": "Republic of Cuba",
 		"latitude": 22,
 		"longitude": -79.5,
@@ -560,7 +560,7 @@
 		"population": 11338138
 	},
 	{
-		"id": 3374766,
+		"id": "3374766",
 		"name": "Republic of Cabo Verde",
 		"latitude": 16,
 		"longitude": -24,
@@ -574,7 +574,7 @@
 		"population": 543767
 	},
 	{
-		"id": 146669,
+		"id": "146669",
 		"name": "Republic of Cyprus",
 		"latitude": 35,
 		"longitude": 33,
@@ -588,7 +588,7 @@
 		"population": 1189265
 	},
 	{
-		"id": 3077311,
+		"id": "3077311",
 		"name": "Czechia",
 		"latitude": 49.75,
 		"longitude": 15,
@@ -602,7 +602,7 @@
 		"population": 10625695
 	},
 	{
-		"id": 2921044,
+		"id": "2921044",
 		"name": "Federal Republic of Germany",
 		"latitude": 51.5,
 		"longitude": 10.5,
@@ -616,7 +616,7 @@
 		"population": 82927922
 	},
 	{
-		"id": 223816,
+		"id": "223816",
 		"name": "Republic of Djibouti",
 		"latitude": 11.83333,
 		"longitude": 42.5,
@@ -630,7 +630,7 @@
 		"population": 958920
 	},
 	{
-		"id": 2623032,
+		"id": "2623032",
 		"name": "Kingdom of Denmark",
 		"latitude": 56,
 		"longitude": 10,
@@ -644,7 +644,7 @@
 		"population": 5797446
 	},
 	{
-		"id": 3575830,
+		"id": "3575830",
 		"name": "Dominica",
 		"latitude": 15.5,
 		"longitude": -61.33333,
@@ -658,7 +658,7 @@
 		"population": 71625
 	},
 	{
-		"id": 3508796,
+		"id": "3508796",
 		"name": "Dominican Republic",
 		"latitude": 19,
 		"longitude": -70.66667,
@@ -672,7 +672,7 @@
 		"population": 10627165
 	},
 	{
-		"id": 2589581,
+		"id": "2589581",
 		"name": "People's Democratic Republic of Algeria",
 		"latitude": 28,
 		"longitude": 3,
@@ -686,7 +686,7 @@
 		"population": 42228429
 	},
 	{
-		"id": 3658394,
+		"id": "3658394",
 		"name": "Republic of Ecuador",
 		"latitude": -1.25,
 		"longitude": -78.25,
@@ -700,7 +700,7 @@
 		"population": 17084357
 	},
 	{
-		"id": 453733,
+		"id": "453733",
 		"name": "Republic of Estonia",
 		"latitude": 59,
 		"longitude": 26,
@@ -714,7 +714,7 @@
 		"population": 1320884
 	},
 	{
-		"id": 357994,
+		"id": "357994",
 		"name": "Arab Republic of Egypt",
 		"latitude": 27,
 		"longitude": 30,
@@ -728,7 +728,7 @@
 		"population": 98423595
 	},
 	{
-		"id": 338010,
+		"id": "338010",
 		"name": "State of Eritrea",
 		"latitude": 15,
 		"longitude": 39,
@@ -742,7 +742,7 @@
 		"population": 6209262
 	},
 	{
-		"id": 2510769,
+		"id": "2510769",
 		"name": "Kingdom of Spain",
 		"latitude": 40,
 		"longitude": -4,
@@ -756,7 +756,7 @@
 		"population": 46723749
 	},
 	{
-		"id": 337996,
+		"id": "337996",
 		"name": "Federal Democratic Republic of Ethiopia",
 		"latitude": 9,
 		"longitude": 39.5,
@@ -770,7 +770,7 @@
 		"population": 109224559
 	},
 	{
-		"id": 660013,
+		"id": "660013",
 		"name": "Republic of Finland",
 		"latitude": 64,
 		"longitude": 26,
@@ -784,7 +784,7 @@
 		"population": 5518050
 	},
 	{
-		"id": 2205218,
+		"id": "2205218",
 		"name": "Republic of Fiji",
 		"latitude": -18,
 		"longitude": 178,
@@ -798,7 +798,7 @@
 		"population": 883483
 	},
 	{
-		"id": 3017382,
+		"id": "3017382",
 		"name": "Republic of France",
 		"latitude": 46,
 		"longitude": 2,
@@ -812,7 +812,7 @@
 		"population": 66987244
 	},
 	{
-		"id": 2400553,
+		"id": "2400553",
 		"name": "Gabonese Republic",
 		"latitude": -1,
 		"longitude": 11.75,
@@ -826,7 +826,7 @@
 		"population": 2119275
 	},
 	{
-		"id": 2635167,
+		"id": "2635167",
 		"name": "United Kingdom of Great Britain and Northern Ireland",
 		"latitude": 54.75844,
 		"longitude": -2.69531,
@@ -840,7 +840,7 @@
 		"population": 66488991
 	},
 	{
-		"id": 3580239,
+		"id": "3580239",
 		"name": "Grenada",
 		"latitude": 12.11667,
 		"longitude": -61.66667,
@@ -854,7 +854,7 @@
 		"population": 111454
 	},
 	{
-		"id": 614540,
+		"id": "614540",
 		"name": "Georgia",
 		"latitude": 41.99998,
 		"longitude": 43.4999,
@@ -868,7 +868,7 @@
 		"population": 3731000
 	},
 	{
-		"id": 2300660,
+		"id": "2300660",
 		"name": "Republic of Ghana",
 		"latitude": 8.1,
 		"longitude": -1.2,
@@ -882,7 +882,7 @@
 		"population": 29767108
 	},
 	{
-		"id": 2413451,
+		"id": "2413451",
 		"name": "Gambia",
 		"latitude": 13.5,
 		"longitude": -15.5,
@@ -896,7 +896,7 @@
 		"population": 2280102
 	},
 	{
-		"id": 2420477,
+		"id": "2420477",
 		"name": "Republic of Guinea",
 		"latitude": 10.83333,
 		"longitude": -10.66667,
@@ -910,7 +910,7 @@
 		"population": 12414318
 	},
 	{
-		"id": 2309096,
+		"id": "2309096",
 		"name": "Republic of Equatorial Guinea",
 		"latitude": 1.7,
 		"longitude": 10.5,
@@ -924,7 +924,7 @@
 		"population": 1308974
 	},
 	{
-		"id": 390903,
+		"id": "390903",
 		"name": "Hellenic Republic",
 		"latitude": 39,
 		"longitude": 22,
@@ -938,7 +938,7 @@
 		"population": 10727668
 	},
 	{
-		"id": 3595528,
+		"id": "3595528",
 		"name": "Republic of Guatemala",
 		"latitude": 15.5,
 		"longitude": -90.25,
@@ -952,7 +952,7 @@
 		"population": 17247807
 	},
 	{
-		"id": 2372248,
+		"id": "2372248",
 		"name": "Republic of Guinea-Bissau",
 		"latitude": 12,
 		"longitude": -15,
@@ -966,7 +966,7 @@
 		"population": 1874309
 	},
 	{
-		"id": 3378535,
+		"id": "3378535",
 		"name": "Co-operative Republic of Guyana",
 		"latitude": 5,
 		"longitude": -59,
@@ -980,7 +980,7 @@
 		"population": 779004
 	},
 	{
-		"id": 3608932,
+		"id": "3608932",
 		"name": "Republic of Honduras",
 		"latitude": 15,
 		"longitude": -86.5,
@@ -994,7 +994,7 @@
 		"population": 9587522
 	},
 	{
-		"id": 3202326,
+		"id": "3202326",
 		"name": "Republic of Croatia",
 		"latitude": 45.16667,
 		"longitude": 15.5,
@@ -1008,7 +1008,7 @@
 		"population": 3871833
 	},
 	{
-		"id": 3723988,
+		"id": "3723988",
 		"name": "Republic of Haiti",
 		"latitude": 19.07582,
 		"longitude": -72.29616,
@@ -1022,7 +1022,7 @@
 		"population": 11123176
 	},
 	{
-		"id": 719819,
+		"id": "719819",
 		"name": "Hungary",
 		"latitude": 47,
 		"longitude": 20,
@@ -1036,7 +1036,7 @@
 		"population": 9768785
 	},
 	{
-		"id": 1643084,
+		"id": "1643084",
 		"name": "Republic of Indonesia",
 		"latitude": -5,
 		"longitude": 120,
@@ -1050,7 +1050,7 @@
 		"population": 267663435
 	},
 	{
-		"id": 2963597,
+		"id": "2963597",
 		"name": "Ireland",
 		"latitude": 53,
 		"longitude": -8,
@@ -1064,7 +1064,7 @@
 		"population": 4853506
 	},
 	{
-		"id": 294640,
+		"id": "294640",
 		"name": "State of Israel",
 		"latitude": 31.5,
 		"longitude": 34.75,
@@ -1078,7 +1078,7 @@
 		"population": 8883800
 	},
 	{
-		"id": 1269750,
+		"id": "1269750",
 		"name": "Republic of India",
 		"latitude": 22,
 		"longitude": 79,
@@ -1092,7 +1092,7 @@
 		"population": 1352617328
 	},
 	{
-		"id": 99237,
+		"id": "99237",
 		"name": "Republic of Iraq",
 		"latitude": 33,
 		"longitude": 44,
@@ -1106,7 +1106,7 @@
 		"population": 38433600
 	},
 	{
-		"id": 130758,
+		"id": "130758",
 		"name": "Islamic Republic of Iran",
 		"latitude": 32,
 		"longitude": 53,
@@ -1120,7 +1120,7 @@
 		"population": 81800269
 	},
 	{
-		"id": 2629691,
+		"id": "2629691",
 		"name": "Iceland",
 		"latitude": 65,
 		"longitude": -18,
@@ -1134,7 +1134,7 @@
 		"population": 353574
 	},
 	{
-		"id": 3175395,
+		"id": "3175395",
 		"name": "Italian Republic",
 		"latitude": 42.83333,
 		"longitude": 12.83333,
@@ -1148,7 +1148,7 @@
 		"population": 60431283
 	},
 	{
-		"id": 3489940,
+		"id": "3489940",
 		"name": "Jamaica",
 		"latitude": 18.16667,
 		"longitude": -77.25,
@@ -1162,7 +1162,7 @@
 		"population": 2934855
 	},
 	{
-		"id": 248816,
+		"id": "248816",
 		"name": "Hashemite Kingdom of Jordan",
 		"latitude": 31,
 		"longitude": 36,
@@ -1176,7 +1176,7 @@
 		"population": 9956011
 	},
 	{
-		"id": 1861060,
+		"id": "1861060",
 		"name": "Japan",
 		"latitude": 35.68536,
 		"longitude": 139.75309,
@@ -1190,7 +1190,7 @@
 		"population": 126529100
 	},
 	{
-		"id": 192950,
+		"id": "192950",
 		"name": "Republic of Kenya",
 		"latitude": 1,
 		"longitude": 38,
@@ -1204,7 +1204,7 @@
 		"population": 51393010
 	},
 	{
-		"id": 1527747,
+		"id": "1527747",
 		"name": "Kyrgyz Republic",
 		"latitude": 41.5,
 		"longitude": 75,
@@ -1218,7 +1218,7 @@
 		"population": 6315800
 	},
 	{
-		"id": 1831722,
+		"id": "1831722",
 		"name": "Kingdom of Cambodia",
 		"latitude": 13,
 		"longitude": 105,
@@ -1232,7 +1232,7 @@
 		"population": 16249798
 	},
 	{
-		"id": 4030945,
+		"id": "4030945",
 		"name": "Republic of Kiribati",
 		"latitude": 1.421,
 		"longitude": 172.984,
@@ -1246,7 +1246,7 @@
 		"population": 115847
 	},
 	{
-		"id": 921929,
+		"id": "921929",
 		"name": "Union of the Comoros",
 		"latitude": -12.23333,
 		"longitude": 44.44553,
@@ -1260,7 +1260,7 @@
 		"population": 832322
 	},
 	{
-		"id": 3575174,
+		"id": "3575174",
 		"name": "Federation of Saint Kitts and Nevis",
 		"latitude": 17.33333,
 		"longitude": -62.75,
@@ -1274,7 +1274,7 @@
 		"population": 52441
 	},
 	{
-		"id": 1873107,
+		"id": "1873107",
 		"name": "Democratic People’s Republic of Korea",
 		"latitude": 40,
 		"longitude": 127,
@@ -1288,7 +1288,7 @@
 		"population": 25549819
 	},
 	{
-		"id": 1835841,
+		"id": "1835841",
 		"name": "Republic of Korea",
 		"latitude": 36.5,
 		"longitude": 127.75,
@@ -1302,7 +1302,7 @@
 		"population": 51635256
 	},
 	{
-		"id": 285570,
+		"id": "285570",
 		"name": "State of Kuwait",
 		"latitude": 29.5,
 		"longitude": 47.75,
@@ -1316,7 +1316,7 @@
 		"population": 4137309
 	},
 	{
-		"id": 1522867,
+		"id": "1522867",
 		"name": "Republic of Kazakhstan",
 		"latitude": 48,
 		"longitude": 68,
@@ -1330,7 +1330,7 @@
 		"population": 18276499
 	},
 	{
-		"id": 1655842,
+		"id": "1655842",
 		"name": "Lao People’s Democratic Republic",
 		"latitude": 18,
 		"longitude": 105,
@@ -1344,7 +1344,7 @@
 		"population": 7061507
 	},
 	{
-		"id": 272103,
+		"id": "272103",
 		"name": "Lebanon",
 		"latitude": 33.83333,
 		"longitude": 35.83333,
@@ -1358,7 +1358,7 @@
 		"population": 6848925
 	},
 	{
-		"id": 3576468,
+		"id": "3576468",
 		"name": "Saint Lucia",
 		"latitude": 13.88333,
 		"longitude": -60.96667,
@@ -1372,7 +1372,7 @@
 		"population": 181889
 	},
 	{
-		"id": 3042058,
+		"id": "3042058",
 		"name": "Principality of Liechtenstein",
 		"latitude": 47.16667,
 		"longitude": 9.53333,
@@ -1386,7 +1386,7 @@
 		"population": 37910
 	},
 	{
-		"id": 1227603,
+		"id": "1227603",
 		"name": "Democratic Socialist Republic of Sri Lanka",
 		"latitude": 7.75,
 		"longitude": 80.75,
@@ -1400,7 +1400,7 @@
 		"population": 21670000
 	},
 	{
-		"id": 2275384,
+		"id": "2275384",
 		"name": "Republic of Liberia",
 		"latitude": 6.5,
 		"longitude": -9.5,
@@ -1414,7 +1414,7 @@
 		"population": 4818977
 	},
 	{
-		"id": 932692,
+		"id": "932692",
 		"name": "Kingdom of Lesotho",
 		"latitude": -29.5,
 		"longitude": 28.25,
@@ -1428,7 +1428,7 @@
 		"population": 2108132
 	},
 	{
-		"id": 597427,
+		"id": "597427",
 		"name": "Republic of Lithuania",
 		"latitude": 55.41667,
 		"longitude": 24,
@@ -1442,7 +1442,7 @@
 		"population": 2789533
 	},
 	{
-		"id": 2960313,
+		"id": "2960313",
 		"name": "Grand Duchy of Luxembourg",
 		"latitude": 49.75,
 		"longitude": 6.16667,
@@ -1456,7 +1456,7 @@
 		"population": 607728
 	},
 	{
-		"id": 458258,
+		"id": "458258",
 		"name": "Republic of Latvia",
 		"latitude": 57,
 		"longitude": 25,
@@ -1470,7 +1470,7 @@
 		"population": 1926542
 	},
 	{
-		"id": 2215636,
+		"id": "2215636",
 		"name": "Libya",
 		"latitude": 28,
 		"longitude": 17,
@@ -1484,7 +1484,7 @@
 		"population": 6678567
 	},
 	{
-		"id": 2542007,
+		"id": "2542007",
 		"name": "Kingdom of Morocco",
 		"latitude": 28.5,
 		"longitude": -10,
@@ -1498,7 +1498,7 @@
 		"population": 36029138
 	},
 	{
-		"id": 2993457,
+		"id": "2993457",
 		"name": "Principality of Monaco",
 		"latitude": 43.73141,
 		"longitude": 7.41903,
@@ -1512,7 +1512,7 @@
 		"population": 38682
 	},
 	{
-		"id": 617790,
+		"id": "617790",
 		"name": "Republic of Moldova",
 		"latitude": 47.25,
 		"longitude": 28.58333,
@@ -1526,7 +1526,7 @@
 		"population": 3545883
 	},
 	{
-		"id": 3194884,
+		"id": "3194884",
 		"name": "Montenegro",
 		"latitude": 42.75,
 		"longitude": 19.25,
@@ -1540,7 +1540,7 @@
 		"population": 622345
 	},
 	{
-		"id": 1062947,
+		"id": "1062947",
 		"name": "Republic of Madagascar",
 		"latitude": -20,
 		"longitude": 47,
@@ -1554,7 +1554,7 @@
 		"population": 26262368
 	},
 	{
-		"id": 718075,
+		"id": "718075",
 		"name": "North Macedonia",
 		"latitude": 41.66667,
 		"longitude": 21.75,
@@ -1568,7 +1568,7 @@
 		"population": 2082958
 	},
 	{
-		"id": 2453866,
+		"id": "2453866",
 		"name": "Republic of Mali",
 		"latitude": 18,
 		"longitude": -2,
@@ -1582,7 +1582,7 @@
 		"population": 19077690
 	},
 	{
-		"id": 1327865,
+		"id": "1327865",
 		"name": "Union of Burma",
 		"latitude": 21,
 		"longitude": 96,
@@ -1596,7 +1596,7 @@
 		"population": 53708395
 	},
 	{
-		"id": 2029969,
+		"id": "2029969",
 		"name": "Mongolia",
 		"latitude": 46,
 		"longitude": 105,
@@ -1610,7 +1610,7 @@
 		"population": 3170208
 	},
 	{
-		"id": 2378080,
+		"id": "2378080",
 		"name": "Islamic Republic of Mauritania",
 		"latitude": 20.25,
 		"longitude": -10.5,
@@ -1624,7 +1624,7 @@
 		"population": 4403319
 	},
 	{
-		"id": 2562770,
+		"id": "2562770",
 		"name": "Republic of Malta",
 		"latitude": 35.91667,
 		"longitude": 14.43333,
@@ -1638,7 +1638,7 @@
 		"population": 483530
 	},
 	{
-		"id": 934292,
+		"id": "934292",
 		"name": "Republic of Mauritius",
 		"latitude": -20.3,
 		"longitude": 57.58333,
@@ -1652,7 +1652,7 @@
 		"population": 1265303
 	},
 	{
-		"id": 1282028,
+		"id": "1282028",
 		"name": "Republic of Maldives",
 		"latitude": 3.2,
 		"longitude": 73,
@@ -1666,7 +1666,7 @@
 		"population": 515696
 	},
 	{
-		"id": 927384,
+		"id": "927384",
 		"name": "Republic of Malawi",
 		"latitude": -13.5,
 		"longitude": 34,
@@ -1680,7 +1680,7 @@
 		"population": 17563749
 	},
 	{
-		"id": 3996063,
+		"id": "3996063",
 		"name": "Mexico",
 		"latitude": 23,
 		"longitude": -102,
@@ -1694,7 +1694,7 @@
 		"population": 126190788
 	},
 	{
-		"id": 1733045,
+		"id": "1733045",
 		"name": "Malaysia",
 		"latitude": 2.5,
 		"longitude": 112.5,
@@ -1708,7 +1708,7 @@
 		"population": 31528585
 	},
 	{
-		"id": 1036973,
+		"id": "1036973",
 		"name": "Republic of Mozambique",
 		"latitude": -18.25,
 		"longitude": 35,
@@ -1722,7 +1722,7 @@
 		"population": 29495962
 	},
 	{
-		"id": 3355338,
+		"id": "3355338",
 		"name": "Republic of Namibia",
 		"latitude": -22,
 		"longitude": 17,
@@ -1736,7 +1736,7 @@
 		"population": 2448255
 	},
 	{
-		"id": 2440476,
+		"id": "2440476",
 		"name": "Republic of Niger",
 		"latitude": 18,
 		"longitude": 9,
@@ -1750,7 +1750,7 @@
 		"population": 22442948
 	},
 	{
-		"id": 2328926,
+		"id": "2328926",
 		"name": "Federal Republic of Nigeria",
 		"latitude": 10,
 		"longitude": 8,
@@ -1764,7 +1764,7 @@
 		"population": 195874740
 	},
 	{
-		"id": 3617476,
+		"id": "3617476",
 		"name": "Republic of Nicaragua",
 		"latitude": 13,
 		"longitude": -85,
@@ -1778,7 +1778,7 @@
 		"population": 6465513
 	},
 	{
-		"id": 2750405,
+		"id": "2750405",
 		"name": "Kingdom of the Netherlands",
 		"latitude": 52.25,
 		"longitude": 5.75,
@@ -1792,7 +1792,7 @@
 		"population": 17231017
 	},
 	{
-		"id": 3144096,
+		"id": "3144096",
 		"name": "Kingdom of Norway",
 		"latitude": 62,
 		"longitude": 10,
@@ -1806,7 +1806,7 @@
 		"population": 5314336
 	},
 	{
-		"id": 1282988,
+		"id": "1282988",
 		"name": "Nepal",
 		"latitude": 28,
 		"longitude": 84,
@@ -1820,7 +1820,7 @@
 		"population": 28087871
 	},
 	{
-		"id": 2110425,
+		"id": "2110425",
 		"name": "Nauru",
 		"latitude": -0.517,
 		"longitude": 166.933,
@@ -1834,7 +1834,7 @@
 		"population": 12704
 	},
 	{
-		"id": 2186224,
+		"id": "2186224",
 		"name": "New Zealand",
 		"latitude": -42,
 		"longitude": 174,
@@ -1848,7 +1848,7 @@
 		"population": 4885500
 	},
 	{
-		"id": 286963,
+		"id": "286963",
 		"name": "Sultanate of Oman",
 		"latitude": 21,
 		"longitude": 57,
@@ -1862,7 +1862,7 @@
 		"population": 4829483
 	},
 	{
-		"id": 3703430,
+		"id": "3703430",
 		"name": "Republic of Panama",
 		"latitude": 9,
 		"longitude": -80,
@@ -1876,7 +1876,7 @@
 		"population": 4176873
 	},
 	{
-		"id": 3932488,
+		"id": "3932488",
 		"name": "Republic of Peru",
 		"latitude": -10,
 		"longitude": -75.25,
@@ -1890,7 +1890,7 @@
 		"population": 31989256
 	},
 	{
-		"id": 2088628,
+		"id": "2088628",
 		"name": "Independent State of Papua New Guinea",
 		"latitude": -6,
 		"longitude": 147,
@@ -1904,7 +1904,7 @@
 		"population": 8606316
 	},
 	{
-		"id": 1694008,
+		"id": "1694008",
 		"name": "Republic of the Philippines",
 		"latitude": 13.40882,
 		"longitude": 122.56155,
@@ -1918,7 +1918,7 @@
 		"population": 106651922
 	},
 	{
-		"id": 1168579,
+		"id": "1168579",
 		"name": "Islamic Republic of Pakistan",
 		"latitude": 30,
 		"longitude": 70,
@@ -1932,7 +1932,7 @@
 		"population": 212215030
 	},
 	{
-		"id": 798544,
+		"id": "798544",
 		"name": "Republic of Poland",
 		"latitude": 52,
 		"longitude": 20,
@@ -1946,7 +1946,7 @@
 		"population": 37978548
 	},
 	{
-		"id": 2264397,
+		"id": "2264397",
 		"name": "Portuguese Republic",
 		"latitude": 39.6945,
 		"longitude": -8.13057,
@@ -1960,7 +1960,7 @@
 		"population": 10281762
 	},
 	{
-		"id": 3437598,
+		"id": "3437598",
 		"name": "Republic of Paraguay",
 		"latitude": -23.33333,
 		"longitude": -58,
@@ -1974,7 +1974,7 @@
 		"population": 6956071
 	},
 	{
-		"id": 289688,
+		"id": "289688",
 		"name": "State of Qatar",
 		"latitude": 25.5,
 		"longitude": 51.25,
@@ -1988,7 +1988,7 @@
 		"population": 2781677
 	},
 	{
-		"id": 798549,
+		"id": "798549",
 		"name": "România",
 		"latitude": 46,
 		"longitude": 25,
@@ -2002,7 +2002,7 @@
 		"population": 19473936
 	},
 	{
-		"id": 6290252,
+		"id": "6290252",
 		"name": "Serbia",
 		"latitude": 44.81892,
 		"longitude": 20.45998,
@@ -2016,7 +2016,7 @@
 		"population": 6982084
 	},
 	{
-		"id": 2017370,
+		"id": "2017370",
 		"name": "Russian Federation",
 		"latitude": 60,
 		"longitude": 100,
@@ -2030,7 +2030,7 @@
 		"population": 144478050
 	},
 	{
-		"id": 49518,
+		"id": "49518",
 		"name": "Republic of Rwanda",
 		"latitude": -2,
 		"longitude": 30,
@@ -2044,7 +2044,7 @@
 		"population": 12301939
 	},
 	{
-		"id": 102358,
+		"id": "102358",
 		"name": "Kingdom of Saudi Arabia",
 		"latitude": 25,
 		"longitude": 45,
@@ -2058,7 +2058,7 @@
 		"population": 33699947
 	},
 	{
-		"id": 2103350,
+		"id": "2103350",
 		"name": "Solomon Islands",
 		"latitude": -8,
 		"longitude": 159,
@@ -2072,7 +2072,7 @@
 		"population": 652858
 	},
 	{
-		"id": 241170,
+		"id": "241170",
 		"name": "Republic of Seychelles",
 		"latitude": -4.58333,
 		"longitude": 55.66667,
@@ -2086,7 +2086,7 @@
 		"population": 96762
 	},
 	{
-		"id": 366755,
+		"id": "366755",
 		"name": "Republic of the Sudan",
 		"latitude": 16,
 		"longitude": 30,
@@ -2100,7 +2100,7 @@
 		"population": 41801533
 	},
 	{
-		"id": 2661886,
+		"id": "2661886",
 		"name": "Kingdom of Sweden",
 		"latitude": 62,
 		"longitude": 15,
@@ -2114,7 +2114,7 @@
 		"population": 10183175
 	},
 	{
-		"id": 1880251,
+		"id": "1880251",
 		"name": "Republic of Singapore",
 		"latitude": 1.36667,
 		"longitude": 103.8,
@@ -2128,7 +2128,7 @@
 		"population": 5638676
 	},
 	{
-		"id": 3190538,
+		"id": "3190538",
 		"name": "Republic of Slovenia",
 		"latitude": 46.08333,
 		"longitude": 15,
@@ -2142,7 +2142,7 @@
 		"population": 2067372
 	},
 	{
-		"id": 3057568,
+		"id": "3057568",
 		"name": "Slovak Republic",
 		"latitude": 48.66667,
 		"longitude": 19.5,
@@ -2156,7 +2156,7 @@
 		"population": 5447011
 	},
 	{
-		"id": 2403846,
+		"id": "2403846",
 		"name": "Republic of Sierra Leone",
 		"latitude": 8.5,
 		"longitude": -11.5,
@@ -2170,7 +2170,7 @@
 		"population": 7650154
 	},
 	{
-		"id": 3168068,
+		"id": "3168068",
 		"name": "Repubblica di San Marino",
 		"latitude": 43.9367,
 		"longitude": 12.4463,
@@ -2184,7 +2184,7 @@
 		"population": 33785
 	},
 	{
-		"id": 2245662,
+		"id": "2245662",
 		"name": "Republic of Senegal",
 		"latitude": 14.5,
 		"longitude": -14.25,
@@ -2198,7 +2198,7 @@
 		"population": 15854360
 	},
 	{
-		"id": 51537,
+		"id": "51537",
 		"name": "Somalia",
 		"latitude": 6,
 		"longitude": 48,
@@ -2212,7 +2212,7 @@
 		"population": 15008154
 	},
 	{
-		"id": 3382998,
+		"id": "3382998",
 		"name": "Republic of Suriname",
 		"latitude": 4,
 		"longitude": -56,
@@ -2226,7 +2226,7 @@
 		"population": 575991
 	},
 	{
-		"id": 7909807,
+		"id": "7909807",
 		"name": "South Sudan",
 		"latitude": 7.5,
 		"longitude": 30,
@@ -2240,7 +2240,7 @@
 		"population": 8260490
 	},
 	{
-		"id": 2410758,
+		"id": "2410758",
 		"name": "Sao Tome and Principe",
 		"latitude": 1,
 		"longitude": 7,
@@ -2254,7 +2254,7 @@
 		"population": 197700
 	},
 	{
-		"id": 3585968,
+		"id": "3585968",
 		"name": "Republic of El Salvador",
 		"latitude": 13.83333,
 		"longitude": -88.91667,
@@ -2268,7 +2268,7 @@
 		"population": 6420744
 	},
 	{
-		"id": 163843,
+		"id": "163843",
 		"name": "Syrian Arab Republic",
 		"latitude": 35,
 		"longitude": 38,
@@ -2282,7 +2282,7 @@
 		"population": 16906283
 	},
 	{
-		"id": 934841,
+		"id": "934841",
 		"name": "Eswatini",
 		"latitude": -26.5,
 		"longitude": 31.5,
@@ -2296,7 +2296,7 @@
 		"population": 1136191
 	},
 	{
-		"id": 2434508,
+		"id": "2434508",
 		"name": "Republic of Chad",
 		"latitude": 15,
 		"longitude": 19,
@@ -2310,7 +2310,7 @@
 		"population": 15477751
 	},
 	{
-		"id": 2363686,
+		"id": "2363686",
 		"name": "Togolese Republic",
 		"latitude": 8.66667,
 		"longitude": 1.08333,
@@ -2324,7 +2324,7 @@
 		"population": 7889094
 	},
 	{
-		"id": 1605651,
+		"id": "1605651",
 		"name": "Kingdom of Thailand",
 		"latitude": 15.5,
 		"longitude": 101,
@@ -2338,7 +2338,7 @@
 		"population": 69428524
 	},
 	{
-		"id": 1220409,
+		"id": "1220409",
 		"name": "Republic of Tajikistan",
 		"latitude": 39,
 		"longitude": 71,
@@ -2352,7 +2352,7 @@
 		"population": 9100837
 	},
 	{
-		"id": 1966436,
+		"id": "1966436",
 		"name": "Democratic Republic of Timor-Leste",
 		"latitude": -8.83333,
 		"longitude": 125.75,
@@ -2366,7 +2366,7 @@
 		"population": 1267972
 	},
 	{
-		"id": 1218197,
+		"id": "1218197",
 		"name": "Turkmenistan",
 		"latitude": 39.75,
 		"longitude": 59.66667,
@@ -2380,7 +2380,7 @@
 		"population": 5850908
 	},
 	{
-		"id": 2464461,
+		"id": "2464461",
 		"name": "Republic of Tunisia",
 		"latitude": 34,
 		"longitude": 9,
@@ -2394,7 +2394,7 @@
 		"population": 11565204
 	},
 	{
-		"id": 4032283,
+		"id": "4032283",
 		"name": "Kingdom of Tonga",
 		"latitude": -20,
 		"longitude": -175,
@@ -2408,7 +2408,7 @@
 		"population": 103197
 	},
 	{
-		"id": 298795,
+		"id": "298795",
 		"name": "Republic of Turkey",
 		"latitude": 39,
 		"longitude": 35,
@@ -2422,7 +2422,7 @@
 		"population": 82319724
 	},
 	{
-		"id": 3573591,
+		"id": "3573591",
 		"name": "Republic of Trinidad and Tobago",
 		"latitude": 11,
 		"longitude": -61,
@@ -2436,7 +2436,7 @@
 		"population": 1389858
 	},
 	{
-		"id": 2110297,
+		"id": "2110297",
 		"name": "Tuvalu",
 		"latitude": -8.51719,
 		"longitude": 179.14478,
@@ -2450,7 +2450,7 @@
 		"population": 11508
 	},
 	{
-		"id": 1668284,
+		"id": "1668284",
 		"name": "Taiwan",
 		"latitude": 24,
 		"longitude": 121,
@@ -2464,7 +2464,7 @@
 		"population": 23451837
 	},
 	{
-		"id": 149590,
+		"id": "149590",
 		"name": "United Republic of Tanzania",
 		"latitude": -6,
 		"longitude": 35,
@@ -2478,7 +2478,7 @@
 		"population": 56318348
 	},
 	{
-		"id": 690791,
+		"id": "690791",
 		"name": "Ukraine",
 		"latitude": 49,
 		"longitude": 32,
@@ -2492,7 +2492,7 @@
 		"population": 44622516
 	},
 	{
-		"id": 226074,
+		"id": "226074",
 		"name": "Republic of Uganda",
 		"latitude": 1.25,
 		"longitude": 32.5,
@@ -2506,7 +2506,7 @@
 		"population": 42723139
 	},
 	{
-		"id": 6252001,
+		"id": "6252001",
 		"name": "United States",
 		"latitude": 39.76,
 		"longitude": -98.5,
@@ -2520,7 +2520,7 @@
 		"population": 327167434
 	},
 	{
-		"id": 3439705,
+		"id": "3439705",
 		"name": "Oriental Republic of Uruguay",
 		"latitude": -33,
 		"longitude": -56,
@@ -2534,7 +2534,7 @@
 		"population": 3449299
 	},
 	{
-		"id": 1512440,
+		"id": "1512440",
 		"name": "Republic of Uzbekistan",
 		"latitude": 41.66667,
 		"longitude": 63.83333,
@@ -2548,7 +2548,7 @@
 		"population": 32955400
 	},
 	{
-		"id": 3164670,
+		"id": "3164670",
 		"name": "State of the Vatican City",
 		"latitude": 41.90225,
 		"longitude": 12.4533,
@@ -2562,7 +2562,7 @@
 		"population": 921
 	},
 	{
-		"id": 3577815,
+		"id": "3577815",
 		"name": "Saint Vincent and the Grenadines",
 		"latitude": 13.08333,
 		"longitude": -61.2,
@@ -2576,7 +2576,7 @@
 		"population": 110211
 	},
 	{
-		"id": 3625428,
+		"id": "3625428",
 		"name": "Bolivarian Republic of Venezuela",
 		"latitude": 8,
 		"longitude": -66,
@@ -2590,7 +2590,7 @@
 		"population": 28870195
 	},
 	{
-		"id": 1562822,
+		"id": "1562822",
 		"name": "Socialist Republic of Vietnam",
 		"latitude": 16.16667,
 		"longitude": 107.83333,
@@ -2604,7 +2604,7 @@
 		"population": 95540395
 	},
 	{
-		"id": 2134431,
+		"id": "2134431",
 		"name": "Republic of Vanuatu",
 		"latitude": -16.3333,
 		"longitude": 167.5,
@@ -2618,7 +2618,7 @@
 		"population": 292680
 	},
 	{
-		"id": 4034894,
+		"id": "4034894",
 		"name": "Independent State of Samoa",
 		"latitude": -13.8,
 		"longitude": -172.13333,
@@ -2632,7 +2632,7 @@
 		"population": 196130
 	},
 	{
-		"id": 831053,
+		"id": "831053",
 		"name": "Republic of Kosovo",
 		"latitude": 42.58333,
 		"longitude": 20.91667,
@@ -2646,7 +2646,7 @@
 		"population": 1845300
 	},
 	{
-		"id": 69543,
+		"id": "69543",
 		"name": "Republic of Yemen",
 		"latitude": 15.5,
 		"longitude": 47.5,
@@ -2660,7 +2660,7 @@
 		"population": 28498687
 	},
 	{
-		"id": 953987,
+		"id": "953987",
 		"name": "South Africa",
 		"latitude": -29,
 		"longitude": 24,
@@ -2674,7 +2674,7 @@
 		"population": 57779622
 	},
 	{
-		"id": 895949,
+		"id": "895949",
 		"name": "Republic of Zambia",
 		"latitude": -14.33333,
 		"longitude": 28.5,
@@ -2688,7 +2688,7 @@
 		"population": 17351822
 	},
 	{
-		"id": 878675,
+		"id": "878675",
 		"name": "Republic of Zimbabwe",
 		"latitude": -19,
 		"longitude": 29.75,

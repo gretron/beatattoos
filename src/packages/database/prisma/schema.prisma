@@ -50,6 +50,33 @@ model VerificationToken {
     @@unique([identifier, token])
 }
 
+model Country {
+    id              String @id
+    name            String @unique
+    latitude        Float
+    longitude       Float
+    stateProvinces  StateProvince[]
+}
+
+model StateProvince {
+    id              String @id
+    countryId       String
+    name            String
+    latitude        Float
+    longitude       Float
+    cities          City[]
+    country         Country @relation(fields: [countryId], references: [id], onDelete: Cascade)
+}
+
+model City {
+    id              String @id
+    stateProvinceId String
+    name            String
+    latitude        Float
+    longitude       Float
+    stateProvince   StateProvince @relation(fields: [stateProvinceId], references: [id], onDelete: Cascade)
+}
+
 enum Role {
     CLIENT
     ADMIN

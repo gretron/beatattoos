@@ -16,8 +16,8 @@ const pathToGeonames = __dirname + "/../res/allCountries.txt";
 
 interface Geoname {
   [key: string]: any;
-  id: number;
-  parentId?: number;
+  id: string;
+  parentId?: string;
   name: string;
   latitude: number;
   longitude: number;
@@ -69,7 +69,7 @@ function geonameLineToGeoname(geonameLine: string): Geoname {
   const splitLine = geonameLine.split("\t");
 
   return {
-    id: Number(splitLine[0]),
+    id: String(splitLine[0]),
     name: String(splitLine[1]),
     latitude: Number(splitLine[4]),
     longitude: Number(splitLine[5]),
