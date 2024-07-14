@@ -80,7 +80,9 @@ class City implements Location {
 async function importCountries() {
   await db.country.deleteMany({});
 
-  const countries = countryGeonames.map((geoname: any) => new Country(geoname));
+  const countries: Country[] = countryGeonames.map(
+    (geoname: any) => new Country(geoname),
+  );
 
   await db.country.createMany({ data: countries });
 }
