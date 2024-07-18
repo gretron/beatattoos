@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import TopBar from "~/app/(protected)/_components/TopBar";
-import ClientList from "~/app/(protected)/clientele/_components/ClientList";
+import ClientList from "~/app/(protected)/clientele/_components/ClientList/index";
 import Link from "next/link";
 import { IconPlus } from "@tabler/icons-react";
 import SearchClientField from "~/app/(protected)/clientele/_components/SearchClientField";
@@ -15,7 +15,7 @@ interface ClienteleLayoutProps {
 /**
  * Layout for clientele pages
  */
-function ClienteleLayout(props: ClienteleLayoutProps) {
+export default async function ClienteleLayout(props: ClienteleLayoutProps) {
   return (
     <section
       className={
@@ -46,5 +46,3 @@ function ClienteleLayout(props: ClienteleLayoutProps) {
     </section>
   );
 }
-
-export default ClienteleLayout;

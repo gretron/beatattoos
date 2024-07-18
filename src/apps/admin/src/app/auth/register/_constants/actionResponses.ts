@@ -1,4 +1,4 @@
-import { Alert, AlertType } from "@beatattoos/ui/Alert";
+import { Alert, AlertType } from "@beatattoos/ui";
 
 export const EXISTING_ACCOUNT_ERROR: Alert = {
   type: AlertType.error,

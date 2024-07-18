@@ -57,6 +57,17 @@ model Country {
     longitude       Float
     stateProvinces  StateProvince[]
     users           User[]
+    alternatenames  CountryAlternatename[]
+}
+
+model CountryAlternatename {
+    id              String @id
+    countryId       String
+    name            String
+    isoLanguage     String
+    isPreferred     Boolean
+    isShortName     Boolean
+    country         Country @relation(fields: [countryId], references: [id])
 }
 
 model StateProvince {
@@ -68,6 +79,17 @@ model StateProvince {
     cities          City[]
     country         Country @relation(fields: [countryId], references: [id], onDelete: Cascade)
     users           User[]
+    alternatenames  StateProvinceAlternatename[]
+}
+
+model StateProvinceAlternatename {
+    id              String @id
+    stateProvinceId String
+    name            String
+    isoLanguage     String
+    isPreferred     Boolean
+    isShortName     Boolean
+    stateProvince   StateProvince @relation(fields: [stateProvinceId], references: [id])
 }
 
 model City {
@@ -78,6 +100,17 @@ model City {
     longitude       Float
     stateProvince   StateProvince @relation(fields: [stateProvinceId], references: [id], onDelete: Cascade)
     users           User[]
+    alternatenames  CityAlternatename[]
+}
+
+model CityAlternatename {
+    id              String @id
+    cityId          String
+    name            String
+    isoLanguage     String
+    isPreferred     Boolean
+    isShortName     Boolean
+    city            City @relation(fields: [cityId], references: [id])
 }
 
 enum Role {
@@ -91,7 +124,7 @@ model User {
     lastName        String
     countryId       String
     stateProvinceId String
-    cityId          String
+    cityId          String?
     emailAddress    String @unique
     password        String
     role            Role
@@ -99,6 +132,6 @@ model User {
     sessions        Session[]
     country         Country @relation(fields: [countryId], references: [id])
     stateProvince   StateProvince @relation(fields: [stateProvinceId], references: [id])
-    city            City @relation(fields: [cityId], references: [id])
+    city            City? @relation(fields: [cityId], references: [id])
 }
 

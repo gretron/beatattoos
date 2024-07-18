@@ -1,7 +1,6 @@
 "use server";
 
-import { Alert } from "@beatattoos/ui/Alert";
-import { clientFormSchema } from "~/app/(protected)/clientele/_constants/schemas";
+import { Alert } from "@beatattoos/ui";
 import { db } from "~/lib/db";
 import {
   AUTHENTICATION_ERROR,
@@ -17,14 +16,16 @@ import {
   CREATE_CLIENT_SUCCESS,
 } from "~/app/(protected)/clientele/new/_constants/actionResponses";
 import { authenticate } from "~/app/(protected)/_lib/auth";
+import { areLocationsInvalid } from "~/app/utils/location-utilities";
+import { userSchema } from "~/app/_constants/schemas";
 
 /**
  * Action to create client account
- * @param formData client form data {@link clientFormSchema}
+ * @param formData client form data {@link userSchema}
  */
 export async function createClient(formData: FormData): Promise<Alert> {
   const data = Object.fromEntries(formData);
-  const parsedData = clientFormSchema.safeParse(data);
+  const parsedData = userSchema.safeParse(data);
 
   // Check for data formatting errors
   if (!parsedData.success) {
@@ -37,7 +38,15 @@ export async function createClient(formData: FormData): Promise<Alert> {
     return AUTHENTICATION_ERROR;
   }
 
-  const { firstName, lastName, emailAddress, password } = parsedData.data;
+  const {
+    firstName,
+    lastName,
+    countryId,
+    stateProvinceId,
+    cityId,
+    emailAddress,
+    password,
+  } = parsedData.data;
 
   let emailInUse;
 
@@ -51,6 +60,16 @@ export async function createClient(formData: FormData): Promise<Alert> {
     return EMAIL_IN_USE_ERROR;
   }
 
+  const locationsInvalid = await areLocationsInvalid(
+    countryId,
+    stateProvinceId,
+    cityId,
+  );
+
+  if (locationsInvalid) {
+    return locationsInvalid;
+  }
+
   const hashedPassword = await bcrypt.hash(password, 10);
   let user: User;
 
@@ -60,6 +79,9 @@ export async function createClient(formData: FormData): Promise<Alert> {
         role: "CLIENT",
         firstName,
         lastName,
+        countryId,
+        stateProvinceId,
+        cityId,
         emailAddress,
         password: hashedPassword,
       },

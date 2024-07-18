@@ -1,19 +1,11 @@
 import z from "zod";
-import {
-  emailAddressSchema,
-  firstNameSchema,
-  lastNameSchema,
-  passwordSchema,
-} from "~/app/_constants/schemas";
+import { defaultUserValues, userSchema } from "~/app/_constants/schemas";
 
 /**
  * Validation schema for register form
  */
 export const registerFormSchema = z.object({
-  firstName: firstNameSchema,
-  lastName: lastNameSchema,
-  emailAddress: emailAddressSchema,
-  password: passwordSchema,
+  ...userSchema.shape,
   confirmPassword: z.string(),
 });
 
@@ -47,10 +39,7 @@ export const registerFormSchemaRefined = registerFormSchema.superRefine(
   confirmPasswordRefine,
 );
 
-export const defaultRegisterForm: z.infer<typeof registerFormSchema> = {
-  firstName: "",
-  lastName: "",
-  emailAddress: "",
-  password: "",
+export const defaultRegisterFormValues: z.infer<typeof registerFormSchema> = {
+  ...defaultUserValues,
   confirmPassword: "",
 };

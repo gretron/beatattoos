@@ -1,10 +1,10 @@
 "use client";
 
-import InputField from "@beatattoos/ui/InputField";
+import { InputField } from "@beatattoos/ui";
 import { FormEvent, useState, useTransition } from "react";
-import AlertBox from "@beatattoos/ui/AlertBox";
+import { AlertBox } from "@beatattoos/ui";
 import { z } from "zod";
-import { Alert, AlertType } from "@beatattoos/ui/Alert";
+import { Alert, AlertType } from "@beatattoos/ui";
 import {
   defaultLoginForm,
   loginFormSchema,

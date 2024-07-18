@@ -1,86 +1,21 @@
-const prisma = require("@prisma/client");
-const countryGeonames = require("../res/countries.json");
-const stateProvinceGeonames = require("../res/statesProvinces.json");
-const cityGeonames = require("../res/cities.json");
+import countryGeonames from "../res/countries.json";
+import stateProvinceGeonames from "../res/states-provinces.json";
+import cityGeonames from "../res/cities.json";
+import { Country, StateProvince, City, PrismaClient } from "@prisma/client";
+import Geoname from "../types/Geoname";
 
-if (!process.env.NODE_ENV) {
-  throw new Error("Development environment is not set.");
-}
-
-const db = new prisma.PrismaClient();
-
-/**
- * Location interface containing basic location information
- */
-interface Location {
-  id: string;
-  name: string;
-  latitude: number;
-  longitude: number;
-}
-
-/**
- * Class to represent country
- */
-class Country implements Location {
-  id: string;
-  name: string;
-  latitude: number;
-  longitude: number;
-
-  constructor(geoname: any) {
-    this.id = geoname.id;
-    this.name = geoname.name;
-    this.latitude = geoname.latitude;
-    this.longitude = geoname.longitude;
-  }
-}
-
-/**
- * Class to represent state/province
- */
-class StateProvince implements Location {
-  id: string;
-  countryId: string;
-  name: string;
-  latitude: number;
-  longitude: number;
-
-  constructor(geoname: any) {
-    this.id = geoname.id;
-    this.countryId = geoname.parentId;
-    this.name = geoname.name;
-    this.latitude = geoname.latitude;
-    this.longitude = geoname.longitude;
-  }
-}
-
-/**
- * Class to represent city
- */
-class City implements Location {
-  id: string;
-  stateProvinceId: string;
-  name: string;
-  latitude: number;
-  longitude: number;
-
-  constructor(geoname: any) {
-    this.id = geoname.id;
-    this.stateProvinceId = geoname.parentId;
-    this.name = geoname.name;
-    this.latitude = geoname.latitude;
-    this.longitude = geoname.longitude;
-  }
-}
+const db = new PrismaClient();
 
 /**
  * To update countries into database
  */
 async function updateCountries() {
-  const countries: Country[] = countryGeonames.map(
-    (geoname: any) => new Country(geoname),
-  );
+  const countries: Country[] = countryGeonames.map((geoname: Geoname) => ({
+    id: geoname.id,
+    name: geoname.name,
+    longitude: geoname.longitude,
+    latitude: geoname.latitude,
+  }));
 
   await db.$transaction(
     countries.map((country: Country) =>
@@ -99,8 +34,14 @@ async function updateCountries() {
  * To update state/provinces into database
  */
 async function updateStateProvinces() {
-  const stateProvinces = stateProvinceGeonames.map(
-    (geoname: any) => new StateProvince(geoname),
+  const stateProvinces: StateProvince[] = stateProvinceGeonames.map(
+    (geoname: Geoname) => ({
+      id: geoname.id,
+      countryId: geoname.parentId,
+      name: geoname.name,
+      longitude: geoname.longitude,
+      latitude: geoname.latitude,
+    }),
   );
 
   await db.$transaction(
@@ -120,7 +61,13 @@ async function updateStateProvinces() {
  * To update cities into database
  */
 async function updateCities() {
-  const cities = cityGeonames.map((geoname: any) => new City(geoname));
+  const cities: City[] = cityGeonames.map((geoname: Geoname) => ({
+    id: geoname.id,
+    stateProvinceId: geoname.parentId,
+    name: geoname.name,
+    longitude: geoname.longitude,
+    latitude: geoname.latitude,
+  }));
 
   await db.$transaction(
     cities.map((city: City) =>

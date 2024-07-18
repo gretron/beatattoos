@@ -1,5 +1,6 @@
-const fs = require("fs");
-const readline = require("readline");
+import * as fs from "fs";
+import * as readline from "readline";
+import Geoname from "../types/Geoname";
 
 enum AdminLevels {
   ADM1 = 10,
@@ -13,23 +14,6 @@ const countryStateProvinceLevels: { [key: string]: AdminLevels } = {
 };
 
 const pathToGeonames = __dirname + "/../res/allCountries.txt";
-
-interface Geoname {
-  [key: string]: any;
-  id: string;
-  parentId?: string;
-  name: string;
-  latitude: number;
-  longitude: number;
-  featureClass: string;
-  featureCode: string;
-  countryCode: string;
-  ADM1: string;
-  ADM2: string;
-  ADM3: string;
-  ADM4: string;
-  population: number;
-}
 
 /**
  * To get a readline stream to read file line-by-line
@@ -85,7 +69,7 @@ function geonameLineToGeoname(geonameLine: string): Geoname {
 }
 
 /**
- * To generate geonames to the database
+ * To generate countries to JSON format
  */
 async function generateJSONCountries() {
   const geonamesStream = getReadlineStream(pathToGeonames);
@@ -114,7 +98,7 @@ async function generateJSONCountries() {
     }
   }
 
-  await fs.writeFile(
+  fs.writeFile(
     __dirname + "/../res/countries.json",
     JSON.stringify(countries, null, "\t"),
     (err: Error) => {
@@ -126,7 +110,7 @@ async function generateJSONCountries() {
 }
 
 /**
- * Generate states/provinces to JSON format
+ * To generate states/provinces to JSON format
  * @param countriesByCountryCode Countries object with country code keys
  */
 async function generateJSONStatesProvinces(countriesByCountryCode: {
@@ -170,8 +154,8 @@ async function generateJSONStatesProvinces(countriesByCountryCode: {
     }
   }
 
-  await fs.writeFile(
-    __dirname + "/../res/statesProvinces.json",
+  fs.writeFile(
+    __dirname + "/../res/states-provinces.json",
     JSON.stringify(statesProvinces, null, "\t"),
     (err: Error) => {
       if (err) throw err;
@@ -216,11 +200,17 @@ async function generateJSONCities(stateProvincesByCountryAndAdminCode: {
         `${geoname.countryCode}-${adminCode}`
       ];
 
+    let threshold = 10000;
+
+    if (stateProvince && stateProvince.population < 100000) {
+      threshold = stateProvince.population / 10;
+    }
+
     if (
       !stateProvince ||
       geoname.featureClass !== citiesFeatureClass ||
       !citiesFeatureCodes.includes(geoname.featureCode) ||
-      geoname.population < 10000
+      geoname.population < threshold
     ) {
       continue;
     }
@@ -248,7 +238,7 @@ async function generateJSONCities(stateProvincesByCountryAndAdminCode: {
     console.log(`Added city '${geoname.name}' (${count})`);
   }
 
-  await fs.writeFile(
+  fs.writeFile(
     __dirname + "/../res/cities.json",
     JSON.stringify(cities, null, "\t"),
     (err: Error) => {

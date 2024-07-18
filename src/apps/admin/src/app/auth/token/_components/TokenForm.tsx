@@ -1,12 +1,12 @@
 "use client";
 
-import InputField from "@beatattoos/ui/InputField";
+import { InputField } from "@beatattoos/ui";
 import { FormEvent, useState, useTransition } from "react";
 import { verifyToken } from "~/app/auth/token/actions";
 import { tokenFormSchema } from "~/app/auth/token/_constants/schemas";
-import AlertBox from "@beatattoos/ui/AlertBox";
+import { AlertBox } from "@beatattoos/ui";
 import { useSearchParams } from "next/navigation";
-import { Alert, AlertType } from "@beatattoos/ui/Alert";
+import { Alert, AlertType } from "@beatattoos/ui";
 
 /**
  * Form to validate admin token

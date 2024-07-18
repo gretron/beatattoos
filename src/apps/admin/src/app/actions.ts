@@ -1,23 +1,28 @@
 "use server";
 
-import { auth } from "~/lib/auth";
 import { db } from "~/lib/db";
 
 /**
- * Action to get current user using session
+ * Action to get states/provinces using a given country id
+ * @param countryId id of the country to get states/provinces from
  */
-export async function getCurrentUser() {
-  const session = await auth();
+export async function getStatesProvincesUsingCountryId(countryId: string) {
+  return db.stateProvince.findMany({
+    where: { countryId: countryId },
+    include: {
+      alternatenames: { where: { isoLanguage: "en" } },
+      _count: { select: { cities: true } },
+    },
+  });
+}
 
-  let user;
-
-  try {
-    user = await db.user.findUnique({
-      where: { id: session?.user?.id, role: "ADMIN" },
-    });
-  } catch (e) {}
-
-  if (user) {
-    return user;
-  }
+/**
+ * Action to get cities using a given state/province id
+ * @param stateProvinceId id of the state/province to get states/provinces from
+ */
+export async function getCitiesUsingStateProvinceId(stateProvinceId: string) {
+  return db.city.findMany({
+    where: { stateProvinceId: stateProvinceId },
+    include: { alternatenames: { where: { isoLanguage: "en" } } },
+  });
 }

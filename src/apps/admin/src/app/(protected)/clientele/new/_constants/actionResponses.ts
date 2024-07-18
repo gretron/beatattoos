@@ -1,4 +1,4 @@
-import { Alert, AlertType } from "@beatattoos/ui/Alert";
+import { Alert, AlertType } from "@beatattoos/ui";
 
 export const CREATE_CLIENT_SUCCESS: Alert = {
   type: AlertType.success,

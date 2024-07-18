@@ -1,3 +1,4 @@
 # ignore local allCountries.txt since size is too large for repository
 # visit https://download.geonames.org/export/dump/ to download copy of allCountries.txt
 allCountries.txt
+alternateNamesV2.txt

@@ -1,4 +1,4 @@
-import { Alert, AlertType } from "@beatattoos/ui/Alert";
+import { Alert, AlertType } from "@beatattoos/ui";
 
 export const TOKEN_PARSING_ERROR: Alert = {
   type: AlertType.error,

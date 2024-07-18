@@ -1,23 +1,32 @@
 "use client";
 
-import InputField from "@beatattoos/ui/InputField";
+import { InputField } from "@beatattoos/ui";
 import { FormEvent, useState, useTransition } from "react";
 import { register } from "~/app/auth/register/actions";
 import {
   confirmPasswordSchema,
-  defaultRegisterForm,
+  defaultRegisterFormValues,
   registerFormSchema,
 } from "~/app/auth/register/_constants/schemas";
-import AlertBox from "@beatattoos/ui/AlertBox";
+import { AlertBox } from "@beatattoos/ui";
 import { z } from "zod";
-import { Alert, AlertType } from "@beatattoos/ui/Alert";
+import { Alert, AlertType } from "@beatattoos/ui";
+import LocationFields, {
+  RequiredLocationFieldsProps,
+} from "~/app/_components/LocationFields";
+
+/**
+ * Props for {@link RegisterForm}
+ */
+interface RegisterFormProps extends RequiredLocationFieldsProps {}
 
 /**
  * Form to register admin user
  */
-export default function RegisterForm() {
-  const [registerForm, setRegisterForm] =
-    useState<z.infer<typeof registerFormSchema>>(defaultRegisterForm);
+export default function RegisterForm(props: RegisterFormProps) {
+  const [registerForm, setRegisterForm] = useState<
+    z.infer<typeof registerFormSchema>
+  >(defaultRegisterFormValues);
   const [alert, setAlert] = useState<Alert>({ type: AlertType.error });
   const [isPending, startTransition] = useTransition();
 
@@ -79,6 +88,7 @@ export default function RegisterForm() {
           }))
         }
       />
+      <LocationFields countries={props.countries} disabled={isPending} />
       <InputField
         id={"email-address"}
         name={"emailAddress"}

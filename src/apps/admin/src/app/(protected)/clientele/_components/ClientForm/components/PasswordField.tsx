@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { clientFormSchema } from "~/app/(protected)/clientele/_constants/schemas";
 import {
   IconArrowsShuffle2,
   IconCheck,
@@ -7,8 +6,9 @@ import {
   IconEyeClosed,
   IconEyeFilled,
 } from "@tabler/icons-react";
-import InputField from "@beatattoos/ui/InputField";
+import { InputField } from "@beatattoos/ui";
 import { faker } from "@faker-js/faker";
+import { passwordSchema } from "~/app/_constants/schemas";
 
 /**
  * Props for {@link PasswordField}
@@ -59,7 +59,7 @@ function PasswordField(props: PasswordFieldProps) {
       name={"password"}
       heading={"Password"}
       placeholder={"********"}
-      schema={clientFormSchema.shape.password}
+      schema={passwordSchema}
       disabled={props.isPending}
       required={true}
       value={props.value}

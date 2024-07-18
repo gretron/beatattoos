@@ -18,7 +18,12 @@ import {
   CREDENTIALS_PARSING_ERROR,
   EMAIL_IN_USE_ERROR,
   EMAIL_IN_USE_FAILED_ERROR,
+  INVALID_CITY_ERROR,
+  INVALID_STATE_PROVINCE_ERROR,
+  MISSING_COUNTRY_ERROR,
+  REQUIRED_CITY_ERROR,
 } from "~/app/_constants/actionResponses";
+import { areLocationsInvalid } from "~/app/utils/location-utilities";
 
 /**
  * Action to register new administrator account
@@ -57,7 +62,15 @@ export async function register(formData: FormData) {
     return EXISTING_ACCOUNT_ERROR;
   }
 
-  const { firstName, lastName, emailAddress, password } = parsedData.data;
+  const {
+    firstName,
+    lastName,
+    countryId,
+    stateProvinceId,
+    cityId,
+    emailAddress,
+    password,
+  } = parsedData.data;
 
   let emailInUse;
 
@@ -71,6 +84,16 @@ export async function register(formData: FormData) {
     return EMAIL_IN_USE_ERROR;
   }
 
+  const locationsInvalid = await areLocationsInvalid(
+    countryId,
+    stateProvinceId,
+    cityId,
+  );
+
+  if (locationsInvalid) {
+    return locationsInvalid;
+  }
+
   const hashedPassword = await bcrypt.hash(password, 10);
 
   try {
@@ -79,6 +102,9 @@ export async function register(formData: FormData) {
         role: "ADMIN",
         firstName,
         lastName,
+        countryId,
+        stateProvinceId,
+        cityId,
         emailAddress,
         password: hashedPassword,
       },
