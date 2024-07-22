@@ -1,7 +1,7 @@
 "use client";
 
 import { InputField } from "@beatattoos/ui";
-import { FormEvent, useState, useTransition } from "react";
+import { FormEvent, useActionState, useState, useTransition } from "react";
 import { AlertBox } from "@beatattoos/ui";
 import { z } from "zod";
 import { Alert, AlertType } from "@beatattoos/ui";
@@ -11,6 +11,10 @@ import {
 } from "~/app/auth/login/_constants/schemas";
 import { login } from "~/app/auth/login/actions";
 
+async function increment(previousState: number, formData: FormData) {
+  return previousState + 1;
+}
+
 /**
  * Form to log into admin account
  */
@@ -19,6 +23,7 @@ export default function LoginForm() {
     useState<z.infer<typeof loginFormSchema>>(defaultLoginForm);
   const [alert, setAlert] = useState<Alert>({ type: AlertType.error });
   const [isPending, startTransition] = useTransition();
+  const [state, formAction] = useActionState(increment, 0);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();

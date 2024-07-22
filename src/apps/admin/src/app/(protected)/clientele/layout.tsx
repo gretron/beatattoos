@@ -4,6 +4,8 @@ import ClientList from "~/app/(protected)/clientele/_components/ClientList/index
 import Link from "next/link";
 import { IconPlus } from "@tabler/icons-react";
 import SearchClientField from "~/app/(protected)/clientele/_components/SearchClientField";
+import { getClientsWithLocations } from "~/app/(protected)/clientele/utils/client-utilities";
+import { signOut } from "~/lib/auth";
 
 /**
  * Props for {@link ClienteleLayout}
@@ -16,6 +18,13 @@ interface ClienteleLayoutProps {
  * Layout for clientele pages
  */
 export default async function ClienteleLayout(props: ClienteleLayoutProps) {
+  const clients = await getClientsWithLocations();
+
+  if (!clients) {
+    await signOut();
+    return;
+  }
+
   return (
     <section
       className={
@@ -39,7 +48,7 @@ export default async function ClienteleLayout(props: ClienteleLayoutProps) {
             "min-h-full grid-cols-[minmax(min-content,_1fr)_2fr] overflow-clip rounded-[40px] border-neutral-400 md:grid md:border"
           }
         >
-          <ClientList />
+          <ClientList initialClients={clients} />
           {props.children}
         </main>
       </div>

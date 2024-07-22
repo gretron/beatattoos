@@ -4,55 +4,21 @@ import SearchClientField from "~/app/(protected)/clientele/_components/SearchCli
 import Link from "next/link";
 import ClientListItem from "~/app/(protected)/clientele/_components/ClientList/components/ClientListItem";
 import { getCurrentUser } from "~/app/utils/auth-utilities";
-import { db } from "~/lib/db";
+import { getClientsWithLocations } from "~/app/(protected)/clientele/utils/client-utilities";
+import ClientWithLocations from "~/app/(protected)/clientele/types/ClientWithLocations";
 
 /**
  * Props for {@link ClientList}
  */
 interface ClientListProps {
   children?: ReactNode;
+  initialClients: ClientWithLocations[];
 }
 
 /**
  * List of clients with basic information
  */
 export default async function ClientList(props: ClientListProps) {
-  const user = await getCurrentUser();
-  if (!user) return;
-
-  const users = await db.user.findMany({
-    where: { role: "CLIENT" },
-    include: {
-      country: {
-        include: {
-          alternatenames: {
-            where: {
-              isoLanguage: "en",
-            },
-          },
-        },
-      },
-      stateProvince: {
-        include: {
-          alternatenames: {
-            where: {
-              OR: [{ isoLanguage: "en" }, { isoLanguage: "abbr" }],
-            },
-          },
-        },
-      },
-      city: {
-        include: {
-          alternatenames: {
-            where: {
-              isoLanguage: "en",
-            },
-          },
-        },
-      },
-    },
-  });
-
   return (
     <article
       className={
@@ -85,7 +51,7 @@ export default async function ClientList(props: ClientListProps) {
             "flex h-full w-full flex-col gap-4 p-6 md:absolute md:overflow-auto"
           }
         >
-          {users.map((user, index) => (
+          {props.initialClients.map((user, index) => (
             <ClientListItem key={index} client={user} />
           ))}
         </ul>

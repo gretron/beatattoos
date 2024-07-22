@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { createUser } from "~/utils/userUtilities";
+import { createUser } from "~/utils/user-utilities";
 import { db } from "~/lib/db";
 
 test.beforeAll(async () => {

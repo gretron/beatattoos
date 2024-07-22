@@ -4,7 +4,7 @@ import * as actions from "~/app/auth/login/actions";
 import LoginForm from "~/app/auth/login/_components/LoginForm";
 import { User } from "@prisma/client";
 import { act } from "react";
-import { createUser } from "~/utils/userUtilities";
+import { createUser } from "~/utils/user-utilities";
 import { signIn } from "~/lib/auth";
 import { CallbackRouteError } from "@auth/core/errors";
 import { CredentialsSignin } from "next-auth";

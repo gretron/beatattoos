@@ -5,29 +5,15 @@ import {
   IconUserFilled,
 } from "@tabler/icons-react";
 import { getAlternatenameAbbreviationOrDefault } from "~/app/utils/alternatename-utilities";
-import {
-  User,
-  Country,
-  CountryAlternatename,
-  StateProvince,
-  StateProvinceAlternatename,
-  City,
-  CityAlternatename,
-} from "@beatattoos/db";
 import Link from "next/link";
+import ClientWithLocations from "~/app/(protected)/clientele/types/ClientWithLocations";
 
 /**
  * Props for {@link ClientListItem}
  */
 interface ClientListItemProps {
   children?: ReactNode;
-  client: User & {
-    country: Country & { alternatenames: CountryAlternatename[] };
-    stateProvince: StateProvince & {
-      alternatenames: StateProvinceAlternatename[];
-    };
-    city: (City & { alternatenames: CityAlternatename[] }) | null;
-  };
+  client: ClientWithLocations;
 }
 
 /**
