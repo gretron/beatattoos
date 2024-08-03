@@ -14,13 +14,13 @@ import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 interface AlertBoxProps {
   className?: string;
-  alert: Alert;
+  alert?: Alert;
   setAlert?: Dispatch<SetStateAction<Alert>>;
 }
 
 export default function AlertBox(props: AlertBoxProps) {
   const [alert, setAlert] = useState(props.alert);
-  const type = AlertType[props.alert.type];
+  const type = AlertType[props.alert?.type ?? AlertType.error];
   const icons = [
     <IconAlertOctagonFilled className={"flex-shrink-0"} />,
     <IconCircleCheckFilled className={"flex-shrink-0"} />,
@@ -49,7 +49,7 @@ export default function AlertBox(props: AlertBoxProps) {
 
   return (
     <>
-      {alert.message && (
+      {alert && (
         <motion.aside
           className={`${props.className} grid rounded-2xl border bg-${type}-300 border-${type}-500`}
           initial={"hidden"}
@@ -60,13 +60,11 @@ export default function AlertBox(props: AlertBoxProps) {
         >
           <div className={`overflow-hidden`}>
             <div className={"p-4 flex items-center gap-3"}>
-              {icons[props.alert.type]}
-              <p className={"flex-grow"}>{props.alert.message}</p>
+              {icons[alert.type]}
+              <p className={"flex-grow"}>{alert.message}</p>
               <IconX
                 className={"btn-icon flex-shrink-0"}
-                onClick={() =>
-                  setAlert((prev) => ({ ...prev, message: undefined }))
-                }
+                onClick={() => setAlert(undefined)}
               />
             </div>
           </div>

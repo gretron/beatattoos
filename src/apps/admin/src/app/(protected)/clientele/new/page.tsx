@@ -2,8 +2,9 @@ import ClientForm from "~/app/(protected)/clientele/_components/ClientForm";
 import { AlertType } from "@beatattoos/ui";
 import Link from "next/link";
 import { IconX } from "@tabler/icons-react";
-import { createClient } from "~/app/(protected)/clientele/new/actions";
+import { createClient2 } from "~/app/(protected)/clientele/new/actions";
 import { db } from "~/lib/db";
+import NewClientForm from "~/app/(protected)/clientele/new/_components/NewClientForm";
 
 /**
  * Page to add new clients
@@ -32,14 +33,7 @@ export default async function NewClientPage() {
           <IconX />
         </Link>
       </header>
-      <ClientForm
-        action={createClient}
-        countries={countries}
-        alert={{
-          type: AlertType.warning,
-          message: "You must transmit the entered password to the client",
-        }}
-      />
+      <NewClientForm countries={countries} />
     </main>
   );
 }

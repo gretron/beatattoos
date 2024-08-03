@@ -23,7 +23,7 @@ import {
   MISSING_COUNTRY_ERROR,
   REQUIRED_CITY_ERROR,
 } from "~/app/_constants/actionResponses";
-import { areLocationsInvalid } from "~/app/utils/location-utilities";
+import { areLocationsInvalid } from "~/app/_utils/location-utilities";
 
 /**
  * Action to register new administrator account

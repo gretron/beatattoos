@@ -2,8 +2,8 @@
 
 import { useMemo } from "react";
 import { SelectField, SelectFieldProps } from "@beatattoos/ui";
-import { sortAlternatenames } from "~/app/utils/alternatename-utilities";
-import { Location } from "~/app/types/Location";
+import { sortAlternatenames } from "~/app/_utils/alternatename-utilities";
+import { Location } from "~/app/_types/Location";
 
 /**
  * Props for {@link LocationField}

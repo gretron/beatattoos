@@ -1,11 +1,12 @@
-import { ReactNode } from "react";
+"use client";
+
+import { ReactNode, useContext, useEffect, useState } from "react";
 import { IconPlus } from "@tabler/icons-react";
 import SearchClientField from "~/app/(protected)/clientele/_components/SearchClientField";
 import Link from "next/link";
 import ClientListItem from "~/app/(protected)/clientele/_components/ClientList/components/ClientListItem";
-import { getCurrentUser } from "~/app/utils/auth-utilities";
-import { getClientsWithLocations } from "~/app/(protected)/clientele/utils/client-utilities";
-import ClientWithLocations from "~/app/(protected)/clientele/types/ClientWithLocations";
+import ClientWithLocations from "~/app/(protected)/clientele/_types/ClientWithLocations";
+import { ClienteleContext } from "~/app/(protected)/clientele/_context/ClienteleContext";
 
 /**
  * Props for {@link ClientList}
@@ -18,7 +19,13 @@ interface ClientListProps {
 /**
  * List of clients with basic information
  */
-export default async function ClientList(props: ClientListProps) {
+export default function ClientList(props: ClientListProps) {
+  const { clients, setClients } = useContext(ClienteleContext);
+
+  useEffect(() => {
+    setClients(props.initialClients);
+  }, []);
+
   return (
     <article
       className={
@@ -51,9 +58,11 @@ export default async function ClientList(props: ClientListProps) {
             "flex h-full w-full flex-col gap-4 p-6 md:absolute md:overflow-auto"
           }
         >
-          {props.initialClients.map((user, index) => (
-            <ClientListItem key={index} client={user} />
-          ))}
+          {(clients.length === 0 ? props.initialClients : clients).map(
+            (user, index) => (
+              <ClientListItem key={index} client={user} />
+            ),
+          )}
         </ul>
       </div>
     </article>

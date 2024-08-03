@@ -1,7 +1,7 @@
 "use server";
 
 import { signIn } from "~/lib/auth";
-import { Alert } from "@beatattoos/ui/Alert";
+import { Alert, AlertType } from "@beatattoos/ui";
 import { loginFormSchema } from "~/app/auth/login/_constants/schemas";
 import { CredentialsSignin } from "next-auth";
 import { CallbackRouteError } from "@auth/core/errors";

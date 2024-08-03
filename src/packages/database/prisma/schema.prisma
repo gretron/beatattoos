@@ -134,4 +134,3 @@ model User {
     stateProvince   StateProvince @relation(fields: [stateProvinceId], references: [id])
     city            City? @relation(fields: [cityId], references: [id])
 }
-

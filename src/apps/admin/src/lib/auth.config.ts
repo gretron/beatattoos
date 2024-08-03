@@ -5,11 +5,13 @@ import { Adapter } from "next-auth/adapters";
 import Credentials from "next-auth/providers/credentials";
 import { loginFormSchema } from "~/app/auth/login/_constants/schemas";
 import bcrypt from "bcryptjs";
+import { Role } from "@beatattoos/db";
 
 declare module "next-auth" {
   interface Session extends DefaultSession {
     user: {
       id: string;
+      role: Role;
     } /* & DefaultSession["user"]; */;
   }
 }
