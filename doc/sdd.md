@@ -8,7 +8,7 @@ This document provides information regarding the technical specifications of the
 - **Shared**: contains the visual components and business logic shared between the application components
 - **Storage**: stores and retrieves all application data
 ### Component Diagram
-Here is a [link](https://www.figma.com/board/BoKrfOHfDMlBjGueEAiYs4/Diagrams?node-id=1-2&t=wdJXqc44TwnmdagJ-1) to the **beatattoos** system architecture diagram
+Here is a [link](https://www.figma.com/board/e1gJpss6BXzyHw2XSj0wo5/System-Architecture?node-id=40000003-347&t=3IJcEw2DDfQnVC3T-4) to the **beatattoos** system architecture diagram
 ## User Interface
 ### Design System
 [Design system](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=297-1367&t=mvOEQwcOuLHUznJo-1)
