@@ -26,15 +26,7 @@ export default function useFormState<T, U>(
     const formData = new FormData(e.target as HTMLFormElement);
     const data = Object.fromEntries(formData);
 
-    let caca;
-
-    try {
-      caca = await formAction(data as U);
-
-      console.log(caca);
-
-      setFormState(caca);
-    } catch (e) {}
+    setFormState(await formAction(data as U));
 
     setIsPending(false);
   }
