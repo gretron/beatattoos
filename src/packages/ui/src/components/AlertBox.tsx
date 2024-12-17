@@ -15,7 +15,6 @@ import { Dispatch, SetStateAction, useEffect, useState } from "react";
 interface AlertBoxProps {
   className?: string;
   alert?: Alert;
-  setAlert?: Dispatch<SetStateAction<Alert>>;
 }
 
 export default function AlertBox(props: AlertBoxProps) {
