@@ -63,7 +63,7 @@ export default function LoginForm() {
           }))
         }
       />
-      <AlertBox className={"mt-6"} alert={formState} />
+      <AlertBox className={"mt-6"} alert={formState?.alert} />
       <button className={"btn-primary mt-6 w-full"}>Log In</button>
     </form>
   );
