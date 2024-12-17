@@ -1,7 +1,6 @@
 import { initTRPC, TRPCError } from "@trpc/server";
 import { experimental_nextAppDirCaller } from "@trpc/server/adapters/next-app-dir";
 import { auth } from "~/lib/auth";
-import { db } from "~/lib/db";
 import { getCurrentUser } from "~/app/_utils/auth-utilities";
 
 interface Meta {
