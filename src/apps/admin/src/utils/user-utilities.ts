@@ -15,6 +15,9 @@ export function createUser(overrideFields?: Partial<User>): User {
     emailAddress: faker.internet.email(),
     password: faker.internet.password(),
     role: faker.helpers.enumValue(Role),
+    countryId: faker.string.uuid(),
+    stateProvinceId: faker.string.uuid(),
+    cityId: faker.string.uuid(),
     ...overrideFields,
   };
 }

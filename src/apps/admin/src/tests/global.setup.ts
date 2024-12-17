@@ -1,5 +1,5 @@
 import { expect, test as setup } from "@playwright/test";
-import { createUser } from "~/utils/userUtilities";
+import { createUser } from "~/utils/user-utilities";
 import { db } from "~/lib/db";
 import { STORAGE_STATE } from "../../playwright.config";
 
