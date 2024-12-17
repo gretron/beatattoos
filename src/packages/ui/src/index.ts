@@ -9,6 +9,10 @@ import useDebounceTimer from "./hooks/useDebounceTimer";
 import useFormState from "./hooks/useFormState";
 import useOptimisticState from "./hooks/useOptimisticState";
 import { SelectFieldProps } from "./components/SelectField";
+import InformationLine from "./components/InformationLine";
+import useInfiniteScroll from "./hooks/useInfiniteScroll";
+import AnimatedIconCheck from "./components/AnimatedIconCopy";
+import useCopy from "./hooks/useCopy";
 
 export {
   AlertBox,
@@ -18,6 +22,10 @@ export {
   AlertType,
   useDebounceTimer,
   useFormState,
+  useInfiniteScroll,
   useOptimisticState,
+  useCopy,
+  InformationLine,
+  AnimatedIconCheck,
 };
 export type { Alert, SelectOption, SelectFieldProps };
