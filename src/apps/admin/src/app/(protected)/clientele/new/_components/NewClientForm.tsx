@@ -1,10 +1,15 @@
 "use client";
 
 import ClientForm from "~/app/(protected)/clientele/_components/ClientForm";
-import { Alert, AlertBox, AlertType, useFormState } from "@beatattoos/ui";
-import { createClient2 } from "~/app/(protected)/clientele/new/actions";
+import { AlertBox, AlertType, useFormState } from "@beatattoos/ui";
+import { createClient } from "~/app/(protected)/clientele/new/actions";
 import { RequiredLocationFieldsProps } from "~/app/_components/LocationFields";
-import { useEffect, useMemo } from "react";
+import { useContext, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import ClientWithLocations from "~/app/(protected)/clientele/_types/ClientWithLocations";
+import { z } from "zod";
+import { userSchema } from "~/app/_constants/schemas";
+import { ClienteleContext } from "~/app/(protected)/clientele/_context/ClienteleContext";
 
 /**
  * Props for {@link NewClientForm}
@@ -15,7 +20,16 @@ interface NewClientFormProps extends RequiredLocationFieldsProps {}
  * Button to submit add client form
  */
 export default function NewClientForm(props: NewClientFormProps) {
-  const { formState, isPending, handleSubmit } = useFormState(createClient2);
+  const { formState, isPending, handleSubmit } = useFormState(createClient);
+  const { clients, setClients } = useContext(ClienteleContext);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (formState?.data) {
+      setClients([formState.data, ...clients]);
+      router.push(`/clientele/${formState.data.id}`);
+    }
+  }, [formState]);
 
   return (
     <ClientForm
