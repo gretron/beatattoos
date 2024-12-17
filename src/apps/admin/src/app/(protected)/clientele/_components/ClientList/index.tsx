@@ -1,12 +1,22 @@
 "use client";
 
-import { ReactNode, useContext, useEffect, useState } from "react";
+import {
+  ReactNode,
+  useCallback,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { IconPlus } from "@tabler/icons-react";
 import SearchClientField from "~/app/(protected)/clientele/_components/SearchClientField";
 import Link from "next/link";
 import ClientListItem from "~/app/(protected)/clientele/_components/ClientList/components/ClientListItem";
 import ClientWithLocations from "~/app/(protected)/clientele/_types/ClientWithLocations";
 import { ClienteleContext } from "~/app/(protected)/clientele/_context/ClienteleContext";
+import ClientListSkeleton from "~/app/(protected)/clientele/_components/ClientList/components/ClientListSkeleton";
+import { useInfiniteScroll } from "@beatattoos/ui";
+import { getClientsWithLocations } from "~/app/(protected)/clientele/actions";
 
 /**
  * Props for {@link ClientList}
@@ -21,6 +31,27 @@ interface ClientListProps {
  */
 export default function ClientList(props: ClientListProps) {
   const { clients, setClients } = useContext(ClienteleContext);
+  const infiniteScrollRef = useRef(null);
+  const [clientOffset, setClientOffset] = useState(2);
+
+  const fetchClient = useCallback(async () => {
+    const _clients = (
+      (await getClientsWithLocations(
+        clientOffset * 5,
+        5,
+      )) as ClientWithLocations[]
+    ).filter((c) => !clients.find((cl) => cl.id === c.id));
+
+    setClientOffset((prev) => ++prev);
+    setClients([...clients, ..._clients]);
+
+    return _clients;
+  }, [clientOffset, clients]);
+
+  const { hasMore, isLoading } = useInfiniteScroll(
+    fetchClient,
+    infiniteScrollRef.current,
+  );
 
   useEffect(() => {
     setClients(props.initialClients);
@@ -55,7 +86,7 @@ export default function ClientList(props: ClientListProps) {
       <div className={"grow md:relative"}>
         <ul
           className={
-            "flex h-full w-full flex-col gap-4 p-6 md:absolute md:overflow-auto"
+            "relative flex h-full w-full flex-col gap-4 p-6 md:absolute md:overflow-auto"
           }
         >
           {(clients.length === 0 ? props.initialClients : clients).map(
@@ -63,6 +94,11 @@ export default function ClientList(props: ClientListProps) {
               <ClientListItem key={index} client={user} />
             ),
           )}
+          {isLoading &&
+            Array.from(Array(5).keys()).map((num, index) => (
+              <ClientListSkeleton key={index} />
+            ))}
+          {hasMore && <div ref={infiniteScrollRef}></div>}
         </ul>
       </div>
     </article>
