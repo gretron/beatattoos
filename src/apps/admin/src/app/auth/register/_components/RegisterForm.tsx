@@ -1,7 +1,7 @@
 "use client";
 
-import { InputField } from "@beatattoos/ui";
-import { FormEvent, useState, useTransition } from "react";
+import { InputField, useFormState } from "@beatattoos/ui";
+import { useState } from "react";
 import { register } from "~/app/auth/register/actions";
 import {
   confirmPasswordSchema,
@@ -10,7 +10,7 @@ import {
 } from "~/app/auth/register/_constants/schemas";
 import { AlertBox } from "@beatattoos/ui";
 import { z } from "zod";
-import { Alert, AlertType } from "@beatattoos/ui";
+import { Alert } from "@beatattoos/ui";
 import LocationFields, {
   RequiredLocationFieldsProps,
 } from "~/app/_components/LocationFields";
@@ -27,20 +27,7 @@ export default function RegisterForm(props: RegisterFormProps) {
   const [registerForm, setRegisterForm] = useState<
     z.infer<typeof registerFormSchema>
   >(defaultRegisterFormValues);
-  const [alert, setAlert] = useState<Alert>({ type: AlertType.error });
-  const [isPending, startTransition] = useTransition();
-
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-
-    setAlert((prev) => ({ ...prev, message: undefined }));
-
-    startTransition(async () => {
-      await register(new FormData(e.target as HTMLFormElement)).then((res) => {
-        setAlert((prev) => ({ ...prev, message: res?.message }));
-      });
-    });
-  };
+  const { formState, isPending, handleSubmit } = useFormState(register);
 
   return (
     <form
@@ -145,7 +132,7 @@ export default function RegisterForm(props: RegisterFormProps) {
           confirmPassword: registerForm.confirmPassword,
         }}
       />
-      <AlertBox className={"mt-6"} alert={alert} setAlert={setAlert} />
+      <AlertBox className={"mt-6"} alert={formState} />
       <button className={"btn-primary mt-6 w-full"}>Register</button>
     </form>
   );
