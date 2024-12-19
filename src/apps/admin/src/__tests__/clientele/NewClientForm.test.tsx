@@ -111,7 +111,7 @@ const getUserSchemaErrorMessage = (user: User) => {
  * @param user user credentials to fill form with
  * @param excludeCountry to exclude filling country field
  * @param excludeStateProvince to exclude filling state/province field
- * @param excludeCity to exclude filling city
+ * @param excludeCity to exclude filling city field
  */
 const fillClientFormAndSubmit = async (
   user: User,
