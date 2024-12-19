@@ -30,10 +30,12 @@ import {
 import NewClientForm from "~/app/(protected)/clientele/new/_components/NewClientForm";
 import { userSchema } from "~/app/_constants/schemas";
 
+// Mock modules
 vi.mock("~/lib/db");
 vi.mock("~/lib/auth");
 vi.mock("next/navigation");
 
+// Create action spies
 const createClientSpy = vi.spyOn(clienteleActions, "createClient");
 const getStateProvincesSpy = vi.spyOn(
   locationActions,
@@ -41,6 +43,7 @@ const getStateProvincesSpy = vi.spyOn(
 );
 const getCitiesSpy = vi.spyOn(locationActions, "getCitiesUsingStateProvinceId");
 
+// Create randomized locations (country, state/province, city)
 const countries = Array.from(
   { length: faker.number.int({ min: 3, max: 5 }) },
   () => createCountry(),
@@ -84,6 +87,8 @@ const cities = Object.values(stateProvinces).reduce(
   },
   {},
 );
+
+// Select locations from randomized locations
 const selectedCountry = faker.helpers.arrayElement(countries);
 const selectedStateProvince = faker.helpers.arrayElement(
   stateProvinces[selectedCountry.id] ?? [],
@@ -96,7 +101,7 @@ const selectedCity = faker.helpers.arrayElement(
  * To get error message from user schema given a user
  * @param user user to generate error message from
  */
-const getUserSchemaMessage = (user: User) => {
+const getUserSchemaErrorMessage = (user: User) => {
   return JSON.parse(userSchema.safeParse(user)?.error?.message ?? "")[0]
     .message;
 };
@@ -206,7 +211,6 @@ const expectError = async (errorMessage: string) => {
   expect(createClientSpy).toHaveBeenCalled();
 
   await act(async () => {
-    // Forces create client action to resolve and expects error
     expect(createClientSpy.mock.results[0]?.value).rejects.toThrowError();
   });
 
@@ -233,9 +237,7 @@ describe("ClientForm", async () => {
 
     await fillClientFormAndSubmit(createUser());
 
-    // Must use act since response creates AlertBox
     await act(async () => {
-      // Wait for create client server action to complete
       await createClientSpy.mock.results[0]?.value;
     });
 
@@ -254,7 +256,7 @@ describe("ClientForm", async () => {
     mockLocations(true);
 
     await fillClientFormAndSubmit(user);
-    await expectError(getUserSchemaMessage(user));
+    await expectError(getUserSchemaErrorMessage(user));
   });
 
   it("should fail with invalid last name", async () => {
@@ -265,7 +267,7 @@ describe("ClientForm", async () => {
     mockLocations(true);
 
     await fillClientFormAndSubmit(user);
-    await expectError(getUserSchemaMessage(user));
+    await expectError(getUserSchemaErrorMessage(user));
   });
 
   it("should fail with missing country", async () => {
@@ -276,7 +278,7 @@ describe("ClientForm", async () => {
     mockLocations(true);
 
     await fillClientFormAndSubmit(user, true, true, true);
-    await expectError(getUserSchemaMessage(user));
+    await expectError(getUserSchemaErrorMessage(user));
   });
 
   it("should fail with invalid country", async () => {
@@ -297,7 +299,7 @@ describe("ClientForm", async () => {
     mockLocations(true);
 
     await fillClientFormAndSubmit(user, false, true, true);
-    await expectError(getUserSchemaMessage(user));
+    await expectError(getUserSchemaErrorMessage(user));
   });
 
   it("should fail with invalid state/province", async () => {
@@ -354,7 +356,7 @@ describe("ClientForm", async () => {
     mockLocations();
 
     await fillClientFormAndSubmit(user);
-    await expectError(getUserSchemaMessage(user));
+    await expectError(getUserSchemaErrorMessage(user));
   });
 
   it("should fail with invalid password", async () => {
@@ -365,7 +367,7 @@ describe("ClientForm", async () => {
     mockLocations();
 
     await fillClientFormAndSubmit(user);
-    await expectError(getUserSchemaMessage(user));
+    await expectError(getUserSchemaErrorMessage(user));
   });
 
   it("should fail when session is empty", async () => {
