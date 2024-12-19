@@ -27,9 +27,13 @@ export default function useCopy(value: string) {
   /**
    * Handle copy button click event
    */
-  const handleCopyClick = () => {
-    navigator.clipboard.writeText(value);
-    setIsCopied(true);
+  const handleCopyClick = async () => {
+    try {
+      await navigator.clipboard.writeText(value);
+      setIsCopied(true);
+    } catch (err) {
+      console.error("ERROR: Error writing to clipboard: ", err);
+    }
   };
 
   return { isCopied, handleCopyClick };
