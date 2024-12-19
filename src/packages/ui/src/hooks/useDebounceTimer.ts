@@ -17,11 +17,13 @@ export default function useDebounceTimer(
   useEffect(() => {
     clearTimeout(debounceTimer.current);
 
-    preTimerCallback();
-
-    if (value !== undefined || value !== "") {
+    if (value !== undefined && value !== "") {
       setIsLoading(true);
+    } else {
+      return;
     }
+
+    preTimerCallback();
 
     debounceTimer.current = setTimeout(async () => {
       if (value === undefined || value === "") {

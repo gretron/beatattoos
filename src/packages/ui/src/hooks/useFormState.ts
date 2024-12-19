@@ -10,6 +10,7 @@ import { FormEvent, useState } from "react";
 export default function useFormState<T, U>(
   formAction: (input: U) => Promise<T>,
   initialState?: T,
+  errorHandler?: (err: Error) => T,
 ) {
   const [formState, setFormState] = useState<T | undefined>(initialState);
   const [isPending, setIsPending] = useState(false);
@@ -26,7 +27,15 @@ export default function useFormState<T, U>(
     const formData = new FormData(e.target as HTMLFormElement);
     const data = Object.fromEntries(formData);
 
-    setFormState(await formAction(data as U));
+    try {
+      setFormState(await formAction(data as U));
+    } catch (error) {
+      if (error instanceof Error) {
+        const errorData = errorHandler?.(error);
+
+        setFormState(errorData);
+      }
+    }
 
     setIsPending(false);
   }

@@ -33,6 +33,9 @@ interface LocationFieldsProps {
   disabled: boolean;
 }
 
+/**
+ * Fields for country, state/province, and city
+ */
 export default function LocationFields(props: LocationFieldsProps) {
   const [countryId, setCountryId] = useState("");
   const [stateProvinceId, setStateProvinceId] = useState("");

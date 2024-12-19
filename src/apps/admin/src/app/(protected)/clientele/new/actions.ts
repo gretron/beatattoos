@@ -6,6 +6,7 @@ import {
   CREDENTIALS_PARSING_ERROR,
   EMAIL_IN_USE_ERROR,
   EMAIL_IN_USE_FAILED_ERROR,
+  MISSING_COUNTRY_ERROR,
 } from "~/app/_constants/actionResponses";
 import bcrypt from "bcryptjs";
 import {
@@ -19,6 +20,7 @@ import ClientWithLocations from "~/app/(protected)/clientele/_types/ClientWithLo
 import LocationsInclude from "~/app/(protected)/clientele/_constants/locations-include";
 import { authenticatedAction } from "~/lib/trpc";
 import { Alert } from "@beatattoos/ui";
+import { TRPCError } from "@trpc/server";
 
 export const createClient = authenticatedAction
   .input(userSchema)
@@ -31,13 +33,10 @@ export const createClient = authenticatedAction
 
       // Check for data formatting errors
       if (!parsedData.success) {
-        return { alert: CREDENTIALS_PARSING_ERROR };
-      }
-
-      try {
-        await authenticate();
-      } catch (e) {
-        return { alert: AUTHENTICATION_ERROR };
+        throw new TRPCError({
+          code: "BAD_REQUEST",
+          message: CREDENTIALS_PARSING_ERROR,
+        });
       }
 
       const {
@@ -55,11 +54,17 @@ export const createClient = authenticatedAction
       try {
         emailInUse = await db.user.findUnique({ where: { emailAddress } });
       } catch (e) {
-        return { alert: EMAIL_IN_USE_FAILED_ERROR };
+        throw new TRPCError({
+          code: "INTERNAL_SERVER_ERROR",
+          message: EMAIL_IN_USE_FAILED_ERROR,
+        });
       }
 
       if (emailInUse) {
-        return { alert: EMAIL_IN_USE_ERROR };
+        throw new TRPCError({
+          code: "BAD_REQUEST",
+          message: EMAIL_IN_USE_ERROR,
+        });
       }
 
       const locationsInvalid = await areLocationsInvalid(
@@ -69,7 +74,7 @@ export const createClient = authenticatedAction
       );
 
       if (locationsInvalid) {
-        return { alert: locationsInvalid };
+        throw locationsInvalid;
       }
 
       const hashedPassword = await bcrypt.hash(password, 10);
@@ -90,7 +95,10 @@ export const createClient = authenticatedAction
           include: LocationsInclude,
         });
       } catch (e) {
-        return { alert: CREATE_CLIENT_FAILED_ERROR };
+        throw new TRPCError({
+          code: "INTERNAL_SERVER_ERROR",
+          message: CREATE_CLIENT_FAILED_ERROR,
+        });
       }
 
       // For integration tests

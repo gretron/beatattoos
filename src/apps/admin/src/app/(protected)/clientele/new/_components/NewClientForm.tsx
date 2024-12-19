@@ -6,9 +6,6 @@ import { createClient } from "~/app/(protected)/clientele/new/actions";
 import { RequiredLocationFieldsProps } from "~/app/_components/LocationFields";
 import { useContext, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import ClientWithLocations from "~/app/(protected)/clientele/_types/ClientWithLocations";
-import { z } from "zod";
-import { userSchema } from "~/app/_constants/schemas";
 import { ClienteleContext } from "~/app/(protected)/clientele/_context/ClienteleContext";
 
 /**
@@ -20,7 +17,11 @@ interface NewClientFormProps extends RequiredLocationFieldsProps {}
  * Button to submit add client form
  */
 export default function NewClientForm(props: NewClientFormProps) {
-  const { formState, isPending, handleSubmit } = useFormState(createClient);
+  const { formState, isPending, handleSubmit } = useFormState(
+    createClient,
+    undefined,
+    (err) => ({ alert: { type: AlertType.error, message: err.message } }),
+  );
   const { clients, setClients } = useContext(ClienteleContext);
   const router = useRouter();
 
