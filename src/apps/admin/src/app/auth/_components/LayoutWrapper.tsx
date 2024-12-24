@@ -20,6 +20,7 @@ interface LayoutWrapperProps {
 export default function LayoutWrapper(props: LayoutWrapperProps) {
   const pathname = usePathname();
   const initialPathname = useRef(pathname);
+  const isContinualIntegration = !!process.env.NEXT_PUBLIC_CI;
 
   return (
     <section
@@ -71,9 +72,11 @@ export default function LayoutWrapper(props: LayoutWrapperProps) {
         </div>
       </div>
       {/* For CI WebGL-disabled browsers */}
-      <ErrorBoundary fallback={null}>
-        <Background />
-      </ErrorBoundary>
+      {!isContinualIntegration && (
+        <ErrorBoundary fallback={null}>
+          <Background />
+        </ErrorBoundary>
+      )}
     </section>
   );
 }

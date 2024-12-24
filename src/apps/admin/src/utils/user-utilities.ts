@@ -18,6 +18,7 @@ export function createUser(overrideFields?: Partial<User>): User {
     countryId: faker.string.uuid(),
     stateProvinceId: faker.string.uuid(),
     cityId: faker.string.uuid(),
+    refreshTokenVersion: faker.number.int(),
     ...overrideFields,
   };
 }

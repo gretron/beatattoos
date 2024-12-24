@@ -1,34 +1,46 @@
 import { fireEvent, render, screen, act } from "@testing-library/react";
-import { expect, it, vi, describe, beforeEach, afterEach } from "vitest";
+import {
+  it,
+  vi,
+  describe,
+  beforeEach,
+  afterEach,
+  beforeAll,
+  afterAll,
+} from "vitest";
 import * as clienteleActions from "~/app/(protected)/clientele/new/actions";
 import * as locationActions from "~/app/actions";
 import { User } from "@prisma/client";
 import { createUser } from "~/utils/user-utilities";
 import { auth } from "~/lib/__mocks__/auth";
 import { db } from "~/lib/__mocks__/db";
-import { CREATE_CLIENT_SUCCESS } from "~/app/(protected)/clientele/new/_constants/actionResponses";
+import {
+  CREATE_CLIENT_FAILED_ERROR,
+  CREATE_CLIENT_SUCCESS,
+} from "~/app/(protected)/clientele/new/_constants/actionResponses";
 import {
   AUTHENTICATION_ERROR,
   EMAIL_IN_USE_ERROR,
+  EMAIL_IN_USE_FAILED_ERROR,
   INVALID_CITY_ERROR,
   INVALID_STATE_PROVINCE_ERROR,
   MISSING_COUNTRY_ERROR,
   REQUIRED_CITY_ERROR,
 } from "~/app/_constants/actionResponses";
-import {
-  createCity,
-  createCountry,
-  createStateProvince,
-} from "~/utils/location-utilities";
-import { faker } from "@faker-js/faker";
-import {
-  City,
-  CityAlternatename,
-  StateProvince,
-  StateProvinceAlternatename,
-} from "@beatattoos/db";
 import NewClientForm from "~/app/(protected)/clientele/new/_components/NewClientForm";
 import { userSchema } from "~/app/_constants/schemas";
+import {
+  MOCK_COUNTRIES,
+  SELECTED_MOCK_CITY,
+  SELECTED_MOCK_COUNTRY,
+  SELECTED_MOCK_STATE_PROVINCE,
+  expectAsyncSpyError,
+  expectAsyncSpyToResolveWith,
+  expectErrorMessage,
+  getSchemaErrorMessage,
+  mockLocations,
+  waitForAsyncSpyToResolve,
+} from "~/utils/integration-test-utilities";
 
 // Mock modules
 vi.mock("~/lib/db");
@@ -42,69 +54,6 @@ const getStateProvincesSpy = vi.spyOn(
   "getStatesProvincesUsingCountryId",
 );
 const getCitiesSpy = vi.spyOn(locationActions, "getCitiesUsingStateProvinceId");
-
-// Create randomized locations (country, state/province, city)
-const countries = Array.from(
-  { length: faker.number.int({ min: 3, max: 5 }) },
-  () => createCountry(),
-);
-const stateProvinces = countries.reduce(
-  (
-    acc: {
-      [key: string]: (StateProvince & {
-        alternatenames: StateProvinceAlternatename[];
-        _count: { cities: number };
-      })[];
-    },
-    country,
-  ) => {
-    acc[country.id] = Array.from(
-      { length: faker.number.int({ min: 3, max: 5 }) },
-      () => createStateProvince(country),
-    );
-
-    return acc;
-  },
-  {},
-);
-const cities = Object.values(stateProvinces).reduce(
-  (
-    acc: {
-      [key: string]: (City & {
-        alternatenames: CityAlternatename[];
-      })[];
-    },
-    stateProvinces,
-  ) => {
-    stateProvinces.map((stateProvince) => {
-      acc[stateProvince.id] = Array.from(
-        { length: stateProvince._count.cities },
-        () => createCity(stateProvince),
-      );
-    });
-
-    return acc;
-  },
-  {},
-);
-
-// Select locations from randomized locations
-const selectedCountry = faker.helpers.arrayElement(countries);
-const selectedStateProvince = faker.helpers.arrayElement(
-  stateProvinces[selectedCountry.id] ?? [],
-);
-const selectedCity = faker.helpers.arrayElement(
-  cities[selectedStateProvince.id] ?? [],
-);
-
-/**
- * To get error message from user schema given a user
- * @param user user to generate error message from
- */
-const getUserSchemaErrorMessage = (user: User) => {
-  return JSON.parse(userSchema.safeParse(user)?.error?.message ?? "")[0]
-    .message;
-};
 
 /**
  * To fill client form with credentials and submit
@@ -136,19 +85,21 @@ const fillClientFormAndSubmit = async (
   });
 
   if (!excludeCountry) {
-    fireEvent.change(countryInput, { target: { value: selectedCountry.id } });
+    fireEvent.change(countryInput, {
+      target: { value: SELECTED_MOCK_COUNTRY.id },
+    });
   }
 
   if (!excludeStateProvince) {
     await act(async () => {
       // Instantly resolve debounce timer
       await vi.runOnlyPendingTimersAsync();
-      // Await get states/provinces call
-      await getStateProvincesSpy.mock.results[0]?.value;
+      // Wait for get states/provinces call to complete
+      await waitForAsyncSpyToResolve(getStateProvincesSpy);
     });
     const stateProvinceInput = screen.getByLabelText(/State\/province/i);
     fireEvent.change(stateProvinceInput, {
-      target: { value: selectedStateProvince.id },
+      target: { value: SELECTED_MOCK_STATE_PROVINCE.id },
     });
   }
 
@@ -156,242 +107,220 @@ const fillClientFormAndSubmit = async (
     await act(async () => {
       // Instantly resolve debounce timer
       await vi.runOnlyPendingTimersAsync();
-      // Await get cities call
-      await getCitiesSpy.mock.results[0]?.value;
+      // Wait for get cities call to complete
+      await waitForAsyncSpyToResolve(getCitiesSpy);
     });
     const cityInput = screen.getByLabelText(/City/i);
     fireEvent.change(cityInput, {
-      target: { value: selectedCity.id },
+      target: { value: SELECTED_MOCK_CITY.id },
     });
   }
 
   fireEvent.submit(registerForm);
 };
 
-/**
- * To mock authentication given a user
- * @param user user to mock authentication with
- */
-const mockAuthentication = (user: User) => {
-  auth.mockResolvedValueOnce({ user: user });
-  db.user.findUnique.mockResolvedValueOnce(user);
-};
-
-/**
- * To mock location calls for valid locations
- * @param excludeDatabaseCall to exclude mock database call
- */
-const mockLocations = (excludeDatabaseCall?: boolean) => {
-  db.stateProvince.findMany.mockImplementationOnce(
-    (args: { where: { countryId: string } }) =>
-      Promise.resolve(stateProvinces[args.where.countryId]),
-  );
-  db.city.findMany.mockImplementationOnce(
-    (args: { where: { stateProvinceId: string } }) =>
-      Promise.resolve(cities[args.where.stateProvinceId]),
-  );
-
-  if (!excludeDatabaseCall) {
-    db.country.findUnique.mockResolvedValueOnce({
-      ...selectedCountry,
-      stateProvinces: stateProvinces[selectedCountry.id]?.map(
-        (stateProvince) => {
-          return { ...stateProvince, cities: cities[stateProvince.id] };
-        },
-      ),
-    });
-  }
-};
-
-/**
- * Reusable credentials error assertion
- * @param errorMessage error message to look for
- */
-const expectError = async (errorMessage: string) => {
-  expect(createClientSpy).toHaveBeenCalled();
-
-  await act(async () => {
-    expect(createClientSpy.mock.results[0]?.value).rejects.toThrowError();
+describe("ClientForm", async () => {
+  beforeAll(() => {
+    vi.useFakeTimers();
+    mockLocations();
   });
 
-  expect(screen.getByText(errorMessage)).toBeDefined();
-};
-
-describe("ClientForm", async () => {
   beforeEach(() => {
-    vi.useFakeTimers();
-    render(<NewClientForm countries={countries} />);
+    render(<NewClientForm countries={MOCK_COUNTRIES} />);
+  });
+
+  afterAll(() => {
+    vi.runOnlyPendingTimers();
+    vi.useRealTimers();
+    vi.resetAllMocks();
   });
 
   afterEach(() => {
-    vi.runOnlyPendingTimers();
-    vi.useRealTimers();
     vi.clearAllMocks();
   });
 
-  it("should succeed with valid client credentials", async () => {
-    const createUserReturn = createUser();
-    mockAuthentication(createUser({ role: "ADMIN" }));
-    mockLocations();
-    db.user.create.mockResolvedValueOnce(createUserReturn);
-
-    await fillClientFormAndSubmit(createUser());
-
-    await act(async () => {
-      await createClientSpy.mock.results[0]?.value;
+  describe("given authenticated admin user", async () => {
+    beforeEach(() => {
+      auth.mockResolvedValueOnce({ user: createUser({ role: "ADMIN" }) });
     });
 
-    expect(createClientSpy).toHaveBeenCalled();
-    expect(createClientSpy).toHaveReturnedWith({
-      alert: CREATE_CLIENT_SUCCESS,
-      data: createUserReturn,
-    });
-  });
+    it("should succeed with valid client credentials", async () => {
+      const createUserReturn = createUser();
 
-  it("should fail with invalid first name", async () => {
-    const user = createUser();
-    user.firstName = "";
+      // Mock error when database creates user
+      db.user.create.mockResolvedValueOnce(createUserReturn);
 
-    mockAuthentication(createUser({ role: "ADMIN" }));
-    mockLocations(true);
+      await fillClientFormAndSubmit(createUser());
 
-    await fillClientFormAndSubmit(user);
-    await expectError(getUserSchemaErrorMessage(user));
-  });
-
-  it("should fail with invalid last name", async () => {
-    const user = createUser();
-    user.lastName = "";
-
-    mockAuthentication(createUser({ role: "ADMIN" }));
-    mockLocations(true);
-
-    await fillClientFormAndSubmit(user);
-    await expectError(getUserSchemaErrorMessage(user));
-  });
-
-  it("should fail with missing country", async () => {
-    const user = createUser();
-    user.countryId = "";
-
-    mockAuthentication(createUser({ role: "ADMIN" }));
-    mockLocations(true);
-
-    await fillClientFormAndSubmit(user, true, true, true);
-    await expectError(getUserSchemaErrorMessage(user));
-  });
-
-  it("should fail with invalid country", async () => {
-    const user = createUser();
-
-    mockAuthentication(createUser({ role: "ADMIN" }));
-    mockLocations(true);
-
-    await fillClientFormAndSubmit(user);
-    await expectError(MISSING_COUNTRY_ERROR);
-  });
-
-  it("should fail with missing state/province", async () => {
-    const user = createUser();
-    user.stateProvinceId = "";
-
-    mockAuthentication(createUser({ role: "ADMIN" }));
-    mockLocations(true);
-
-    await fillClientFormAndSubmit(user, false, true, true);
-    await expectError(getUserSchemaErrorMessage(user));
-  });
-
-  it("should fail with invalid state/province", async () => {
-    const user = createUser();
-
-    mockAuthentication(createUser({ role: "ADMIN" }));
-    mockLocations(true);
-    db.country.findUnique.mockResolvedValueOnce({
-      ...selectedCountry,
-      stateProvinces: [],
+      await expectAsyncSpyToResolveWith(createClientSpy, {
+        alert: CREATE_CLIENT_SUCCESS,
+        data: createUserReturn,
+      });
     });
 
-    await fillClientFormAndSubmit(user, false, false, true);
-    await expectError(INVALID_STATE_PROVINCE_ERROR);
-  });
+    it("should fail when create user db call fails", async () => {
+      db.user.create.mockRejectedValueOnce(new Error());
 
-  it("should fail with missing city", async () => {
-    const user = createUser();
+      await fillClientFormAndSubmit(createUser());
 
-    mockAuthentication(createUser({ role: "ADMIN" }));
-    mockLocations(true);
-    db.country.findUnique.mockResolvedValueOnce({
-      ...selectedCountry,
-      stateProvinces: [
-        {
-          ...selectedStateProvince,
-        },
-      ],
+      await expectAsyncSpyError(createClientSpy);
+      await expectErrorMessage(CREATE_CLIENT_FAILED_ERROR);
     });
 
-    await fillClientFormAndSubmit(user, false, false, true);
-    await expectError(REQUIRED_CITY_ERROR);
-  });
+    it("should fail with missing first name", async () => {
+      const user = createUser();
+      user.firstName = "";
 
-  it("should fail with invalid city", async () => {
-    const user = createUser();
+      await fillClientFormAndSubmit(user);
 
-    mockAuthentication(createUser({ role: "ADMIN" }));
-    mockLocations(true);
-    db.country.findUnique.mockResolvedValueOnce({
-      ...selectedCountry,
-      stateProvinces: [{ ...selectedStateProvince, cities: [] }],
+      await expectAsyncSpyError(createClientSpy);
+      await expectErrorMessage(getSchemaErrorMessage(userSchema, user));
     });
 
-    await fillClientFormAndSubmit(user, false, false, false);
-    await expectError(INVALID_CITY_ERROR);
-  });
+    it("should fail with missing last name", async () => {
+      const user = createUser();
+      user.lastName = "";
 
-  it("should fail with invalid email address", async () => {
-    const user = createUser();
-    user.emailAddress = "fail@err.c";
+      await fillClientFormAndSubmit(user);
 
-    mockAuthentication(createUser({ role: "ADMIN" }));
-    mockLocations();
+      await expectAsyncSpyError(createClientSpy);
+      await expectErrorMessage(getSchemaErrorMessage(userSchema, user));
+    });
 
-    await fillClientFormAndSubmit(user);
-    await expectError(getUserSchemaErrorMessage(user));
-  });
+    it("should fail with missing country", async () => {
+      const user = createUser();
+      user.countryId = "";
 
-  it("should fail with invalid password", async () => {
-    const user = createUser();
-    user.password = "pass";
+      await fillClientFormAndSubmit(user, true, true, true);
 
-    mockAuthentication(createUser({ role: "ADMIN" }));
-    mockLocations();
+      await expectAsyncSpyError(createClientSpy);
+      await expectErrorMessage(getSchemaErrorMessage(userSchema, user));
+    });
 
-    await fillClientFormAndSubmit(user);
-    await expectError(getUserSchemaErrorMessage(user));
+    it("should fail with invalid country", async () => {
+      const user = createUser();
+
+      // Mock when database checks if entered country exists in database
+      db.country.findUnique.mockResolvedValueOnce(undefined);
+
+      await fillClientFormAndSubmit(user);
+
+      await expectAsyncSpyError(createClientSpy);
+      await expectErrorMessage(MISSING_COUNTRY_ERROR);
+    });
+
+    it("should fail with missing state/province", async () => {
+      const user = createUser();
+      user.stateProvinceId = "";
+
+      await fillClientFormAndSubmit(user, false, true, true);
+
+      await expectAsyncSpyError(createClientSpy);
+      await expectErrorMessage(getSchemaErrorMessage(userSchema, user));
+    });
+
+    it("should fail with invalid state/province", async () => {
+      const user = createUser();
+
+      // Mock when database checks if entered state/province exists in database
+      db.country.findUnique.mockResolvedValueOnce({
+        ...SELECTED_MOCK_COUNTRY,
+        stateProvinces: [],
+      });
+
+      await fillClientFormAndSubmit(user, false, false, true);
+
+      await expectAsyncSpyError(createClientSpy);
+      await expectErrorMessage(INVALID_STATE_PROVINCE_ERROR);
+    });
+
+    it("should fail with missing city", async () => {
+      const user = createUser();
+
+      // Mock when database checks if missing city exists in database
+      db.country.findUnique.mockResolvedValueOnce({
+        ...SELECTED_MOCK_COUNTRY,
+        stateProvinces: [
+          {
+            ...SELECTED_MOCK_STATE_PROVINCE,
+          },
+        ],
+      });
+
+      await fillClientFormAndSubmit(user, false, false, true);
+
+      await expectAsyncSpyError(createClientSpy);
+      await expectErrorMessage(REQUIRED_CITY_ERROR);
+    });
+
+    it("should fail with invalid city", async () => {
+      const user = createUser();
+
+      // Mock when database checks if entered city exists in database
+      db.country.findUnique.mockResolvedValueOnce({
+        ...SELECTED_MOCK_COUNTRY,
+        stateProvinces: [{ ...SELECTED_MOCK_STATE_PROVINCE, cities: [] }],
+      });
+
+      await fillClientFormAndSubmit(user);
+
+      await expectAsyncSpyError(createClientSpy);
+      await expectErrorMessage(INVALID_CITY_ERROR);
+    });
+
+    it("should fail with invalid email address", async () => {
+      const user = createUser();
+      user.emailAddress = "fail@err.c";
+
+      await fillClientFormAndSubmit(user);
+
+      await expectAsyncSpyError(createClientSpy);
+      await expectErrorMessage(getSchemaErrorMessage(userSchema, user));
+    });
+
+    it("should fail with invalid password", async () => {
+      const user = createUser();
+      user.password = "pass";
+
+      await fillClientFormAndSubmit(user);
+
+      await expectAsyncSpyError(createClientSpy);
+      await expectErrorMessage(getSchemaErrorMessage(userSchema, user));
+    });
+
+    it("should fail when email is in use", async () => {
+      // Mock when database checks if user associated to email exists
+      db.user.findUnique.mockResolvedValueOnce(createUser());
+
+      await fillClientFormAndSubmit(createUser());
+
+      await expectAsyncSpyError(createClientSpy);
+      await expectErrorMessage(EMAIL_IN_USE_ERROR);
+    });
+
+    it("should fail when email in use db call fails", async () => {
+      db.user.findUnique.mockRejectedValueOnce(new Error());
+
+      await fillClientFormAndSubmit(createUser());
+
+      await expectAsyncSpyError(createClientSpy);
+      await expectErrorMessage(EMAIL_IN_USE_FAILED_ERROR);
+    });
   });
 
   it("should fail when session is empty", async () => {
-    mockLocations();
-    auth.mockResolvedValueOnce(null);
-
     await fillClientFormAndSubmit(createUser());
-    await expectError(AUTHENTICATION_ERROR);
+
+    await expectAsyncSpyError(createClientSpy);
+    await expectErrorMessage(AUTHENTICATION_ERROR);
   });
 
   it("should fail when current user is unauthorized", async () => {
-    mockAuthentication(createUser({ role: "CLIENT" }));
-    mockLocations();
+    auth.mockResolvedValueOnce({ user: createUser({ role: "CLIENT" }) });
 
     await fillClientFormAndSubmit(createUser());
-    await expectError(AUTHENTICATION_ERROR);
-  });
 
-  it("should fail when email is in use", async () => {
-    mockAuthentication(createUser({ role: "ADMIN" }));
-    mockLocations();
-    db.user.findUnique.mockResolvedValueOnce(createUser());
-
-    await fillClientFormAndSubmit(createUser());
-    await expectError(EMAIL_IN_USE_ERROR);
+    await expectAsyncSpyError(createClientSpy);
+    await expectErrorMessage(AUTHENTICATION_ERROR);
   });
 });
