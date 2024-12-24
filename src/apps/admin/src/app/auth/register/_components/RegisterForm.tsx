@@ -1,12 +1,13 @@
 "use client";
 
-import { InputField, useFormState } from "@beatattoos/ui";
+import { AlertType, InputField, useFormState } from "@beatattoos/ui";
 import { useState } from "react";
 import { register } from "~/app/auth/register/actions";
 import {
   confirmPasswordSchema,
   defaultRegisterFormValues,
   registerFormSchema,
+  registerFormSchemaRefined,
 } from "~/app/auth/register/_constants/schemas";
 import { AlertBox } from "@beatattoos/ui";
 import { z } from "zod";
@@ -25,9 +26,15 @@ interface RegisterFormProps extends RequiredLocationFieldsProps {}
  */
 export default function RegisterForm(props: RegisterFormProps) {
   const [registerForm, setRegisterForm] = useState<
-    z.infer<typeof registerFormSchema>
+    z.infer<typeof registerFormSchemaRefined>
   >(defaultRegisterFormValues);
-  const { formState, isPending, handleSubmit } = useFormState(register);
+  const { formState, isPending, handleSubmit } = useFormState<
+    Alert,
+    z.infer<typeof registerFormSchemaRefined>
+  >(register, undefined, (err) => ({
+    type: AlertType.error,
+    message: err.message,
+  }));
 
   return (
     <form
@@ -111,7 +118,7 @@ export default function RegisterForm(props: RegisterFormProps) {
           }))
         }
       />
-      <InputField<z.infer<typeof confirmPasswordSchema>>
+      <InputField
         id={"confirm-password"}
         type={"password"}
         name={"confirmPassword"}

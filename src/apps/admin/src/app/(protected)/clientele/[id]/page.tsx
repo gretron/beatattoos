@@ -1,7 +1,7 @@
-import { getCurrentUser } from "~/app/_utils/auth-utilities";
 import { db } from "~/lib/db";
 import ClientInformation from "~/app/(protected)/clientele/[id]/_components/ClientInformation";
 import ClientWithLocations from "~/app/(protected)/clientele/_types/ClientWithLocations";
+import { auth } from "~/lib/auth";
 
 /**
  * Page to view client details
@@ -11,8 +11,9 @@ export default async function ClientDetailsPage({
 }: {
   params: { id: string };
 }) {
-  const user = await getCurrentUser();
-  if (!user) return;
+  const session = await auth();
+
+  if (!session) return;
 
   const client = await db.user.findUnique({
     select: {

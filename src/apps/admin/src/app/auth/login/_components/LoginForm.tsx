@@ -1,6 +1,12 @@
 "use client";
 
-import { AlertBox, InputField, useFormState } from "@beatattoos/ui";
+import {
+  Alert,
+  AlertBox,
+  AlertType,
+  InputField,
+  useFormState,
+} from "@beatattoos/ui";
 import { useState } from "react";
 import { z } from "zod";
 import {
@@ -15,7 +21,13 @@ import { login } from "~/app/auth/login/actions";
 export default function LoginForm() {
   const [loginForm, setLoginForm] =
     useState<z.infer<typeof loginFormSchema>>(defaultLoginForm);
-  const { formState, isPending, handleSubmit } = useFormState(login);
+  const { formState, isPending, handleSubmit } = useFormState<
+    Alert,
+    z.infer<typeof loginFormSchema>
+  >(login, undefined, (err) => ({
+    type: AlertType.error,
+    message: err.message,
+  }));
 
   return (
     <form
@@ -63,7 +75,7 @@ export default function LoginForm() {
           }))
         }
       />
-      <AlertBox className={"mt-6"} alert={formState?.alert} />
+      <AlertBox className={"mt-6"} alert={formState} />
       <button className={"btn-primary mt-6 w-full"}>Log In</button>
     </form>
   );

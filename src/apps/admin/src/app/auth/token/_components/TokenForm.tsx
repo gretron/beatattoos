@@ -18,7 +18,13 @@ import { useSearchParams } from "next/navigation";
 export default function TokenForm() {
   const [token, setToken] = useState<string>("");
   const searchParams = useSearchParams();
-  const { handleSubmit, formState, isPending } = useFormState(verifyToken);
+  const { handleSubmit, formState, isPending } = useFormState<
+    Alert,
+    { adminToken: string }
+  >(verifyToken, undefined, (err) => ({
+    type: AlertType.error,
+    message: err.message,
+  }));
 
   return (
     <form

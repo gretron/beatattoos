@@ -4,28 +4,23 @@ import ClientList from "~/app/(protected)/clientele/_components/ClientList/index
 import Link from "next/link";
 import { IconPlus } from "@tabler/icons-react";
 import SearchClientField from "~/app/(protected)/clientele/_components/SearchClientField";
-import { findClientsWithLocations } from "~/app/(protected)/clientele/_utils/clientele-utilities";
-import { signOut } from "~/lib/auth";
 import ClienteleContextProvider from "~/app/(protected)/clientele/_context/ClienteleContext";
+import { getClientsWithLocations } from "~/app/(protected)/clientele/actions";
 
 /**
  * Props for {@link ClienteleLayout}
  */
 interface ClienteleLayoutProps {
   children?: ReactNode;
-  params: { id: string };
 }
+
+export const dynamic = "force-dynamic";
 
 /**
  * Layout for clientele pages
  */
 export default async function ClienteleLayout(props: ClienteleLayoutProps) {
-  const clients = await findClientsWithLocations(0, 5);
-
-  if (!clients) {
-    await signOut();
-    return;
-  }
+  const clients = await getClientsWithLocations({ skip: 0, take: 5 });
 
   return (
     <ClienteleContextProvider>

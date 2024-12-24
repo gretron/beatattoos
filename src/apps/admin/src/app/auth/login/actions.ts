@@ -9,27 +9,36 @@ import {
   OPERATIONS_ERROR,
 } from "~/app/auth/login/_constants/actionResponses";
 import { SUCCESS_REDIRECT } from "~/app/auth/login/_constants/redirectUrls";
-import { z } from "zod";
+import { redirect } from "next/navigation";
+import { serverActionProcedure } from "~/lib/trpc";
+import { TRPCError } from "@trpc/server";
 
 /**
  * Action to log in into administrator account
  * @param data login form data {@link loginFormSchema}
  */
-export async function login(
-  data: z.infer<typeof loginFormSchema>,
-): Promise<any> {
-  try {
-    await signIn("credentials", { ...data, redirectTo: SUCCESS_REDIRECT });
-  } catch (e) {
-    if (e instanceof CallbackRouteError && e.cause?.err) {
-      return e.cause.err instanceof CredentialsSignin
-        ? { alert: CREDENTIALS_ERROR }
-        : { alert: OPERATIONS_ERROR };
+export const login = serverActionProcedure
+  .input(loginFormSchema)
+  .mutation(async ({ ctx, input }) => {
+    try {
+      await signIn("credentials", { ...input, redirect: false });
+    } catch (e) {
+      if (
+        e instanceof CallbackRouteError &&
+        e.cause?.err instanceof CredentialsSignin
+      ) {
+        return Promise.reject(
+          new TRPCError({ code: "UNAUTHORIZED", message: CREDENTIALS_ERROR }),
+        );
+      }
+
+      return Promise.reject(
+        new TRPCError({
+          code: "INTERNAL_SERVER_ERROR",
+          message: OPERATIONS_ERROR,
+        }),
+      );
     }
 
-    // Throw error to allow successful login redirect
-    throw e;
-  }
-
-  return { alert: OPERATIONS_ERROR };
-}
+    redirect(SUCCESS_REDIRECT);
+  });

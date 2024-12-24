@@ -36,10 +36,10 @@ export default function ClientList(props: ClientListProps) {
 
   const fetchClient = useCallback(async () => {
     const _clients = (
-      (await getClientsWithLocations(
-        clientOffset * 5,
-        5,
-      )) as ClientWithLocations[]
+      (await getClientsWithLocations({
+        skip: clientOffset * 5,
+        take: 5,
+      })) as ClientWithLocations[]
     ).filter((c) => !clients.find((cl) => cl.id === c.id));
 
     setClientOffset((prev) => ++prev);
