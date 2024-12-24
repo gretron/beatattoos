@@ -10,7 +10,7 @@ import {
   IconX,
 } from "@tabler/icons-react";
 import { Alert, AlertType } from "../types/Alert";
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 interface AlertBoxProps {
   className?: string;
