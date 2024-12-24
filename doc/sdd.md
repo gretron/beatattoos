@@ -30,3 +30,5 @@ Here is a [link](https://www.figma.com/board/e1gJpss6BXzyHw2XSj0wo5/System-Archi
 ### View Client Details Process
 #### Wireframe
 [View client details wireframe](https://www.figma.com/design/NKFhgn4TKEaUyLy72z8yyt/User-Interface?node-id=500-2695&t=ruULLJFoaCrLk9HA-1)
+#### Mockup
+[View client details mockup](https://www.figma.com/design/TQ8gPI3f9OEMlvBOmeT38G/User-Interface?node-id=511-3963&t=szfgmmTLblLkeGsH-1)
