@@ -28,6 +28,7 @@ jobs:
     env:
       NEXTAUTH_SECRET: ${{ vars.ADMIN_NEXTAUTH_SECRET }}
       NEXTAUTH_URL: ${{ vars.ADMIN_NEXTAUTH_URL }}
+      NEXT_PUBLIC_CI: "1"
       DISCORD_CLIENT_ID: ${{ vars.ADMIN_DISCORD_CLIENT_ID }}
       DISCORD_CLIENT_SECRET: ${{ vars.ADMIN_DISCORD_CLIENT_SECRET }}
       ADMIN_TOKEN: ${{ vars.ADMIN_TOKEN }}
@@ -43,14 +44,6 @@ jobs:
       - name: Install monorepo dependencies
         working-directory: ./src
         run: npm ci
-      - name: Install admin app dependencies
-        run: npm ci
-      - name: Generate prisma client
-        run: npm run postinstall
-      - name: Build admin app
-        run: npm run build
-      - name: Run linter
-        run: npm run lint
       - name: Setup supabase CLI
         uses: supabase/setup-cli@v1
         with:
@@ -59,8 +52,29 @@ jobs:
         run: supabase init --with-intellij-settings --with-vscode-settings
       - name: Start supabase database
         run: supabase db start
+      - name: Reset supabase database
+        run: supabase db reset
+      - name: Install db package dependencies
+        working-directory: ./src/packages/db
+        run: npm ci
+      - name: Generate prisma client
+        working-directory: ./src/packages/db
+        run: npm run postinstall
       - name: Push tables to database
+        working-directory: ./src/packages/db
         run: npm run db:push
+      - name: Import geonames into database
+        working-directory: ./src/packages/db
+        run: npm run import-geonames
+      - name: Import alternate names into database
+        working-directory: ./src/packages/db
+        run: npm run import-alternatenames
+      - name: Install admin app dependencies
+        run: npm ci
+      - name: Build admin app
+        run: npm run build
+      - name: Run linter
+        run: npm run lint
       - name: Install playwright
         run: npx playwright install --with-deps
       - name: Run playwright e2e tests
