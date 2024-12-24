@@ -15,7 +15,18 @@ const db = new PrismaClient();
  * To import country alternatenames into database
  */
 async function importCountryAlternatenames() {
-  await db.countryAlternatename.deleteMany({});
+  try {
+    await db.countryAlternatename.deleteMany({});
+  } catch (e) {
+    console.error(
+      "ERROR: An error occurred while deleting existing database country alternate names",
+      e,
+    );
+
+    return Promise.reject(e);
+  }
+
+  console.log("Successfully deleted existing database country alternate names");
 
   const alternateNames: CountryAlternatename[] = (
     countryAlternatenames as []
@@ -28,14 +39,38 @@ async function importCountryAlternatenames() {
     isShortName: alternatename.isShortName,
   }));
 
-  await db.countryAlternatename.createMany({ data: alternateNames });
+  try {
+    await db.countryAlternatename.createMany({ data: alternateNames });
+  } catch (e) {
+    console.error(
+      "ERROR: An error occurred while creating country alternate names",
+      e,
+    );
+
+    return Promise.reject(e);
+  }
+
+  console.log("Successfully created country alternate names");
 }
 
 /**
  * To import state/province alternatenames into database
  */
 async function importStateProvinceAlternatenames() {
-  await db.stateProvinceAlternatename.deleteMany({});
+  try {
+    await db.stateProvinceAlternatename.deleteMany({});
+  } catch (e) {
+    console.error(
+      "ERROR: An error occurred while deleting existing database state/province alternate names",
+      e,
+    );
+
+    return Promise.reject(e);
+  }
+
+  console.log(
+    "Successfully deleted existing database state/province alternate names",
+  );
 
   const alternateNames: StateProvinceAlternatename[] = (
     stateProvinceAlternatenames as []
@@ -48,14 +83,36 @@ async function importStateProvinceAlternatenames() {
     isShortName: alternatename.isShortName,
   }));
 
-  await db.stateProvinceAlternatename.createMany({ data: alternateNames });
+  try {
+    await db.stateProvinceAlternatename.createMany({ data: alternateNames });
+  } catch (e) {
+    console.error(
+      "ERROR: An error occurred while creating state/province alternate names",
+      e,
+    );
+
+    return Promise.reject(e);
+  }
+
+  console.log("Successfully created state/province alternate names");
 }
 
 /**
  * To import city alternatenames into database
  */
 async function importCityAlternatenames() {
-  await db.cityAlternatename.deleteMany({});
+  try {
+    await db.cityAlternatename.deleteMany({});
+  } catch (e) {
+    console.error(
+      "ERROR: An error occurred while deleting existing database city alternate names",
+      e,
+    );
+
+    return Promise.reject(e);
+  }
+
+  console.log("Successfully deleted existing database city alternate names");
 
   const alternateNames: CityAlternatename[] = (cityAlternatenames as []).map(
     (alternatename: Alternatename) => ({
@@ -68,7 +125,18 @@ async function importCityAlternatenames() {
     }),
   );
 
-  await db.cityAlternatename.createMany({ data: alternateNames });
+  try {
+    await db.cityAlternatename.createMany({ data: alternateNames });
+  } catch (e) {
+    console.error(
+      "ERROR: An error occurred while creating city alternate names",
+      e,
+    );
+
+    return Promise.reject(e);
+  }
+
+  console.log("Successfully created city alternate names");
 }
 
 /**
