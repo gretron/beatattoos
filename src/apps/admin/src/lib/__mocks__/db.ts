@@ -6,4 +6,13 @@ export const db = {
     findUnique: vi.fn(),
     create: vi.fn(),
   },
+  country: {
+    findUnique: vi.fn(),
+  },
+  stateProvince: {
+    findMany: vi.fn(),
+  },
+  city: {
+    findMany: vi.fn(),
+  },
 };

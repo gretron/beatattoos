@@ -9,10 +9,6 @@
     @apply !font-body font-medium !text-base text-secondary-500;
   }
 
-  input:-webkit-autofill:disabled {
-    -webkit-text-fill-color: #a47c6f;
-  }
-
   .d1,
   .d2,
   .d3 {
@@ -97,5 +93,9 @@
 
   ::-webkit-scrollbar-thumb {
     @apply bg-neutral-500 rounded-full;
+  }
+
+  ::-webkit-scrollbar-corner {
+    @apply bg-neutral-400;
   }
 }

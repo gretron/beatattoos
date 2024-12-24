@@ -1,54 +1,35 @@
 "use client";
 
-import { FormEvent, ReactNode, useState, useTransition } from "react";
+import { FormEvent, ReactNode, useState } from "react";
 import { z } from "zod";
-import {
-  clientFormSchema,
-  defaultClientForm,
-} from "~/app/(protected)/clientele/_constants/schemas";
-import InputField from "@beatattoos/ui/InputField";
-import { Alert, AlertType } from "@beatattoos/ui/Alert";
-import AlertBox from "@beatattoos/ui/AlertBox";
+import { InputField } from "@beatattoos/ui";
 import PasswordField from "~/app/(protected)/clientele/_components/ClientForm/components/PasswordField";
-import { useFormState } from "react-dom";
+import LocationFields, {
+  RequiredLocationFieldsProps,
+} from "~/app/_components/LocationFields";
+import { defaultUserValues, userSchema } from "~/app/_constants/schemas";
 
 /**
  * Props for {@link ClientForm}
  */
-interface ClientFormProps {
+interface ClientFormProps extends RequiredLocationFieldsProps {
   children?: ReactNode;
-  alert?: Alert;
-  action: (formData: FormData) => Promise<Alert>;
+  isPending: boolean;
+  handleSubmit: (e: FormEvent) => void;
 }
 
 /**
  * Form for client add/edit operations
  */
-function ClientForm(props: ClientFormProps) {
+export default function ClientForm(props: ClientFormProps) {
   const [clientForm, setClientForm] =
-    useState<z.infer<typeof clientFormSchema>>(defaultClientForm);
-  const [alert, setAlert] = useState<Alert>({ type: AlertType.error });
-  const [isPending, startTransition] = useTransition();
-
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-
-    setAlert((prev) => ({ ...prev, message: undefined }));
-
-    startTransition(async () => {
-      await props
-        .action(new FormData(e.target as HTMLFormElement))
-        .then((res) => {
-          setAlert((prev) => ({ ...prev, message: res?.message }));
-        });
-    });
-  };
+    useState<z.infer<typeof userSchema>>(defaultUserValues);
 
   return (
     <form
       className={"flex grow flex-col"}
       aria-label={"Client form"}
-      onSubmit={handleSubmit}
+      onSubmit={props.handleSubmit}
     >
       <div className={"grow"}>
         <InputField
@@ -57,8 +38,8 @@ function ClientForm(props: ClientFormProps) {
           heading={"First name"}
           placeholder={"John"}
           className={"mb-4"}
-          disabled={isPending}
-          schema={clientFormSchema.shape.firstName}
+          disabled={props.isPending}
+          schema={userSchema.shape.firstName}
           required={true}
           value={clientForm.firstName}
           setValue={(value) =>
@@ -74,8 +55,8 @@ function ClientForm(props: ClientFormProps) {
           heading={"Last name"}
           placeholder={"Doe"}
           className={"mb-4"}
-          disabled={isPending}
-          schema={clientFormSchema.shape.lastName}
+          disabled={props.isPending}
+          schema={userSchema.shape.lastName}
           required={true}
           value={clientForm.lastName}
           setValue={(value) =>
@@ -85,14 +66,18 @@ function ClientForm(props: ClientFormProps) {
             }))
           }
         />
+        <LocationFields
+          countries={props.countries}
+          disabled={props.isPending}
+        />
         <InputField
           id={"email-address"}
           name={"emailAddress"}
           heading={"Email address"}
           placeholder={"john.doe@example.com"}
           className={"mb-4"}
-          disabled={isPending}
-          schema={clientFormSchema.shape.emailAddress}
+          disabled={props.isPending}
+          schema={userSchema.shape.emailAddress}
           required={true}
           value={clientForm.emailAddress}
           setValue={(value) =>
@@ -103,7 +88,7 @@ function ClientForm(props: ClientFormProps) {
           }
         />
         <PasswordField
-          isPending={isPending}
+          isPending={props.isPending}
           value={clientForm.password}
           setValue={(value) =>
             setClientForm((prevState) => ({
@@ -113,19 +98,7 @@ function ClientForm(props: ClientFormProps) {
           }
         />
       </div>
-      <div>
-        {props.alert && (
-          <AlertBox
-            className={"mt-6"}
-            alert={props.alert}
-            setAlert={undefined}
-          />
-        )}
-        <AlertBox className={"mt-6"} alert={alert} setAlert={setAlert} />
-        <button className={"btn-primary mt-6 w-full"}>Add Client</button>
-      </div>
+      <div>{props.children}</div>
     </form>
   );
 }
-
-export default ClientForm;

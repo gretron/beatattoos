@@ -1,0 +1,26 @@
+{
+  "name": "@beatattoos/db",
+  "version": "0.0.0",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "generate-geonames": "ts-node ./scripts/generate-geonames.ts",
+    "generate-alternatenames": "ts-node ./scripts/generate-alternatenames.ts",
+    "import-geonames": "ts-node ./scripts/import-geonames.ts",
+    "import-alternatenames": "ts-node ./scripts/import-alternatenames.ts",
+    "update-geonames": "ts-node ./scripts/update-geonames.ts",
+    "db:generate": "prisma migrate dev",
+    "db:migrate": "prisma migrate deploy",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.14.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.14.0",
+    "ts-node": "^10.9.2"
+  }
+}

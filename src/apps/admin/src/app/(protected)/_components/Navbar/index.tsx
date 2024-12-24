@@ -1,14 +1,13 @@
 import React from "react";
 import NavLink from "~/app/(protected)/_components/Navbar/components/NavLink";
-import { IconLayout, IconLogout, IconUsers } from "@tabler/icons-react";
+import { IconLayout, IconUsers } from "@tabler/icons-react";
 import Container from "~/app/(protected)/_components/Navbar/components/Container";
-import { signOut } from "~/lib/auth";
 import LogoutButton from "~/app/(protected)/_components/Navbar/components/LogoutButton";
 
 /**
  * Application navbar
  */
-function Navbar() {
+export default async function Navbar() {
   return (
     <Container>
       <ul className={"flex gap-8 max-md:justify-between md:flex-col"}>
@@ -38,5 +37,3 @@ function Navbar() {
     </Container>
   );
 }
-
-export default Navbar;

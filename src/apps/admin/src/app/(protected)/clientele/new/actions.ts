@@ -1,75 +1,93 @@
 "use server";
 
-import { Alert } from "@beatattoos/ui/Alert";
-import { clientFormSchema } from "~/app/(protected)/clientele/_constants/schemas";
 import { db } from "~/lib/db";
 import {
-  AUTHENTICATION_ERROR,
-  CREDENTIALS_PARSING_ERROR,
   EMAIL_IN_USE_ERROR,
   EMAIL_IN_USE_FAILED_ERROR,
 } from "~/app/_constants/actionResponses";
 import bcrypt from "bcryptjs";
-import { redirect } from "next/navigation";
-import { User } from "@prisma/client";
 import {
   CREATE_CLIENT_FAILED_ERROR,
   CREATE_CLIENT_SUCCESS,
 } from "~/app/(protected)/clientele/new/_constants/actionResponses";
-import { authenticate } from "~/app/(protected)/_lib/auth";
+import { areLocationsInvalid } from "~/app/_utils/location-utilities";
+import { userSchema } from "~/app/_constants/schemas";
+import ClientWithLocations from "~/app/(protected)/clientele/_types/ClientWithLocations";
+import LocationsInclude from "~/app/(protected)/clientele/_constants/locations-include";
+import { authenticatedAction } from "~/lib/trpc";
+import { TRPCError } from "@trpc/server";
 
 /**
- * Action to create client account
- * @param formData client form data {@link clientFormSchema}
+ * Action to create a new client
+ * @param input the new client data {@link userSchema}
  */
-export async function createClient(formData: FormData): Promise<Alert> {
-  const data = Object.fromEntries(formData);
-  const parsedData = clientFormSchema.safeParse(data);
+export const createClient = authenticatedAction
+  .input(userSchema)
+  .mutation(async ({ ctx, input }) => {
+    const {
+      firstName,
+      lastName,
+      countryId,
+      stateProvinceId,
+      cityId,
+      emailAddress,
+      password,
+    } = input;
 
-  // Check for data formatting errors
-  if (!parsedData.success) {
-    return CREDENTIALS_PARSING_ERROR;
-  }
+    let emailInUse;
 
-  try {
-    await authenticate();
-  } catch (e) {
-    return AUTHENTICATION_ERROR;
-  }
+    try {
+      emailInUse = await db.user.findUnique({ where: { emailAddress } });
+    } catch (e) {
+      return Promise.reject({
+        code: "INTERNAL_SERVER_ERROR",
+        message: EMAIL_IN_USE_FAILED_ERROR,
+      });
+    }
 
-  const { firstName, lastName, emailAddress, password } = parsedData.data;
+    if (emailInUse) {
+      return Promise.reject({
+        code: "BAD_REQUEST",
+        message: EMAIL_IN_USE_ERROR,
+      });
+    }
 
-  let emailInUse;
+    const locationsInvalid = await areLocationsInvalid(
+      countryId,
+      stateProvinceId,
+      cityId,
+    );
 
-  try {
-    emailInUse = await db.user.findUnique({ where: { emailAddress } });
-  } catch (e) {
-    return EMAIL_IN_USE_FAILED_ERROR;
-  }
+    if (locationsInvalid) {
+      return Promise.reject(locationsInvalid);
+    }
 
-  if (emailInUse) {
-    return EMAIL_IN_USE_ERROR;
-  }
+    const hashedPassword = await bcrypt.hash(password, 10);
+    let user: ClientWithLocations;
 
-  const hashedPassword = await bcrypt.hash(password, 10);
-  let user: User;
+    try {
+      user = await db.user.create({
+        data: {
+          role: "CLIENT",
+          firstName,
+          lastName,
+          countryId,
+          stateProvinceId,
+          cityId,
+          emailAddress,
+          password: hashedPassword,
+        },
+        include: LocationsInclude,
+      });
+    } catch (e) {
+      return Promise.reject(
+        new TRPCError({
+          code: "BAD_REQUEST",
+          message: CREATE_CLIENT_FAILED_ERROR,
+        }),
+      );
+    }
 
-  try {
-    user = await db.user.create({
-      data: {
-        role: "CLIENT",
-        firstName,
-        lastName,
-        emailAddress,
-        password: hashedPassword,
-      },
-    });
-  } catch (e) {
-    return CREATE_CLIENT_FAILED_ERROR;
-  }
-
-  redirect(`/clientele/${user.id}`);
-
-  // For integration tests
-  return CREATE_CLIENT_SUCCESS;
-}
+    // For integration tests
+    return { alert: CREATE_CLIENT_SUCCESS, data: user };
+  });

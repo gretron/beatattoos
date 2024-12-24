@@ -1,0 +1,9458 @@
+[
+	{
+		"id": "1561377",
+		"geonameId": "3041565",
+		"isoLanguage": "da",
+		"name": "Andorra",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561380",
+		"geonameId": "3041565",
+		"isoLanguage": "en",
+		"name": "Andorra",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561386",
+		"geonameId": "3041565",
+		"isoLanguage": "fr",
+		"name": "Andorre",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561395",
+		"geonameId": "3041565",
+		"isoLanguage": "it",
+		"name": "Andorra",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4307283",
+		"geonameId": "3041565",
+		"isoLanguage": "en",
+		"name": "Principality of Andorra",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1561319",
+		"geonameId": "290557",
+		"isoLanguage": "da",
+		"name": "Forenede Arabiske Emirater",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1561323",
+		"geonameId": "290557",
+		"isoLanguage": "en",
+		"name": "United Arab Emirates",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561331",
+		"geonameId": "290557",
+		"isoLanguage": "fr",
+		"name": "Émirats Arabes Unis",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561340",
+		"geonameId": "290557",
+		"isoLanguage": "it",
+		"name": "Emirati Arabi Uniti",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "5881659",
+		"geonameId": "290557",
+		"isoLanguage": "abbr",
+		"name": "UAE",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "16925935",
+		"geonameId": "290557",
+		"isoLanguage": "da",
+		"name": "De Forenede Arabiske Emirater",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561259",
+		"geonameId": "1149361",
+		"isoLanguage": "da",
+		"name": "Afghanistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561263",
+		"geonameId": "1149361",
+		"isoLanguage": "en",
+		"name": "Afghanistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561271",
+		"geonameId": "1149361",
+		"isoLanguage": "fr",
+		"name": "Afghanistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561280",
+		"geonameId": "1149361",
+		"isoLanguage": "it",
+		"name": "Afghanistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "3626681",
+		"geonameId": "1149361",
+		"isoLanguage": "en",
+		"name": "Islamic Republic of Afghanistan",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1561149",
+		"geonameId": "3576396",
+		"isoLanguage": "da",
+		"name": "Antigua og Barbuda",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561152",
+		"geonameId": "3576396",
+		"isoLanguage": "en",
+		"name": "Antigua and Barbuda",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561160",
+		"geonameId": "3576396",
+		"isoLanguage": "fr",
+		"name": "Antigua-et-Barbuda",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561169",
+		"geonameId": "3576396",
+		"isoLanguage": "it",
+		"name": "Antigua e Barbuda",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2421020",
+		"geonameId": "3576396",
+		"isoLanguage": "fr",
+		"name": "Antigue-et-Barbude",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "16925988",
+		"geonameId": "3576396",
+		"isoLanguage": "en",
+		"name": "Antigua & Barbuda",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1560871",
+		"geonameId": "783754",
+		"isoLanguage": "da",
+		"name": "Albanien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560874",
+		"geonameId": "783754",
+		"isoLanguage": "en",
+		"name": "Albania",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560880",
+		"geonameId": "783754",
+		"isoLanguage": "fr",
+		"name": "Albanie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560889",
+		"geonameId": "783754",
+		"isoLanguage": "it",
+		"name": "Albania",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4671023",
+		"geonameId": "783754",
+		"isoLanguage": "en",
+		"name": "Republic of Albania",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1560704",
+		"geonameId": "174982",
+		"isoLanguage": "da",
+		"name": "Armenien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560707",
+		"geonameId": "174982",
+		"isoLanguage": "en",
+		"name": "Armenia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560713",
+		"geonameId": "174982",
+		"isoLanguage": "fr",
+		"name": "Arménie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560722",
+		"geonameId": "174982",
+		"isoLanguage": "it",
+		"name": "Armenia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4097947",
+		"geonameId": "174982",
+		"isoLanguage": "en",
+		"name": "Republic of Armenia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1560530",
+		"geonameId": "3351879",
+		"isoLanguage": "da",
+		"name": "Angola",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560533",
+		"geonameId": "3351879",
+		"isoLanguage": "en",
+		"name": "Angola",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560539",
+		"geonameId": "3351879",
+		"isoLanguage": "fr",
+		"name": "Angola",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560548",
+		"geonameId": "3351879",
+		"isoLanguage": "it",
+		"name": "Angola",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "3933241",
+		"geonameId": "3351879",
+		"isoLanguage": "en",
+		"name": "Republic of Angola",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1560475",
+		"geonameId": "3865483",
+		"isoLanguage": "da",
+		"name": "Argentina",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560479",
+		"geonameId": "3865483",
+		"isoLanguage": "en",
+		"name": "Argentina",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560485",
+		"geonameId": "3865483",
+		"isoLanguage": "fr",
+		"name": "Argentine",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560494",
+		"geonameId": "3865483",
+		"isoLanguage": "it",
+		"name": "Argentina",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4396171",
+		"geonameId": "3865483",
+		"isoLanguage": "en",
+		"name": "Argentine Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1560416",
+		"geonameId": "2782113",
+		"isoLanguage": "da",
+		"name": "Østrig",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560420",
+		"geonameId": "2782113",
+		"isoLanguage": "en",
+		"name": "Austria",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560427",
+		"geonameId": "2782113",
+		"isoLanguage": "fr",
+		"name": "Autriche",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560436",
+		"geonameId": "2782113",
+		"isoLanguage": "it",
+		"name": "Austria",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4164670",
+		"geonameId": "2782113",
+		"isoLanguage": "en",
+		"name": "Republic of Austria",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1560357",
+		"geonameId": "2077456",
+		"isoLanguage": "da",
+		"name": "Australien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560361",
+		"geonameId": "2077456",
+		"isoLanguage": "en",
+		"name": "Australia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560368",
+		"geonameId": "2077456",
+		"isoLanguage": "fr",
+		"name": "Australie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560377",
+		"geonameId": "2077456",
+		"isoLanguage": "it",
+		"name": "Australia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560140",
+		"geonameId": "587116",
+		"isoLanguage": "da",
+		"name": "Aserbajdsjan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560143",
+		"geonameId": "587116",
+		"isoLanguage": "en",
+		"name": "Azerbaijan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560150",
+		"geonameId": "587116",
+		"isoLanguage": "fr",
+		"name": "Azerbaïdjan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560159",
+		"geonameId": "587116",
+		"isoLanguage": "it",
+		"name": "Azerbaigian",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "3955223",
+		"geonameId": "587116",
+		"isoLanguage": "en",
+		"name": "Republic of Azerbaijan",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559910",
+		"geonameId": "3277605",
+		"isoLanguage": "da",
+		"name": "Bosnien-Hercegovina",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559913",
+		"geonameId": "3277605",
+		"isoLanguage": "en",
+		"name": "Bosnia and Herzegovina",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559921",
+		"geonameId": "3277605",
+		"isoLanguage": "fr",
+		"name": "Bosnie-Herzégovine",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1975098",
+		"geonameId": "3277605",
+		"isoLanguage": "it",
+		"name": "Bosnia ed Erzegovina",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "7084990",
+		"geonameId": "3277605",
+		"isoLanguage": "it",
+		"name": "Bosnia-Erzegovina",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559799",
+		"geonameId": "3374084",
+		"isoLanguage": "da",
+		"name": "Barbados",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559802",
+		"geonameId": "3374084",
+		"isoLanguage": "en",
+		"name": "Barbados",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559808",
+		"geonameId": "3374084",
+		"isoLanguage": "fr",
+		"name": "Barbade",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559817",
+		"geonameId": "3374084",
+		"isoLanguage": "it",
+		"name": "Barbados",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559683",
+		"geonameId": "1210997",
+		"isoLanguage": "da",
+		"name": "Bangladesh",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559687",
+		"geonameId": "1210997",
+		"isoLanguage": "en",
+		"name": "Bangladesh",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559694",
+		"geonameId": "1210997",
+		"isoLanguage": "fr",
+		"name": "Bangladesh",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559703",
+		"geonameId": "1210997",
+		"isoLanguage": "it",
+		"name": "Bangladesh",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2256759",
+		"geonameId": "1210997",
+		"isoLanguage": "fr",
+		"name": "Pakistan oriental",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1261151",
+		"geonameId": "2802361",
+		"isoLanguage": "fr",
+		"name": "Royaume de Belgique",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559623",
+		"geonameId": "2802361",
+		"isoLanguage": "da",
+		"name": "Belgien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559627",
+		"geonameId": "2802361",
+		"isoLanguage": "en",
+		"name": "Belgium",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559635",
+		"geonameId": "2802361",
+		"isoLanguage": "fr",
+		"name": "Belgique",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559644",
+		"geonameId": "2802361",
+		"isoLanguage": "it",
+		"name": "Belgio",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "6995036",
+		"geonameId": "2802361",
+		"isoLanguage": "en",
+		"name": "Kingdom of Belgium",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559512",
+		"geonameId": "2361809",
+		"isoLanguage": "da",
+		"name": "Burkina Faso",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559515",
+		"geonameId": "2361809",
+		"isoLanguage": "en",
+		"name": "Burkina Faso",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559521",
+		"geonameId": "2361809",
+		"isoLanguage": "fr",
+		"name": "Burkina Faso",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559530",
+		"geonameId": "2361809",
+		"isoLanguage": "it",
+		"name": "Burkina Faso",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559409",
+		"geonameId": "732800",
+		"isoLanguage": "da",
+		"name": "Bulgarien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559412",
+		"geonameId": "732800",
+		"isoLanguage": "en",
+		"name": "Bulgaria",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559418",
+		"geonameId": "732800",
+		"isoLanguage": "fr",
+		"name": "Bulgarie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559427",
+		"geonameId": "732800",
+		"isoLanguage": "it",
+		"name": "Bulgaria",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "6998124",
+		"geonameId": "732800",
+		"isoLanguage": "en",
+		"name": "Republic of Bulgaria",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559352",
+		"geonameId": "290291",
+		"isoLanguage": "da",
+		"name": "Bahrain",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559356",
+		"geonameId": "290291",
+		"isoLanguage": "en",
+		"name": "Bahrain",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559362",
+		"geonameId": "290291",
+		"isoLanguage": "fr",
+		"name": "Bahreïn",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559371",
+		"geonameId": "290291",
+		"isoLanguage": "it",
+		"name": "Bahrein",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1618418",
+		"geonameId": "290291",
+		"isoLanguage": "it",
+		"name": "Bahrain",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "4469684",
+		"geonameId": "290291",
+		"isoLanguage": "en",
+		"name": "Kingdom of Bahrain",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "272711",
+		"geonameId": "433561",
+		"isoLanguage": "fr",
+		"name": "République du Burundi",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559299",
+		"geonameId": "433561",
+		"isoLanguage": "da",
+		"name": "Burundi",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559302",
+		"geonameId": "433561",
+		"isoLanguage": "en",
+		"name": "Burundi",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559308",
+		"geonameId": "433561",
+		"isoLanguage": "fr",
+		"name": "Burundi",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559317",
+		"geonameId": "433561",
+		"isoLanguage": "it",
+		"name": "Burundi",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "3283249",
+		"geonameId": "433561",
+		"isoLanguage": "en",
+		"name": "Republic of Burundi",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1130774",
+		"geonameId": "2395170",
+		"isoLanguage": "fr",
+		"name": "République du Bénin",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559246",
+		"geonameId": "2395170",
+		"isoLanguage": "da",
+		"name": "Benin",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559249",
+		"geonameId": "2395170",
+		"isoLanguage": "en",
+		"name": "Benin",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559255",
+		"geonameId": "2395170",
+		"isoLanguage": "fr",
+		"name": "Benin",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559264",
+		"geonameId": "2395170",
+		"isoLanguage": "it",
+		"name": "Benin",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1977963",
+		"geonameId": "2395170",
+		"isoLanguage": "fr",
+		"name": "Bénin",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4311689",
+		"geonameId": "2395170",
+		"isoLanguage": "en",
+		"name": "Republic of Benin",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559193",
+		"geonameId": "1820814",
+		"isoLanguage": "da",
+		"name": "Brunei Darussalam",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559196",
+		"geonameId": "1820814",
+		"isoLanguage": "en",
+		"name": "Brunei",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559202",
+		"geonameId": "1820814",
+		"isoLanguage": "fr",
+		"name": "Brunei",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1559211",
+		"geonameId": "1820814",
+		"isoLanguage": "it",
+		"name": "Brunei",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1977847",
+		"geonameId": "1820814",
+		"isoLanguage": "da",
+		"name": "Brunei",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2420169",
+		"geonameId": "1820814",
+		"isoLanguage": "fr",
+		"name": "Brunéi Darussalam",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "8046209",
+		"geonameId": "1820814",
+		"isoLanguage": "en",
+		"name": "Brunei Darussalam",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559079",
+		"geonameId": "3923057",
+		"isoLanguage": "da",
+		"name": "Bolivia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559082",
+		"geonameId": "3923057",
+		"isoLanguage": "en",
+		"name": "Bolivia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559089",
+		"geonameId": "3923057",
+		"isoLanguage": "fr",
+		"name": "Bolivie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559098",
+		"geonameId": "3923057",
+		"isoLanguage": "it",
+		"name": "Bolivia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4513489",
+		"geonameId": "3923057",
+		"isoLanguage": "en",
+		"name": "Plurinational State of Bolivia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "4513491",
+		"geonameId": "3923057",
+		"isoLanguage": "en",
+		"name": "Republic of Bolivia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8103207",
+		"geonameId": "3923057",
+		"isoLanguage": "en",
+		"name": "Bolivia, Plurinational State Of",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "13597407",
+		"geonameId": "3923057",
+		"isoLanguage": "en",
+		"name": "Bolivia (Plurinational State of)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559016",
+		"geonameId": "3469034",
+		"isoLanguage": "da",
+		"name": "Brasilien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559020",
+		"geonameId": "3469034",
+		"isoLanguage": "en",
+		"name": "Brazil",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559028",
+		"geonameId": "3469034",
+		"isoLanguage": "fr",
+		"name": "Brésil",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559037",
+		"geonameId": "3469034",
+		"isoLanguage": "it",
+		"name": "Brasile",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4522044",
+		"geonameId": "3469034",
+		"isoLanguage": "en",
+		"name": "Federative Republic of Brazil",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558958",
+		"geonameId": "3572887",
+		"isoLanguage": "da",
+		"name": "Bahamas",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558961",
+		"geonameId": "3572887",
+		"isoLanguage": "en",
+		"name": "Bahamas",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558968",
+		"geonameId": "3572887",
+		"isoLanguage": "fr",
+		"name": "Bahamas",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558977",
+		"geonameId": "3572887",
+		"isoLanguage": "it",
+		"name": "Bahamas",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1978585",
+		"geonameId": "3572887",
+		"isoLanguage": "en",
+		"name": "The Bahamas",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558904",
+		"geonameId": "1252634",
+		"isoLanguage": "da",
+		"name": "Bhutan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558908",
+		"geonameId": "1252634",
+		"isoLanguage": "en",
+		"name": "Bhutan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558915",
+		"geonameId": "1252634",
+		"isoLanguage": "fr",
+		"name": "Bhoutan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558924",
+		"geonameId": "1252634",
+		"isoLanguage": "it",
+		"name": "Bhutan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2420106",
+		"geonameId": "1252634",
+		"isoLanguage": "fr",
+		"name": "Bhutan",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558848",
+		"geonameId": "933860",
+		"isoLanguage": "da",
+		"name": "Botswana",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558851",
+		"geonameId": "933860",
+		"isoLanguage": "en",
+		"name": "Botswana",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558858",
+		"geonameId": "933860",
+		"isoLanguage": "fr",
+		"name": "Botswana",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558867",
+		"geonameId": "933860",
+		"isoLanguage": "it",
+		"name": "Botswana",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558793",
+		"geonameId": "630336",
+		"isoLanguage": "da",
+		"name": "Hviderusland",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558796",
+		"geonameId": "630336",
+		"isoLanguage": "en",
+		"name": "Belarus",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558804",
+		"geonameId": "630336",
+		"isoLanguage": "fr",
+		"name": "Bélarus",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558813",
+		"geonameId": "630336",
+		"isoLanguage": "it",
+		"name": "Bielorussia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1974105",
+		"geonameId": "630336",
+		"isoLanguage": "fr",
+		"name": "Biélorussie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4177477",
+		"geonameId": "630336",
+		"isoLanguage": "en",
+		"name": "Republic of Belarus",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "17408546",
+		"geonameId": "630336",
+		"isoLanguage": "da",
+		"name": "Belarus",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "17408547",
+		"geonameId": "630336",
+		"isoLanguage": "da",
+		"name": "Republikken Belarus",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558737",
+		"geonameId": "3582678",
+		"isoLanguage": "da",
+		"name": "Belize",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558740",
+		"geonameId": "3582678",
+		"isoLanguage": "en",
+		"name": "Belize",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558747",
+		"geonameId": "3582678",
+		"isoLanguage": "fr",
+		"name": "Belize",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558756",
+		"geonameId": "3582678",
+		"isoLanguage": "it",
+		"name": "Belize",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1969547",
+		"geonameId": "6251999",
+		"isoLanguage": "da",
+		"name": "Canada",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1969551",
+		"geonameId": "6251999",
+		"isoLanguage": "en",
+		"name": "Canada",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1969559",
+		"geonameId": "6251999",
+		"isoLanguage": "fr",
+		"name": "Canada",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1969568",
+		"geonameId": "6251999",
+		"isoLanguage": "it",
+		"name": "Canada",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "144865",
+		"geonameId": "203312",
+		"isoLanguage": "fr",
+		"name": "République Démocratique du Congo",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "144876",
+		"geonameId": "203312",
+		"isoLanguage": "fr",
+		"name": "Congo Belge",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558641",
+		"geonameId": "203312",
+		"isoLanguage": "da",
+		"name": "Den Demokratiske Republik Congo",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558656",
+		"geonameId": "203312",
+		"isoLanguage": "it",
+		"name": "Repubblica Democratica del Congo",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1978896",
+		"geonameId": "203312",
+		"isoLanguage": "en",
+		"name": "Democratic Republic of the Congo",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1978908",
+		"geonameId": "203312",
+		"isoLanguage": "da",
+		"name": "Demokratiske Republik Congo",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2419931",
+		"geonameId": "203312",
+		"isoLanguage": "da",
+		"name": "Zaire",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2419938",
+		"geonameId": "203312",
+		"isoLanguage": "fr",
+		"name": "Congo-Kinshasa",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2419943",
+		"geonameId": "203312",
+		"isoLanguage": "it",
+		"name": "Zaire",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "4147221",
+		"geonameId": "203312",
+		"isoLanguage": "fr",
+		"name": "République du Zaïre",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "7995810",
+		"geonameId": "203312",
+		"isoLanguage": "fr",
+		"name": "RDC",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "17682361",
+		"geonameId": "203312",
+		"isoLanguage": "fr",
+		"name": "Congo",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "153327",
+		"geonameId": "239880",
+		"isoLanguage": "fr",
+		"name": "République Centrafricaine",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558587",
+		"geonameId": "239880",
+		"isoLanguage": "da",
+		"name": "Den Centralafrikanske Republik",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558590",
+		"geonameId": "239880",
+		"isoLanguage": "en",
+		"name": "Central African Republic",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558598",
+		"geonameId": "239880",
+		"isoLanguage": "fr",
+		"name": "Centrafrique",
+		"isPreferred": false,
+		"isShortName": true
+	},
+	{
+		"id": "1558607",
+		"geonameId": "239880",
+		"isoLanguage": "it",
+		"name": "Repubblica Centrafricana",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2419919",
+		"geonameId": "239880",
+		"isoLanguage": "fr",
+		"name": "Centrafricaine, république",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1093052",
+		"geonameId": "2260494",
+		"isoLanguage": "fr",
+		"name": "République du Congo",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558530",
+		"geonameId": "2260494",
+		"isoLanguage": "da",
+		"name": "Congo",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558550",
+		"geonameId": "2260494",
+		"isoLanguage": "it",
+		"name": "Congo-Brazzaville",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1978630",
+		"geonameId": "2260494",
+		"isoLanguage": "en",
+		"name": "Republic of the Congo",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1978640",
+		"geonameId": "2260494",
+		"isoLanguage": "da",
+		"name": "Republikken Congo",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1978655",
+		"geonameId": "2260494",
+		"isoLanguage": "it",
+		"name": "Repubblica del Congo",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2419897",
+		"geonameId": "2260494",
+		"isoLanguage": "da",
+		"name": "Congo-Brazzaville",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2419902",
+		"geonameId": "2260494",
+		"isoLanguage": "fr",
+		"name": "Congo-Brazzaville",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1226414",
+		"geonameId": "2658434",
+		"isoLanguage": "fr",
+		"name": "Confédération Suisse",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1226415",
+		"geonameId": "2658434",
+		"isoLanguage": "it",
+		"name": "Confederazione Svizzera",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558469",
+		"geonameId": "2658434",
+		"isoLanguage": "da",
+		"name": "Schweiz",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558473",
+		"geonameId": "2658434",
+		"isoLanguage": "en",
+		"name": "Switzerland",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558481",
+		"geonameId": "2658434",
+		"isoLanguage": "fr",
+		"name": "Suisse",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558490",
+		"geonameId": "2658434",
+		"isoLanguage": "it",
+		"name": "Svizzera",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1101114",
+		"geonameId": "2287781",
+		"isoLanguage": "fr",
+		"name": "République de Côte d'Ivoire",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1101118",
+		"geonameId": "2287781",
+		"isoLanguage": "fr",
+		"name": "Côte d'Ivoire",
+		"isPreferred": false,
+		"isShortName": true
+	},
+	{
+		"id": "1558411",
+		"geonameId": "2287781",
+		"isoLanguage": "da",
+		"name": "Elfenbenskysten",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558414",
+		"geonameId": "2287781",
+		"isoLanguage": "en",
+		"name": "Ivory Coast",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1977541",
+		"geonameId": "2287781",
+		"isoLanguage": "en",
+		"name": "Côte d'Ivoire",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1977561",
+		"geonameId": "2287781",
+		"isoLanguage": "it",
+		"name": "Costa d'Avorio",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2419873",
+		"geonameId": "2287781",
+		"isoLanguage": "fr",
+		"name": "Côte d’Ivoire",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4130592",
+		"geonameId": "2287781",
+		"isoLanguage": "en",
+		"name": "Republic of Côte d’Ivoire",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8044877",
+		"geonameId": "2287781",
+		"isoLanguage": "en",
+		"name": "Côte d’Ivoire",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "16927443",
+		"geonameId": "2287781",
+		"isoLanguage": "it",
+		"name": "Côte d’Ivoire",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558355",
+		"geonameId": "3895114",
+		"isoLanguage": "da",
+		"name": "Chile",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558358",
+		"geonameId": "3895114",
+		"isoLanguage": "en",
+		"name": "Chile",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558366",
+		"geonameId": "3895114",
+		"isoLanguage": "fr",
+		"name": "Chili",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558375",
+		"geonameId": "3895114",
+		"isoLanguage": "it",
+		"name": "Cile",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4420347",
+		"geonameId": "3895114",
+		"isoLanguage": "en",
+		"name": "Republic of Chile",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1082170",
+		"geonameId": "2233387",
+		"isoLanguage": "fr",
+		"name": "République du Cameroun",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558296",
+		"geonameId": "2233387",
+		"isoLanguage": "da",
+		"name": "Cameroun",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558299",
+		"geonameId": "2233387",
+		"isoLanguage": "en",
+		"name": "Cameroon",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558307",
+		"geonameId": "2233387",
+		"isoLanguage": "fr",
+		"name": "Cameroun",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558316",
+		"geonameId": "2233387",
+		"isoLanguage": "it",
+		"name": "Camerun",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2419797",
+		"geonameId": "2233387",
+		"isoLanguage": "da",
+		"name": "Cameroon",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "3668773",
+		"geonameId": "2233387",
+		"isoLanguage": "en",
+		"name": "Republic of Cameroon",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558231",
+		"geonameId": "1814991",
+		"isoLanguage": "da",
+		"name": "Kina",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558235",
+		"geonameId": "1814991",
+		"isoLanguage": "en",
+		"name": "China",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558243",
+		"geonameId": "1814991",
+		"isoLanguage": "fr",
+		"name": "Chine",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1558253",
+		"geonameId": "1814991",
+		"isoLanguage": "it",
+		"name": "Cina",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1973854",
+		"geonameId": "1814991",
+		"isoLanguage": "en",
+		"name": "People's Republic of China",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1973855",
+		"geonameId": "1814991",
+		"isoLanguage": "fr",
+		"name": "République populaire de Chine",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1973872",
+		"geonameId": "1814991",
+		"isoLanguage": "da",
+		"name": "Folkerepublikken Kina",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1973888",
+		"geonameId": "1814991",
+		"isoLanguage": "it",
+		"name": "Repubblica Popolare Cinese",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "4206101",
+		"geonameId": "1814991",
+		"isoLanguage": "en",
+		"name": "People’s Republic of China",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558170",
+		"geonameId": "3686110",
+		"isoLanguage": "da",
+		"name": "Colombia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558173",
+		"geonameId": "3686110",
+		"isoLanguage": "en",
+		"name": "Colombia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558181",
+		"geonameId": "3686110",
+		"isoLanguage": "fr",
+		"name": "Colombie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558190",
+		"geonameId": "3686110",
+		"isoLanguage": "it",
+		"name": "Colombia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4537777",
+		"geonameId": "3686110",
+		"isoLanguage": "en",
+		"name": "Republic of Colombia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558115",
+		"geonameId": "3624060",
+		"isoLanguage": "da",
+		"name": "Costa Rica",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558118",
+		"geonameId": "3624060",
+		"isoLanguage": "en",
+		"name": "Costa Rica",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1558125",
+		"geonameId": "3624060",
+		"isoLanguage": "fr",
+		"name": "Costa Rica",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558134",
+		"geonameId": "3624060",
+		"isoLanguage": "it",
+		"name": "Costa Rica",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4356447",
+		"geonameId": "3624060",
+		"isoLanguage": "en",
+		"name": "Republic of Costa Rica",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558056",
+		"geonameId": "3562981",
+		"isoLanguage": "da",
+		"name": "Cuba",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558060",
+		"geonameId": "3562981",
+		"isoLanguage": "en",
+		"name": "Cuba",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558068",
+		"geonameId": "3562981",
+		"isoLanguage": "fr",
+		"name": "Cuba",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558077",
+		"geonameId": "3562981",
+		"isoLanguage": "it",
+		"name": "Cuba",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4245064",
+		"geonameId": "3562981",
+		"isoLanguage": "en",
+		"name": "Republic of Cuba",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1557944",
+		"geonameId": "3374766",
+		"isoLanguage": "da",
+		"name": "Kap Verde",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557947",
+		"geonameId": "3374766",
+		"isoLanguage": "en",
+		"name": "Cape Verde",
+		"isPreferred": false,
+		"isShortName": true
+	},
+	{
+		"id": "1557955",
+		"geonameId": "3374766",
+		"isoLanguage": "fr",
+		"name": "Cap-Vert",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557964",
+		"geonameId": "3374766",
+		"isoLanguage": "it",
+		"name": "Capo Verde",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4314580",
+		"geonameId": "3374766",
+		"isoLanguage": "en",
+		"name": "Republic of Cape Verde",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8554635",
+		"geonameId": "3374766",
+		"isoLanguage": "en",
+		"name": "Republic of Cabo Verde",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8554636",
+		"geonameId": "3374766",
+		"isoLanguage": "en",
+		"name": "Cabo Verde",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1557888",
+		"geonameId": "146669",
+		"isoLanguage": "da",
+		"name": "Cypern",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557891",
+		"geonameId": "146669",
+		"isoLanguage": "en",
+		"name": "Cyprus",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557899",
+		"geonameId": "146669",
+		"isoLanguage": "fr",
+		"name": "Chypre",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557908",
+		"geonameId": "146669",
+		"isoLanguage": "it",
+		"name": "Cipro",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2198829",
+		"geonameId": "146669",
+		"isoLanguage": "en",
+		"name": "Republic of Cyprus",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1311584",
+		"geonameId": "3077311",
+		"isoLanguage": "en",
+		"name": "Czechia",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1557776",
+		"geonameId": "3077311",
+		"isoLanguage": "da",
+		"name": "Tjekkiet",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557780",
+		"geonameId": "3077311",
+		"isoLanguage": "en",
+		"name": "Czech Republic",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557788",
+		"geonameId": "3077311",
+		"isoLanguage": "fr",
+		"name": "République tchèque",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557797",
+		"geonameId": "3077311",
+		"isoLanguage": "it",
+		"name": "Repubblica Ceca",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2419670",
+		"geonameId": "3077311",
+		"isoLanguage": "fr",
+		"name": "Tchéquie",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "11661144",
+		"geonameId": "3077311",
+		"isoLanguage": "en",
+		"name": "Bohemia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "12189288",
+		"geonameId": "3077311",
+		"isoLanguage": "it",
+		"name": "Cechia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557478",
+		"geonameId": "2921044",
+		"isoLanguage": "da",
+		"name": "Tyskland",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557482",
+		"geonameId": "2921044",
+		"isoLanguage": "en",
+		"name": "Germany",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557490",
+		"geonameId": "2921044",
+		"isoLanguage": "fr",
+		"name": "Allemagne",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557500",
+		"geonameId": "2921044",
+		"isoLanguage": "it",
+		"name": "Germania",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4216015",
+		"geonameId": "2921044",
+		"isoLanguage": "en",
+		"name": "Federal Republic of Germany",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8517330",
+		"geonameId": "2921044",
+		"isoLanguage": "en",
+		"name": "West Germany",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "149954",
+		"geonameId": "223816",
+		"isoLanguage": "fr",
+		"name": "République de Djibouti",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1557360",
+		"geonameId": "223816",
+		"isoLanguage": "da",
+		"name": "Djibouti",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557363",
+		"geonameId": "223816",
+		"isoLanguage": "en",
+		"name": "Djibouti",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557370",
+		"geonameId": "223816",
+		"isoLanguage": "fr",
+		"name": "Djibouti",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557379",
+		"geonameId": "223816",
+		"isoLanguage": "it",
+		"name": "Gibuti",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4152614",
+		"geonameId": "223816",
+		"isoLanguage": "en",
+		"name": "Republic of Djibouti",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1218284",
+		"geonameId": "2623032",
+		"isoLanguage": "da",
+		"name": "Kongeriget Danmark",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1557299",
+		"geonameId": "2623032",
+		"isoLanguage": "da",
+		"name": "Danmark",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557303",
+		"geonameId": "2623032",
+		"isoLanguage": "en",
+		"name": "Denmark",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557311",
+		"geonameId": "2623032",
+		"isoLanguage": "fr",
+		"name": "Danemark",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557320",
+		"geonameId": "2623032",
+		"isoLanguage": "it",
+		"name": "Danimarca",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "3945229",
+		"geonameId": "2623032",
+		"isoLanguage": "en",
+		"name": "Kingdom of Denmark",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1557242",
+		"geonameId": "3575830",
+		"isoLanguage": "da",
+		"name": "Dominica",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557245",
+		"geonameId": "3575830",
+		"isoLanguage": "en",
+		"name": "Dominica",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557253",
+		"geonameId": "3575830",
+		"isoLanguage": "fr",
+		"name": "Dominique",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557262",
+		"geonameId": "3575830",
+		"isoLanguage": "it",
+		"name": "Dominica",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2426522",
+		"geonameId": "3575830",
+		"isoLanguage": "en",
+		"name": "Commonwealth of Dominica",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1557131",
+		"geonameId": "3508796",
+		"isoLanguage": "da",
+		"name": "Den Dominikanske Republik",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557134",
+		"geonameId": "3508796",
+		"isoLanguage": "en",
+		"name": "Dominican Republic",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557141",
+		"geonameId": "3508796",
+		"isoLanguage": "fr",
+		"name": "République dominicaine",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557150",
+		"geonameId": "3508796",
+		"isoLanguage": "it",
+		"name": "Repubblica Dominicana",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1618860",
+		"geonameId": "3508796",
+		"isoLanguage": "da",
+		"name": "Dominikanske Republik",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1627863",
+		"geonameId": "3508796",
+		"isoLanguage": "en",
+		"name": "Spanish Haiti",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2419295",
+		"geonameId": "3508796",
+		"isoLanguage": "fr",
+		"name": "Dominicaine, république",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1557017",
+		"geonameId": "2589581",
+		"isoLanguage": "da",
+		"name": "Algeriet",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557020",
+		"geonameId": "2589581",
+		"isoLanguage": "en",
+		"name": "Algeria",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557027",
+		"geonameId": "2589581",
+		"isoLanguage": "fr",
+		"name": "Algérie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557036",
+		"geonameId": "2589581",
+		"isoLanguage": "it",
+		"name": "Algeria",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4779125",
+		"geonameId": "2589581",
+		"isoLanguage": "en",
+		"name": "People’s Democratic Republic of Algeria",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556959",
+		"geonameId": "3658394",
+		"isoLanguage": "da",
+		"name": "Ecuador",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556962",
+		"geonameId": "3658394",
+		"isoLanguage": "en",
+		"name": "Ecuador",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556970",
+		"geonameId": "3658394",
+		"isoLanguage": "fr",
+		"name": "Équateur",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556979",
+		"geonameId": "3658394",
+		"isoLanguage": "it",
+		"name": "Ecuador",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4408863",
+		"geonameId": "3658394",
+		"isoLanguage": "en",
+		"name": "Republic of Ecuador",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556903",
+		"geonameId": "453733",
+		"isoLanguage": "da",
+		"name": "Estland",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556906",
+		"geonameId": "453733",
+		"isoLanguage": "en",
+		"name": "Estonia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556913",
+		"geonameId": "453733",
+		"isoLanguage": "fr",
+		"name": "Estonie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556922",
+		"geonameId": "453733",
+		"isoLanguage": "it",
+		"name": "Estonia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "3600553",
+		"geonameId": "453733",
+		"isoLanguage": "en",
+		"name": "Republic of Estonia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556841",
+		"geonameId": "357994",
+		"isoLanguage": "da",
+		"name": "Egypten",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556845",
+		"geonameId": "357994",
+		"isoLanguage": "en",
+		"name": "Egypt",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556853",
+		"geonameId": "357994",
+		"isoLanguage": "fr",
+		"name": "Égypte",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556863",
+		"geonameId": "357994",
+		"isoLanguage": "it",
+		"name": "Egitto",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1974361",
+		"geonameId": "357994",
+		"isoLanguage": "da",
+		"name": "Ægypten",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "4604474",
+		"geonameId": "357994",
+		"isoLanguage": "en",
+		"name": "Arab Republic of Egypt",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556787",
+		"geonameId": "338010",
+		"isoLanguage": "da",
+		"name": "Eritrea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556790",
+		"geonameId": "338010",
+		"isoLanguage": "en",
+		"name": "Eritrea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556796",
+		"geonameId": "338010",
+		"isoLanguage": "fr",
+		"name": "Érythrée",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556805",
+		"geonameId": "338010",
+		"isoLanguage": "it",
+		"name": "Eritrea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4527952",
+		"geonameId": "338010",
+		"isoLanguage": "en",
+		"name": "State of Eritrea",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1177492",
+		"geonameId": "2510769",
+		"isoLanguage": "en",
+		"name": "Spanish State",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556726",
+		"geonameId": "2510769",
+		"isoLanguage": "da",
+		"name": "Spanien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556730",
+		"geonameId": "2510769",
+		"isoLanguage": "en",
+		"name": "Spain",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556738",
+		"geonameId": "2510769",
+		"isoLanguage": "fr",
+		"name": "Espagne",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556748",
+		"geonameId": "2510769",
+		"isoLanguage": "it",
+		"name": "Spagna",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4564637",
+		"geonameId": "2510769",
+		"isoLanguage": "en",
+		"name": "Kingdom of Spain",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556665",
+		"geonameId": "337996",
+		"isoLanguage": "da",
+		"name": "Etiopien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556668",
+		"geonameId": "337996",
+		"isoLanguage": "en",
+		"name": "Ethiopia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556676",
+		"geonameId": "337996",
+		"isoLanguage": "fr",
+		"name": "Éthiopie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556685",
+		"geonameId": "337996",
+		"isoLanguage": "it",
+		"name": "Etiopia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4527941",
+		"geonameId": "337996",
+		"isoLanguage": "en",
+		"name": "Federal Democratic Republic of Ethiopia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556547",
+		"geonameId": "660013",
+		"isoLanguage": "da",
+		"name": "Finland",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556551",
+		"geonameId": "660013",
+		"isoLanguage": "en",
+		"name": "Finland",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556559",
+		"geonameId": "660013",
+		"isoLanguage": "fr",
+		"name": "Finlande",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556568",
+		"geonameId": "660013",
+		"isoLanguage": "it",
+		"name": "Finlandia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4307563",
+		"geonameId": "660013",
+		"isoLanguage": "en",
+		"name": "Republic of Finland",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556427",
+		"geonameId": "2205218",
+		"isoLanguage": "da",
+		"name": "Fiji-øerne",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556430",
+		"geonameId": "2205218",
+		"isoLanguage": "en",
+		"name": "Fiji",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556436",
+		"geonameId": "2205218",
+		"isoLanguage": "fr",
+		"name": "Îles Fidji",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556445",
+		"geonameId": "2205218",
+		"isoLanguage": "it",
+		"name": "Figi",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1977119",
+		"geonameId": "2205218",
+		"isoLanguage": "da",
+		"name": "Fiji",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2419051",
+		"geonameId": "2205218",
+		"isoLanguage": "fr",
+		"name": "Fidji",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1291074",
+		"geonameId": "3017382",
+		"isoLanguage": "fr",
+		"name": "République Française",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556309",
+		"geonameId": "3017382",
+		"isoLanguage": "da",
+		"name": "Frankrig",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556313",
+		"geonameId": "3017382",
+		"isoLanguage": "en",
+		"name": "France",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556321",
+		"geonameId": "3017382",
+		"isoLanguage": "fr",
+		"name": "France",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556330",
+		"geonameId": "3017382",
+		"isoLanguage": "it",
+		"name": "Francia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1131815",
+		"geonameId": "2400553",
+		"isoLanguage": "fr",
+		"name": "République Gabonaise",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555800",
+		"geonameId": "2400553",
+		"isoLanguage": "da",
+		"name": "Gabon",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555803",
+		"geonameId": "2400553",
+		"isoLanguage": "en",
+		"name": "Gabon",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555809",
+		"geonameId": "2400553",
+		"isoLanguage": "fr",
+		"name": "Gabon",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555817",
+		"geonameId": "2400553",
+		"isoLanguage": "it",
+		"name": "Gabon",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4312809",
+		"geonameId": "2400553",
+		"isoLanguage": "en",
+		"name": "Gabonese Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1220512",
+		"geonameId": "2635167",
+		"isoLanguage": "en",
+		"name": "Great Britain",
+		"isPreferred": false,
+		"isShortName": true
+	},
+	{
+		"id": "1220513",
+		"geonameId": "2635167",
+		"isoLanguage": "en",
+		"name": "Britain",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555686",
+		"geonameId": "2635167",
+		"isoLanguage": "da",
+		"name": "Storbritannien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555690",
+		"geonameId": "2635167",
+		"isoLanguage": "en",
+		"name": "United Kingdom",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1555696",
+		"geonameId": "2635167",
+		"isoLanguage": "fr",
+		"name": "R.-u.",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555705",
+		"geonameId": "2635167",
+		"isoLanguage": "it",
+		"name": "UK",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1972706",
+		"geonameId": "2635167",
+		"isoLanguage": "da",
+		"name": "Det Forenede Kongerige",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1972707",
+		"geonameId": "2635167",
+		"isoLanguage": "da",
+		"name": "Det Forenede Kongerige Storbritannien og Nordirland",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2254452",
+		"geonameId": "2635167",
+		"isoLanguage": "en",
+		"name": "UK",
+		"isPreferred": false,
+		"isShortName": true
+	},
+	{
+		"id": "2296433",
+		"geonameId": "2635167",
+		"isoLanguage": "fr",
+		"name": "Royaume-Uni",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "3059100",
+		"geonameId": "2635167",
+		"isoLanguage": "en",
+		"name": "U.K.",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "4010214",
+		"geonameId": "2635167",
+		"isoLanguage": "en",
+		"name": "United Kingdom of Great Britain and Northern Ireland",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "17126230",
+		"geonameId": "2635167",
+		"isoLanguage": "it",
+		"name": "Regno Unito",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "17415892",
+		"geonameId": "2635167",
+		"isoLanguage": "en",
+		"name": "U.K",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555532",
+		"geonameId": "3580239",
+		"isoLanguage": "da",
+		"name": "Grenada",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555535",
+		"geonameId": "3580239",
+		"isoLanguage": "en",
+		"name": "Grenada",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555541",
+		"geonameId": "3580239",
+		"isoLanguage": "fr",
+		"name": "Grenade",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555549",
+		"geonameId": "3580239",
+		"isoLanguage": "it",
+		"name": "Grenada",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "369434",
+		"geonameId": "614540",
+		"isoLanguage": "en",
+		"name": "Georgian Soviet Socialist Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555480",
+		"geonameId": "614540",
+		"isoLanguage": "da",
+		"name": "Georgien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555483",
+		"geonameId": "614540",
+		"isoLanguage": "en",
+		"name": "Georgia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555489",
+		"geonameId": "614540",
+		"isoLanguage": "fr",
+		"name": "Géorgie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555498",
+		"geonameId": "614540",
+		"isoLanguage": "it",
+		"name": "Georgia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555371",
+		"geonameId": "2300660",
+		"isoLanguage": "da",
+		"name": "Ghana",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555374",
+		"geonameId": "2300660",
+		"isoLanguage": "en",
+		"name": "Ghana",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555380",
+		"geonameId": "2300660",
+		"isoLanguage": "fr",
+		"name": "Ghana",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555388",
+		"geonameId": "2300660",
+		"isoLanguage": "it",
+		"name": "Ghana",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555210",
+		"geonameId": "2413451",
+		"isoLanguage": "da",
+		"name": "Gambia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555213",
+		"geonameId": "2413451",
+		"isoLanguage": "en",
+		"name": "Gambia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555219",
+		"geonameId": "2413451",
+		"isoLanguage": "fr",
+		"name": "Gambie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555227",
+		"geonameId": "2413451",
+		"isoLanguage": "it",
+		"name": "Gambia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1136051",
+		"geonameId": "2420477",
+		"isoLanguage": "fr",
+		"name": "République de Guinée",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555096",
+		"geonameId": "2420477",
+		"isoLanguage": "da",
+		"name": "Guinea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555099",
+		"geonameId": "2420477",
+		"isoLanguage": "en",
+		"name": "Guinea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555106",
+		"geonameId": "2420477",
+		"isoLanguage": "fr",
+		"name": "Guinée",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555114",
+		"geonameId": "2420477",
+		"isoLanguage": "it",
+		"name": "Guinea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2256655",
+		"geonameId": "2420477",
+		"isoLanguage": "fr",
+		"name": "Guinée-Conakry",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "4334042",
+		"geonameId": "2420477",
+		"isoLanguage": "en",
+		"name": "Republic of Guinea",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "17414783",
+		"geonameId": "2420477",
+		"isoLanguage": "en",
+		"name": "Guinea-Conakry",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1111029",
+		"geonameId": "2309096",
+		"isoLanguage": "en",
+		"name": "Spanish Guinea",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1554986",
+		"geonameId": "2309096",
+		"isoLanguage": "da",
+		"name": "Ækvatorialguinea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554989",
+		"geonameId": "2309096",
+		"isoLanguage": "en",
+		"name": "Equatorial Guinea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554997",
+		"geonameId": "2309096",
+		"isoLanguage": "fr",
+		"name": "Guinée équatoriale",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555005",
+		"geonameId": "2309096",
+		"isoLanguage": "it",
+		"name": "Guinea Equatoriale",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2418293",
+		"geonameId": "2309096",
+		"isoLanguage": "da",
+		"name": "Ækvatorial Guinea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4146790",
+		"geonameId": "2309096",
+		"isoLanguage": "en",
+		"name": "Republic of Equatorial Guinea",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1554927",
+		"geonameId": "390903",
+		"isoLanguage": "da",
+		"name": "Grækenland",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554931",
+		"geonameId": "390903",
+		"isoLanguage": "en",
+		"name": "Greece",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554939",
+		"geonameId": "390903",
+		"isoLanguage": "fr",
+		"name": "Grèce",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554948",
+		"geonameId": "390903",
+		"isoLanguage": "it",
+		"name": "Grecia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4751278",
+		"geonameId": "390903",
+		"isoLanguage": "en",
+		"name": "Hellenic Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1554871",
+		"geonameId": "3595528",
+		"isoLanguage": "da",
+		"name": "Guatemala",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554874",
+		"geonameId": "3595528",
+		"isoLanguage": "en",
+		"name": "Guatemala",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554880",
+		"geonameId": "3595528",
+		"isoLanguage": "fr",
+		"name": "Guatemala",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554889",
+		"geonameId": "3595528",
+		"isoLanguage": "it",
+		"name": "Guatemala",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4348526",
+		"geonameId": "3595528",
+		"isoLanguage": "en",
+		"name": "Republic of Guatemala",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1554815",
+		"geonameId": "2372248",
+		"isoLanguage": "da",
+		"name": "Guinea-Bissau",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554818",
+		"geonameId": "2372248",
+		"isoLanguage": "en",
+		"name": "Guinea-Bissau",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554826",
+		"geonameId": "2372248",
+		"isoLanguage": "fr",
+		"name": "Guinée-Bissau",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554835",
+		"geonameId": "2372248",
+		"isoLanguage": "it",
+		"name": "Guinea-Bissau",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4260423",
+		"geonameId": "2372248",
+		"isoLanguage": "en",
+		"name": "Republic of Guinea-Bissau",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1554702",
+		"geonameId": "3378535",
+		"isoLanguage": "da",
+		"name": "Guyana",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554705",
+		"geonameId": "3378535",
+		"isoLanguage": "en",
+		"name": "Guyana",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554712",
+		"geonameId": "3378535",
+		"isoLanguage": "fr",
+		"name": "Guyana",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554721",
+		"geonameId": "3378535",
+		"isoLanguage": "it",
+		"name": "Guyana",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2256636",
+		"geonameId": "3378535",
+		"isoLanguage": "fr",
+		"name": "Guyane britannique",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1564645",
+		"geonameId": "3608932",
+		"isoLanguage": "da",
+		"name": "Honduras",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564648",
+		"geonameId": "3608932",
+		"isoLanguage": "en",
+		"name": "Honduras",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564654",
+		"geonameId": "3608932",
+		"isoLanguage": "fr",
+		"name": "Honduras",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564663",
+		"geonameId": "3608932",
+		"isoLanguage": "it",
+		"name": "Honduras",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4351756",
+		"geonameId": "3608932",
+		"isoLanguage": "en",
+		"name": "Republic of Honduras",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1564530",
+		"geonameId": "3202326",
+		"isoLanguage": "da",
+		"name": "Kroatien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564533",
+		"geonameId": "3202326",
+		"isoLanguage": "en",
+		"name": "Croatia",
+		"isPreferred": false,
+		"isShortName": true
+	},
+	{
+		"id": "1564541",
+		"geonameId": "3202326",
+		"isoLanguage": "fr",
+		"name": "Croatie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564550",
+		"geonameId": "3202326",
+		"isoLanguage": "it",
+		"name": "Croazia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "6999755",
+		"geonameId": "3202326",
+		"isoLanguage": "en",
+		"name": "Republic of Croatia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1504066",
+		"geonameId": "3723988",
+		"isoLanguage": "fr",
+		"name": "République d’Haïti",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1564477",
+		"geonameId": "3723988",
+		"isoLanguage": "da",
+		"name": "Haiti",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564480",
+		"geonameId": "3723988",
+		"isoLanguage": "en",
+		"name": "Haiti",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564486",
+		"geonameId": "3723988",
+		"isoLanguage": "fr",
+		"name": "Haïti",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564495",
+		"geonameId": "3723988",
+		"isoLanguage": "it",
+		"name": "Haiti",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4687856",
+		"geonameId": "3723988",
+		"isoLanguage": "en",
+		"name": "Republic of Haiti",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1564361",
+		"geonameId": "719819",
+		"isoLanguage": "da",
+		"name": "Ungarn",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564364",
+		"geonameId": "719819",
+		"isoLanguage": "en",
+		"name": "Hungary",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564372",
+		"geonameId": "719819",
+		"isoLanguage": "fr",
+		"name": "Hongrie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564381",
+		"geonameId": "719819",
+		"isoLanguage": "it",
+		"name": "Ungheria",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4424518",
+		"geonameId": "719819",
+		"isoLanguage": "en",
+		"name": "Republic of Hungary",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1564252",
+		"geonameId": "1643084",
+		"isoLanguage": "da",
+		"name": "Indonesien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564255",
+		"geonameId": "1643084",
+		"isoLanguage": "en",
+		"name": "Indonesia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564261",
+		"geonameId": "1643084",
+		"isoLanguage": "fr",
+		"name": "Indonésie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564270",
+		"geonameId": "1643084",
+		"isoLanguage": "it",
+		"name": "Indonesia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2256823",
+		"geonameId": "1643084",
+		"isoLanguage": "fr",
+		"name": "Indes orientales néerlandaises",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "3972954",
+		"geonameId": "1643084",
+		"isoLanguage": "en",
+		"name": "Republic of Indonesia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1272979",
+		"geonameId": "2963597",
+		"isoLanguage": "en",
+		"name": "Ireland",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564194",
+		"geonameId": "2963597",
+		"isoLanguage": "da",
+		"name": "Irland",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564205",
+		"geonameId": "2963597",
+		"isoLanguage": "fr",
+		"name": "Irlande",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564214",
+		"geonameId": "2963597",
+		"isoLanguage": "it",
+		"name": "Irlanda",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1974874",
+		"geonameId": "2963597",
+		"isoLanguage": "en",
+		"name": "Republic of Ireland",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1974902",
+		"geonameId": "2963597",
+		"isoLanguage": "it",
+		"name": "Repubblica d'Irlanda",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "12096099",
+		"geonameId": "2963597",
+		"isoLanguage": "abbr",
+		"name": "Ire",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1564069",
+		"geonameId": "294640",
+		"isoLanguage": "da",
+		"name": "Israel",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564073",
+		"geonameId": "294640",
+		"isoLanguage": "en",
+		"name": "Israel",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564080",
+		"geonameId": "294640",
+		"isoLanguage": "fr",
+		"name": "Israël",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564089",
+		"geonameId": "294640",
+		"isoLanguage": "it",
+		"name": "Israele",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4473452",
+		"geonameId": "294640",
+		"isoLanguage": "en",
+		"name": "State of Israel",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1564001",
+		"geonameId": "1269750",
+		"isoLanguage": "da",
+		"name": "Indien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564005",
+		"geonameId": "1269750",
+		"isoLanguage": "en",
+		"name": "India",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564011",
+		"geonameId": "1269750",
+		"isoLanguage": "fr",
+		"name": "Inde",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564021",
+		"geonameId": "1269750",
+		"isoLanguage": "it",
+		"name": "India",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563822",
+		"geonameId": "99237",
+		"isoLanguage": "da",
+		"name": "Irak",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563826",
+		"geonameId": "99237",
+		"isoLanguage": "en",
+		"name": "Iraq",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563843",
+		"geonameId": "99237",
+		"isoLanguage": "it",
+		"name": "Iraq",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1974275",
+		"geonameId": "99237",
+		"isoLanguage": "fr",
+		"name": "Irak",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2422184",
+		"geonameId": "99237",
+		"isoLanguage": "fr",
+		"name": "Iraq",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "3677985",
+		"geonameId": "99237",
+		"isoLanguage": "en",
+		"name": "Republic of Iraq",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "85192",
+		"geonameId": "130758",
+		"isoLanguage": "en",
+		"name": "Empire of Iran",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1563765",
+		"geonameId": "130758",
+		"isoLanguage": "da",
+		"name": "Iran",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563769",
+		"geonameId": "130758",
+		"isoLanguage": "en",
+		"name": "Iran",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1563775",
+		"geonameId": "130758",
+		"isoLanguage": "fr",
+		"name": "Iran",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563784",
+		"geonameId": "130758",
+		"isoLanguage": "it",
+		"name": "Iran",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2422169",
+		"geonameId": "130758",
+		"isoLanguage": "da",
+		"name": "Den Islamiske Republik Iran",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2422172",
+		"geonameId": "130758",
+		"isoLanguage": "fr",
+		"name": "Iran (République islamique de)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2422174",
+		"geonameId": "130758",
+		"isoLanguage": "it",
+		"name": "Iran (Repubblica Islamica)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "3705445",
+		"geonameId": "130758",
+		"isoLanguage": "en",
+		"name": "Islamic Republic of Iran",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8103215",
+		"geonameId": "130758",
+		"isoLanguage": "en",
+		"name": "Iran, Islamic Republic Of",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1563705",
+		"geonameId": "2629691",
+		"isoLanguage": "da",
+		"name": "Island",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563709",
+		"geonameId": "2629691",
+		"isoLanguage": "en",
+		"name": "Iceland",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563717",
+		"geonameId": "2629691",
+		"isoLanguage": "fr",
+		"name": "Islande",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563726",
+		"geonameId": "2629691",
+		"isoLanguage": "it",
+		"name": "Islanda",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "3984330",
+		"geonameId": "2629691",
+		"isoLanguage": "en",
+		"name": "Republic of Iceland",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1350607",
+		"geonameId": "3175395",
+		"isoLanguage": "it",
+		"name": "Repubblica Italiana",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1350609",
+		"geonameId": "3175395",
+		"isoLanguage": "en",
+		"name": "Republic of Italy",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1563641",
+		"geonameId": "3175395",
+		"isoLanguage": "da",
+		"name": "Italien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563645",
+		"geonameId": "3175395",
+		"isoLanguage": "en",
+		"name": "Italy",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563653",
+		"geonameId": "3175395",
+		"isoLanguage": "fr",
+		"name": "Italie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563662",
+		"geonameId": "3175395",
+		"isoLanguage": "it",
+		"name": "Italia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1626637",
+		"geonameId": "3175395",
+		"isoLanguage": "it",
+		"name": "il Bel Paese",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "4664748",
+		"geonameId": "3175395",
+		"isoLanguage": "en",
+		"name": "Italian Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1563305",
+		"geonameId": "3489940",
+		"isoLanguage": "da",
+		"name": "Jamaica",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563309",
+		"geonameId": "3489940",
+		"isoLanguage": "en",
+		"name": "Jamaica",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563317",
+		"geonameId": "3489940",
+		"isoLanguage": "fr",
+		"name": "Jamaïque",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563326",
+		"geonameId": "3489940",
+		"isoLanguage": "it",
+		"name": "Giamaica",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563248",
+		"geonameId": "248816",
+		"isoLanguage": "da",
+		"name": "Jordan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563251",
+		"geonameId": "248816",
+		"isoLanguage": "en",
+		"name": "Jordan",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1563258",
+		"geonameId": "248816",
+		"isoLanguage": "fr",
+		"name": "Jordanie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563267",
+		"geonameId": "248816",
+		"isoLanguage": "it",
+		"name": "Giordania",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4399452",
+		"geonameId": "248816",
+		"isoLanguage": "en",
+		"name": "Hashemite Kingdom of Jordan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563185",
+		"geonameId": "1861060",
+		"isoLanguage": "da",
+		"name": "Japan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563189",
+		"geonameId": "1861060",
+		"isoLanguage": "en",
+		"name": "Japan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563196",
+		"geonameId": "1861060",
+		"isoLanguage": "fr",
+		"name": "Japon",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563205",
+		"geonameId": "1861060",
+		"isoLanguage": "it",
+		"name": "Giappone",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563123",
+		"geonameId": "192950",
+		"isoLanguage": "da",
+		"name": "Kenya",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563127",
+		"geonameId": "192950",
+		"isoLanguage": "en",
+		"name": "Kenya",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563135",
+		"geonameId": "192950",
+		"isoLanguage": "fr",
+		"name": "Kenya",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563144",
+		"geonameId": "192950",
+		"isoLanguage": "it",
+		"name": "Kenya",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563065",
+		"geonameId": "1527747",
+		"isoLanguage": "da",
+		"name": "Kirgisistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563068",
+		"geonameId": "1527747",
+		"isoLanguage": "en",
+		"name": "Kyrgyzstan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563076",
+		"geonameId": "1527747",
+		"isoLanguage": "fr",
+		"name": "Kirghizstan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563085",
+		"geonameId": "1527747",
+		"isoLanguage": "it",
+		"name": "Kirghizistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4093172",
+		"geonameId": "1527747",
+		"isoLanguage": "en",
+		"name": "Kyrgyz Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "926079",
+		"geonameId": "1831722",
+		"isoLanguage": "fr",
+		"name": "République Khmère",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "926082",
+		"geonameId": "1831722",
+		"isoLanguage": "fr",
+		"name": "Royaume du Cambodge",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "926084",
+		"geonameId": "1831722",
+		"isoLanguage": "fr",
+		"name": "Kampuchea Démocratique",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "926085",
+		"geonameId": "1831722",
+		"isoLanguage": "en",
+		"name": "Democratic Cambodia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "926086",
+		"geonameId": "1831722",
+		"isoLanguage": "fr",
+		"name": "République du Cambodge",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "926090",
+		"geonameId": "1831722",
+		"isoLanguage": "en",
+		"name": "Khmer Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "926091",
+		"geonameId": "1831722",
+		"isoLanguage": "en",
+		"name": "Democratic Kampuchea",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1563004",
+		"geonameId": "1831722",
+		"isoLanguage": "da",
+		"name": "Cambodja",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563008",
+		"geonameId": "1831722",
+		"isoLanguage": "en",
+		"name": "Cambodia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563016",
+		"geonameId": "1831722",
+		"isoLanguage": "fr",
+		"name": "Cambodge",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563025",
+		"geonameId": "1831722",
+		"isoLanguage": "it",
+		"name": "Cambogia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4390140",
+		"geonameId": "1831722",
+		"isoLanguage": "en",
+		"name": "Kingdom of Cambodia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562900",
+		"geonameId": "4030945",
+		"isoLanguage": "da",
+		"name": "Kiribati",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562903",
+		"geonameId": "4030945",
+		"isoLanguage": "en",
+		"name": "Kiribati",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562909",
+		"geonameId": "4030945",
+		"isoLanguage": "fr",
+		"name": "Kiribati",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562917",
+		"geonameId": "4030945",
+		"isoLanguage": "it",
+		"name": "Kiribati",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "515519",
+		"geonameId": "921929",
+		"isoLanguage": "fr",
+		"name": "Union des Comores",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562844",
+		"geonameId": "921929",
+		"isoLanguage": "da",
+		"name": "Comorerne",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562847",
+		"geonameId": "921929",
+		"isoLanguage": "en",
+		"name": "Comoros",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562855",
+		"geonameId": "921929",
+		"isoLanguage": "fr",
+		"name": "Comores",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562864",
+		"geonameId": "921929",
+		"isoLanguage": "it",
+		"name": "Comore",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2421765",
+		"geonameId": "921929",
+		"isoLanguage": "fr",
+		"name": "Comores (Archipel)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "4140573",
+		"geonameId": "921929",
+		"isoLanguage": "en",
+		"name": "Union of the Comoros",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "6113747",
+		"geonameId": "921929",
+		"isoLanguage": "en",
+		"name": "Republic of the Comoros",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "6113749",
+		"geonameId": "921929",
+		"isoLanguage": "en",
+		"name": "Federal Islamic Republic of the Comoros",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "6113750",
+		"geonameId": "921929",
+		"isoLanguage": "fr",
+		"name": "État Comorien",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "6113751",
+		"geonameId": "921929",
+		"isoLanguage": "fr",
+		"name": "Territoire des Comores",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "6113752",
+		"geonameId": "921929",
+		"isoLanguage": "fr",
+		"name": "République Fédérale Islamique des Comores",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "6113753",
+		"geonameId": "921929",
+		"isoLanguage": "fr",
+		"name": "République Fédérale et Islamique des Comores",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "6113754",
+		"geonameId": "921929",
+		"isoLanguage": "fr",
+		"name": "République des Comores",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562790",
+		"geonameId": "3575174",
+		"isoLanguage": "da",
+		"name": "Saint Kitts og Nevis",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562793",
+		"geonameId": "3575174",
+		"isoLanguage": "en",
+		"name": "St. Kitts & Nevis",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562801",
+		"geonameId": "3575174",
+		"isoLanguage": "fr",
+		"name": "Saint-Kitts-et-Nevis",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562810",
+		"geonameId": "3575174",
+		"isoLanguage": "it",
+		"name": "Saint Kitts e Nevis",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1619802",
+		"geonameId": "3575174",
+		"isoLanguage": "fr",
+		"name": "Saint-Christophe-et-Niévès",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "13288306",
+		"geonameId": "3575174",
+		"isoLanguage": "en",
+		"name": "St Kitts and Nevis",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "16766506",
+		"geonameId": "3575174",
+		"isoLanguage": "en",
+		"name": "St. Kitts and Nevis",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562732",
+		"geonameId": "1873107",
+		"isoLanguage": "da",
+		"name": "Nordkorea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562736",
+		"geonameId": "1873107",
+		"isoLanguage": "en",
+		"name": "North Korea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562744",
+		"geonameId": "1873107",
+		"isoLanguage": "fr",
+		"name": "Corée du Nord",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562753",
+		"geonameId": "1873107",
+		"isoLanguage": "it",
+		"name": "Corea del Nord",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2421714",
+		"geonameId": "1873107",
+		"isoLanguage": "da",
+		"name": "Den demokratiske folkerepublik Korea (Nordkorea)",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2421718",
+		"geonameId": "1873107",
+		"isoLanguage": "fr",
+		"name": "République populaire démocratique de Corée",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2421721",
+		"geonameId": "1873107",
+		"isoLanguage": "it",
+		"name": "Corea, Repubblica Popolare Democratica",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "4651712",
+		"geonameId": "1873107",
+		"isoLanguage": "en",
+		"name": "Democratic People’s Republic of Korea",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8103217",
+		"geonameId": "1873107",
+		"isoLanguage": "en",
+		"name": "Korea, Democratic People’s Republic of",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "16820984",
+		"geonameId": "1873107",
+		"isoLanguage": "abbr",
+		"name": "DPRK",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562673",
+		"geonameId": "1835841",
+		"isoLanguage": "da",
+		"name": "Sydkorea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562677",
+		"geonameId": "1835841",
+		"isoLanguage": "en",
+		"name": "South Korea",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1562685",
+		"geonameId": "1835841",
+		"isoLanguage": "fr",
+		"name": "Corée du Sud",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562694",
+		"geonameId": "1835841",
+		"isoLanguage": "it",
+		"name": "Corea del Sud",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2421689",
+		"geonameId": "1835841",
+		"isoLanguage": "da",
+		"name": "Republikken Korea (Sydkorea)",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2421694",
+		"geonameId": "1835841",
+		"isoLanguage": "fr",
+		"name": "Corée (République de)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2421698",
+		"geonameId": "1835841",
+		"isoLanguage": "it",
+		"name": "Corea (Repubblica)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "4498451",
+		"geonameId": "1835841",
+		"isoLanguage": "en",
+		"name": "Republic of Korea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "8103216",
+		"geonameId": "1835841",
+		"isoLanguage": "en",
+		"name": "Korea, Republic of",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562614",
+		"geonameId": "285570",
+		"isoLanguage": "da",
+		"name": "Kuwait",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562618",
+		"geonameId": "285570",
+		"isoLanguage": "en",
+		"name": "Kuwait",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562625",
+		"geonameId": "285570",
+		"isoLanguage": "fr",
+		"name": "Koweït",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562634",
+		"geonameId": "285570",
+		"isoLanguage": "it",
+		"name": "Kuwait",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4466330",
+		"geonameId": "285570",
+		"isoLanguage": "en",
+		"name": "State of Kuwait",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562557",
+		"geonameId": "1522867",
+		"isoLanguage": "da",
+		"name": "Kasakhstan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562560",
+		"geonameId": "1522867",
+		"isoLanguage": "en",
+		"name": "Kazakhstan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562567",
+		"geonameId": "1522867",
+		"isoLanguage": "fr",
+		"name": "Kazakhstan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562576",
+		"geonameId": "1522867",
+		"isoLanguage": "it",
+		"name": "Kazakistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4090379",
+		"geonameId": "1522867",
+		"isoLanguage": "en",
+		"name": "Republic of Kazakhstan",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562501",
+		"geonameId": "1655842",
+		"isoLanguage": "da",
+		"name": "Laos",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562505",
+		"geonameId": "1655842",
+		"isoLanguage": "en",
+		"name": "Laos",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562511",
+		"geonameId": "1655842",
+		"isoLanguage": "fr",
+		"name": "Laos",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562520",
+		"geonameId": "1655842",
+		"isoLanguage": "it",
+		"name": "Laos",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "3981456",
+		"geonameId": "1655842",
+		"isoLanguage": "en",
+		"name": "Lao People’s Democratic Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8103218",
+		"geonameId": "1655842",
+		"isoLanguage": "en",
+		"name": "Lao",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "9410786",
+		"geonameId": "1655842",
+		"isoLanguage": "en",
+		"name": "Lao PDR",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562442",
+		"geonameId": "272103",
+		"isoLanguage": "da",
+		"name": "Libanon",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562446",
+		"geonameId": "272103",
+		"isoLanguage": "en",
+		"name": "Lebanon",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562454",
+		"geonameId": "272103",
+		"isoLanguage": "fr",
+		"name": "Liban",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562463",
+		"geonameId": "272103",
+		"isoLanguage": "it",
+		"name": "Libano",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4454463",
+		"geonameId": "272103",
+		"isoLanguage": "en",
+		"name": "Republic of Lebanon",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562389",
+		"geonameId": "3576468",
+		"isoLanguage": "da",
+		"name": "Saint Lucia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562392",
+		"geonameId": "3576468",
+		"isoLanguage": "en",
+		"name": "Saint Lucia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562400",
+		"geonameId": "3576468",
+		"isoLanguage": "fr",
+		"name": "Sainte-Lucie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562409",
+		"geonameId": "3576468",
+		"isoLanguage": "it",
+		"name": "Saint Lucia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2421584",
+		"geonameId": "3576468",
+		"isoLanguage": "it",
+		"name": "Santa Lucia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "13288307",
+		"geonameId": "3576468",
+		"isoLanguage": "en",
+		"name": "St Lucia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "16775693",
+		"geonameId": "3576468",
+		"isoLanguage": "en",
+		"name": "St. Lucia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562336",
+		"geonameId": "3042058",
+		"isoLanguage": "da",
+		"name": "Liechtenstein",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562339",
+		"geonameId": "3042058",
+		"isoLanguage": "en",
+		"name": "Liechtenstein",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562346",
+		"geonameId": "3042058",
+		"isoLanguage": "fr",
+		"name": "Liechtenstein",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562355",
+		"geonameId": "3042058",
+		"isoLanguage": "it",
+		"name": "Liechtenstein",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2421564",
+		"geonameId": "3042058",
+		"isoLanguage": "it",
+		"name": "Principato del Liechtenstein",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "4332843",
+		"geonameId": "3042058",
+		"isoLanguage": "en",
+		"name": "Principality of Liechtenstein",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562282",
+		"geonameId": "1227603",
+		"isoLanguage": "da",
+		"name": "Sri Lanka",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562286",
+		"geonameId": "1227603",
+		"isoLanguage": "en",
+		"name": "Sri Lanka",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562292",
+		"geonameId": "1227603",
+		"isoLanguage": "fr",
+		"name": "Sri Lanka",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562301",
+		"geonameId": "1227603",
+		"isoLanguage": "it",
+		"name": "Sri Lanka",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562226",
+		"geonameId": "2275384",
+		"isoLanguage": "da",
+		"name": "Liberia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562229",
+		"geonameId": "2275384",
+		"isoLanguage": "en",
+		"name": "Liberia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562235",
+		"geonameId": "2275384",
+		"isoLanguage": "fr",
+		"name": "Libéria",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562244",
+		"geonameId": "2275384",
+		"isoLanguage": "it",
+		"name": "Liberia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2421533",
+		"geonameId": "2275384",
+		"isoLanguage": "fr",
+		"name": "Liberia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562169",
+		"geonameId": "932692",
+		"isoLanguage": "da",
+		"name": "Lesotho",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562172",
+		"geonameId": "932692",
+		"isoLanguage": "en",
+		"name": "Lesotho",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562179",
+		"geonameId": "932692",
+		"isoLanguage": "fr",
+		"name": "Lesotho",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562188",
+		"geonameId": "932692",
+		"isoLanguage": "it",
+		"name": "Lesotho",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "355935",
+		"geonameId": "597427",
+		"isoLanguage": "en",
+		"name": "Lithuanian Soviet Socialist Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562114",
+		"geonameId": "597427",
+		"isoLanguage": "da",
+		"name": "Litauen",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562117",
+		"geonameId": "597427",
+		"isoLanguage": "en",
+		"name": "Lithuania",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1562125",
+		"geonameId": "597427",
+		"isoLanguage": "fr",
+		"name": "Lituanie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562134",
+		"geonameId": "597427",
+		"isoLanguage": "it",
+		"name": "Lituania",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4007214",
+		"geonameId": "597427",
+		"isoLanguage": "en",
+		"name": "Republic of Lithuania",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1271376",
+		"geonameId": "2960313",
+		"isoLanguage": "fr",
+		"name": "Grand-Duché de Luxembourg",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562055",
+		"geonameId": "2960313",
+		"isoLanguage": "da",
+		"name": "Luxembourg",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562058",
+		"geonameId": "2960313",
+		"isoLanguage": "en",
+		"name": "Luxembourg",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562066",
+		"geonameId": "2960313",
+		"isoLanguage": "fr",
+		"name": "Luxembourg",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562075",
+		"geonameId": "2960313",
+		"isoLanguage": "it",
+		"name": "Lussemburgo",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4219515",
+		"geonameId": "2960313",
+		"isoLanguage": "en",
+		"name": "Grand Duchy of Luxembourg",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1561997",
+		"geonameId": "458258",
+		"isoLanguage": "da",
+		"name": "Letland",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562000",
+		"geonameId": "458258",
+		"isoLanguage": "en",
+		"name": "Latvia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562008",
+		"geonameId": "458258",
+		"isoLanguage": "fr",
+		"name": "Lettonie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562017",
+		"geonameId": "458258",
+		"isoLanguage": "it",
+		"name": "Lettonia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "3652591",
+		"geonameId": "458258",
+		"isoLanguage": "en",
+		"name": "Republic of Latvia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1074680",
+		"geonameId": "2215636",
+		"isoLanguage": "en",
+		"name": "Socialist People’s Libyan Arab Jamahiriya",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1074684",
+		"geonameId": "2215636",
+		"isoLanguage": "en",
+		"name": "Libyan Arab Jamahiriyah",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1074688",
+		"geonameId": "2215636",
+		"isoLanguage": "en",
+		"name": "Libyan Arab Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1561880",
+		"geonameId": "2215636",
+		"isoLanguage": "da",
+		"name": "Libyen",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561883",
+		"geonameId": "2215636",
+		"isoLanguage": "en",
+		"name": "Libya",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561890",
+		"geonameId": "2215636",
+		"isoLanguage": "fr",
+		"name": "Libye",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561899",
+		"geonameId": "2215636",
+		"isoLanguage": "it",
+		"name": "Libia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2421459",
+		"geonameId": "2215636",
+		"isoLanguage": "da",
+		"name": "Libyan Arab Jamahiriya",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2421465",
+		"geonameId": "2215636",
+		"isoLanguage": "fr",
+		"name": "Jamahiriya arabe libyenne",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2421468",
+		"geonameId": "2215636",
+		"isoLanguage": "it",
+		"name": "Libia, Repubblica Araba",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "3663060",
+		"geonameId": "2215636",
+		"isoLanguage": "en",
+		"name": "Great Socialist People’s Libyan Arab Jamahiriya",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "17684265",
+		"geonameId": "2215636",
+		"isoLanguage": "en",
+		"name": "Kingdom of Libya",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "17684266",
+		"geonameId": "2215636",
+		"isoLanguage": "en",
+		"name": "State of Libya",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1193857",
+		"geonameId": "2542007",
+		"isoLanguage": "fr",
+		"name": "Royaume du Maroc",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1561820",
+		"geonameId": "2542007",
+		"isoLanguage": "da",
+		"name": "Marokko",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561823",
+		"geonameId": "2542007",
+		"isoLanguage": "en",
+		"name": "Morocco",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561831",
+		"geonameId": "2542007",
+		"isoLanguage": "fr",
+		"name": "Maroc",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561840",
+		"geonameId": "2542007",
+		"isoLanguage": "it",
+		"name": "Marocco",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4692938",
+		"geonameId": "2542007",
+		"isoLanguage": "en",
+		"name": "Kingdom of Morocco",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1284460",
+		"geonameId": "2993457",
+		"isoLanguage": "fr",
+		"name": "Principauté de Monaco",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1561761",
+		"geonameId": "2993457",
+		"isoLanguage": "da",
+		"name": "Monaco",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561764",
+		"geonameId": "2993457",
+		"isoLanguage": "en",
+		"name": "Monaco",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1561772",
+		"geonameId": "2993457",
+		"isoLanguage": "fr",
+		"name": "Monaco",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561781",
+		"geonameId": "2993457",
+		"isoLanguage": "it",
+		"name": "Monaco",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1618663",
+		"geonameId": "2993457",
+		"isoLanguage": "it",
+		"name": "Principato di Monaco",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "16766172",
+		"geonameId": "2993457",
+		"isoLanguage": "en",
+		"name": "Principality of Monaco",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561707",
+		"geonameId": "617790",
+		"isoLanguage": "da",
+		"name": "Republikken Moldova",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1561710",
+		"geonameId": "617790",
+		"isoLanguage": "en",
+		"name": "Moldova",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1561717",
+		"geonameId": "617790",
+		"isoLanguage": "fr",
+		"name": "Moldova",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1561726",
+		"geonameId": "617790",
+		"isoLanguage": "it",
+		"name": "Moldavia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1975295",
+		"geonameId": "617790",
+		"isoLanguage": "fr",
+		"name": "République de Moldavie",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1975312",
+		"geonameId": "617790",
+		"isoLanguage": "da",
+		"name": "Moldavien",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2256627",
+		"geonameId": "617790",
+		"isoLanguage": "fr",
+		"name": "Moldavie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2421432",
+		"geonameId": "617790",
+		"isoLanguage": "da",
+		"name": "Moldova",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4101794",
+		"geonameId": "617790",
+		"isoLanguage": "en",
+		"name": "Republic of Moldova",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "8103221",
+		"geonameId": "617790",
+		"isoLanguage": "en",
+		"name": "Moldova, Republic Of",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1367036",
+		"geonameId": "3194884",
+		"isoLanguage": "en",
+		"name": "Socialist Republic of Montenegro",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1610818",
+		"geonameId": "3194884",
+		"isoLanguage": "en",
+		"name": "Montenegro",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2256621",
+		"geonameId": "3194884",
+		"isoLanguage": "fr",
+		"name": "Monténégro",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2256622",
+		"geonameId": "3194884",
+		"isoLanguage": "fr",
+		"name": "République du Monténégro",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2421393",
+		"geonameId": "3194884",
+		"isoLanguage": "da",
+		"name": "Montenegro",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2421406",
+		"geonameId": "3194884",
+		"isoLanguage": "it",
+		"name": "Montenegro",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4678138",
+		"geonameId": "3194884",
+		"isoLanguage": "en",
+		"name": "Republic of Montenegro",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "546329",
+		"geonameId": "1062947",
+		"isoLanguage": "fr",
+		"name": "République de Madagascar",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1561652",
+		"geonameId": "1062947",
+		"isoLanguage": "da",
+		"name": "Madagaskar",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561655",
+		"geonameId": "1062947",
+		"isoLanguage": "en",
+		"name": "Madagascar",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561663",
+		"geonameId": "1062947",
+		"isoLanguage": "fr",
+		"name": "Madagascar",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561672",
+		"geonameId": "1062947",
+		"isoLanguage": "it",
+		"name": "Madagascar",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2421378",
+		"geonameId": "1062947",
+		"isoLanguage": "da",
+		"name": "Madagascar",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4641159",
+		"geonameId": "1062947",
+		"isoLanguage": "en",
+		"name": "Republic of Madagascar",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "427909",
+		"geonameId": "718075",
+		"isoLanguage": "en",
+		"name": "Peoples Republic of Macedonia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "427911",
+		"geonameId": "718075",
+		"isoLanguage": "en",
+		"name": "Socialist Republic of Macedonia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1561594",
+		"geonameId": "718075",
+		"isoLanguage": "da",
+		"name": "Nordmakedonien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561597",
+		"geonameId": "718075",
+		"isoLanguage": "en",
+		"name": "Macedonia (FYR)",
+		"isPreferred": false,
+		"isShortName": true
+	},
+	{
+		"id": "1561605",
+		"geonameId": "718075",
+		"isoLanguage": "fr",
+		"name": "Macédoine du Nord",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561614",
+		"geonameId": "718075",
+		"isoLanguage": "it",
+		"name": "Macedonia del Nord, Repubblica",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1880931",
+		"geonameId": "718075",
+		"isoLanguage": "en",
+		"name": "The Former Yugoslav Republic of Macedonia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1976522",
+		"geonameId": "718075",
+		"isoLanguage": "en",
+		"name": "Republic of North Macedonia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1976533",
+		"geonameId": "718075",
+		"isoLanguage": "da",
+		"name": "Makedonien",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1976549",
+		"geonameId": "718075",
+		"isoLanguage": "it",
+		"name": "Repubblica di Macedonia del Nord",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2421244",
+		"geonameId": "718075",
+		"isoLanguage": "da",
+		"name": "Tidligere Jugoslaviske Republik Makedonien",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2421250",
+		"geonameId": "718075",
+		"isoLanguage": "fr",
+		"name": "Ancienne république yougoslave de Macédoine",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2421255",
+		"geonameId": "718075",
+		"isoLanguage": "it",
+		"name": "Ex Repubblica Jugoslava di Macedonia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2697909",
+		"geonameId": "718075",
+		"isoLanguage": "abbr",
+		"name": "ARYM",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2697910",
+		"geonameId": "718075",
+		"isoLanguage": "abbr",
+		"name": "FYROM",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "5651430",
+		"geonameId": "718075",
+		"isoLanguage": "en",
+		"name": "Former Yugoslav Republic of Macedonia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8103219",
+		"geonameId": "718075",
+		"isoLanguage": "en",
+		"name": "Macedonia, The Former Yugoslav Republic Of",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8356505",
+		"geonameId": "718075",
+		"isoLanguage": "en",
+		"name": "Macedonia",
+		"isPreferred": false,
+		"isShortName": true
+	},
+	{
+		"id": "8435598",
+		"geonameId": "718075",
+		"isoLanguage": "it",
+		"name": "Macedonia del Nord",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "16246163",
+		"geonameId": "718075",
+		"isoLanguage": "en",
+		"name": "North Macedonia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "17684524",
+		"geonameId": "718075",
+		"isoLanguage": "en",
+		"name": "Democratic Federal Macedonia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1146780",
+		"geonameId": "2453866",
+		"isoLanguage": "fr",
+		"name": "République du Mali",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1561540",
+		"geonameId": "2453866",
+		"isoLanguage": "da",
+		"name": "Mali",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561543",
+		"geonameId": "2453866",
+		"isoLanguage": "en",
+		"name": "Mali",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561549",
+		"geonameId": "2453866",
+		"isoLanguage": "fr",
+		"name": "Mali",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561558",
+		"geonameId": "2453866",
+		"isoLanguage": "it",
+		"name": "Mali",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561487",
+		"geonameId": "1327865",
+		"isoLanguage": "da",
+		"name": "Myanmar (Burma)",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561491",
+		"geonameId": "1327865",
+		"isoLanguage": "en",
+		"name": "Myanmar",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561497",
+		"geonameId": "1327865",
+		"isoLanguage": "fr",
+		"name": "Myanmar",
+		"isPreferred": false,
+		"isShortName": true
+	},
+	{
+		"id": "1561506",
+		"geonameId": "1327865",
+		"isoLanguage": "it",
+		"name": "Myanmar (Birmania)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1976726",
+		"geonameId": "1327865",
+		"isoLanguage": "da",
+		"name": "Burma",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1976742",
+		"geonameId": "1327865",
+		"isoLanguage": "it",
+		"name": "Birmania",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2421216",
+		"geonameId": "1327865",
+		"isoLanguage": "fr",
+		"name": "Myanmar (Union de)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "4561434",
+		"geonameId": "1327865",
+		"isoLanguage": "en",
+		"name": "Union of Burma",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "6960558",
+		"geonameId": "1327865",
+		"isoLanguage": "en",
+		"name": "Burma",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "10782324",
+		"geonameId": "1327865",
+		"isoLanguage": "fr",
+		"name": "Birmanie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "17684419",
+		"geonameId": "1327865",
+		"isoLanguage": "en",
+		"name": "Republic of the Union of Myanmar",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1551865",
+		"geonameId": "2029969",
+		"isoLanguage": "en",
+		"name": "Mongolian People’s Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1551866",
+		"geonameId": "2029969",
+		"isoLanguage": "en",
+		"name": "Mongol Peoples Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1561431",
+		"geonameId": "2029969",
+		"isoLanguage": "da",
+		"name": "Mongoliet",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561435",
+		"geonameId": "2029969",
+		"isoLanguage": "en",
+		"name": "Mongolia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561441",
+		"geonameId": "2029969",
+		"isoLanguage": "fr",
+		"name": "Mongolie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561450",
+		"geonameId": "2029969",
+		"isoLanguage": "it",
+		"name": "Mongolia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561203",
+		"geonameId": "2378080",
+		"isoLanguage": "da",
+		"name": "Mauretanien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561206",
+		"geonameId": "2378080",
+		"isoLanguage": "en",
+		"name": "Mauritania",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561213",
+		"geonameId": "2378080",
+		"isoLanguage": "fr",
+		"name": "Mauritanie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561222",
+		"geonameId": "2378080",
+		"isoLanguage": "it",
+		"name": "Mauritania",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4304934",
+		"geonameId": "2378080",
+		"isoLanguage": "en",
+		"name": "Islamic Republic of Mauritania",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1208639",
+		"geonameId": "2562770",
+		"isoLanguage": "en",
+		"name": "Republic of Malta",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1561095",
+		"geonameId": "2562770",
+		"isoLanguage": "da",
+		"name": "Malta",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561104",
+		"geonameId": "2562770",
+		"isoLanguage": "fr",
+		"name": "Malte",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561113",
+		"geonameId": "2562770",
+		"isoLanguage": "it",
+		"name": "Malta",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1974861",
+		"geonameId": "2562770",
+		"isoLanguage": "en",
+		"name": "Malta Island",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2488075",
+		"geonameId": "2562770",
+		"isoLanguage": "en",
+		"name": "Malta",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "518473",
+		"geonameId": "934292",
+		"isoLanguage": "fr",
+		"name": "Île de France",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1560982",
+		"geonameId": "934292",
+		"isoLanguage": "da",
+		"name": "Mauritius",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560986",
+		"geonameId": "934292",
+		"isoLanguage": "en",
+		"name": "Mauritius",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560994",
+		"geonameId": "934292",
+		"isoLanguage": "fr",
+		"name": "Maurice",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1561003",
+		"geonameId": "934292",
+		"isoLanguage": "it",
+		"name": "Maurizio",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1619013",
+		"geonameId": "934292",
+		"isoLanguage": "it",
+		"name": "Mauritius",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2256656",
+		"geonameId": "934292",
+		"isoLanguage": "fr",
+		"name": "Île Maurice",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "8488515",
+		"geonameId": "934292",
+		"isoLanguage": "en",
+		"name": "Republic of Mauritius",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "16932835",
+		"geonameId": "934292",
+		"isoLanguage": "fr",
+		"name": "république de Maurice",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1560925",
+		"geonameId": "1282028",
+		"isoLanguage": "da",
+		"name": "Maldiverne",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560930",
+		"geonameId": "1282028",
+		"isoLanguage": "en",
+		"name": "Maldives",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560938",
+		"geonameId": "1282028",
+		"isoLanguage": "fr",
+		"name": "Maldives",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560947",
+		"geonameId": "1282028",
+		"isoLanguage": "it",
+		"name": "Maldive",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4316485",
+		"geonameId": "1282028",
+		"isoLanguage": "en",
+		"name": "Republic of Maldives",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1560817",
+		"geonameId": "927384",
+		"isoLanguage": "da",
+		"name": "Malawi",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560820",
+		"geonameId": "927384",
+		"isoLanguage": "en",
+		"name": "Malawi",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560827",
+		"geonameId": "927384",
+		"isoLanguage": "fr",
+		"name": "Malawi",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560836",
+		"geonameId": "927384",
+		"isoLanguage": "it",
+		"name": "Malawi",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1538457",
+		"geonameId": "3996063",
+		"isoLanguage": "en",
+		"name": "United Mexican States",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1538463",
+		"geonameId": "3996063",
+		"isoLanguage": "en",
+		"name": "Mexican Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1560760",
+		"geonameId": "3996063",
+		"isoLanguage": "da",
+		"name": "Mexico",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560764",
+		"geonameId": "3996063",
+		"isoLanguage": "en",
+		"name": "Mexico",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560772",
+		"geonameId": "3996063",
+		"isoLanguage": "fr",
+		"name": "Mexique",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560781",
+		"geonameId": "3996063",
+		"isoLanguage": "it",
+		"name": "Messico",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560644",
+		"geonameId": "1733045",
+		"isoLanguage": "da",
+		"name": "Malaysia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560648",
+		"geonameId": "1733045",
+		"isoLanguage": "en",
+		"name": "Malaysia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560656",
+		"geonameId": "1733045",
+		"isoLanguage": "fr",
+		"name": "Malaisie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560665",
+		"geonameId": "1733045",
+		"isoLanguage": "it",
+		"name": "Malaysia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560586",
+		"geonameId": "1036973",
+		"isoLanguage": "da",
+		"name": "Mozambique",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560589",
+		"geonameId": "1036973",
+		"isoLanguage": "en",
+		"name": "Mozambique",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560597",
+		"geonameId": "1036973",
+		"isoLanguage": "fr",
+		"name": "Mozambique",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560606",
+		"geonameId": "1036973",
+		"isoLanguage": "it",
+		"name": "Mozambico",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2420796",
+		"geonameId": "1036973",
+		"isoLanguage": "da",
+		"name": "Moçambique",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4591547",
+		"geonameId": "1036973",
+		"isoLanguage": "en",
+		"name": "Republic of Mozambique",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1560302",
+		"geonameId": "3355338",
+		"isoLanguage": "da",
+		"name": "Namibia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560305",
+		"geonameId": "3355338",
+		"isoLanguage": "en",
+		"name": "Namibia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560311",
+		"geonameId": "3355338",
+		"isoLanguage": "fr",
+		"name": "Namibie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560319",
+		"geonameId": "3355338",
+		"isoLanguage": "it",
+		"name": "Namibia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1141067",
+		"geonameId": "2440476",
+		"isoLanguage": "fr",
+		"name": "République du Niger",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1560195",
+		"geonameId": "2440476",
+		"isoLanguage": "da",
+		"name": "Niger",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560198",
+		"geonameId": "2440476",
+		"isoLanguage": "en",
+		"name": "Niger",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560204",
+		"geonameId": "2440476",
+		"isoLanguage": "fr",
+		"name": "Niger",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560212",
+		"geonameId": "2440476",
+		"isoLanguage": "it",
+		"name": "Niger",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4359976",
+		"geonameId": "2440476",
+		"isoLanguage": "en",
+		"name": "Republic of Niger",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1560084",
+		"geonameId": "2328926",
+		"isoLanguage": "da",
+		"name": "Nigeria",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560087",
+		"geonameId": "2328926",
+		"isoLanguage": "en",
+		"name": "Nigeria",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560093",
+		"geonameId": "2328926",
+		"isoLanguage": "fr",
+		"name": "Nigéria",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1560101",
+		"geonameId": "2328926",
+		"isoLanguage": "it",
+		"name": "Nigeria",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1975714",
+		"geonameId": "2328926",
+		"isoLanguage": "fr",
+		"name": "Nigeria",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "11285821",
+		"geonameId": "2328926",
+		"isoLanguage": "en",
+		"name": "Naija",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1560027",
+		"geonameId": "3617476",
+		"isoLanguage": "da",
+		"name": "Nicaragua",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560030",
+		"geonameId": "3617476",
+		"isoLanguage": "en",
+		"name": "Nicaragua",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560038",
+		"geonameId": "3617476",
+		"isoLanguage": "fr",
+		"name": "Nicaragua",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560046",
+		"geonameId": "3617476",
+		"isoLanguage": "it",
+		"name": "Nicaragua",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4354570",
+		"geonameId": "3617476",
+		"isoLanguage": "en",
+		"name": "Republic of Nicaragua",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559969",
+		"geonameId": "2750405",
+		"isoLanguage": "da",
+		"name": "Holland",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559973",
+		"geonameId": "2750405",
+		"isoLanguage": "en",
+		"name": "Netherlands",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559981",
+		"geonameId": "2750405",
+		"isoLanguage": "fr",
+		"name": "Pays-Bas",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559989",
+		"geonameId": "2750405",
+		"isoLanguage": "it",
+		"name": "Paesi Bassi",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2430935",
+		"geonameId": "2750405",
+		"isoLanguage": "it",
+		"name": "Olanda",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559741",
+		"geonameId": "3144096",
+		"isoLanguage": "da",
+		"name": "Norge",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559745",
+		"geonameId": "3144096",
+		"isoLanguage": "en",
+		"name": "Norway",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559753",
+		"geonameId": "3144096",
+		"isoLanguage": "fr",
+		"name": "Norvège",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559761",
+		"geonameId": "3144096",
+		"isoLanguage": "it",
+		"name": "Norvegia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4615920",
+		"geonameId": "3144096",
+		"isoLanguage": "en",
+		"name": "Kingdom of Norway",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559565",
+		"geonameId": "1282988",
+		"isoLanguage": "da",
+		"name": "Nepal",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559569",
+		"geonameId": "1282988",
+		"isoLanguage": "en",
+		"name": "Nepal",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559575",
+		"geonameId": "1282988",
+		"isoLanguage": "fr",
+		"name": "Népal",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559584",
+		"geonameId": "1282988",
+		"isoLanguage": "it",
+		"name": "Nepal",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "7362416",
+		"geonameId": "1282988",
+		"isoLanguage": "en",
+		"name": "Federal Democratic Republic of Nepal",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "17414790",
+		"geonameId": "1282988",
+		"isoLanguage": "en",
+		"name": "Nepal (Republic of)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1041359",
+		"geonameId": "2110425",
+		"isoLanguage": "en",
+		"name": "Republic of Nauru",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559463",
+		"geonameId": "2110425",
+		"isoLanguage": "da",
+		"name": "Nauru",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559466",
+		"geonameId": "2110425",
+		"isoLanguage": "en",
+		"name": "Nauru",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559472",
+		"geonameId": "2110425",
+		"isoLanguage": "fr",
+		"name": "Nauru",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559480",
+		"geonameId": "2110425",
+		"isoLanguage": "it",
+		"name": "Nauru",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559135",
+		"geonameId": "2186224",
+		"isoLanguage": "da",
+		"name": "New Zealand",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559139",
+		"geonameId": "2186224",
+		"isoLanguage": "en",
+		"name": "New Zealand",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559147",
+		"geonameId": "2186224",
+		"isoLanguage": "fr",
+		"name": "Nouvelle-Zélande",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559155",
+		"geonameId": "2186224",
+		"isoLanguage": "it",
+		"name": "Nuova Zelanda",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2420155",
+		"geonameId": "2186224",
+		"isoLanguage": "da",
+		"name": "Ny Zeeland",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558685",
+		"geonameId": "286963",
+		"isoLanguage": "da",
+		"name": "Oman",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558688",
+		"geonameId": "286963",
+		"isoLanguage": "en",
+		"name": "Oman",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558694",
+		"geonameId": "286963",
+		"isoLanguage": "fr",
+		"name": "Oman",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558702",
+		"geonameId": "286963",
+		"isoLanguage": "it",
+		"name": "Oman",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "3224279",
+		"geonameId": "286963",
+		"isoLanguage": "en",
+		"name": "Sultanate of Oman",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1558001",
+		"geonameId": "3703430",
+		"isoLanguage": "da",
+		"name": "Panama",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558005",
+		"geonameId": "3703430",
+		"isoLanguage": "en",
+		"name": "Panama",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1558011",
+		"geonameId": "3703430",
+		"isoLanguage": "fr",
+		"name": "Panama",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1978003",
+		"geonameId": "3703430",
+		"isoLanguage": "fr",
+		"name": "Panamá",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1978014",
+		"geonameId": "3703430",
+		"isoLanguage": "it",
+		"name": "Panamá",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4659024",
+		"geonameId": "3703430",
+		"isoLanguage": "en",
+		"name": "Republic of Panama",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1557834",
+		"geonameId": "3932488",
+		"isoLanguage": "da",
+		"name": "Peru",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557837",
+		"geonameId": "3932488",
+		"isoLanguage": "en",
+		"name": "Peru",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557844",
+		"geonameId": "3932488",
+		"isoLanguage": "fr",
+		"name": "Pérou",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557853",
+		"geonameId": "3932488",
+		"isoLanguage": "it",
+		"name": "Perù",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4583241",
+		"geonameId": "3932488",
+		"isoLanguage": "en",
+		"name": "Republic of Peru",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1557718",
+		"geonameId": "2088628",
+		"isoLanguage": "da",
+		"name": "Papua Ny Guinea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557721",
+		"geonameId": "2088628",
+		"isoLanguage": "en",
+		"name": "Papua New Guinea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557729",
+		"geonameId": "2088628",
+		"isoLanguage": "fr",
+		"name": "Papouasie-Nouvelle-Guinée",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557738",
+		"geonameId": "2088628",
+		"isoLanguage": "it",
+		"name": "Papua Nuova Guinea",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557660",
+		"geonameId": "1694008",
+		"isoLanguage": "da",
+		"name": "Filippinerne",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557663",
+		"geonameId": "1694008",
+		"isoLanguage": "en",
+		"name": "Philippines",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557671",
+		"geonameId": "1694008",
+		"isoLanguage": "fr",
+		"name": "Philippines",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557680",
+		"geonameId": "1694008",
+		"isoLanguage": "it",
+		"name": "Filippine",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4063958",
+		"geonameId": "1694008",
+		"isoLanguage": "en",
+		"name": "Republic of the Philippines",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1557601",
+		"geonameId": "1168579",
+		"isoLanguage": "da",
+		"name": "Pakistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557605",
+		"geonameId": "1168579",
+		"isoLanguage": "en",
+		"name": "Pakistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557611",
+		"geonameId": "1168579",
+		"isoLanguage": "fr",
+		"name": "Pakistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557621",
+		"geonameId": "1168579",
+		"isoLanguage": "it",
+		"name": "Pakistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "3935480",
+		"geonameId": "1168579",
+		"isoLanguage": "en",
+		"name": "Islamic Republic of Pakistan",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1557543",
+		"geonameId": "798544",
+		"isoLanguage": "da",
+		"name": "Polen",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557546",
+		"geonameId": "798544",
+		"isoLanguage": "en",
+		"name": "Poland",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557554",
+		"geonameId": "798544",
+		"isoLanguage": "fr",
+		"name": "Pologne",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557563",
+		"geonameId": "798544",
+		"isoLanguage": "it",
+		"name": "Polonia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4723903",
+		"geonameId": "798544",
+		"isoLanguage": "en",
+		"name": "Republic of Poland",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1557417",
+		"geonameId": "2264397",
+		"isoLanguage": "da",
+		"name": "Portugal",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557421",
+		"geonameId": "2264397",
+		"isoLanguage": "en",
+		"name": "Portugal",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557427",
+		"geonameId": "2264397",
+		"isoLanguage": "fr",
+		"name": "Portugal",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557436",
+		"geonameId": "2264397",
+		"isoLanguage": "it",
+		"name": "Portogallo",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4122766",
+		"geonameId": "2264397",
+		"isoLanguage": "en",
+		"name": "Portuguese Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1557186",
+		"geonameId": "3437598",
+		"isoLanguage": "da",
+		"name": "Paraguay",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557189",
+		"geonameId": "3437598",
+		"isoLanguage": "en",
+		"name": "Paraguay",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557197",
+		"geonameId": "3437598",
+		"isoLanguage": "fr",
+		"name": "Paraguay",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557206",
+		"geonameId": "3437598",
+		"isoLanguage": "it",
+		"name": "Paraguay",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4412989",
+		"geonameId": "3437598",
+		"isoLanguage": "en",
+		"name": "Republic of Paraguay",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1557073",
+		"geonameId": "289688",
+		"isoLanguage": "da",
+		"name": "Qatar",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557077",
+		"geonameId": "289688",
+		"isoLanguage": "en",
+		"name": "Qatar",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557085",
+		"geonameId": "289688",
+		"isoLanguage": "fr",
+		"name": "Qatar",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1557094",
+		"geonameId": "289688",
+		"isoLanguage": "it",
+		"name": "Qatar",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4469080",
+		"geonameId": "289688",
+		"isoLanguage": "en",
+		"name": "State of Qatar",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556607",
+		"geonameId": "798549",
+		"isoLanguage": "da",
+		"name": "Rumænien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556610",
+		"geonameId": "798549",
+		"isoLanguage": "en",
+		"name": "Romania",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556618",
+		"geonameId": "798549",
+		"isoLanguage": "fr",
+		"name": "Roumanie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556627",
+		"geonameId": "798549",
+		"isoLanguage": "it",
+		"name": "Romania",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1978040",
+		"geonameId": "6290252",
+		"isoLanguage": "fr",
+		"name": "Serbie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1978041",
+		"geonameId": "6290252",
+		"isoLanguage": "en",
+		"name": "Serbia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1978057",
+		"geonameId": "6290252",
+		"isoLanguage": "da",
+		"name": "Serbien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1978073",
+		"geonameId": "6290252",
+		"isoLanguage": "it",
+		"name": "Serbia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2419088",
+		"geonameId": "6290252",
+		"isoLanguage": "da",
+		"name": "Serbia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "993186",
+		"geonameId": "2017370",
+		"isoLanguage": "en",
+		"name": "Russian Soviet Federated Socialist Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "993188",
+		"geonameId": "2017370",
+		"isoLanguage": "en",
+		"name": "Russian Soviet Federative Socialist Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "993191",
+		"geonameId": "2017370",
+		"isoLanguage": "en",
+		"name": "Russian Socialist Federative Soviet Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556484",
+		"geonameId": "2017370",
+		"isoLanguage": "da",
+		"name": "Rusland",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556487",
+		"geonameId": "2017370",
+		"isoLanguage": "en",
+		"name": "Russia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556495",
+		"geonameId": "2017370",
+		"isoLanguage": "fr",
+		"name": "Russie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556504",
+		"geonameId": "2017370",
+		"isoLanguage": "it",
+		"name": "Federazione Russa",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2419064",
+		"geonameId": "2017370",
+		"isoLanguage": "it",
+		"name": "Russia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2728832",
+		"geonameId": "2017370",
+		"isoLanguage": "en",
+		"name": "Russian Federation",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "6191",
+		"geonameId": "49518",
+		"isoLanguage": "fr",
+		"name": "République du Rwanda",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556371",
+		"geonameId": "49518",
+		"isoLanguage": "da",
+		"name": "Rwanda",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556374",
+		"geonameId": "49518",
+		"isoLanguage": "en",
+		"name": "Rwanda",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556382",
+		"geonameId": "49518",
+		"isoLanguage": "fr",
+		"name": "Rwanda",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556391",
+		"geonameId": "49518",
+		"isoLanguage": "it",
+		"name": "Ruanda",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2197518",
+		"geonameId": "49518",
+		"isoLanguage": "en",
+		"name": "Republic of Rwanda",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556247",
+		"geonameId": "102358",
+		"isoLanguage": "da",
+		"name": "Saudi-Arabien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556251",
+		"geonameId": "102358",
+		"isoLanguage": "en",
+		"name": "Saudi Arabia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556258",
+		"geonameId": "102358",
+		"isoLanguage": "fr",
+		"name": "Arabie saoudite",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556267",
+		"geonameId": "102358",
+		"isoLanguage": "it",
+		"name": "Arabia Saudita",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "7417773",
+		"geonameId": "102358",
+		"isoLanguage": "en",
+		"name": "Kingdom of Saudi Arabia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556192",
+		"geonameId": "2103350",
+		"isoLanguage": "da",
+		"name": "Salomonøerne",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556195",
+		"geonameId": "2103350",
+		"isoLanguage": "en",
+		"name": "Solomon Islands",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556203",
+		"geonameId": "2103350",
+		"isoLanguage": "fr",
+		"name": "Îles Salomon",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556211",
+		"geonameId": "2103350",
+		"isoLanguage": "it",
+		"name": "Isole Solomon",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1979827",
+		"geonameId": "2103350",
+		"isoLanguage": "it",
+		"name": "Isole Salomone",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2418872",
+		"geonameId": "2103350",
+		"isoLanguage": "fr",
+		"name": "Iles Salomon",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2418876",
+		"geonameId": "2103350",
+		"isoLanguage": "it",
+		"name": "Salomone, isole",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8193891",
+		"geonameId": "2103350",
+		"isoLanguage": "fr",
+		"name": "Salomon",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1556138",
+		"geonameId": "241170",
+		"isoLanguage": "da",
+		"name": "Seychellerne",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556141",
+		"geonameId": "241170",
+		"isoLanguage": "en",
+		"name": "Seychelles",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556149",
+		"geonameId": "241170",
+		"isoLanguage": "fr",
+		"name": "Seychelles",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556157",
+		"geonameId": "241170",
+		"isoLanguage": "it",
+		"name": "Seychelles",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556085",
+		"geonameId": "366755",
+		"isoLanguage": "da",
+		"name": "Sudan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556088",
+		"geonameId": "366755",
+		"isoLanguage": "en",
+		"name": "Sudan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556094",
+		"geonameId": "366755",
+		"isoLanguage": "fr",
+		"name": "Soudan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556103",
+		"geonameId": "366755",
+		"isoLanguage": "it",
+		"name": "Sudan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556024",
+		"geonameId": "2661886",
+		"isoLanguage": "da",
+		"name": "Sverige",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556028",
+		"geonameId": "2661886",
+		"isoLanguage": "en",
+		"name": "Sweden",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556036",
+		"geonameId": "2661886",
+		"isoLanguage": "fr",
+		"name": "Suède",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1556045",
+		"geonameId": "2661886",
+		"isoLanguage": "it",
+		"name": "Svezia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4035267",
+		"geonameId": "2661886",
+		"isoLanguage": "en",
+		"name": "Kingdom of Sweden",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555966",
+		"geonameId": "1880251",
+		"isoLanguage": "da",
+		"name": "Singapore",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555969",
+		"geonameId": "1880251",
+		"isoLanguage": "en",
+		"name": "Singapore",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555977",
+		"geonameId": "1880251",
+		"isoLanguage": "fr",
+		"name": "Singapour",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555986",
+		"geonameId": "1880251",
+		"isoLanguage": "it",
+		"name": "Singapore",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "19253645",
+		"geonameId": "1880251",
+		"isoLanguage": "en",
+		"name": "Republic of Singapore",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555909",
+		"geonameId": "3190538",
+		"isoLanguage": "da",
+		"name": "Slovenien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555913",
+		"geonameId": "3190538",
+		"isoLanguage": "en",
+		"name": "Slovenia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555920",
+		"geonameId": "3190538",
+		"isoLanguage": "fr",
+		"name": "Slovénie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555929",
+		"geonameId": "3190538",
+		"isoLanguage": "it",
+		"name": "Slovenia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "6999753",
+		"geonameId": "3190538",
+		"isoLanguage": "en",
+		"name": "Republic of Slovenia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555854",
+		"geonameId": "3057568",
+		"isoLanguage": "da",
+		"name": "Slovakiet",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555857",
+		"geonameId": "3057568",
+		"isoLanguage": "en",
+		"name": "Slovakia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555864",
+		"geonameId": "3057568",
+		"isoLanguage": "fr",
+		"name": "Slovaquie",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1555873",
+		"geonameId": "3057568",
+		"isoLanguage": "it",
+		"name": "Slovacchia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2418698",
+		"geonameId": "3057568",
+		"isoLanguage": "da",
+		"name": "Slovakiet (Den Slovakiske Republik)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2418701",
+		"geonameId": "3057568",
+		"isoLanguage": "fr",
+		"name": "République slovaque",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2418703",
+		"geonameId": "3057568",
+		"isoLanguage": "it",
+		"name": "Slovacchia (Repubblica Slovacca)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "6998119",
+		"geonameId": "3057568",
+		"isoLanguage": "en",
+		"name": "Slovak Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555745",
+		"geonameId": "2403846",
+		"isoLanguage": "da",
+		"name": "Sierra Leone",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555748",
+		"geonameId": "2403846",
+		"isoLanguage": "en",
+		"name": "Sierra Leone",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555755",
+		"geonameId": "2403846",
+		"isoLanguage": "fr",
+		"name": "Sierra Leone",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555764",
+		"geonameId": "2403846",
+		"isoLanguage": "it",
+		"name": "Sierra Leone",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1348307",
+		"geonameId": "3168068",
+		"isoLanguage": "it",
+		"name": "Repubblica di San Marino",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555632",
+		"geonameId": "3168068",
+		"isoLanguage": "da",
+		"name": "San Marino",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555635",
+		"geonameId": "3168068",
+		"isoLanguage": "en",
+		"name": "San Marino",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555641",
+		"geonameId": "3168068",
+		"isoLanguage": "fr",
+		"name": "Saint-Marin",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555650",
+		"geonameId": "3168068",
+		"isoLanguage": "it",
+		"name": "San Marino",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1087502",
+		"geonameId": "2245662",
+		"isoLanguage": "fr",
+		"name": "République du Sénégal",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555582",
+		"geonameId": "2245662",
+		"isoLanguage": "da",
+		"name": "Senegal",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555585",
+		"geonameId": "2245662",
+		"isoLanguage": "en",
+		"name": "Senegal",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555591",
+		"geonameId": "2245662",
+		"isoLanguage": "fr",
+		"name": "Sénégal",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555600",
+		"geonameId": "2245662",
+		"isoLanguage": "it",
+		"name": "Senegal",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4103239",
+		"geonameId": "2245662",
+		"isoLanguage": "en",
+		"name": "Republic of Senegal",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1977766",
+		"geonameId": "51537",
+		"isoLanguage": "en",
+		"name": "Somalia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1977767",
+		"geonameId": "51537",
+		"isoLanguage": "fr",
+		"name": "Somalie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1977779",
+		"geonameId": "51537",
+		"isoLanguage": "da",
+		"name": "Somalia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1977798",
+		"geonameId": "51537",
+		"isoLanguage": "it",
+		"name": "Somalia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "8103912",
+		"geonameId": "51537",
+		"isoLanguage": "en",
+		"name": "Federal Republic of Somalia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8103914",
+		"geonameId": "51537",
+		"isoLanguage": "en",
+		"name": "The Somali Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555424",
+		"geonameId": "3382998",
+		"isoLanguage": "da",
+		"name": "Surinam",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555427",
+		"geonameId": "3382998",
+		"isoLanguage": "en",
+		"name": "Suriname",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555435",
+		"geonameId": "3382998",
+		"isoLanguage": "fr",
+		"name": "Suriname",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555444",
+		"geonameId": "3382998",
+		"isoLanguage": "it",
+		"name": "Suriname",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2418530",
+		"geonameId": "3382998",
+		"isoLanguage": "fr",
+		"name": "Surinam",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "4411912",
+		"geonameId": "3382998",
+		"isoLanguage": "en",
+		"name": "Republic of Suriname",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "6702110",
+		"geonameId": "7909807",
+		"isoLanguage": "en",
+		"name": "Republic of South Sudan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "6702111",
+		"geonameId": "7909807",
+		"isoLanguage": "en",
+		"name": "South Sudan",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "6754736",
+		"geonameId": "7909807",
+		"isoLanguage": "fr",
+		"name": "Soudan du Sud",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "6754737",
+		"geonameId": "7909807",
+		"isoLanguage": "fr",
+		"name": "Sud-Soudan",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "7322917",
+		"geonameId": "7909807",
+		"isoLanguage": "it",
+		"name": "Sudan del Sud",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "16931139",
+		"geonameId": "7909807",
+		"isoLanguage": "da",
+		"name": "Sydsudan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "16931159",
+		"geonameId": "7909807",
+		"isoLanguage": "it",
+		"name": "Sud Sudan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555317",
+		"geonameId": "2410758",
+		"isoLanguage": "da",
+		"name": "São Tomé og Príncipe",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555320",
+		"geonameId": "2410758",
+		"isoLanguage": "en",
+		"name": "São Tomé & Príncipe",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555328",
+		"geonameId": "2410758",
+		"isoLanguage": "fr",
+		"name": "Sao Tomé-et-Principe",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555337",
+		"geonameId": "2410758",
+		"isoLanguage": "it",
+		"name": "São Tomé e Príncipe",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1979656",
+		"geonameId": "2410758",
+		"isoLanguage": "fr",
+		"name": "São Tomé-et-Principe",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1979657",
+		"geonameId": "2410758",
+		"isoLanguage": "en",
+		"name": "São Tomé and Príncipe",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1979667",
+		"geonameId": "2410758",
+		"isoLanguage": "da",
+		"name": "Sao Tome og Principe",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2418447",
+		"geonameId": "2410758",
+		"isoLanguage": "da",
+		"name": "Sao Tomé og Principe",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2418452",
+		"geonameId": "2410758",
+		"isoLanguage": "fr",
+		"name": "São Tomé-et-Príncipe",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2418458",
+		"geonameId": "2410758",
+		"isoLanguage": "it",
+		"name": "Sao Tomè e Principe",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2426524",
+		"geonameId": "2410758",
+		"isoLanguage": "en",
+		"name": "Democratic Republic of Sao Tome and Principe",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555264",
+		"geonameId": "3585968",
+		"isoLanguage": "da",
+		"name": "El Salvador",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555267",
+		"geonameId": "3585968",
+		"isoLanguage": "en",
+		"name": "El Salvador",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555273",
+		"geonameId": "3585968",
+		"isoLanguage": "fr",
+		"name": "El Salvador",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555282",
+		"geonameId": "3585968",
+		"isoLanguage": "it",
+		"name": "El Salvador",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1978746",
+		"geonameId": "3585968",
+		"isoLanguage": "fr",
+		"name": "Salvador",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4346316",
+		"geonameId": "3585968",
+		"isoLanguage": "en",
+		"name": "Republic of El Salvador",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555153",
+		"geonameId": "163843",
+		"isoLanguage": "da",
+		"name": "Syrien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555156",
+		"geonameId": "163843",
+		"isoLanguage": "en",
+		"name": "Syria",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555163",
+		"geonameId": "163843",
+		"isoLanguage": "fr",
+		"name": "Syrie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555172",
+		"geonameId": "163843",
+		"isoLanguage": "it",
+		"name": "Siria",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4024778",
+		"geonameId": "163843",
+		"isoLanguage": "en",
+		"name": "Syrian Arab Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "7824998",
+		"geonameId": "163843",
+		"isoLanguage": "fr",
+		"name": "Surie",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8791541",
+		"geonameId": "163843",
+		"isoLanguage": "fr",
+		"name": "République arabe syrienne",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555041",
+		"geonameId": "934841",
+		"isoLanguage": "da",
+		"name": "Eswatini",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1555044",
+		"geonameId": "934841",
+		"isoLanguage": "en",
+		"name": "Swaziland",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1555052",
+		"geonameId": "934841",
+		"isoLanguage": "fr",
+		"name": "Swaziland",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1555061",
+		"geonameId": "934841",
+		"isoLanguage": "it",
+		"name": "Swaziland",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "13694813",
+		"geonameId": "934841",
+		"isoLanguage": "fr",
+		"name": "Eswatini",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "13694955",
+		"geonameId": "934841",
+		"isoLanguage": "fr",
+		"name": "Royaume du Swaziland",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "13858018",
+		"geonameId": "934841",
+		"isoLanguage": "en",
+		"name": "Eswatini",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "17414791",
+		"geonameId": "934841",
+		"isoLanguage": "en",
+		"name": "Swaziland (Eswatini)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1139141",
+		"geonameId": "2434508",
+		"isoLanguage": "fr",
+		"name": "République du Tchad",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1554757",
+		"geonameId": "2434508",
+		"isoLanguage": "da",
+		"name": "Tchad",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554760",
+		"geonameId": "2434508",
+		"isoLanguage": "en",
+		"name": "Chad",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554768",
+		"geonameId": "2434508",
+		"isoLanguage": "fr",
+		"name": "Tchad",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554777",
+		"geonameId": "2434508",
+		"isoLanguage": "it",
+		"name": "Ciad",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4358159",
+		"geonameId": "2434508",
+		"isoLanguage": "en",
+		"name": "Republic of Chad",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1121654",
+		"geonameId": "2363686",
+		"isoLanguage": "fr",
+		"name": "République Togolaise",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1554648",
+		"geonameId": "2363686",
+		"isoLanguage": "da",
+		"name": "Togo",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554651",
+		"geonameId": "2363686",
+		"isoLanguage": "en",
+		"name": "Togo",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554666",
+		"geonameId": "2363686",
+		"isoLanguage": "it",
+		"name": "Togo",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4258636",
+		"geonameId": "2363686",
+		"isoLanguage": "en",
+		"name": "Togolese Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "11107673",
+		"geonameId": "2363686",
+		"isoLanguage": "fr",
+		"name": "Togo",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554592",
+		"geonameId": "1605651",
+		"isoLanguage": "da",
+		"name": "Thailand",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554596",
+		"geonameId": "1605651",
+		"isoLanguage": "en",
+		"name": "Thailand",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554603",
+		"geonameId": "1605651",
+		"isoLanguage": "fr",
+		"name": "Thaïlande",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554612",
+		"geonameId": "1605651",
+		"isoLanguage": "it",
+		"name": "Tailandia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1975920",
+		"geonameId": "1605651",
+		"isoLanguage": "it",
+		"name": "Thailandia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "3632751",
+		"geonameId": "1605651",
+		"isoLanguage": "en",
+		"name": "Kingdom of Thailand",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1554534",
+		"geonameId": "1220409",
+		"isoLanguage": "da",
+		"name": "Tadsjikistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554538",
+		"geonameId": "1220409",
+		"isoLanguage": "en",
+		"name": "Tajikistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554546",
+		"geonameId": "1220409",
+		"isoLanguage": "fr",
+		"name": "Tadjikistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554555",
+		"geonameId": "1220409",
+		"isoLanguage": "it",
+		"name": "Tagikistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2417999",
+		"geonameId": "1220409",
+		"isoLanguage": "da",
+		"name": "Tajikistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4020977",
+		"geonameId": "1220409",
+		"isoLanguage": "en",
+		"name": "Republic of Tajikistan",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1554486",
+		"geonameId": "1966436",
+		"isoLanguage": "da",
+		"name": "Timor-Leste",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1554489",
+		"geonameId": "1966436",
+		"isoLanguage": "en",
+		"name": "East Timor",
+		"isPreferred": false,
+		"isShortName": true
+	},
+	{
+		"id": "1554494",
+		"geonameId": "1966436",
+		"isoLanguage": "fr",
+		"name": "Timor-Oriental",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1554500",
+		"geonameId": "1966436",
+		"isoLanguage": "it",
+		"name": "Timor Est",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1978823",
+		"geonameId": "1966436",
+		"isoLanguage": "fr",
+		"name": "Timor Oriental",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1978832",
+		"geonameId": "1966436",
+		"isoLanguage": "da",
+		"name": "Østtimor",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4976035",
+		"geonameId": "1966436",
+		"isoLanguage": "en",
+		"name": "Democratic Republic of Timor-Leste",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8052190",
+		"geonameId": "1966436",
+		"isoLanguage": "en",
+		"name": "Timor-Leste",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1564976",
+		"geonameId": "1218197",
+		"isoLanguage": "da",
+		"name": "Turkmenistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564979",
+		"geonameId": "1218197",
+		"isoLanguage": "en",
+		"name": "Turkmenistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564985",
+		"geonameId": "1218197",
+		"isoLanguage": "fr",
+		"name": "Turkmenistan",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1564995",
+		"geonameId": "1218197",
+		"isoLanguage": "it",
+		"name": "Turkmenistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1978365",
+		"geonameId": "1218197",
+		"isoLanguage": "fr",
+		"name": "Turkménistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564919",
+		"geonameId": "2464461",
+		"isoLanguage": "da",
+		"name": "Tunesien",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564922",
+		"geonameId": "2464461",
+		"isoLanguage": "en",
+		"name": "Tunisia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564929",
+		"geonameId": "2464461",
+		"isoLanguage": "fr",
+		"name": "Tunisie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564938",
+		"geonameId": "2464461",
+		"isoLanguage": "it",
+		"name": "Tunisia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2422676",
+		"geonameId": "2464461",
+		"isoLanguage": "da",
+		"name": "Tunis",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4487068",
+		"geonameId": "2464461",
+		"isoLanguage": "en",
+		"name": "Tunisian Republic",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1564865",
+		"geonameId": "4032283",
+		"isoLanguage": "da",
+		"name": "Tonga",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564868",
+		"geonameId": "4032283",
+		"isoLanguage": "en",
+		"name": "Tonga",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564874",
+		"geonameId": "4032283",
+		"isoLanguage": "fr",
+		"name": "Tonga",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564883",
+		"geonameId": "4032283",
+		"isoLanguage": "it",
+		"name": "Tonga",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564806",
+		"geonameId": "298795",
+		"isoLanguage": "da",
+		"name": "Tyrkiet",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564809",
+		"geonameId": "298795",
+		"isoLanguage": "en",
+		"name": "Turkey",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1564817",
+		"geonameId": "298795",
+		"isoLanguage": "fr",
+		"name": "Turquie",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1564827",
+		"geonameId": "298795",
+		"isoLanguage": "it",
+		"name": "Turchia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4475608",
+		"geonameId": "298795",
+		"isoLanguage": "en",
+		"name": "Republic of Turkey",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "7824902",
+		"geonameId": "298795",
+		"isoLanguage": "fr",
+		"name": "estroict de Sibyle",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "17660098",
+		"geonameId": "298795",
+		"isoLanguage": "en",
+		"name": "Republic of Türkiye",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "17681396",
+		"geonameId": "298795",
+		"isoLanguage": "en",
+		"name": "Türkiye",
+		"isPreferred": false,
+		"isShortName": true
+	},
+	{
+		"id": "1564748",
+		"geonameId": "3573591",
+		"isoLanguage": "da",
+		"name": "Trinidad og Tobago",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564751",
+		"geonameId": "3573591",
+		"isoLanguage": "en",
+		"name": "Trinidad & Tobago",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1564759",
+		"geonameId": "3573591",
+		"isoLanguage": "fr",
+		"name": "Trinité-et-Tobago",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564768",
+		"geonameId": "3573591",
+		"isoLanguage": "it",
+		"name": "Trinidad e Tobago",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2422626",
+		"geonameId": "3573591",
+		"isoLanguage": "fr",
+		"name": "Trinidad et Tobago",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "16933104",
+		"geonameId": "3573591",
+		"isoLanguage": "en",
+		"name": "Trinidad and Tobago",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564697",
+		"geonameId": "2110297",
+		"isoLanguage": "da",
+		"name": "Tuvalu",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564700",
+		"geonameId": "2110297",
+		"isoLanguage": "en",
+		"name": "Tuvalu",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564706",
+		"geonameId": "2110297",
+		"isoLanguage": "fr",
+		"name": "Tuvalu",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564715",
+		"geonameId": "2110297",
+		"isoLanguage": "it",
+		"name": "Tuvalu",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1983319",
+		"geonameId": "1668284",
+		"isoLanguage": "en",
+		"name": "Taiwan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1983321",
+		"geonameId": "1668284",
+		"isoLanguage": "fr",
+		"name": "République de Chine",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1983330",
+		"geonameId": "1668284",
+		"isoLanguage": "da",
+		"name": "Republikken Kina",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1983336",
+		"geonameId": "1668284",
+		"isoLanguage": "it",
+		"name": "Isola di Formosa",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2422533",
+		"geonameId": "1668284",
+		"isoLanguage": "fr",
+		"name": "Taïwan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "8435595",
+		"geonameId": "1668284",
+		"isoLanguage": "it",
+		"name": "Taiwan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "13895881",
+		"geonameId": "1668284",
+		"isoLanguage": "en",
+		"name": "Taiwan, Republic of China",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "13895882",
+		"geonameId": "1668284",
+		"isoLanguage": "en",
+		"name": "Taiwan ROC",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "16931709",
+		"geonameId": "1668284",
+		"isoLanguage": "da",
+		"name": "Taiwan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "18158497",
+		"geonameId": "1668284",
+		"isoLanguage": "en",
+		"name": "Taiwan R.O.C.",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1564588",
+		"geonameId": "149590",
+		"isoLanguage": "da",
+		"name": "Tanzania",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564591",
+		"geonameId": "149590",
+		"isoLanguage": "en",
+		"name": "Tanzania",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564598",
+		"geonameId": "149590",
+		"isoLanguage": "fr",
+		"name": "Tanzanie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564607",
+		"geonameId": "149590",
+		"isoLanguage": "it",
+		"name": "Tanzania",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564421",
+		"geonameId": "690791",
+		"isoLanguage": "da",
+		"name": "Ukraine",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564424",
+		"geonameId": "690791",
+		"isoLanguage": "en",
+		"name": "Ukraine",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564432",
+		"geonameId": "690791",
+		"isoLanguage": "fr",
+		"name": "Ukraine",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564441",
+		"geonameId": "690791",
+		"isoLanguage": "it",
+		"name": "Ucraina",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564307",
+		"geonameId": "226074",
+		"isoLanguage": "da",
+		"name": "Uganda",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564310",
+		"geonameId": "226074",
+		"isoLanguage": "en",
+		"name": "Uganda",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564316",
+		"geonameId": "226074",
+		"isoLanguage": "fr",
+		"name": "Ouganda",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564325",
+		"geonameId": "226074",
+		"isoLanguage": "it",
+		"name": "Uganda",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564130",
+		"geonameId": "6252001",
+		"isoLanguage": "da",
+		"name": "USA",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564142",
+		"geonameId": "6252001",
+		"isoLanguage": "fr",
+		"name": "États Unis",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1564152",
+		"geonameId": "6252001",
+		"isoLanguage": "it",
+		"name": "USA",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2188443",
+		"geonameId": "6252001",
+		"isoLanguage": "da",
+		"name": "Amerikas Forenede Stater",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2428563",
+		"geonameId": "6252001",
+		"isoLanguage": "en",
+		"name": "United States of America",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "6533510",
+		"geonameId": "6252001",
+		"isoLanguage": "fr",
+		"name": "USA",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "7297444",
+		"geonameId": "6252001",
+		"isoLanguage": "abbr",
+		"name": "U.S.",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "7297445",
+		"geonameId": "6252001",
+		"isoLanguage": "abbr",
+		"name": "USA",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "7297446",
+		"geonameId": "6252001",
+		"isoLanguage": "abbr",
+		"name": "U.S.A.",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "16934725",
+		"geonameId": "6252001",
+		"isoLanguage": "it",
+		"name": "Stati Uniti",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "19335534",
+		"geonameId": "6252001",
+		"isoLanguage": "abbr",
+		"name": "US",
+		"isPreferred": false,
+		"isShortName": true
+	},
+	{
+		"id": "1563939",
+		"geonameId": "3439705",
+		"isoLanguage": "da",
+		"name": "Uruguay",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563942",
+		"geonameId": "3439705",
+		"isoLanguage": "en",
+		"name": "Uruguay",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563950",
+		"geonameId": "3439705",
+		"isoLanguage": "fr",
+		"name": "Uruguay",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563959",
+		"geonameId": "3439705",
+		"isoLanguage": "it",
+		"name": "Uruguay",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4413592",
+		"geonameId": "3439705",
+		"isoLanguage": "en",
+		"name": "Oriental Republic of Uruguay",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1563883",
+		"geonameId": "1512440",
+		"isoLanguage": "da",
+		"name": "Usbekistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563887",
+		"geonameId": "1512440",
+		"isoLanguage": "en",
+		"name": "Uzbekistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563894",
+		"geonameId": "1512440",
+		"isoLanguage": "fr",
+		"name": "Ouzbékistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563903",
+		"geonameId": "1512440",
+		"isoLanguage": "it",
+		"name": "Uzbekistan",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4014988",
+		"geonameId": "1512440",
+		"isoLanguage": "en",
+		"name": "Republic of Uzbekistan",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1347280",
+		"geonameId": "3164670",
+		"isoLanguage": "it",
+		"name": "Stato della Città del Vaticano",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1347281",
+		"geonameId": "3164670",
+		"isoLanguage": "en",
+		"name": "Vatican City",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1347282",
+		"geonameId": "3164670",
+		"isoLanguage": "en",
+		"name": "Holy See",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1347283",
+		"geonameId": "3164670",
+		"isoLanguage": "it",
+		"name": "Città del Vaticano",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1347284",
+		"geonameId": "3164670",
+		"isoLanguage": "it",
+		"name": "Città Vaticano",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1347285",
+		"geonameId": "3164670",
+		"isoLanguage": "en",
+		"name": "Vatican City State",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1563580",
+		"geonameId": "3164670",
+		"isoLanguage": "da",
+		"name": "Vatikanstaten",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563583",
+		"geonameId": "3164670",
+		"isoLanguage": "en",
+		"name": "Vatican",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1563591",
+		"geonameId": "3164670",
+		"isoLanguage": "fr",
+		"name": "Saint-Siège (Etat de la Cité du Vatican)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1563600",
+		"geonameId": "3164670",
+		"isoLanguage": "it",
+		"name": "Vaticano",
+		"isPreferred": false,
+		"isShortName": true
+	},
+	{
+		"id": "1974940",
+		"geonameId": "3164670",
+		"isoLanguage": "en",
+		"name": "Vatican Hill",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1974942",
+		"geonameId": "3164670",
+		"isoLanguage": "it",
+		"name": "Colle Vaticano",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2254573",
+		"geonameId": "3164670",
+		"isoLanguage": "fr",
+		"name": "Vatican",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "2422119",
+		"geonameId": "3164670",
+		"isoLanguage": "da",
+		"name": "Pavestolen (Vatikanstaten)",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2422125",
+		"geonameId": "3164670",
+		"isoLanguage": "fr",
+		"name": "Saint-Siège (État de la Cité du Vatican)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2422131",
+		"geonameId": "3164670",
+		"isoLanguage": "it",
+		"name": "Santa Sede (Città del Vaticano)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8103214",
+		"geonameId": "3164670",
+		"isoLanguage": "en",
+		"name": "Holy See (Vatican City State)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8103246",
+		"geonameId": "3164670",
+		"isoLanguage": "en",
+		"name": "Vatican City State (Holy See)",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1563527",
+		"geonameId": "3577815",
+		"isoLanguage": "da",
+		"name": "St. Vincent og Grenadinerne",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1563530",
+		"geonameId": "3577815",
+		"isoLanguage": "en",
+		"name": "St. Vincent & Grenadines",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1981019",
+		"geonameId": "3577815",
+		"isoLanguage": "da",
+		"name": "Saint Vincent og Grenadinerne",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1981027",
+		"geonameId": "3577815",
+		"isoLanguage": "it",
+		"name": "Saint Vincent e Grenadine",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "7091728",
+		"geonameId": "3577815",
+		"isoLanguage": "it",
+		"name": "Saint Vincent e Grenadines",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8202764",
+		"geonameId": "3577815",
+		"isoLanguage": "fr",
+		"name": "Saint-Vincent-et-les-Grenadines",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "13288308",
+		"geonameId": "3577815",
+		"isoLanguage": "en",
+		"name": "St Vincent and Grenadines",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "16766507",
+		"geonameId": "3577815",
+		"isoLanguage": "en",
+		"name": "St. Vincent and the Grenadines",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1473191",
+		"geonameId": "3625428",
+		"isoLanguage": "en",
+		"name": "United States of Venezuela",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1473193",
+		"geonameId": "3625428",
+		"isoLanguage": "en",
+		"name": "Republic of Venezuela",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1563472",
+		"geonameId": "3625428",
+		"isoLanguage": "da",
+		"name": "Venezuela",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563475",
+		"geonameId": "3625428",
+		"isoLanguage": "en",
+		"name": "Venezuela",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563482",
+		"geonameId": "3625428",
+		"isoLanguage": "fr",
+		"name": "Vénézuéla",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1563491",
+		"geonameId": "3625428",
+		"isoLanguage": "it",
+		"name": "Venezuela",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1976072",
+		"geonameId": "3625428",
+		"isoLanguage": "fr",
+		"name": "Venezuela",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4401825",
+		"geonameId": "3625428",
+		"isoLanguage": "en",
+		"name": "Bolivarian Republic of Venezuela",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "8103243",
+		"geonameId": "3625428",
+		"isoLanguage": "en",
+		"name": "Venezuela, Bolivarian Republic Of",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1563417",
+		"geonameId": "1562822",
+		"isoLanguage": "da",
+		"name": "Vietnam",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563421",
+		"geonameId": "1562822",
+		"isoLanguage": "en",
+		"name": "Vietnam",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563427",
+		"geonameId": "1562822",
+		"isoLanguage": "fr",
+		"name": "Viet Nam",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1563436",
+		"geonameId": "1562822",
+		"isoLanguage": "it",
+		"name": "Vietnam",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1976216",
+		"geonameId": "1562822",
+		"isoLanguage": "fr",
+		"name": "Viêt Nam",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2421964",
+		"geonameId": "1562822",
+		"isoLanguage": "fr",
+		"name": "Vietnam",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "3600844",
+		"geonameId": "1562822",
+		"isoLanguage": "en",
+		"name": "Socialist Republic of Vietnam",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1057591",
+		"geonameId": "2134431",
+		"isoLanguage": "fr",
+		"name": "République de Vanuatu",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1563364",
+		"geonameId": "2134431",
+		"isoLanguage": "da",
+		"name": "Vanuatu",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563367",
+		"geonameId": "2134431",
+		"isoLanguage": "en",
+		"name": "Vanuatu",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563373",
+		"geonameId": "2134431",
+		"isoLanguage": "fr",
+		"name": "Vanuatu",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1563382",
+		"geonameId": "2134431",
+		"isoLanguage": "it",
+		"name": "Vanuatu",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4125600",
+		"geonameId": "2134431",
+		"isoLanguage": "en",
+		"name": "Republic of Vanuatu",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1562951",
+		"geonameId": "4034894",
+		"isoLanguage": "da",
+		"name": "Samoa",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562954",
+		"geonameId": "4034894",
+		"isoLanguage": "en",
+		"name": "Samoa",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562961",
+		"geonameId": "4034894",
+		"isoLanguage": "fr",
+		"name": "Samoa",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1562969",
+		"geonameId": "4034894",
+		"isoLanguage": "it",
+		"name": "Samoa",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4316265",
+		"geonameId": "4034894",
+		"isoLanguage": "en",
+		"name": "Independent State of Samoa",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "17699542",
+		"geonameId": "4034894",
+		"isoLanguage": "en",
+		"name": "Western Samoa",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2256822",
+		"geonameId": "831053",
+		"isoLanguage": "fr",
+		"name": "Kosovo",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "2427694",
+		"geonameId": "831053",
+		"isoLanguage": "da",
+		"name": "Kosovo",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4792344",
+		"geonameId": "831053",
+		"isoLanguage": "en",
+		"name": "Republic of Kosovo",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "5463027",
+		"geonameId": "831053",
+		"isoLanguage": "en",
+		"name": "Kosovo",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "6598488",
+		"geonameId": "831053",
+		"isoLanguage": "it",
+		"name": "Cossovo",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "16932140",
+		"geonameId": "831053",
+		"isoLanguage": "it",
+		"name": "Kosovo",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561938",
+		"geonameId": "69543",
+		"isoLanguage": "da",
+		"name": "Yemen",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561941",
+		"geonameId": "69543",
+		"isoLanguage": "en",
+		"name": "Yemen",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561948",
+		"geonameId": "69543",
+		"isoLanguage": "fr",
+		"name": "Yémen",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561957",
+		"geonameId": "69543",
+		"isoLanguage": "it",
+		"name": "Yemen",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "3159693",
+		"geonameId": "69543",
+		"isoLanguage": "en",
+		"name": "Republic of Yemen",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "16489119",
+		"geonameId": "69543",
+		"isoLanguage": "en",
+		"name": "Arabia Felix / Arabia eudaímōn",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "522056",
+		"geonameId": "953987",
+		"isoLanguage": "en",
+		"name": "Union of South Africa",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1561037",
+		"geonameId": "953987",
+		"isoLanguage": "da",
+		"name": "Sydafrika",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561041",
+		"geonameId": "953987",
+		"isoLanguage": "en",
+		"name": "Republic of South Africa",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561049",
+		"geonameId": "953987",
+		"isoLanguage": "fr",
+		"name": "Afrique du Sud",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1561058",
+		"geonameId": "953987",
+		"isoLanguage": "it",
+		"name": "Sudafrica",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "7361697",
+		"geonameId": "953987",
+		"isoLanguage": "en",
+		"name": "South Africa",
+		"isPreferred": true,
+		"isShortName": true
+	},
+	{
+		"id": "1560246",
+		"geonameId": "895949",
+		"isoLanguage": "da",
+		"name": "Zambia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560257",
+		"geonameId": "895949",
+		"isoLanguage": "fr",
+		"name": "Zambie",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1560266",
+		"geonameId": "895949",
+		"isoLanguage": "it",
+		"name": "Zambia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1978444",
+		"geonameId": "895949",
+		"isoLanguage": "en",
+		"name": "Northern Rhodesia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "2124839",
+		"geonameId": "895949",
+		"isoLanguage": "en",
+		"name": "Zambia",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "4100750",
+		"geonameId": "895949",
+		"isoLanguage": "en",
+		"name": "Republic of Zambia",
+		"isPreferred": false,
+		"isShortName": false
+	},
+	{
+		"id": "1559852",
+		"geonameId": "878675",
+		"isoLanguage": "da",
+		"name": "Zimbabwe",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559856",
+		"geonameId": "878675",
+		"isoLanguage": "en",
+		"name": "Zimbabwe",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559863",
+		"geonameId": "878675",
+		"isoLanguage": "fr",
+		"name": "Zimbabwe",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1559872",
+		"geonameId": "878675",
+		"isoLanguage": "it",
+		"name": "Zimbabwe",
+		"isPreferred": true,
+		"isShortName": false
+	},
+	{
+		"id": "1977685",
+		"geonameId": "878675",
+		"isoLanguage": "en",
+		"name": "Southern Rhodesia",
+		"isPreferred": false,
+		"isShortName": false
+	}
+]

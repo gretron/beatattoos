@@ -1,10 +1,14 @@
 "use client";
 
-import InputField from "@beatattoos/ui/InputField";
-import { FormEvent, useState, useTransition } from "react";
-import AlertBox from "@beatattoos/ui/AlertBox";
+import {
+  Alert,
+  AlertBox,
+  AlertType,
+  InputField,
+  useFormState,
+} from "@beatattoos/ui";
+import { useState } from "react";
 import { z } from "zod";
-import { Alert, AlertType } from "@beatattoos/ui/Alert";
 import {
   defaultLoginForm,
   loginFormSchema,
@@ -17,24 +21,13 @@ import { login } from "~/app/auth/login/actions";
 export default function LoginForm() {
   const [loginForm, setLoginForm] =
     useState<z.infer<typeof loginFormSchema>>(defaultLoginForm);
-  const [alert, setAlert] = useState<Alert>({ type: AlertType.error });
-  const [isPending, startTransition] = useTransition();
-
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-
-    setAlert((prev) => ({ ...prev, message: undefined }));
-
-    startTransition(async () => {
-      await login(new FormData(e.target as HTMLFormElement))
-        .then((res) => {
-          setAlert((prev) => ({ ...prev, message: res?.message }));
-        })
-        .catch(() => {
-          /* When log in is successful */
-        });
-    });
-  };
+  const { formState, isPending, handleSubmit } = useFormState<
+    Alert,
+    z.infer<typeof loginFormSchema>
+  >(login, undefined, (err) => ({
+    type: AlertType.error,
+    message: err.message,
+  }));
 
   return (
     <form
@@ -82,7 +75,7 @@ export default function LoginForm() {
           }))
         }
       />
-      <AlertBox className={"mt-6"} alert={alert} setAlert={setAlert} />
+      <AlertBox className={"mt-6"} alert={formState} />
       <button className={"btn-primary mt-6 w-full"}>Log In</button>
     </form>
   );

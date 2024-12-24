@@ -5,7 +5,7 @@ import { IconLogout } from "@tabler/icons-react";
 /**
  * Button to log out of current account
  */
-function LogoutButton() {
+export default function LogoutButton() {
   return (
     <form
       action={async (formData) => {
@@ -22,5 +22,3 @@ function LogoutButton() {
     </form>
   );
 }
-
-export default LogoutButton;

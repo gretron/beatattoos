@@ -2,6 +2,10 @@
 
 import { RefObject, useEffect, useState } from "react";
 
+/**
+ * Hook for whenever element is focused
+ * @param ref Reference to the element
+ */
 export default function useFocused(ref: RefObject<any>) {
   const [isFocused, setIsFocused] = useState(false);
   const [wasFocused, setWasFocused] = useState(false);

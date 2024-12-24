@@ -1,38 +1,30 @@
 "use client";
 
-import InputField from "@beatattoos/ui/InputField";
-import { FormEvent, useState, useTransition } from "react";
+import {
+  Alert,
+  AlertBox,
+  AlertType,
+  InputField,
+  useFormState,
+} from "@beatattoos/ui";
+import { FormEvent, useEffect, useState, useTransition } from "react";
 import { verifyToken } from "~/app/auth/token/actions";
 import { tokenFormSchema } from "~/app/auth/token/_constants/schemas";
-import AlertBox from "@beatattoos/ui/AlertBox";
 import { useSearchParams } from "next/navigation";
-import { Alert, AlertType } from "@beatattoos/ui/Alert";
 
 /**
  * Form to validate admin token
  */
 export default function TokenForm() {
   const [token, setToken] = useState<string>("");
-  const [isPending, startTransition] = useTransition();
   const searchParams = useSearchParams();
-  const [alert, setAlert] = useState<Alert>({
+  const { handleSubmit, formState, isPending } = useFormState<
+    Alert,
+    { adminToken: string }
+  >(verifyToken, undefined, (err) => ({
     type: AlertType.error,
-    message: searchParams.get("message") ?? undefined,
-  });
-
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-
-    setAlert((prev) => ({ ...prev, message: undefined }));
-
-    startTransition(() => {
-      verifyToken(new FormData(e.target as HTMLFormElement)).then((res) => {
-        if (res) {
-          setAlert((prev) => ({ ...prev, message: res?.message }));
-        }
-      });
-    });
-  };
+    message: err.message,
+  }));
 
   return (
     <form
@@ -58,7 +50,7 @@ export default function TokenForm() {
         disabled={isPending}
         setValue={setToken}
       />
-      <AlertBox className={"mt-6"} alert={alert} setAlert={setAlert} />
+      <AlertBox className={"mt-6"} alert={formState} />
       <button className={"btn-primary mt-6 w-full"}>Validate</button>
     </form>
   );

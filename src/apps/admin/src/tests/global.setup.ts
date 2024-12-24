@@ -1,5 +1,5 @@
 import { expect, test as setup } from "@playwright/test";
-import { createUser } from "~/utils/userUtilities";
+import { createUser } from "~/utils/user-utilities";
 import { db } from "~/lib/db";
 import { STORAGE_STATE } from "../../playwright.config";
 
@@ -13,12 +13,45 @@ setup(
       where: { role: { equals: "ADMIN" } },
     });
 
+    const country = await db.country.findFirst({
+      include: {
+        stateProvinces: {
+          include: {
+            cities: true,
+          },
+        },
+      },
+    });
+
+    if (!country) {
+      throw new Error("ERROR: No available country in database");
+    }
+
+    const stateProvince = country.stateProvinces[0];
+
+    if (!stateProvince) {
+      throw new Error(
+        "ERROR: No available state/province for given country in database",
+      );
+    }
+
+    const city = stateProvince.cities[0];
+
     await page.goto("/auth/token");
     await page.getByLabel(/Admin token/).fill(process.env.ADMIN_TOKEN ?? "");
     await page.getByRole("button", { name: "Validate" }).click();
     await expect(page).toHaveURL(/auth\/register/);
     await page.getByLabel(/First name/).fill(user.firstName);
     await page.getByLabel(/Last name/).fill(user.lastName);
+
+    await page.getByLabel(/Country/).selectOption(country.id);
+    await page.getByLabel(/State\/province/).selectOption(stateProvince.id);
+
+    // If city exists under given state/province
+    if (city) {
+      await page.getByLabel(/City/).selectOption(city.id);
+    }
+
     await page.getByLabel(/Email address/).fill(user.emailAddress);
     await page.getByLabel(/^Password/).fill(user.password);
     await page.getByLabel(/Confirm password/).fill(user.password);

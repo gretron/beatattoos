@@ -1,6 +1,5 @@
 "use server";
 
-import { registerFormSchemaRefined } from "~/app/auth/register/_constants/schemas";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import bcrypt from "bcryptjs";
@@ -9,83 +8,128 @@ import {
   CREATE_USER_FAILED_ERROR,
   EXISTING_ACCOUNT_ERROR,
   EXISTING_ACCOUNT_FAILED_ERROR,
+  INCORRECT_TOKEN_ERROR,
 } from "~/app/auth/register/_constants/actionResponses";
+import { SUCCESS_REDIRECT } from "~/app/auth/register/_constants/redirectUrls";
 import {
-  INCORRECT_TOKEN_REDIRECT,
-  SUCCESS_REDIRECT,
-} from "~/app/auth/register/_constants/redirectUrls";
-import {
-  CREDENTIALS_PARSING_ERROR,
   EMAIL_IN_USE_ERROR,
   EMAIL_IN_USE_FAILED_ERROR,
 } from "~/app/_constants/actionResponses";
+import { areLocationsInvalid } from "~/app/_utils/location-utilities";
+import { TRPCError } from "@trpc/server";
+import { serverActionProcedure } from "~/lib/trpc";
+import { registerFormSchemaRefined } from "~/app/auth/register/_constants/schemas";
 
 /**
  * Action to register new administrator account
- * @param formData register form data {@link registerFormSchema}
+ * @param input register form data {@link registerFormSchemaRefined}
  */
-export async function register(formData: FormData) {
-  const data = Object.fromEntries(formData);
-  const parsedData = registerFormSchemaRefined.safeParse(data);
+export const register = serverActionProcedure
+  .input(registerFormSchemaRefined)
+  .mutation(async ({ ctx, input }) => {
+    // Retrieve admin token
+    const cookieStore = cookies();
+    const adminToken = cookieStore.get("adminToken");
 
-  // Check for data formatting errors
-  if (!parsedData.success) {
-    return CREDENTIALS_PARSING_ERROR;
-  }
+    // If admin token does not correspond, redirect to token page
+    if (adminToken?.value !== process.env.ADMIN_TOKEN) {
+      return Promise.reject(
+        new TRPCError({
+          code: "UNAUTHORIZED",
+          message: INCORRECT_TOKEN_ERROR,
+        }),
+      );
+    }
 
-  // Retrieve admin token
-  const cookieStore = cookies();
-  const adminToken = cookieStore.get("adminToken");
+    let adminUserExists;
 
-  // If admin token does not correspond, redirect to token page
-  if (adminToken?.value !== process.env.ADMIN_TOKEN) {
-    redirect(INCORRECT_TOKEN_REDIRECT);
-    return; // For integration test
-  }
+    try {
+      adminUserExists = await db.user.findFirst({
+        where: { role: "ADMIN" },
+      });
+    } catch (e) {
+      return Promise.reject(
+        new TRPCError({
+          code: "INTERNAL_SERVER_ERROR",
+          message: EXISTING_ACCOUNT_FAILED_ERROR,
+        }),
+      );
+    }
 
-  let adminUserExists;
+    if (adminUserExists) {
+      return Promise.reject(
+        new TRPCError({
+          code: "BAD_REQUEST",
+          message: EXISTING_ACCOUNT_ERROR,
+        }),
+      );
+    }
 
-  try {
-    adminUserExists = await db.user.findFirst({
-      where: { role: "ADMIN" },
-    });
-  } catch (e) {
-    return EXISTING_ACCOUNT_FAILED_ERROR;
-  }
+    const {
+      firstName,
+      lastName,
+      countryId,
+      stateProvinceId,
+      cityId,
+      emailAddress,
+      password,
+    } = input;
 
-  if (adminUserExists) {
-    return EXISTING_ACCOUNT_ERROR;
-  }
+    let emailInUse;
 
-  const { firstName, lastName, emailAddress, password } = parsedData.data;
+    try {
+      emailInUse = await db.user.findUnique({ where: { emailAddress } });
+    } catch (e) {
+      return Promise.reject(
+        new TRPCError({
+          code: "INTERNAL_SERVER_ERROR",
+          message: EMAIL_IN_USE_FAILED_ERROR,
+        }),
+      );
+    }
 
-  let emailInUse;
+    if (emailInUse) {
+      return Promise.reject(
+        new TRPCError({
+          code: "BAD_REQUEST",
+          message: EMAIL_IN_USE_ERROR,
+        }),
+      );
+    }
 
-  try {
-    emailInUse = await db.user.findUnique({ where: { emailAddress } });
-  } catch (e) {
-    return EMAIL_IN_USE_FAILED_ERROR;
-  }
+    const locationsInvalid = await areLocationsInvalid(
+      countryId,
+      stateProvinceId,
+      cityId,
+    );
 
-  if (emailInUse) {
-    return EMAIL_IN_USE_ERROR;
-  }
+    if (locationsInvalid) {
+      return Promise.reject(locationsInvalid);
+    }
 
-  const hashedPassword = await bcrypt.hash(password, 10);
+    const hashedPassword = await bcrypt.hash(password, 10);
 
-  try {
-    await db.user.create({
-      data: {
-        role: "ADMIN",
-        firstName,
-        lastName,
-        emailAddress,
-        password: hashedPassword,
-      },
-    });
-  } catch (e) {
-    return CREATE_USER_FAILED_ERROR;
-  }
+    try {
+      await db.user.create({
+        data: {
+          role: "ADMIN",
+          firstName,
+          lastName,
+          countryId,
+          stateProvinceId,
+          cityId,
+          emailAddress,
+          password: hashedPassword,
+        },
+      });
+    } catch (e) {
+      return Promise.reject(
+        new TRPCError({
+          code: "INTERNAL_SERVER_ERROR",
+          message: CREATE_USER_FAILED_ERROR,
+        }),
+      );
+    }
 
-  redirect(SUCCESS_REDIRECT);
-}
+    redirect(SUCCESS_REDIRECT);
+  });

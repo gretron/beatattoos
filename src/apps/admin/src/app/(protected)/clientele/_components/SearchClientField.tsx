@@ -2,7 +2,7 @@
 
 import { ReactNode, useState } from "react";
 import { IconSearch } from "@tabler/icons-react";
-import InputField from "@beatattoos/ui/InputField";
+import { InputField } from "@beatattoos/ui";
 
 /**
  * Props for {@link SearchClientField}
