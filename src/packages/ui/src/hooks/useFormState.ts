@@ -6,11 +6,12 @@ import { FormEvent, useState } from "react";
  * Hook to keep track of form state
  * @param formAction the form action
  * @param initialState the initial state of the form
+ * @param errorHandler callback to turn error into form state
  */
 export default function useFormState<T, U>(
   formAction: (input: U) => Promise<T>,
   initialState?: T,
-  errorHandler?: (err: Error) => T,
+  errorHandler?: (err: Error) => Partial<T>,
 ) {
   const [formState, setFormState] = useState<T | undefined>(initialState);
   const [isPending, setIsPending] = useState(false);
@@ -33,7 +34,7 @@ export default function useFormState<T, U>(
       if (error instanceof Error) {
         const errorData = errorHandler?.(error);
 
-        setFormState(errorData);
+        setFormState(errorData as T);
       }
     }
 
