@@ -9,13 +9,13 @@ on:
     branches:
       - main
     paths:
-      - "src/apps/**"
+      - "src/apps/admin/**"
       - "src/packages/**"
   push:
     branches:
       - main
     paths:
-      - "src/apps/**"
+      - "src/apps/admin/**"
       - "src/packages/**"
 
 jobs:
