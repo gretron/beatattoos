@@ -1,8 +1,8 @@
 import { type Config } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme";
+import GlobalPreset from "@beatattoos/ui/global.preset";
 
 export default {
-  presets: [require("../../packages/ui/global.preset")],
+  presets: [GlobalPreset],
   content: ["./src/**/*.tsx"],
   plugins: [],
 } satisfies Config;

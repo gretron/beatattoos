@@ -1,8 +1,7 @@
-import "~/styles/globals.css";
+import "~/app/_styles/globals.css";
 
-import { GeistSans } from "geist/font/sans";
-
-import { TRPCReactProvider } from "~/trpc/react";
+import localFont from "next/font/local";
+import { ReactNode } from "react";
 
 export const metadata = {
   title: "Create T3 App",
@@ -10,16 +9,18 @@ export const metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+/**
+ * Import Proclamate Heavy local font
+ */
+const proclamateHeavy = localFont({
+  src: [{ path: "../../public/fonts/proclamate_heavy.woff" }],
+  variable: "--font-proclamate-heavy",
+});
+
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
-      <body>
-        <TRPCReactProvider>{children}</TRPCReactProvider>
-      </body>
+    <html lang="en" className={`${proclamateHeavy.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

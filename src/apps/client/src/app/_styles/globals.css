@@ -1,0 +1,38 @@
+/* noinspection CssUnknownTarget */
+@import url("@beatattoos/ui/globals.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary-500;
+}
+
+.section-curve {
+  @apply relative h-16 w-full bg-accent-500 md:h-32;
+}
+
+.section-curve::before {
+  @apply absolute h-16 w-16 bg-primary-500 md:h-32 md:w-32;
+  content: "";
+  clip-path: path("M 0 0 L 64 0 A 64 64 0 0 0 0 64 Z");
+}
+
+.section-curve::after {
+  @apply absolute -top-full right-0 h-16 w-16 bg-accent-500 md:h-32 md:w-32;
+  content: "";
+  clip-path: path("M 64 64 L 0 64 A 64 64 0 0 0 64 0 Z");
+}
+
+@media screen(md) {
+  .section-curve::before {
+    clip-path: path("M 0 0 L 128 0 A 128 128 0 0 0 0 128 Z");
+  }
+
+  .section-curve::after {
+    @apply absolute -top-full right-0 h-32 w-32 bg-accent-500;
+    content: "";
+    clip-path: path("M 128 128 L 0 128 A 128 128 0 0 0 128 0 Z");
+  }
+}
