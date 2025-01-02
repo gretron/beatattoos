@@ -67,5 +67,5 @@ This clause directly relates product requirements to user experiences to efficie
 ##### User Flow Diagram
 [View client details process user flow diagram](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=117-198&t=sXJObP5DN9cpEhhv-1)
 ### Client
-#### Homepage Overview Process
+#### Homepage Process
 [Homepage overview process user flow diagram](https://www.figma.com/board/JewRrRNisvGv3NWFMoPPSh/User-Experience-(Client)?node-id=1-109&t=4lsmnsjUHuDppW1G-1)
