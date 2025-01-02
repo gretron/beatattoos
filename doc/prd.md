@@ -52,17 +52,20 @@ Clients interested in getting a tattoo typically initiate contact with the tatto
 [User stories defining product requirements](https://github.com/users/gretron/projects/3/views/3)
 ## User Experience
 This clause directly relates product requirements to user experiences to efficiently visualize features for technical development
-### Authentication
-#### Registration Process (Admin)
+### Admin
+#### Registration Process
 ##### User Flow Diagram
 [Registration process user flow diagram](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=17-84&t=Kw5xTLbOPfc352hX-1)
-#### Log In Process (Admin)
+#### Log In Process
 ##### User Flow Diagram
 [Log in process user flow diagram](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=85-115&t=hhlIwkxEefmNzaUY-1)
 ### Client
-#### Create Client Process (Admin)
+#### Create Client Process
 ##### User Flow Diagram
 [Create client process user flow diagram](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=90-159&t=cZJKBYeqwHWRzt69-1)
-#### View Client Details Process (Admin)
+#### View Client Details Process
 ##### User Flow Diagram
 [View client details process user flow diagram](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=117-198&t=sXJObP5DN9cpEhhv-1)
+### Client
+#### Homepage Overview Process
+[Homepage overview process user flow diagram](https://www.figma.com/board/JewRrRNisvGv3NWFMoPPSh/User-Experience-(Client)?node-id=1-109&t=4lsmnsjUHuDppW1G-1)
