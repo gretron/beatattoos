@@ -35,7 +35,7 @@ export default function Snake(props: SnakeProps) {
   const uniforms = useMemo(() => {
     return {
       colorMap: {
-        value: [new Color("#F05D23"), new Color("#FFF4E0")],
+        value: [new Color("#F05D23"), new Color("#FFEFD6")],
       },
       brightnessThreshold: {
         value: 0.5,
