@@ -56,31 +56,31 @@ This clause directly relates product requirements to user experiences to efficie
 #### Registration Process
 As a tattoo artist (admin), I want to register with my email address and password during the initial setup so that I can create an account with access to the admin website
 ##### GitHub Issue
-[Registration user story](https://github.com/gretron/beatattoos/issues/79)
+[Registration process user story](https://github.com/gretron/beatattoos/issues/79)
 ##### User Flow Diagram
-[Registration user flow diagram](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=17-84&t=Kw5xTLbOPfc352hX-1)
+[Registration process user flow diagram](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=17-84&t=Kw5xTLbOPfc352hX-1)
 #### Log In Process
 As a tattoo artist (admin), I want to log in with my email address and password so that I can access the administrator website
 ##### GitHub Issue
-[Log in user story](https://github.com/gretron/beatattoos/issues/47)
+[Log in process user story](https://github.com/gretron/beatattoos/issues/47)
 ##### User Flow Diagram
-[Log in user flow diagram](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=85-115&t=hhlIwkxEefmNzaUY-1)
+[Log in process user flow diagram](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=85-115&t=hhlIwkxEefmNzaUY-1)
 #### Create Client Process
 As a tattoo artist (admin), I want to create client accounts so that I can make accounts for in-person clients
 ##### GitHub Issue
-[Create client user story](https://github.com/gretron/beatattoos/issues/96)
+[Create client process user story](https://github.com/gretron/beatattoos/issues/96)
 ##### User Flow Diagram
-[Create client user flow diagram](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=90-159&t=cZJKBYeqwHWRzt69-1)
+[Create client process user flow diagram](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=90-159&t=cZJKBYeqwHWRzt69-1)
 #### View Client Details Process
 As a tattoo artist (admin), I want to view client accounts so that I can be aware of client information
 ##### GitHub Issue
-[View client details user story](https://github.com/gretron/beatattoos/issues/98)
+[View client process details user story](https://github.com/gretron/beatattoos/issues/98)
 ##### User Flow Diagram
-[View client details user flow diagram](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=117-198&t=sXJObP5DN9cpEhhv-1)
+[View client process details user flow diagram](https://www.figma.com/board/M17iRBOWYN4O8asf6DViLf/User-Experience?node-id=117-198&t=sXJObP5DN9cpEhhv-1)
 ### Client
 #### Home Page Process
 As a client, I want to view a homepage so that I can preview the tattoo artist's previous work and capabilities
 ##### GitHub Issue
-[Home page user story](https://github.com/gretron/beatattoos/issues/101)
+[Home page process user story](https://github.com/gretron/beatattoos/issues/101)
 ##### User Flow Diagram
-[Home page user flow diagram](https://www.figma.com/board/JewRrRNisvGv3NWFMoPPSh/User-Experience-(Client)?node-id=1-109&t=4lsmnsjUHuDppW1G-1)
+[Home page process user flow diagram](https://www.figma.com/board/JewRrRNisvGv3NWFMoPPSh/User-Experience-(Client)?node-id=1-109&t=4lsmnsjUHuDppW1G-1)
