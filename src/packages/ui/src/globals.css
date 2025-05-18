@@ -1,0 +1,206 @@
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+  hanging-punctuation: first last;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  max-width: 75ch;
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+  }
+}
+
+/* Variables */
+
+:root {
+  --primary-300: #fff7e6;
+  --primary-400: #fff4e0;
+  --primary-500: #ffefd6;
+  --primary-600: #dbc09c;
+  --primary-700: #b7946b;
+
+  --secondary-300: #73600d;
+  --secondary-400: #5c4d0a;
+  --secondary-500: #493d08;
+  --secondary-600: #3e3305;
+  --secondary-700: #342904;
+
+  --accent-300: #faaf7a;
+  --accent-400: #f68f58;
+  --accent-500: #f05d23;
+  --accent-600: #ce4019;
+  --accent-700: #ac2811;
+
+  --neutral-300: #e3c8b7;
+  --neutral-400: #c8a797;
+  --neutral-500: #a47c6f;
+  --neutral-600: #8d5b51;
+  --neutral-700: #763e37;
+
+  --error-300: #fe9d89;
+  --error-400: #fd786b;
+  --error-500: #fc3b3b;
+  --error-600: #d82b3a;
+  --error-700: #b51d38;
+
+  --success-300: #a2fcae;
+  --success-400: #8afaa4;
+  --success-500: #64f895;
+  --success-600: #49d585;
+  --success-700: #32b276;
+
+  --warning-300: #ffe385;
+  --warning-400: #ffd767;
+  --warning-500: #ffc535;
+  --warning-600: #dba226;
+  --warning-700: #b7811a;
+
+  --info-300: #8dd0f9;
+  --info-400: #70bbf4;
+  --info-500: #429bed;
+  --info-600: #3079cb;
+  --info-700: #215aaa;
+}
+
+/* Elements */
+
+.d1,
+.d2,
+.d3 {
+  font-family: var(--font-proclamate-heavy), serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.d1 {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.d2 {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.d3 {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* Components */
+
+.bt-button {
+  --text-color: var(--secondary-500);
+  --background-color: var(--accent-500);
+  --background-hover-color: var(--accent-600);
+
+  color: var(--text-color);
+  background: var(--background-color);
+
+  font-weight: 700;
+
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 1rem;
+
+  cursor: pointer;
+
+  transition: 150ms ease-in-out;
+}
+
+.bt-button:hover {
+  background: var(--background-hover-color);
+}
+
+.bt-link {
+  color: var(--secondary-500);
+
+  font-weight: 700;
+
+  transition: 150ms ease-in-out;
+}
+
+.bt-link:hover {
+  color: var(--secondary-400);
+}

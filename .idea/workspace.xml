@@ -4,11 +4,62 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a67ee757-d539-4489-a9ec-73f9ab00ed59" name="Changes" comment="" />
+    <list default="true" id="a67ee757-d539-4489-a9ec-73f9ab00ed59" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/Hero/components/Scene/components/Snake/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/Hero/components/Scene/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/Hero/components/Scene/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/Hero/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/Hero/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/HomePageFallback/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/Loader/components/InkWave/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/Loader/components/InkWave/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/Loader/components/TattooGun/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/Loader/components/TattooGun/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/Loader/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/Loader/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/Navbar/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/Navbar/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/PageTransition/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/PageTransition/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/Styles/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/Styles/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/TransitionHand/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_components/TransitionHand/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_contexts/LoadingContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_fonts/Proclamate-Heavy.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/app/_shaders/TwoToneShader.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/client/public/models/snake.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packages/ui/src/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apps/client/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/apps/client/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apps/client/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/apps/client/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apps/client/app/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apps/client/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/apps/client/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apps/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/apps/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apps/client/public/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apps/client/public/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apps/client/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apps/client/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apps/client/public/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apps/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/apps/client/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/packages/ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/packages/ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pnpm-lock.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,22 +73,78 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\David\\Documents\\GitHub\\beatattoos\\src\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\Users\\David\\Documents\\GitHub\\beatattoos\\src\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/David/Documents/GitHub/beatattoos/src/apps/client/public/models&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\David\\Documents\\GitHub\\beatattoos\\src\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\David\\Documents\\GitHub\\beatattoos\\src\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\David\Documents\GitHub\beatattoos\src\apps\client\public\models" />
+      <recent name="C:\Users\David\Documents\GitHub\beatattoos\src\packages\ui\src" />
+      <recent name="C:\Users\David\Documents\GitHub\beatattoos\src\apps\client\app\_fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\David\Documents\GitHub\beatattoos\src\apps\client\app\_components" />
+      <recent name="C:\Users\David\Documents\GitHub\beatattoos\src\apps\client\app\_components\Loader\components\InkWave" />
+      <recent name="C:\Users\David\Documents\GitHub\beatattoos\src\apps\client\app\_components\PageTransition" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/src/apps/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/src/apps/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/src/apps/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -54,7 +161,21 @@
       <option name="presentableId" value="Default" />
       <updated>1746460861693</updated>
       <workItem from="1746460863563" duration="1667000" />
-      <workItem from="1746469265684" duration="131000" />
+      <workItem from="1746469265684" duration="7370000" />
+      <workItem from="1746480464015" duration="2238000" />
+      <workItem from="1746544811335" duration="9923000" />
+      <workItem from="1746638391079" duration="2111000" />
+      <workItem from="1746649918810" duration="6889000" />
+      <workItem from="1746711927591" duration="669000" />
+      <workItem from="1746727537994" duration="8838000" />
+      <workItem from="1746805335757" duration="5607000" />
+      <workItem from="1746824196806" duration="760000" />
+      <workItem from="1746899570428" duration="1592000" />
+      <workItem from="1747095253449" duration="7470000" />
+      <workItem from="1747144920806" duration="16863000" />
+      <workItem from="1747353491828" duration="16241000" />
+      <workItem from="1747407447155" duration="4425000" />
+      <workItem from="1747527571157" duration="1468000" />
     </task>
     <servers />
   </component>

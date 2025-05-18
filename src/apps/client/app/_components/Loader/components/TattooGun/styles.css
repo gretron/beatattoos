@@ -1,0 +1,17 @@
+.bt-tattoo-gun {
+  position: absolute;
+  bottom: 0;
+  right: calc(100% - 1px);
+
+  fill: var(--secondary-500);
+
+  height: 2rem;
+
+  animation: tattoo-gun-animation 0.5s linear infinite alternate;
+}
+
+@keyframes tattoo-gun-animation {
+  to {
+    bottom: 100%;
+  }
+}

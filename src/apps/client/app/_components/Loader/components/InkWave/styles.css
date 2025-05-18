@@ -1,0 +1,20 @@
+.bt-ink-wave {
+  height: 1rem;
+}
+
+.bt-ink-wave__wave {
+  stroke: var(--secondary-400);
+  stroke-width: 0.5rem;
+
+  animation: wave-animation 1s linear infinite;
+}
+
+@keyframes wave-animation {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(76px);
+  }
+}
